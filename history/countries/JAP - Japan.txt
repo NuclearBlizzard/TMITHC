@@ -68,6 +68,42 @@ if = {
 		target = MAN
 		autonomous_state = autonomy_integrated_puppet
 	}
+	set_autonomy = {
+		target = JSR
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = JIC
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = SIA
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = JBD
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = JBM
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = JBM
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = JEI
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = JPS
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = JSA
+		autonomous_state = autonomy_integrated_puppet
+	}
 	else = {
 		set_autonomy = {
 			target = MEN
@@ -77,8 +113,57 @@ if = {
 			target = MAN
 			autonomous_state = autonomy_puppet
 		}
+		set_autonomy = {
+			target = JSR
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = JIC
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = SIA
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = JBD
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = JBM
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = JBM
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = JEI
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = JPS
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = JSA
+			autonomous_state = autonomy_puppet
+		}
 	}
 }
+
+
+create_faction = cpps
+add_to_faction = JIC
+add_to_faction = SIA
+add_to_faction = JBM
+add_to_faction = JBD
+add_to_faction = RAJ
+add_to_faction = JEI
+add_to_faction = AST
+add_to_faction = CHI
+add_to_faction = JSR
+add_to_faction = JPS
 
 
 set_politics = {
