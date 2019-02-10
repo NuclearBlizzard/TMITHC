@@ -51,6 +51,12 @@ set_convoys = 150
 set_stability = 0.5
 
 
+create_faction = iberia_pact
+add_to_faction = POR
+
+
+
+
 create_country_leader = {
 	name = "Manuel Azana"
 	desc = "POLITICS_MANUEL_AZANA_DESC"
