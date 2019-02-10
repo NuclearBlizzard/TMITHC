@@ -111,5 +111,25 @@ KEN = "countries/Kenya.txt"
 PAK = "countries/Pakistan.txt"
 BOT = "countries/Botswana.txt"
 MAN = "countries/Manchukou.txt"
+
+
+###############################################################
+
+RKA = "countries/Reichskommisariat Afrika.txt"
+RKM = "countries/Reichskommisariat Moskowien.txt"
+RKU = "countries/Reichskommisariat Ukraine.txt"
+RKK = "countries/Reichskommisariat Kaukasus.txt"
+RKT = "countries/Reichskommisariat Turkestan.txt"
+RKL = "countries/Reichskommisariat Ural.txt"
+RKG = "countries/General Gouvernment.txt"
+JIC = "countries/Japanese Indochina.txt"
+JBM = "countries/Japanese Burma.txt"
+JBD = "countries/Japanese Bangladesh"
+JEI = "countries/Japanese East India.txt"
+JSR = "countries/Japanese Siberian Republic.txt"
+GAB = "countries/German Aligned Brazil.txt"
+JSA = "countries/Japanese South America.txt"
+RKC = "countries/Reichskommissariat Karibien"
 JPS = "countries/Japanese Pacific States.txt" 
 NEU = "countries/Neutral Zone.txt"
+
