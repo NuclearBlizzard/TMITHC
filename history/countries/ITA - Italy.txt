@@ -64,8 +64,16 @@ set_politics = {
 	elections_allowed = no
 }
 
+puppet = CRO
+puppet = MNT
+puppet = SER
 
-
+create_faction = med_pact
+add_to_faction = BUL
+add_to_faction = TUR
+add_to_faction = IRQ
+add_to_faction = SAU
+add_to_faction = GRE
 
 create_country_leader = {
 	name = "Benito Mussolini"
