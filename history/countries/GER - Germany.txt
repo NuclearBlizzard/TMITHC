@@ -80,7 +80,6 @@ set_politics = {
 
 }
 
-
 puppet = SLO
 puppet = CZE
 puppet = RKG
@@ -92,8 +91,8 @@ puppet = RKM
 puppet = RKC
 puppet = RKA
 puppet = LIT
-
-
+puppet = USA
+puppet = CAN
 
 
 create_faction = Axis

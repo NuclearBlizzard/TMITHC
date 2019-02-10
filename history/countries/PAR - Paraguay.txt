@@ -55,6 +55,8 @@ create_country_leader = {
 	}
 }
 
+
+
 	create_country_leader = {
 		name = "Higinio Morinigo"
 		desc = "POLITICS_HIGINIO_MORINIGO_DESC"

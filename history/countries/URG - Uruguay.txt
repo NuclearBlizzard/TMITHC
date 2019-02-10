@@ -46,7 +46,6 @@ create_country_leader = {
 	}
 }
 
-
 	create_country_leader = {
 		name = "Alfredo Baldomir Ferrari"
 		desc = "POLITICS_ALFREDO_BALDOMIR_FERRARI_DESC"
