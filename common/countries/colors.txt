@@ -1,10 +1,7 @@
 #reload countrycolors
 
 
-SOV = {
-	color = rgb { 125 13 24 }
-	color_ui = rgb { 163 17 31 }
-}
+
 LUX = {
 	color = rgb { 65 175 179 }
 	color_ui = rgb { 85 228 233 }
@@ -94,10 +91,6 @@ BRA = {
 CAN = {
 	color = rgb { 119 48 39 }
 	color_ui = rgb { 155 62 51 }
-}
-CHI = {
-	color = hsv { 0.18 0.6 0.9 } #255 244 190
-	color_ui = hsv { 0.18 0.3 0.9 }
 }
 CHL = {
 	color = rgb { 155 101 107 }
@@ -216,10 +209,6 @@ MON = {
 	color = rgb { 108 140 42 }
 	color_ui = rgb { 209 247 133 }
 }
-MEN = {
-	color = rgb { 185  255  152 }
-	color_ui = rgb { 165  230  132 }
-}
 TAN = {
 	color = rgb { 152 130 191 }
 	color_ui = rgb { 198 169 248 }
@@ -248,11 +237,6 @@ OMA = {
 	color = rgb { 155 101 107 }
 	color_ui = rgb { 202 131 139 }
 }
-RAJ = {
-	color = rgb { 170  10  10 }
-	color_ui = rgb { 200  10  10 }
-}
-
 CRO = {
 	color = rgb { 230  70  180 }
 	color_ui = rgb { 230 255 122 }
@@ -343,10 +327,7 @@ LAO = {
 	color_ui = rgb { 176  102  136 }
 }
 
-INS = {
-	color = rgb { 128  158  118 }
-	color_ui = rgb { 128  158  118 }
-}
+
 
 VIN = {
 	color = rgb { 230  223  50 }
@@ -371,10 +352,6 @@ MNT = {
 BLR = {
 	color = rgb { 180 220 190 }
 	color_ui = rgb { 180 220 190 }
-}
-MAN = {
-	color = rgb { 255 120 71 }
-	color_ui = rgb { 255 120 71 }
 }
 ANG = {
 	color = rgb { 37 140 61 }
@@ -561,7 +538,7 @@ GRE = {
 	color_ui = rgb { 121 235 255 }
 }
 RKA = {
-	color = rgb { 128 128 128 }
+	color = rgb { 96 96 96 }
 	color_ui = rgb { 121 235 255 }
 }
 FIN = {
@@ -571,4 +548,48 @@ FIN = {
 AFG = {
 	color = rgb { 90 145 149 }
 	color_ui = rgb { 83 208 217 }
+}
+PAK = {
+	color = rgb { 93 74 56 }
+	color_ui = rgb { 83 208 217 }
+}
+RAJ = {
+	color = rgb { 121  130  96 }
+	color_ui = rgb { 200  10  10 }
+}
+JIC = {
+	color = rgb { 123 151 69 }
+	color_ui = rgb { 200  10  10 }
+}
+CHI = {
+	color = rgb { 206 187 88 }
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+JBM = {
+	color = rgb { 153 129 82 }
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+JBD = {
+	color = rgb { 124 166 147 }
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+SOV = {
+	color = rgb { 135 41 50 }
+	color_ui = rgb { 163 17 31 }
+}
+MEN = {
+	color = rgb { 183  229  163 }
+	color_ui = rgb { 165  230  132 }
+}
+JEI = {
+	color = rgb { 128  158  118 }
+	color_ui = rgb { 128  158  118 }
+}
+MAN = {
+	color = rgb { 242 139 102 }
+	color_ui = rgb { 255 120 71 }
+}
+JSR = {
+	color = rgb { 177 135 117 }
+	color_ui = rgb { 128  158  118 }
 }
