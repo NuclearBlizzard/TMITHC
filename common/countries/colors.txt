@@ -237,10 +237,7 @@ OMA = {
 	color = rgb { 155 101 107 }
 	color_ui = rgb { 202 131 139 }
 }
-CRO = {
-	color = rgb { 230  70  180 }
-	color_ui = rgb { 230 255 122 }
-}
+
 
 PRC = {
 	color = rgb { 245 12 55 }
@@ -592,4 +589,8 @@ MAN = {
 JSR = {
 	color = rgb { 177 135 117 }
 	color_ui = rgb { 128  158  118 }
+}
+CRO = {
+	color = rgb { 161 142 99 }
+	color_ui = rgb { 230 255 122 }
 }
