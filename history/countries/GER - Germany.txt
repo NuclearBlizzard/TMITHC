@@ -80,9 +80,45 @@ set_politics = {
 
 }
 
-create_faction = Axis
-add_to_faction = GER
+puppet = SLO
+puppet = CZE
+puppet = RKG
+puppet = RKU
+puppet = RKL
+puppet = RKK
+puppet = RKT
+puppet = RKM
+puppet = RKC
+puppet = RKA
+puppet = LIT
+puppet = USA
+puppet = CAN
 
+
+create_faction = Axis
+add_to_faction = SAF
+add_to_faction = GER
+add_to_faction = FRA
+add_to_faction = ENG
+add_to_faction = IRE
+add_to_faction = ROM
+add_to_faction = HUN
+add_to_faction = SLO
+add_to_faction = CZE
+add_to_faction = RKG
+add_to_faction = RKU
+add_to_faction = RKL
+add_to_faction = RKK
+add_to_faction = RKT
+add_to_faction = RKM
+add_to_faction = RKC
+add_to_faction = NOR
+add_to_faction = GAB
+add_to_faction = ARG
+add_to_faction = PAR
+add_to_faction = URG
+add_to_faction = RKA
+add_to_faction = VEN
 
 add_ideas = {
 

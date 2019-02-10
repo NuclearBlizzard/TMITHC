@@ -88,10 +88,6 @@ BRA = {
 	color = rgb { 76 145 63 }
 	color_ui = rgb { 99 189 82 }
 }
-CAN = {
-	color = rgb { 119 48 39 }
-	color_ui = rgb { 155 62 51 }
-}
 CHL = {
 	color = rgb { 155 101 107 }
 	color_ui = rgb { 202 131 139 }
@@ -167,10 +163,6 @@ PHI = {
 PRU = {
 	color = rgb { 196 189 204 }
 	color_ui = rgb { 255 246 255 }
-}
-SAF = {
-	color = rgb { 152 130 191 }
-	color_ui = rgb { 198 169 248 }
 }
 SAU = {
 	color = rgb { 171 190 152 }
@@ -605,4 +597,24 @@ RKC = {
 SIK = {
 	color = rgb { 94 174 150 }
 	color_ui = rgb { 222 247 198 }
+}
+USA = {
+	color = rgb { 96 96 96 }
+	color_ui = rgb { 200  10  10 }
+}
+NEU = {
+	color = rgb { 88 124 124 }
+	color_ui = rgb { 200  10  10 }
+}
+JPS = {
+	color = rgb { 178 126 92 }
+	color_ui = rgb { 200  10  10 }
+}
+CAN = {
+	color = rgb { 135 78 69 }
+	color_ui = rgb { 155 62 51 }
+}
+SAF = {
+	color = rgb { 109 101 122 }
+	color_ui = rgb { 198 169 248 }
 }
