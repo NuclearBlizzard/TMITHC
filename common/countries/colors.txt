@@ -180,10 +180,6 @@ SIA = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 222 247 198 }
 }
-SIK = {
-	color = rgb { 71 190 152 }
-	color_ui = rgb { 222 247 198 }
-}
 TIB = {
 	color = rgb { 80 115 45}
 	color_ui = rgb { 222 247 198 }
@@ -593,4 +589,20 @@ JSR = {
 CRO = {
 	color = rgb { 161 142 99 }
 	color_ui = rgb { 230 255 122 }
+}
+GAB = {
+	color = rgb { 56 125 43 }
+	color_ui = rgb { 230 255 122 }
+}
+JSA = {
+	color = rgb { 128  158  118 }
+	color_ui = rgb { 200  10  10 }
+}
+RKC = {
+	color = rgb { 96 96 96 }
+	color_ui = rgb { 200  10  10 }
+}
+SIK = {
+	color = rgb { 94 174 150 }
+	color_ui = rgb { 222 247 198 }
 }
