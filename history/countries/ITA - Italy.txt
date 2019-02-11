@@ -67,6 +67,8 @@ set_politics = {
 puppet = CRO
 puppet = MNT
 puppet = SER
+puppet = IRQ
+puppet = SAU
 
 create_faction = med_pact
 add_to_faction = BUL
@@ -78,7 +80,7 @@ add_to_faction = GRE
 create_country_leader = {
 	name = "Benito Mussolini"
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "Portrait_Italy_Benito_Mussolini.dds"
+	picture = "portrait_ita_benito_mussolini1.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

@@ -56,7 +56,7 @@ set_stability = 0.75
 create_country_leader = {
 	name = "António de Oliveira Salazar"
 	desc = "POLITICS_ANTÓNIO_DE_OLIVEIRA_SALAZAR_DESC"
-	picture = "Portrait_Portugal_Antonio_de_Oliveira_Salazar.dds"
+	picture = "portrait_por_antonio_de_oliveira_salazar.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -76,9 +76,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Francisco de Barcelos Rolão Preto"
-	desc = "POLITICS_FRANSISCO_BARCELOS_ROLAO_PRETO_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	name = "António de Oliveira Salazar"
+	desc = "POLITICS_DESC"
+	picture = "portrait_por_antonio_de_oliveira_salazar.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

@@ -1,4 +1,4 @@
-﻿capital = 64
+capital = 64
 
 oob = "GER_1936"
 
@@ -42,29 +42,36 @@ set_technology = {
 	transport = 1
 }
 
+puppet = RKA
+puppet = RKM
+puppet = UKR
+puppet = RKV
+puppet = LIT
+puppet = RKU
+puppet = ARM
+puppet = USA
+puppet = SAF
+puppet = ARG
+puppet = CUB
+
+
+
 
 set_research_slots = 4
 set_convoys = 200
 set_stability = 0.75 
 set_war_support = 0.3
 
-#Trade
-create_import = {
-
-}
-
-
-
 
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 2
+			popularity = 5
 		}
 
 		fascism = {
-			popularity = 98
+			popularity = 95
 		}
 		
 		communism = {
@@ -80,56 +87,34 @@ set_politics = {
 
 }
 
-puppet = SLO
-puppet = CZE
-puppet = RKG
-puppet = RKU
-puppet = RKL
-puppet = RKK
-puppet = RKT
-puppet = RKM
-puppet = RKC
-puppet = RKA
-puppet = LIT
-puppet = USA
-puppet = CAN
-
-
 create_faction = Axis
-add_to_faction = SAF
 add_to_faction = GER
+add_to_faction = ROM
+add_to_faction = HUN
 add_to_faction = FRA
 add_to_faction = ENG
 add_to_faction = IRE
-add_to_faction = ROM
-add_to_faction = HUN
-add_to_faction = SLO
-add_to_faction = CZE
-add_to_faction = RKG
-add_to_faction = RKU
-add_to_faction = RKL
-add_to_faction = RKK
-add_to_faction = RKT
-add_to_faction = RKM
-add_to_faction = RKC
-add_to_faction = NOR
-add_to_faction = GAB
 add_to_faction = ARG
 add_to_faction = PAR
+add_to_faction = BOL
+add_to_faction = GAB
 add_to_faction = URG
-add_to_faction = RKA
 add_to_faction = VEN
+add_to_faction = SWE
+add_to_faction = FIN
+add_to_faction = NOR
+
+
 
 add_ideas = {
 
 }
 
 
-
 create_country_leader = {
 	name = "Adolf Hitler"
 	desc = "POLITICS_ADOLF_HITLER_DESC"
-	picture = "Portrait_Germany_Adolf_Hitler.dds"
+	picture = "Portrait_Germany_Adolf_Hitler1.tga"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
