@@ -54,9 +54,9 @@ set_stability = 0.75
 
 
 create_country_leader = {
-	name = "Leonard Knapp"
+	name = "Hans Frank"
 	desc = "POLITICS_ANTON_MUSSERT_DESC"
-	picture = "portrait_rkg_leonard.tga"
+	picture = "portrait_rkg_hans.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

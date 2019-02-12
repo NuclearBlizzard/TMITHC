@@ -54,9 +54,9 @@ set_stability = 0.75
 
 
 create_country_leader = {
-	name = "Bruno Pasche"
+	name = "Arno Schickedanz"
 	desc = "POLITICS_ANTON_MUSSERT_DESC"
-	picture = "portrait_rkk_bruno.tga"
+	picture = "portrait_rkk_arno.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

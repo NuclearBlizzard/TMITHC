@@ -73,9 +73,9 @@ bookmarks = {
 			}
 	
 		}
-		"NEU"={
-			history = "NEU_GATHERING_STORM_DESC"
-			ideology = fascism
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
 			ideas = {
 
 			}

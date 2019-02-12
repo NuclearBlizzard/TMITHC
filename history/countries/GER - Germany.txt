@@ -105,8 +105,6 @@ add_to_faction = BOL
 add_to_faction = GAB
 add_to_faction = URG
 add_to_faction = VEN
-add_to_faction = SWE
-add_to_faction = FIN
 add_to_faction = NOR
 
 
