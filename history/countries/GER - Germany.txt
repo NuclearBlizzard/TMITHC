@@ -53,7 +53,12 @@ puppet = USA
 puppet = SAF
 puppet = ARG
 puppet = CUB
-
+puppet = CZE
+puppet = RKG
+puppet = SLO
+puppet = RKL
+puppet = RKK
+puppet = RKT
 
 
 
