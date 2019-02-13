@@ -110,7 +110,7 @@ add_to_faction = NOR
 
 
 add_ideas = {
-
+	GER_african_question
 }
 
 
