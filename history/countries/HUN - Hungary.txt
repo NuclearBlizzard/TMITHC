@@ -17,14 +17,7 @@ set_technology = {
 	CAS1 = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	add_ideas = {
 
-	}
-}
 
 
 
@@ -50,40 +43,17 @@ set_politics = {
 	elections_allowed = yes
 }
 
-
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	create_country_leader = {
-		name = "Miklós Horthy"
-		desc = "POLITICS_MIKLOS_HORTHY_DESC"
-		picture = "Portrait_Hungary_Miklos_Horthy.dds"
-		expire = "1965.1.1"
-		ideology = oligarchism
-		traits = {
-			fascist_sympathies
-			anti_communist
-		}
-		id = 500 #Horthy Neutral
-	}
-	else = {
-		create_country_leader = {
-			name = "Miklós Horthy"
-			desc = "POLITICS_MIKLOS_HORTHY_DESC"
-			picture = "Portrait_Hungary_Miklos_Horthy.dds"
-			expire = "1965.1.1"
-			ideology = despotism
-		}
-		create_country_leader = {
-			name = "Miklós Horthy"
-			desc = "POLITICS_MIKLOS_HORTHY_DESC"
-			picture = "Portrait_Hungary_Miklos_Horthy.dds"
-			expire = "1965.1.1"
-			ideology = fascism_ideology
-		}
+create_country_leader = {
+	name = "Miklós Horthy"
+	desc = "POLITICS_MYKLOS_HORTHY_DESC"
+	picture = "portrait_hun_horthy1.tga"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
 	}
 }
+
 
 create_country_leader = {
 	name = "Mátyás Rákosi"

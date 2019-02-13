@@ -86,9 +86,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Georgios Kosmidis"
+	name = "Georgios Papadopoulos"
 	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	picture = "portrait_gre_georgies.tga"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {

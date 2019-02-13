@@ -7,28 +7,8 @@ bookmarks = {
 		default_country = "GER"
 		default = yes
 		
-		"FRA"={
-			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-
-			}
-			focuses = {
-
-			}
-		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-
-			}
-			focuses = {
-
-			}
-		}
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 
@@ -76,6 +56,22 @@ bookmarks = {
 
 			}	
 			
+		}
+		"SPR"={
+			history = "SPR_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+
+			}
+	
+		}
+		"JPS"={
+			history = "JPS_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+
+			}
+	
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"

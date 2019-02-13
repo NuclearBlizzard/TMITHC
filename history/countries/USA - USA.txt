@@ -37,28 +37,6 @@ set_technology = {
 
 }
 
-#Monroe Doctrine
-#give_guarantee = CAN
-#give_guarantee = MEX
-#give_guarantee = CUB
-#give_guarantee = HAI
-#give_guarantee = DOM
-#give_guarantee = GUA
-#give_guarantee = HON
-#give_guarantee = ELS
-#give_guarantee = NIC
-#give_guarantee = COS
-#give_guarantee = PAN
-#give_guarantee = VEN
-#give_guarantee = COL
-#give_guarantee = ECU
-#give_guarantee = PRU
-#give_guarantee = BRA
-#give_guarantee = BOL
-#give_guarantee = CHL
-#give_guarantee = PAR
-#give_guarantee = ARG
-#give_guarantee = URG
 
 
 
@@ -90,43 +68,10 @@ set_politics = {
 }
 
 add_ideas = {
-	war_economy
-	free_trade
-	limited_conscription
+
 }
 
 
-# DIPLOMACY
-#set_autonomy = {
-#	target = PHI
-#	autonomous_state =  autonomy_puppet
-}
-
-1939.1.1 = {
-
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 0
-			}
-
-			fascism = {
-				popularity = 100
-			}
-			
-			communism = {
-				popularity = 0
-				#banned = no #default is no
-			}
-		}
-		
-		ruling_party = democratic
-		last_election = "1936.11.3"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-}
 
 create_country_leader = {
 	name = "Franklin Delano Roosevelt"
@@ -140,11 +85,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "William Dudley Pelley"
-	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
-	picture = "Portrait_USA_William_Dudley_Pelley.dds"
+	name = "George Lincoln Rockwell"
+	desc = "POLITICS_GEORGE_LINCOLN_ROCKWELL_DESC"
+	picture = "portrait_usa_george_lincoln_rockwell.tga"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = nazism
 	traits = {
 		
 	}
