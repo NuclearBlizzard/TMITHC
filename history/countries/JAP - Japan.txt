@@ -104,6 +104,10 @@ if = {
 		target = JSA
 		autonomous_state = autonomy_integrated_puppet
 	}
+	set_autonomy = {
+		target = CHI
+		autonomous_state = autonomy_integrated_puppet
+	}
 	else = {
 		set_autonomy = {
 			target = MEN
@@ -149,6 +153,11 @@ if = {
 			target = JSA
 			autonomous_state = autonomy_puppet
 		}
+		set_autonomy = {
+			target = CHI
+			autonomous_state = autonomy_puppet
+		}
+
 	}
 }
 
@@ -164,6 +173,9 @@ add_to_faction = AST
 add_to_faction = CHI
 add_to_faction = JSR
 add_to_faction = JPS
+add_to_faction = BHU
+add_to_faction = NEP
+add_to_faction = TIB
 
 
 set_politics = {
