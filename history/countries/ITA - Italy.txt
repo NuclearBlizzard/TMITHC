@@ -76,6 +76,10 @@ if = {
 		target = IAS
 		autonomous_state = autonomy_integrated_puppet
 	}
+	set_autonomy = {
+		target = GRE
+		autonomous_state = autonomy_integrated_puppet
+	}
 	else = {
 		set_autonomy = {
 			target = ITE
@@ -83,6 +87,10 @@ if = {
 		}
 		set_autonomy = {
 			target = IAS
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = GRE
 			autonomous_state = autonomy_puppet
 		}
 	}

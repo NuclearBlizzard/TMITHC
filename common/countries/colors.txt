@@ -546,10 +546,6 @@ JIC = {
 	color = rgb { 123 151 69 }
 	color_ui = rgb { 200  10  10 }
 }
-CHI = {
-	color = rgb { 206 187 88 }
-	color_ui = hsv { 0.18 0.3 0.9 }
-}
 JBM = {
 	color = rgb { 153 129 82 }
 	color_ui = hsv { 0.18 0.3 0.9 }
@@ -625,4 +621,8 @@ ITE = {
 IAS = {
 	color = rgb { 70 112 67 }
 	color_ui = rgb { 87 165 82 }
+}
+RNC = {
+	color = rgb { 206 187 88 }
+	color_ui = hsv { 0.18 0.3 0.9 }
 }
