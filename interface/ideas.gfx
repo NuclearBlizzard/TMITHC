@@ -3637,5 +3637,8 @@ spriteTypes = {
 		name = "GFX_idea_GER_african_question"
 		texturefile = "gfx/interface/ideas/GER_african_question.tga"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_GER_ss"
+		texturefile = "gfx/interface/ideas/GER_ss.tga"
+	}
 }

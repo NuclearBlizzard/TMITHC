@@ -64,7 +64,7 @@ puppet = RKT
 
 set_research_slots = 4
 set_convoys = 200
-set_stability = 0.75 
+set_stability = 0.65 
 set_war_support = 0.3
 
 
@@ -111,6 +111,7 @@ add_to_faction = NOR
 
 add_ideas = {
 	GER_african_question
+	GER_ss
 }
 
 

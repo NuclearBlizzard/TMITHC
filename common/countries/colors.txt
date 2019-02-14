@@ -618,3 +618,11 @@ SAF = {
 	color = rgb { 109 101 122 }
 	color_ui = rgb { 198 169 248 }
 }
+ITE = {
+	color = rgb { 95 129 93 }
+	color_ui = rgb { 87 165 82 }
+}
+IAS = {
+	color = rgb { 70 112 67 }
+	color_ui = rgb { 87 165 82 }
+}
