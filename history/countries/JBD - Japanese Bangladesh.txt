@@ -56,7 +56,7 @@ create_country_leader = {
 	desc = "POLITICS_BA_MAW_DESC"
 	picture = "JBD_ba_maw.tga"
 	expire = "1965.1.1"
-	ideology = fascist_ideology
+	ideology = fascism_ideology
 	traits = {
 		
 	}
