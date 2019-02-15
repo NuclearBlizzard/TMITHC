@@ -1,0 +1,54 @@
+ideas = {
+	
+
+	country = {
+		GER_african_question = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = GER_african_question
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.03
+			}
+		}
+		GER_ss = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = GER_ss
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.15
+				enemy_partisan_effect = -0.1
+			}
+		}	
+
+	}
+
+
+
+
+
+
+
+
+
+}

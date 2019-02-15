@@ -132,4 +132,6 @@ JSA = "countries/Japanese South America.txt"
 RKC = "countries/Reichskommissariat Karibien"
 JPS = "countries/Japanese Pacific States.txt" 
 NEU = "countries/Neutral Zone.txt"
-
+ITE = "countries/Italian Egypt.txt"
+IAS = "countries/Italian Abyssinia"
+RNC = "countries/Reorganized Nationalist China.txt"
