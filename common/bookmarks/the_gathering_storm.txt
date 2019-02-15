@@ -22,7 +22,8 @@ bookmarks = {
 			ideology = fascism
 			available = { has_dlc = "Waking the Tiger" }
 			ideas = {
-
+			GER_african_question
+			GER_ss
 			}
 			focuses = {
 
@@ -33,7 +34,8 @@ bookmarks = {
 			ideology = fascism
 			available = { NOT = { has_dlc = "Waking the Tiger" } }
 			ideas = {
-
+			GER_african_question
+			GER_ss
 			}
 			focuses = {
 
