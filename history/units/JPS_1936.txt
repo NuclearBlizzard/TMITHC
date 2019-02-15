@@ -1,0 +1,135 @@
+##### Division Templates #####
+
+
+division_template = {
+	name = "Kempeitai Brigade"  		# used for island defense (older equipment, lower experience)
+
+	division_names_group = JPS_GAR_01		# Brigade level irregular unit, so no default names
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+	priority = 0
+}
+units = {
+ 	division = {			
+		name = "Los Angeles Brigade"
+		location = 9814
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Los Angeles Brigade"
+		location = 9814
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Los Angeles Brigade"
+		location = 9814
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Seatle Brigade"
+		location = 7315
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Seatle Brigade"
+		location = 7315
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Seatle Brigade"
+		location = 7315
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7764
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 3781
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 917
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+	}
+}
+
+
+navy = {					
+		name = "Destroyer Flotilla  1"				
+		base = 9671
+		location = 9617 # Norfolk
+		# 3rd Destroyer Division				
+		ship = { name = "USS Decatur" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Badger" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Babbitt" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Leary" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Schenck" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		# 4th Destroyer Division				
+		ship = { name = "USS Jacob Jones" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Roper" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Dickerson" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Herbert" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		# 28th Destroyer Division				
+		ship = { name = "USS Dallas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Du Pont" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Bernadou" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Ellis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Cole" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		# 29th Destroyer Division				
+		ship = { name = "USS Lea" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Tarbell" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Upshur" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Greer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+	}					
+	navy = {					
+		name = "Destroyer Flotilla  2"				
+		base = 9617
+		location = 9617 # Norfolk
+		# 36th Destroyer Division			
+		ship = { name = "USS Trever" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Perry" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Hulbert" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Noa" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS William B Preston" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		# 37th Destroyer Division			
+		ship = { name = "USS Palmer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Hogan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Howard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		ship = { name = "USS Stansbury" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+	}					
