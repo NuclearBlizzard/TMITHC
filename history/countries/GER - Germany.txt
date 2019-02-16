@@ -1,4 +1,4 @@
-capital = 64
+﻿capital = 64
 
 oob = "GER_1936"
 
@@ -59,6 +59,7 @@ puppet = SLO
 puppet = RKL
 puppet = RKK
 puppet = RKT
+puppet = RKO
 
 
 
@@ -106,7 +107,7 @@ add_to_faction = GAB
 add_to_faction = URG
 add_to_faction = VEN
 add_to_faction = NOR
-
+add_to_faction = RKO
 
 
 add_ideas = {

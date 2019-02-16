@@ -56,6 +56,10 @@ create_import = {
 
 set_convoys = 400
 
+puppet = JAA
+puppet = JPR
+
+
 if = {
 	limit = {
 		has_dlc = "Together for Victory"
@@ -175,7 +179,6 @@ add_to_faction = JSR
 add_to_faction = JPS
 add_to_faction = BHU
 add_to_faction = NEP
-add_to_faction = TIB
 
 
 set_politics = {
