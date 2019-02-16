@@ -72,10 +72,6 @@ ARG = {
 	color = rgb { 145 157 236 }
 	color_ui = rgb { 189 204 255 }
 }
-AST = {
-	color = rgb { 57 143 97 }
-	color_ui = rgb { 74 186 126 }
-}
 BHU = {
 	color = rgb { 172 122 88 }
 	color_ui = rgb { 172 122 88 }
@@ -475,10 +471,6 @@ BUL = {
 	color = rgb { 96 145 72 }
 	color_ui = rgb { 210 147 217 }
 }
-LIT = {
-	color = rgb { 132 137 102 }
-	color_ui = rgb { 255 255 155 }
-}
 GER = {
 	color = rgb { 78 78 78 }
 	color_ui = rgb { 138 155 116 }
@@ -538,17 +530,13 @@ PAK = {
 	color = rgb { 93 74 56 }
 	color_ui = rgb { 83 208 217 }
 }
-RAJ = {
+JPR = {
 	color = rgb { 121  130  96 }
 	color_ui = rgb { 200  10  10 }
 }
 JIC = {
 	color = rgb { 123 151 69 }
 	color_ui = rgb { 200  10  10 }
-}
-CHI = {
-	color = rgb { 206 187 88 }
-	color_ui = hsv { 0.18 0.3 0.9 }
 }
 JBM = {
 	color = rgb { 153 129 82 }
@@ -617,4 +605,24 @@ CAN = {
 SAF = {
 	color = rgb { 109 101 122 }
 	color_ui = rgb { 198 169 248 }
+}
+ITE = {
+	color = rgb { 95 129 93 }
+	color_ui = rgb { 87 165 82 }
+}
+IAS = {
+	color = rgb { 70 112 67 }
+	color_ui = rgb { 87 165 82 }
+}
+RNC = {
+	color = rgb { 206 187 88 }
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+RKO = {
+	color = rgb { 132 137 102 }
+	color_ui = rgb { 255 255 155 }
+}
+JAA = {
+	color = rgb { 57 143 97 }
+	color_ui = rgb { 74 186 126 }
 }

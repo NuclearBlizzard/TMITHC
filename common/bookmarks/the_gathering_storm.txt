@@ -7,28 +7,8 @@ bookmarks = {
 		default_country = "GER"
 		default = yes
 		
-		"FRA"={
-			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-
-			}
-			focuses = {
-
-			}
-		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-
-			}
-			focuses = {
-
-			}
-		}
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
 
@@ -42,7 +22,8 @@ bookmarks = {
 			ideology = fascism
 			available = { has_dlc = "Waking the Tiger" }
 			ideas = {
-
+			GER_african_question
+			GER_ss
 			}
 			focuses = {
 
@@ -53,7 +34,8 @@ bookmarks = {
 			ideology = fascism
 			available = { NOT = { has_dlc = "Waking the Tiger" } }
 			ideas = {
-
+			GER_african_question
+			GER_ss
 			}
 			focuses = {
 
@@ -76,6 +58,22 @@ bookmarks = {
 
 			}	
 			
+		}
+		"SPR"={
+			history = "SPR_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+
+			}
+	
+		}
+		"JPS"={
+			history = "JPS_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+
+			}
+	
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"

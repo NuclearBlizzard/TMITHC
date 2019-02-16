@@ -6,9 +6,9 @@ state={
 	}
 
 	history={
-		owner = CHI
+		owner = RNC
 		add_core_of = YUN
-		add_core_of = CHI
+		add_core_of = RNC
 		add_core_of = PRC
 		victory_points = {
 			1319 10 
