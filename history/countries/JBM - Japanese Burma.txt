@@ -53,12 +53,11 @@ set_politics = {
 
 
 
-# REVISIT Unclear if appropriate for this ideology
 create_country_leader = {
-	name = "Ba Maw"
+	name = "Kenji-Tomito"
 	desc = "POLITICS_BA_MAW_DESC"
-	picture = "JBM_bamaw.tga"
-	expire = "1965.1.1"
+	picture = "JBM_Kenji.tga"
+	expire = "1990.1.1"
 	ideology = fascism_ideology
 	traits = {
 		
