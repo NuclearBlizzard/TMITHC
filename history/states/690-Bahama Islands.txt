@@ -20,7 +20,7 @@ state={
 			}
 		}
 	}
-
+	add_core_of = RKC
 	provinces={
 		4647 7245 10254 
 	}
