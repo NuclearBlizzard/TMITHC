@@ -1933,8 +1933,17 @@ spriteTypes = {
 	
 ############################################################################################	
 
-spriteType = {
-		name = "GFX_report_event_hitler_dead"
-		texturefile = "gfx/event_pictures/report_event_hitler_dead.tga"
+	spriteType = {
+			name = "GFX_report_event_hitler_dead"
+			texturefile = "gfx/event_pictures/report_event_hitler_dead.tga"
+	}
+
+	spriteType = {
+			name = "GFX_report_event_george_lincoln_resign"
+			texturefile = "gfx/event_pictures/report_event_george_lincoln_resign.tga"
+	}
+	spriteType = {
+			name = "GFX_report_event_crown_prince"
+			texturefile = "gfx/event_pictures/report_event_crown_prince.tga"
 	}
 }
