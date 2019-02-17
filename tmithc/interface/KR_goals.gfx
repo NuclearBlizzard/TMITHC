@@ -1,0 +1,8 @@
+spriteTypes = {	
+
+
+
+	SpriteType = {
+	name = "GFX_goal_continuous_air_production"
+	texturefile = "gfx/interface/goals/GER_Policy.tga"			
+	}	

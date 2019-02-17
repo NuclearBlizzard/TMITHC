@@ -1,0 +1,31 @@
+l_english:
+
+#ROMCountryCosmetics
+
+ ROM_communism:0 "Socialist Republic of Romania"
+ ROM_communism_DEF:0 "Communist Romania"
+
+ ROM_democratic:0 "Romania"
+ ROM_democratic_DEF:0 "Romania"
+
+ ROM_neutrality:0 "Kingdom of Romania"
+ ROM_neutrality_DEF:0 "The Kingdom of Romania"
+
+ ROM_fascism:0 "Legionary State of Romania"
+ ROM_fascism_DEF:0 "Legionary Romania"
+
+ ROM_fascism_ADJ:0 "Romanian"
+ ROM_democratic_ADJ:0 "Romanian"
+ ROM_neutrality_ADJ:0 "Romanian"
+ ROM_communism_ADJ:0 "Romanian"
+
+#ROMParties
+
+ ROM_communism_party:0 "PCR"
+ ROM_communism_party_long:0 "Partidul Comunist Roman"
+ ROM_democratic_party:0 "PNL"
+ ROM_democratic_party_long:0 "Partidul Naţional Liberal"
+ ROM_neutrality_party:0 "FSN"
+ ROM_neutrality_party_long:0 "Frontul Salvării Naţionale"
+ ROM_fascism_party:0 "GdF"
+ ROM_fascism_party_long:0 "Garda de Fier"
