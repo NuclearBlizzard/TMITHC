@@ -37,11 +37,11 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 25
+			popularity = 0
 		}
 
 		neutrality = {
-			popularity  = 0
+			popularity  = 76
 		}
 
 		communism = {
@@ -49,12 +49,12 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 75
+			popularity = 24
 		}
 		
 	}
 	
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1932.9.18"
 	election_frequency = 48
 	elections_allowed = yes
@@ -70,7 +70,7 @@ set_stability = 0.9
 create_country_leader = {
 	name = "Per Albin Hansson"
 	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
-	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
+	picture = "portrait_swe_albin.tga"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
@@ -101,9 +101,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Axel Pehrsson-Bramstorp"
-	desc = "POLITICS_AXEL_PEHRSSON_BRAMSTORP_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	name = "Per Albin Hansson"
+	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
+	picture = "portrait_swe_albin.tga"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {

@@ -70,10 +70,10 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Joseph Stalin"
-	desc = "POLITICS_JOSEPH_STALIN_DESC"
-	picture = "Portrait_Soviet_Joseph_Stalin.dds"
-	expire = "1953.3.1"
+	name = "Russian Tribes"
+	desc = "POLITICS_RUSSIAN_TRIBES_DESC"
+	picture = "portrait_neu_anarchy.tga"
+	expire = "1980.1.1"
 	ideology = stalinism
 	traits = {
 		
@@ -617,30 +617,5 @@ create_equipment_variant = {
 		destroyer_engine_upgrade = 3
 		ship_ASW_upgrade = 3
 		ship_anti_air_upgrade = 3
-	}
-}
-
-1939.1.1 = {
-
-	create_equipment_variant = {
-		name = "Series X Shchuka"
-		type = submarine_2
-		upgrades = {
-			ship_reliability_upgrade = 3
-			sub_engine_upgrade = 3
-			sub_stealth_upgrade = 3
-			sub_torpedo_upgrade = 3
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Maxim Gorky Class"
-		type = heavy_cruiser_2
-		upgrades = {
-			ship_reliability_upgrade = 2
-			ship_engine_upgrade = 2
-			ship_armor_upgrade = 2
-			ship_gun_upgrade = 2
-		}
 	}
 }

@@ -1,0 +1,51 @@
+﻿add_namespace = germany
+
+country_event = {
+	id = germany.1
+	title = germany.1.t
+	desc = germany.1.d	
+	picture = GFX_report_event_hitler_dead
+
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+		tag = GER
+		AND = {
+			date > 1962.3.13
+		}
+	}
+
+	mean_time_to_happen = { days = 7 }
+
+	option  ={
+		name = germany.1.a
+		kill_country_leader = yes
+		ai_chance = { factor = 0 }
+		create_country_leader = {
+			name = "Martin Heusmann"
+			desc = "POLITICS_MARTIN_HEUSMANN_DESC"
+			picture = "GER_Martin_Heusmann.tga"
+			expire = 1990.1.1
+			ideology = nazism
+			traits = {
+				dictator
+			}
+		}
+	}
+	option  ={
+		name = germany.1.b
+		ai_chance = { factor = 100 }
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Heinrich Himmler"
+			desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+			picture = "GER_Heinrich_Himmler.tga"
+			expire = 1990.1.1
+			ideology = nazism
+			traits = {
+				dictator
+			}
+		}
+	}
+}

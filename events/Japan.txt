@@ -1,0 +1,35 @@
+﻿add_namespace = japan
+
+country_event = {
+	id = japan.1
+	title = japan.1.t
+	desc = japan.1.d	
+	picture = GFX_report_event_crown_prince
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAP
+		AND = {
+			date > 1960.8.14
+		}
+	}
+
+	mean_time_to_happen = { days = 6 }
+
+	option  ={
+		name = japan.1.a
+		kill_country_leader = yes
+		ai_chance = { factor = 100 }
+		create_country_leader = {
+			name = "Akihito"
+			desc = "POLITICS_AKIHITO_DESC"
+			picture = "JAP_Akihito.tga"
+			expire = 1990.1.1
+			ideology = fascism_ideology
+			traits = {
+				dictator
+			}
+		}
+	}
+}

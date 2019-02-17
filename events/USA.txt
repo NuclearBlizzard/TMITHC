@@ -1,0 +1,35 @@
+﻿add_namespace = nazireich
+
+country_event = {
+	id = nazireich.1
+	title = nazireich.1.t
+	desc = nazireich.1.d	
+	picture = GFX_report_event_george_lincoln_resign
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		AND = {
+			date > 1962.4.20
+		}
+	}
+
+	mean_time_to_happen = { days = 6 }
+
+	option  ={
+		name = nazireich.1.a
+		retire_country_leader = yes
+		ai_chance = { factor = 100 }
+		create_country_leader = {
+			name = "John Smith"
+			desc = "POLITICS_JOHN_SMITH_DESC"
+			picture = "USA_John_Smith.tga"
+			expire = 1990.1.1
+			ideology = nazism
+			traits = {
+				dictator
+			}
+		}
+	}
+}

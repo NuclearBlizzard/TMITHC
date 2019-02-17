@@ -1,0 +1,68 @@
+﻿capital = 107
+
+oob = "SER_1960"
+
+set_research_slots = 3
+
+add_ideas = {
+
+}
+
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	early_fighter = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_submarine = 1
+}
+
+
+set_convoys = 0
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 2
+		}
+
+		fascism = {
+			popularity = 98
+		}
+		
+		communism = {
+			popularity = 0
+			#banned = no #default is no
+		}
+		
+		neutrality = { 
+			popularity = 0
+		}
+	}
+	
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	elections_allowed = no
+}
+
+
+set_stability = 0.6
+
+
+
+create_country_leader = {
+	name = "Dobrica Ćosić"
+	desc = ""
+	picture = "portrait_ser_dobrica.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}

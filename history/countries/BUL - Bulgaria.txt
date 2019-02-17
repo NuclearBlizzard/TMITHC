@@ -44,33 +44,6 @@ set_politics = {
 	elections_allowed = no
 }
 
-1939.1.1 = {
-	set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 5
-		}
-
-		fascism = {
-			popularity = 35
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes
-		}
-		neutrality = { 
-			popularity = 60
-		}
-	}
-	
-	ruling_party = neutrality
-	last_election = "1938.3.27"
-	election_frequency = 48
-	elections_allowed = no
-}
-}
 
 create_country_leader = {
 	name = "Boris III"
@@ -108,7 +81,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hristo Lukov"
 	desc = "POLITICS_HRISTO_LUKOV_DESC"
-	picture = "GFX_Portrait_bulgaria_hristo_lukov"
+	picture = "portrait_bul_hristo.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
