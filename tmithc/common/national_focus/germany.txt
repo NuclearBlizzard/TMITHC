@@ -12,14 +12,79 @@ focus_tree = {
 
 	default = no
 	focus = {
-		id = GER_foreign_policy
+		id = GER_state_of_the_world
 		icon = GFX_GER_policy
 		cost = 10
-		x = 21
+		x = 17
 		y = 0
 
 		completion_reward = {
 			add_political_power = 150
+		}
+
+	}
+	focus = {
+		id = GER_state_affairs
+		icon = 
+		cost = 10
+		x = 16
+		y = 1
+
+		prerequisite = {
+			focus = GER_state_of_the_world
+		}
+
+		completion_reward = {
+			
+		}
+
+	}
+	focus = {
+		id = GER_germania_meeting
+		icon = 
+		cost = 10
+		x = 18
+		y = 1
+
+		prerequisite = {
+			focus = GER_state_of_the_world
+		}
+
+		completion_reward = {
+			
+		}
+
+	}
+	focus = {
+		id = GER_strengthen_the_pact
+		icon = GFX_
+		cost = 10
+		x = 17
+		y = 2
+
+		prerequisite = {
+			focus = GER_state_affairs
+			focus = GER_germania_meeting
+		}
+
+		completion_reward = {
+			
+		}
+
+	}
+	focus = {
+		id = GER_foreign_affairs
+		icon = GFX_
+		cost = 10
+		x = 17
+		y = 3
+
+		prerequisite = {
+			focus = GER_strengthen_the_pact
+		}
+
+		completion_reward = {
+			
 		}
 
 	}
