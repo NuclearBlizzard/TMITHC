@@ -3641,4 +3641,16 @@ spriteTypes = {
 		name = "GFX_idea_GER_ss"
 		texturefile = "gfx/interface/ideas/GER_ss.tga"
 	}
+	spriteType = {
+		name = "GFX_idea_JAP_army_dominant"
+		texturefile = "gfx/interface/ideas/JAP_army_dominant.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_army_balanced"
+		texturefile = "gfx/interface/ideas/JAP_army_balanced.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_navy_dominant"
+		texturefile = "gfx/interface/ideas/JAP_navy_dominant.dds"
+	}
 }

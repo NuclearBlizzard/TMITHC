@@ -1,0 +1,114 @@
+ideas = {
+	
+	country = {
+		JAP_navy_dominant_high = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = JAP_navy_dominant
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_dockyard_factor = 0.15	
+				production_speed_arms_factory_factor = -0.25
+				industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = -0.25
+			}
+		}
+		
+		JAP_navy_dominant_low = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = JAP_navy_dominant
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_dockyard_factor = 0.1			
+				production_speed_arms_factory_factor = -0.15
+				industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = -0.1
+			}
+		}
+		
+		JAP_army_navy_balanced = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = JAP_army_balanced
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.35
+				stability_factor = 0.05
+			}
+		}
+		
+		JAP_army_dominant_low = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = JAP_army_dominant
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = -0.15
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = -0.15
+			}
+		}
+		
+		JAP_army_dominant_high = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = JAP_army_dominant
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_dockyard_factor = -0.25
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = -0.25
+			}
+		}
+
+	}
+
+}
