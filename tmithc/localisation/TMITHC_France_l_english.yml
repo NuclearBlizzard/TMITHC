@@ -13,7 +13,7 @@ FRA_resistance2_desc:0 "The Vendéens have always historically disagreed with th
 FRA_securecountryside:0 "Analyze the Situation"
 FRA_securecountryside_desc:0 "Maybe things aren't as straight-forward as we thought them to be, was France destined to be one of the many pawns of the Reich? Or is this just one of the many tests she has to pass?"
 FRA_embraceresistance:0 "§YEmbrace the Résistance§!"
-FRA_embraceresistance_desc:0 "The Reich is closely monitoring our every action, but it has also proven incapable of terminating the Résistance aswell, it might just be what need to break bree of our chains."
+FRA_embraceresistance_desc:0 "The Reich is closely monitoring our every action, but it has also proven incapable of terminating the Résistance aswell, it might just be what need to break free of our chains."
 FRA_loyaltogermany:0 "§YStanding with the Reich§!"
 FRA_loyaltogermany_desc:0 "France stands with the German Reich against the Jewish menace, in a world as dire as this one, it is only beneficial for us to stick with our brothers."
 FRA_organizecells:0 "Organize the Résistance"
@@ -46,7 +46,7 @@ FRA_active_resistance_desc:0 "The French Résistance have restlessly continued s
 FRA_milice:0 "Milice Française"
 FRA_milice_desc:0 "The Milice is a branch of the army specializing in tracking down dissidents and terrorists."
 FRA_organised_resistance:0 "Organized Resistance"
-FRA_organised_resistance_desc:0 "No longer mere groups of men and women doing what they could to irritate the German occupiers, the Résistance in France is now a collective effort of organized rebel cells, coordinating with eachother to cause as much damage as possible."
+FRA_organised_resistance_desc:0 "No longer mere groups of men and women doing what they could to irritate the German occupiers, the Résistance in France is now a collective effort from organized rebel cells, coordinating with eachother to cause as much damage as possible."
 FRA_gearing_for_war:0 "Gearing Up For War"
 ########### flags #######
 helped_resistance:0 "§GHelped§! the Résistance."
