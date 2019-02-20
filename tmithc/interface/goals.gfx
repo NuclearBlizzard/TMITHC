@@ -1278,8 +1278,73 @@ spriteTypes = {
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_FRA_atlantikwall"
+		name = "GFX_FRA_atlantikwall"
 		texturefile = "gfx/interface/goals/FRA_atlantikwall.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_fire"
+		texturefile = "gfx/interface/goals/FRA_fire.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_conscription"
+		texturefile = "gfx/interface/goals/FRA_conscription.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_fascism"
+		texturefile = "gfx/interface/goals/FRA_fascism.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_resistancefocus"
+		texturefile = "gfx/interface/goals/FRA_resistancefocus.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_puppet"
+		texturefile = "gfx/interface/goals/FRA_puppet.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_handshake"
+		texturefile = "gfx/interface/goals/FRA_handshake.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_handshake2"
+		texturefile = "gfx/interface/goals/FRA_handshake2.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_militia"
+		texturefile = "gfx/interface/goals/FRA_militia.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_milice"
+		texturefile = "gfx/interface/goals/FRA_milice.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_standwithbritain"
+		texturefile = "gfx/interface/goals/FRA_standwithbritain.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_guns"
+		texturefile = "gfx/interface/goals/FRA_guns.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_factories"
+		texturefile = "gfx/interface/goals/FRA_factories.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_republic"
+		texturefile = "gfx/interface/goals/FRA_republic.tga"
 	}
 
 
