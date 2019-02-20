@@ -75,7 +75,7 @@ ideas = {
 				always = yes
 			}
 
-			picture = FRA_milice
+			picture = FRA_resistance
 
 			removal_cost = -1
 
