@@ -1,0 +1,13 @@
+﻿l_english:
+########## focus localisation ######
+FRA_francisque:0 "The French State"
+FRA_francisque_desc:0 ""
+FRA_manydead:0 "Memoirs of the Résistance"
+FRA_manydead_desc:0 ""
+############ idea localisation ######
+FRA_chained_republic:0 "Chained Government"
+FRA_chained_republic_desc:0 "France's politics, as are most of Europe's aswell, are dominated by German officials, though France's position between the three main powers of Europe makes it vital for Germany's dominance over the continent, and so every action taken by the French government is closely monitored."
+FRA_active_resistance:0 "Active Résistance"
+FRA_active_resistance_desc:0 "The French Résistance have restlessly continued sabotage operations even decades after the end of the Second World War, the French Milice, an army branch tasked with hunting these terrorists, has hardly achieved any success."
+FRA_milice:0 "Milice Française"
+FRA_milice_desc:0 "The Milice is a branch of the army specializing in tracking down dissidents and terrorists."

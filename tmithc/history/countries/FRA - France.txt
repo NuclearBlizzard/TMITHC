@@ -68,7 +68,9 @@ set_politics = {
 }
 
 add_ideas = {
-
+FRA_chained_republic
+FRA_milice
+FRA_active_resistance
 }
 
 

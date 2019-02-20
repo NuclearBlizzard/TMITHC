@@ -60,7 +60,7 @@ puppet = RKL
 puppet = RKK
 puppet = RKT
 puppet = RKO
-
+puppet = RKC
 
 
 set_research_slots = 4
