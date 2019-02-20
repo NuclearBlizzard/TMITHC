@@ -317,7 +317,7 @@ continuous_focus_position = { x = 150 y = 1900 }
 	#Focus: Join the Deuxième Entente ################################################### PLACEHOLDER
 		focus = { 
 			id = FRA_deuxiemeentente
-			icon = GFX_FRA_milice
+			icon = GFX_FRA_standwithbritain
 			x = 0
 			y = 9
 			cost = 1
@@ -444,7 +444,7 @@ continuous_focus_position = { x = 150 y = 1900 }
 	#Focus: La Liberté ou la Mort
 		focus = { 
 			id = FRA_libertyordeath
-			icon = GFX_FRA_freedom
+			icon = GFX_FRA_republic
 			x = 3
 			y = 9
 			cost = 4
@@ -465,6 +465,8 @@ continuous_focus_position = { x = 150 y = 1900 }
 				completion_reward = {
 					add_stability = 0.05
 					add_war_support = 0.15
+					set_politics = { ruling_party = democratic elections_allowed = no }
+					add_popularity = { ideology = democratic popularity = 0.2 }
 					remove_ideas = FRA_chained_republic
 					declare_war_on = {
 						target = GER
