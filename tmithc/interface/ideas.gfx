@@ -3641,4 +3641,20 @@ spriteTypes = {
 		name = "GFX_idea_GER_ss"
 		texturefile = "gfx/interface/ideas/GER_ss.tga"
 	}
+	spriteType = {
+		name = "GFX_idea_Covert_Operations"
+		texturefile = "gfx/interface/ideas/Covert_Operations.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_Suffering_Economy"
+		texturefile = "gfx/interface/ideas/Suffering_Economy.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_End_Hungary"
+		texturefile = "gfx/interface/ideas/Hungarian_Shield.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_Ukranian_Resistance"
+		texturefile = "gfx/interface/ideas/Ukranian_Resistance.tga"
+	}
 }

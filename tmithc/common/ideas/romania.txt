@@ -1,31 +1,66 @@
 ideas = {
 
 	country = {
-		ROM_revenge_against_soviet = {
+		ROM_revenge_against_Hungary = {
 
-			picture = anti_soviet_pact
+			picture = End_Hungary
 			
 			removal_cost = -1
 
 			allowed = {
 				original_tag = ROM
 			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-			}
 			
 			modifier = {
-				fascism_drift = 0.1
-				fascism_acceptance = 100
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				conscription = 0.005
+				army_morale_factor = 0.1
+				fascism_drift = 0.05
 			}
 		}
 	
-		ROM_revenge_against_germany = {
+		ROM_Democratic_Underground = {
 
-			picture = generic_communism_drift_bonus
+			picture = Covert_Operations
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			modifier = {
+				democratic_drift = 0.02
+				neutrality_drift = 0.03
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+
+		ROM_Unstable_Economy = {
+
+			picture = Suffering_Economy
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				production_speed_dockyard_factor = -0.1
+				production_speed_industrial_complex_factor = -0.05
+			}
+		}
+
+		ROM_Ukranian_Nationalists = {
+
+			picture = Ukranian_Resistance
 
 			removal_cost = -1
 			
@@ -33,57 +68,10 @@ ideas = {
 				original_tag = ROM
 			}
 
-			allowed_civil_war = {
-				NOT = {
-					has_government = fascism
+			modifier = {
+				198 = {
+					add_state_modifier = { modifier = { manpower = -0.18 } }
 				}
-			}
-			
-			modifier = {
-				communism_drift = 0.1
-				communism_acceptance = 100
-			}
-		}
-
-		ROM_romanian_volunteer_brigades = {
-
-			picture = generic_volunteer_expedition_bonus
-
-			removal_cost = -1
-			
-			allowed = {
-				original_tag = ROM
-			}
-
-			allowed_civil_war = {
-
-			}
-
-			rule = { can_send_volunteers = yes }
-			
-			modifier = {
-				send_volunteer_divisions_required = -1
-				send_volunteer_size = 1
-			}
-		}
-
-		ROM_fortify_the_borders = {
-
-			picture = generic_fortify_the_borders
-
-			removal_cost = -1
-			
-			allowed = {
-				original_tag = ROM
-			}
-
-			allowed_civil_war = {
-
-			}
-
-			modifier = {
-				production_speed_bunker_factor = 0.2
-				production_speed_coastal_bunker_factor = 0.2
 			}
 		}
 
@@ -697,9 +685,9 @@ ideas = {
 
 	political_advisor = {
 
-		ROM_iuliu_maniu = {
+		ROM_Petre_Minister = {
 
-			picture = generic_democratic_europe
+			picture = Petre_Political_Advisor
 
 			allowed = {
 				original_tag = ROM
@@ -707,7 +695,19 @@ ideas = {
 			
 			traits = { democratic_reformer }
 		}
+
+		ROM_Michael_1_Minister = {
+
+			picture = Michael_I_Political_Advisor
+
+			allowed = {
+				original_tag = ROM
+			}
+			
+			traits = { staunch_monarchist }
+		}
 	}
+
 
 	theorist = {
 

@@ -2,29 +2,24 @@
 state={
 	id=192
 	name="STATE_192"
-	manpower = 1469986
+	manpower = 1460000
+	resources={ steel=13 }
 	
 	state_category = city
 
 	history={
 		owner = ROM
-		victory_points = {
-			11670 10 
-		}
+		victory_points = { 11670 20 }
 		buildings = {
-			infrastructure = 5
+			infrastructure = 6
 			industrial_complex = 2
 			air_base = 6
-			11670 ={
-				naval_base = 3
-				coastal_bunker = 1
-			}
+			11670 ={ naval_base = 6 }
 		}
 		add_core_of = SOV
 		add_core_of = UKR
+		add_core_of = ROM
 	}
 
-	provinces={
-		741 754 3575 3738 3757 9698 9714 11670 11703 
-	}
+	provinces={ 741 3738 9698 11670 }
 }

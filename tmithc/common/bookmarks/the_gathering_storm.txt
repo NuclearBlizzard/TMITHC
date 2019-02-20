@@ -29,18 +29,6 @@ bookmarks = {
 
 			}
 		}
-		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
-			available = { NOT = { has_dlc = "Waking the Tiger" } }
-			ideas = {
-			GER_african_question
-			GER_ss
-			}
-			focuses = {
-
-			}
-		}
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -82,6 +70,21 @@ bookmarks = {
 
 			}
 	
+		}
+
+		"ROM"={
+			minor = yes
+			history = "ROM_60's_DESC"
+			ideology = fascism
+			ideas = {
+				ROM_revenge_against_Hungary
+				ROM_Democratic_Underground
+				ROM_Unstable_Economy
+				ROM_Ukranian_Nationalists
+			}
+			focuses = {
+
+			}	
 		}
 
 		"---"={

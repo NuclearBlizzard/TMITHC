@@ -22,6 +22,13 @@ set_technology = {
 	early_destroyer = 1
 }
 
+add_ideas = {
+	ROM_revenge_against_Hungary
+	ROM_Democratic_Underground
+	ROM_Unstable_Economy
+	ROM_Ukranian_Nationalists
+}
+
 set_convoys = 10
 
 
@@ -29,11 +36,11 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 10
+			popularity = 12
 		}
 
 		fascism = {
-			popularity = 60
+			popularity = 45
 		}
 		
 		communism = {
@@ -41,7 +48,7 @@ set_politics = {
 		}
 		
 		neutrality = { 
-			popularity = 27
+			popularity = 40
 		}
 	}
 	
@@ -54,7 +61,7 @@ set_politics = {
 create_country_leader = {
 	name = "Mihai I"
 	desc = "POLITICS_MIHAI_I_DESC"
-	picture = ""
+	picture = "Michael_I.tga"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
@@ -65,7 +72,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Nicolae Ceausescu"
 	desc = "POLITICS_CEAUSESCU_DESC"
-	picture = ""
+	picture = "Nicolae_Ceausescu.tga"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -74,9 +81,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Gheorghe Tatarescu"
+	name = "Gheorghe Tătărescu"
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
-	picture = ""
+	picture = "Gheorghe_Tatarescu.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -91,47 +98,56 @@ create_country_leader = {
 	picture = "Ion_Antonescu.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		dictator
-	}
+	traits = { dictator }
 }
 
 create_field_marshal = {
-	name = "Petre Dumitrescu"
-	gfx = GFX_Portrait_romania_petre_dumitrescu
-	traits = { offensive_doctrine logistics_wizard }
+	name = "Ilie Şteflea"
+	portrait_path = "gfx/leaders/ROM/Field Marshals/Ilie_Steflea.tga"
+	traits = { substance_abuser organisational_leader }
 	skill = 4
 	attack_skill = 4
-	defense_skill = 4
+	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 3
 }
 
 create_field_marshal = {
-	name = "Ion Antonescu"
-	picture = "Portrait_Romania_Ion_Antonescu.dds"
-	traits = { offensive_doctrine }
+	name = "Constantin Sănătescu"
+	portrait_path = "gfx/leaders/ROM/Field Marshals/Constantin_Sanatescu.tga"
+	traits = { defensive_doctrine logistics_wizard inflexible_strategist }
 	skill = 4
-	attack_skill = 4
+	attack_skill = 2
 	defense_skill = 4
 	planning_skill = 2
-	logistics_skill = 3
+	logistics_skill = 4
 }
 
 create_corps_commander = {
-	name = "Ioan Mihail Racovita"
-	gfx = GFX_Portrait_romania_ioan_mihail_racovita
-	traits = { hill_fighter }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
+	name = "Ioan Mihail Racoviţă"
+	portrait_path = "gfx/leaders/ROM/Generals/Mihail_Racovita.tga"
+	traits = { hill_fighter ranger cavalry_leader }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
 	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Constantin C. Claps"
+	portrait_path = "gfx/leaders/ROM/Generals/Constantin_Claps.tga"
+	traits = { brilliant_strategist infantry_leader infantry_expert }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
 	logistics_skill = 2
 }
 
 create_corps_commander = {
 	name = "Gheorghe Avramescu"
-	gfx = GFX_Portrait_romania_gheorghe_avramescu
+	portrait_path = "gfx/leaders/ROM/Generals/Gheorghe_Avramescu.tga"
 	traits = { }
 	skill = 3
 	attack_skill = 3
@@ -139,9 +155,32 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 3
 }
+
+create_corps_commander = {
+	name = "Leonard Mociulschi"
+	portrait_path = "gfx/leaders/ROM/Generals/Leonard_Mociulschi.tga"
+	traits = { trait_mountaineer winter_specialist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+} 
+
+create_corps_commander = {
+	name = "Septimiu Pretorian"
+	portrait_path = "gfx/leaders/ROM/Generals/Septimiu_Pretorian.tga"
+	traits = { infantry_leader winter_specialist }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
 create_navy_leader = {
 	name = "Horia Macellariu"
-	gfx = "GFX_Portrait_romania_horia_macellariu"
+	portrait_path = "gfx/leaders/ROM/Admirals/Horia_Macellariu.tga"
 	traits = { spotter }
 	skill = 2
 }

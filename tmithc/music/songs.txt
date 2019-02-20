@@ -4,7 +4,29 @@ music = {
 	chance = {
 		modifier = {
 			factor = 0.5
+			NOT = {
+					tag = ROM
+				}
 		}		
+	}
+}
+
+# Romania ######################
+
+music = {
+	song = "rom_viata_complicata"
+
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = {
+					tag = ROM
+				}
+			}
+		modifier = {
+			factor = 10
+			tag = ROM
+		}
 	}
 }
 
