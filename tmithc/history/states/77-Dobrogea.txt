@@ -2,7 +2,7 @@
 state={
 	id=77
 	name="STATE_77"
-	manpower = 378000
+	manpower = 497012
 	
 	state_category = rural
 
@@ -15,7 +15,5 @@ state={
 		add_claim_by = BUL
 	}
 
-	provinces={
-		9614 11597 
-	}
+	provinces={ 9614 11597 }
 }
