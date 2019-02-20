@@ -454,7 +454,7 @@ continuous_focus_position = { x = 150 y = 1900 }
 				
 				available = {
 					has_army_manpower = {
-						size > 350000
+						size > 750000
 					}
 				}
 			
