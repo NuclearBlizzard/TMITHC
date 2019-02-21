@@ -7,7 +7,7 @@ state={
 		oil=5
 	}
 	
-	state_category = city
+	state_category = large_city
 	
 	history={
 		owner = ROM
@@ -16,6 +16,7 @@ state={
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 2
+			synthetic_refinery = 2 
 		}
 		add_core_of = ROM
 	}

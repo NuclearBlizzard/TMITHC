@@ -2,7 +2,7 @@
 state={
 	id=765
 	name="STATE_765" # Muntenia
-	manpower = 690883
+	manpower = 890883
 	resources={ oil=6 }
 
 	state_category = city
@@ -14,6 +14,7 @@ state={
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
+			synthetic_refinery = 1
 			air_base = 5
 			9635 = { naval_base = 8 }
 			687 = { naval_base = 3 }

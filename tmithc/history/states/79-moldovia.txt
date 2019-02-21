@@ -3,7 +3,7 @@ state={
 	name="STATE_79"
 	manpower = 3455612
 	
-	state_category = large_town
+	state_category = city
 	
 	history={
 		owner = ROM

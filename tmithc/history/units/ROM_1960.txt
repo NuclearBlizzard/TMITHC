@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Divizia de Infanterie"			# Infantry Division
-	# Note: also Fortress divisions
 
 	division_names_group = ROM_INF_01
 
@@ -32,14 +31,17 @@ division_template = {
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
 }
 division_template = {
 	name = "Brigada de Cavalerie" 				# Cavalry Brigade
-	# Note: regiments within the brigade were battalion-sized units
 
 	division_names_group = ROM_CAV_01
 
@@ -47,17 +49,31 @@ division_template = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
 	}
 }
 division_template = {
-	name = "Regimentul de Blindate" 				# Armor Regiment
-	# Note: 2nd regiment created and merged with motorized inf to create Armor Division in 1940
+	name = "Grupul Blindate" 				# Armor Regiment
 	division_names_group = ROM_ARM_01
 	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }           # added motorized not to make it a death trap
-		motorized = { x = 1 y = 1 }
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		medium_tank_destroyer_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
 }
 
@@ -72,10 +88,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 818
+		location = 11689
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	division = {
@@ -84,10 +100,9 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 818
+		location = 11672
 		division_template = "Divizia de Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	division = {
@@ -96,22 +111,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 818
+		location = 577
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division = {
-		#name = "5 Brigada de Cavalerie"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 818
-		division_template = "Brigada de Cavalerie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 
@@ -132,10 +135,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 9
 		}
-		location = 9617
+		location = 11655
 		division_template = "Divizia de Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 	division = {
@@ -147,7 +150,7 @@ units = {
 		location = 9617
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -156,18 +159,20 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 9617
+		location = 3575
 		division_template = "Brigada de Cavalerie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division = {
-		name = "Regimentul 1 de Blindate"
+		name = "Grupul 1 Blindat “Mihai Viteazul”"
 		location = 9617
-		division_template = "Regimentul de Blindate"
-		start_experience_factor = 0.3
-		force_equipment_variants = { gw_tank_equipment = { owner = "ROM" creator = "FRA" amount = 72 } }
+		division_template = "Grupul Blindate"
+		start_experience_factor = 0.4
+		#force_equipment_variants = { advanced_medium_tank = { owner = "ROM" creator = "GER" amount = 50 } }
+		#force_equipment_variants = { improved_medium_tank = { owner = "ROM" creator = "GER" amount = 100 } }
+		#force_equipment_variants = { basic_medium_tank = { owner = "ROM" creator = "GER" amount = 150 } }
 
 	}
 
@@ -179,10 +184,9 @@ units = {
 			is_name_ordered = yes
 			name_order = 12
 		}
-		location = 6706
+		location = 9635
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 	division = {
@@ -194,7 +198,7 @@ units = {
 		location = 6706
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 	division = {
@@ -203,10 +207,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 21
 		}
-		location = 6706
+		location = 9606
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 
@@ -217,10 +221,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 7
 		}		
-		location = 9716
+		location = 11670
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -229,10 +233,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}		
-		location = 9716
+		location = 11670
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	division = {
@@ -241,10 +245,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 14
 		}		
-		location = 9716
+		location = 476
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 	division = {
@@ -253,10 +257,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}		
-		location = 9716
+		location = 754
 		division_template = "Brigada de Cavalerie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6
 
 	}
 
@@ -267,10 +271,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 3663
+		location = 3694
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 	division = {
@@ -279,10 +283,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}		
-		location = 3663
+		location = 3694
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.4
 
 	}
 	division = {
@@ -291,7 +295,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 13
 		}
-		location = 3663
+		location = 6697
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -308,7 +312,7 @@ units = {
 		location = 6682
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -320,7 +324,6 @@ units = {
 		location = 6697
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
 
 	}
 	division = {
@@ -329,22 +332,9 @@ units = {
 			is_name_ordered = yes
 			name_order = 18
 		}
-		location = 3696
+		location = 696
 		division_template = "Divizia de Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division = {
-		#name = "Divizia 20 Infanterie"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 20
-		}
-		location = 713
-		division_template = "Divizia de Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.4
 
 	}
 	division = {
@@ -353,10 +343,9 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 6682
+		location = 6455
 		division_template = "Brigada de Cavalerie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 
@@ -367,10 +356,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 690
+		location = 646
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	division = {
@@ -379,10 +368,10 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 690
+		location = 696
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.4
 
 	}
 	division = {
@@ -394,57 +383,53 @@ units = {
 		location = 690
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 
 	}
 
 	# Corp Alpinisti
 	division = {
-		#name = "Brigada 1 de Munte Mixtă"
+		name = "Brigada 6 Operaţii Speciale"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 6711
+		location = 693
 		division_template = "Brigada de Munte"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.4
 
 	}
 	division = {
-		#name = "Brigada 2 de Munte Mixtă"
+		name = "Batalionul 1 Vânători de Munte"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 6711
+		location = 3676
 		division_template = "Brigada de Munte"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.4
 
 	}
 	division = {
-		#name = "Brigada 3 de Munte Mixtă"
+		name = "Batalionul 2 Vânători de Munte"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 6711
+		location = 690
 		division_template = "Brigada de Munte"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.4
 
 	}
 	division = {
-		#name = "Brigada 4 de Munte Mixtă"
+		name = "Batalionul 3 Vânători de Munte „Sarmizegetusa”"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 6711
+		location = 6679
 		division_template = "Brigada de Munte"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.5
 
 	}
 

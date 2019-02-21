@@ -69,9 +69,7 @@ ideas = {
 			}
 
 			modifier = {
-				198 = {
-					add_state_modifier = { modifier = { manpower = -0.18 } }
-				}
+			
 			}
 		}
 
@@ -961,7 +959,7 @@ ideas = {
 			cost = 50
 
 			available = {
-				has_completed_focus = ROM_mobile_tank_destroyers
+				
 			}
 			
 			allowed = {
@@ -1060,7 +1058,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = ROM_coastal_defense_navy
+				
 			}
 			
 			research_bonus = {
@@ -1106,7 +1104,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = ROM_black_sea_dominance
+				
 			}
 			
 			research_bonus = {
@@ -1306,9 +1304,6 @@ ideas = {
 
 			allowed = {
 				original_tag = ROM
-				NOT = {
-					has_dlc = "Death or Dishonor"
-				}
 			}
 			
 			research_bonus = {
@@ -1331,12 +1326,7 @@ ideas = {
 			picture = generic_air_manufacturer_2
 
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus = ROM_invest_in_the_iar
-				}
+
 			}
 
 			cost = 50

@@ -1,6 +1,6 @@
 ﻿capital = 46
 
-oob = "ROM_1936"
+oob = "ROM_1960"
 
 set_research_slots = 3
 set_stability = 0.6
@@ -10,16 +10,34 @@ set_war_support = 0.6
 set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
+	tech_military_police = 1
 	tech_mountaineers = 1
+	tech_mountaineers2 = 1
+	tech_mountaineers3 = 1
 	motorised_infantry = 1
 	gwtank = 1
 	basic_light_tank = 1
+	improved_light_tank = 1
+	improved_light_td = 1
+	basic_medium_tank = 1
+	basic_medium_td = 1
+	improved_medium_tank = 1
+	advanced_medium_tank = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	gw_artillery = 1
 	early_fighter = 1
 	early_submarine = 1
 	early_destroyer = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	improved_oil_processing = 1
+	advanced_oil_processing = 1
+	modern_oil_processing = 1
+	rubber_processing = 1
+	improved_rubber_processing = 1
+	advanced_rubber_processing = 1
+	modern_rubber_processing = 1
 }
 
 add_ideas = {
@@ -29,7 +47,7 @@ add_ideas = {
 	ROM_Ukranian_Nationalists
 }
 
-set_convoys = 10
+set_convoys = 100
 
 
 set_politics = {
@@ -45,6 +63,7 @@ set_politics = {
 		
 		communism = {
 			popularity = 3
+			banned = yes
 		}
 		
 		neutrality = { 
@@ -123,6 +142,28 @@ create_field_marshal = {
 	logistics_skill = 4
 }
 
+create_field_marshal = {
+	name = "Constantin Trestioreanu"
+	portrait_path = "gfx/leaders/ROM/Field Marshals/Constantin_Trestioreanu.tga"
+	traits = { fast_planner aggressive_assaulter inspirational_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Paul Teodorescu"
+	portrait_path = "gfx/leaders/ROM/Field Marshals/Paul_Teodorescu.tga"
+	traits = { organisational_leader }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
 create_corps_commander = {
 	name = "Ioan Mihail Racoviţă"
 	portrait_path = "gfx/leaders/ROM/Generals/Mihail_Racovita.tga"
@@ -168,6 +209,17 @@ create_corps_commander = {
 } 
 
 create_corps_commander = {
+	name = "Edgar Rădulescu"
+	portrait_path = "gfx/leaders/ROM/Generals/Edgar_Radulescu.tga"
+	traits = { armor_officer panzer_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+} 
+
+create_corps_commander = {
 	name = "Septimiu Pretorian"
 	portrait_path = "gfx/leaders/ROM/Generals/Septimiu_Pretorian.tga"
 	traits = { infantry_leader winter_specialist }
@@ -178,23 +230,90 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 
+
+create_corps_commander = {
+	name = "Corneliu Dragalina"
+	portrait_path = "gfx/leaders/ROM/Generals/Corneliu_Dragalina.tga"
+	traits = { panzer_leader winter_specialist }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Gheorghe Manoliu"
+	portrait_path = "gfx/leaders/ROM/Generals/Gheorghe_Manoliu.tga"
+	traits = { fortress_buster ranger trait_mountaineer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Gheorghe G. Marinescu"
+	portrait_path = "gfx/leaders/ROM/Generals/Gheorghe_Gh_Marinescu.tga"
+	traits = { commando trait_engineer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Corneliu Teodorini"
+	portrait_path = "gfx/leaders/ROM/Generals/Corneliu_Teodorini.tga"
+	traits = { urban_assault_specialist trait_engineer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Dumitru Dămăceanu"
+	portrait_path = "gfx/leaders/ROM/Generals/Dumitru_Damaceanu.tga"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ioan Dumitrache"
+	portrait_path = "gfx/leaders/ROM/Generals/Ioan_Dumitrache.tga"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
 create_navy_leader = {
 	name = "Horia Macellariu"
 	portrait_path = "gfx/leaders/ROM/Admirals/Horia_Macellariu.tga"
 	traits = { spotter }
-	skill = 2
+	skill = 4
 }
 
+create_navy_leader = {
+	name = "Nicolae Şova"
+	portrait_path = "gfx/leaders/ROM/Admirals/Nicolae_Sova.tga"
+	traits = { superior_tactician blockade_runner }
+	skill = 3
+}
 
-### Ship Variants ###
-
-create_equipment_variant = {
-	name = "Regele Ferdinand Class"
-	type = destroyer_1
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 1
-		ship_anti_air_upgrade = 1
-	}
+create_navy_leader = {
+	name = "Nicolae Macici"
+	portrait_path = "gfx/leaders/ROM/Admirals/Nicolae_Macici.tga"
+	traits = { seawolf }
+	skill = 2
 }
