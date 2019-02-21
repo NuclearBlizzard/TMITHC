@@ -2,29 +2,27 @@
 state={
 	id=106
 	name="STATE_106"
-	manpower = 1374200
+	manpower = 1384000
 	
-	state_category = rural
+	state_category = town
 	
 	resources={
-		chromium=70 # was: 116
-		aluminium=16 # was: 32
+		chromium=88
+		aluminium=25
 	}
 
 	history={
 		owner = BUL
+		victory_points = { 3833 1 }
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 			air_base = 2
 		}
-		victory_points = {
-			3882 1 
-		}
+		victory_points = { 3882 5 }
 		add_core_of = YUG
+		add_core_of = BUL
 	}
 
-	provinces={
-		907 974 3833 3865 3882 6886 11832 11856 11857 11868 
-	}
+	provinces={ 907 974 3833 3865 3882 6886 11832 11856 11857 11868 }
 }
