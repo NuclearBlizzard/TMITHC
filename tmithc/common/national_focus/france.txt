@@ -534,11 +534,10 @@ continuous_focus_position = { x = 150 y = 3500 }
 			id = FRA_friendshipbritain
 			icon = GFX_FRA_handshake2
 			x = 0
-			y = 13
+			y = 12
 			cost = 5
 			available_if_capitulated = yes
 				
-				prerequisite = { focus = FRA_victoire }
 				prerequisite = { focus = FRA_deuxiemeentente }
 				
 				available = {
@@ -572,11 +571,11 @@ continuous_focus_position = { x = 150 y = 3500 }
 			id = FRA_strenghtenentente
 			icon = GFX_FRA_handshake2
 			x = 0
-			y = 14
+			y = 13
 			cost = 5
 			available_if_capitulated = yes
 				
-				prerequisite = { focus = FRA_friendshipbritain }
+				prerequisite = { focus = FRA_friendshipbritain focus = FRA_victoire }
 				
 				available = {
 					is_puppet = no
@@ -605,7 +604,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 			id = FRA_ententeresearch
 			icon = GFX_FRA_handshake
 			x = 0
-			y = 15
+			y = 14
 			cost = 5
 			available_if_capitulated = yes
 				
@@ -635,7 +634,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 			id = FRA_coorpro
 			icon = GFX_FRA_handshake
 			x = 0
-			y = 16
+			y = 15
 			cost = 5
 			available_if_capitulated = yes
 				
@@ -779,6 +778,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 				
 				bypass = {
 					has_war_with = ITA
+					NOT = { country_exists = PER }
 				}
 			
 				ai_will_do = {
@@ -848,6 +848,44 @@ continuous_focus_position = { x = 150 y = 3500 }
 				
 				completion_reward = {
 					country_event = { days = 1 id = france.resistance.16 }
+				}
+	}
+	
+	#Focus: Cross the Rhone
+		focus = { 
+			id = FRA_crosstherhone
+			icon = GFX_FRA_fire
+			x = 9
+			y = 18
+			cost = 10
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_resistanceprovence focus = FRA_montpellierport }
+				
+				available = {
+					is_puppet = no
+				}
+				
+				bypass = {
+					has_war_with = ITA
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					declare_war_on = {
+						target = ITA
+						type = topple_government
+					}
+					add_timed_idea = {
+						idea = FRA_fastdeployment
+						days = 30
+					}
+					hidden_effect = {
+						country_event = { days = 1 id = france.news.tmithc.1 }
+					}
 				}
 	}
 	
