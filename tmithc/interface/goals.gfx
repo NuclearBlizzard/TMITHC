@@ -1346,6 +1346,11 @@ spriteTypes = {
 		name = "GFX_FRA_republic"
 		texturefile = "gfx/interface/goals/FRA_republic.tga"
 	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_victoire"
+		texturefile = "gfx/interface/goals/FRA_victoire.tga"
+	}
 
 
 }

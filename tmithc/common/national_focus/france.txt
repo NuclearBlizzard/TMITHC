@@ -10,7 +10,7 @@ focus_tree = {
 		}
 	}
 
-continuous_focus_position = { x = 150 y = 1900 }
+continuous_focus_position = { x = 150 y = 3500 }
 
 	#Focus: Francisque
 		focus = { 
@@ -32,7 +32,7 @@ continuous_focus_position = { x = 150 y = 1900 }
 
 	}
 	
-########### RESISTANCE PATH ########
+########### FREEDOM PATH ########
 	
 	#Focus: Memoirs Resistance thing
 		focus = { 
@@ -362,7 +362,7 @@ continuous_focus_position = { x = 150 y = 1900 }
 				}
 			
 				ai_will_do = {
-					factor = 120
+					factor = 400
 				}
 				
 				completion_reward = {
@@ -399,7 +399,7 @@ continuous_focus_position = { x = 150 y = 1900 }
 				}
 			
 				ai_will_do = {
-					factor = 120
+					factor = 400
 				}
 				
 				completion_reward = {
@@ -432,7 +432,7 @@ continuous_focus_position = { x = 150 y = 1900 }
 				prerequisite = { focus = FRA_seizefac }
 			
 				ai_will_do = {
-					factor = 120
+					factor = 400
 				}
 				
 				completion_reward = {
@@ -453,13 +453,11 @@ continuous_focus_position = { x = 150 y = 1900 }
 				prerequisite = { focus = FRA_milicefocus }
 				
 				available = {
-					has_army_manpower = {
-						size > 750000
-					}
+					
 				}
 			
 				ai_will_do = {
-					factor = 40
+					factor = 150
 				}
 				
 				completion_reward = {
@@ -467,6 +465,7 @@ continuous_focus_position = { x = 150 y = 1900 }
 					add_war_support = 0.15
 					set_politics = { ruling_party = democratic elections_allowed = no }
 					add_popularity = { ideology = democratic popularity = 0.2 }
+					add_ideas = FRA_pushthemout
 					remove_ideas = FRA_chained_republic
 					declare_war_on = {
 						target = GER
@@ -476,7 +475,36 @@ continuous_focus_position = { x = 150 y = 1900 }
 				}
 	}
 	
-################# LOYAL TO GERMANY PATH ###########
+	#Focus: Victoire!
+		focus = { 
+			id = FRA_victoire
+			icon = GFX_FRA_victoire
+			x = 3
+			y = 12
+			cost = 1
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_libertyordeath }
+				
+				available = {
+					has_country_flag = fr_victory
+				}
+				
+				bypass = {
+					has_country_flag = fr_victory
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_ideas = FRA_victoryidea
+					remove_ideas = FRA_pushthemout
+				}
+	}
+	
+################# SUBMISSION PATH ###########
 	
 	#Focus: With the Reich
 		focus = { 

@@ -3672,4 +3672,14 @@ spriteTypes = {
 		name = "GFX_idea_FRA_gunresistance"
 		texturefile = "gfx/interface/ideas/FRA_gunresistance.tga"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_victoire"
+		texturefile = "gfx/interface/ideas/FRA_victoire.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_freedom"
+		texturefile = "gfx/interface/ideas/FRA_freedom.tga"
+	}
 }
