@@ -37,7 +37,9 @@ FRA_seizefac_desc:0 "They might not be happy with it, but they must realize that
 FRA_production:0 "Le Bond en Avant"
 FRA_production_desc:0 "We must kickstart a larger production base, or otherwise we won't be able to compete with the German Reich."
 FRA_libertyordeath:0 "§YLa Liberté ou la Mort§!"
-FRA_libertyordeath_desc:0 "§MI fight at the will of the pe§!ople, I donate my bl§Rood to the nation, and if I§!§M must die, I want to be§! the first one, I wan§Rt to be the first name§!§M engr§!aved on the Memo§Rrial.§!"
+FRA_libertyordeath_desc:0 "§MI fight at the will of the pe§!ople, I donate my bl§Rood to the nation, and if I§!§M must die, I wish to be the§! first, I wish to be th§Re first name engraved on §!the Memorial.\n\n§MVive§! la Fra§Rnce.§!"
+FRA_victoire:0 "Victoire!"
+FRA_victoire_desc:0 "The French Nation has triumphed once again, and with the Germans now on their knees, we can decide the fate of Europe and the World as a whole."
 ############ idea localisation ######
 FRA_chained_republic:0 "Chained Government"
 FRA_chained_republic_desc:0 "France's politics, as are most of Europe's aswell, are dominated by German officials, though France's position between the three main powers of Europe makes it vital for Germany's dominance over the continent, and so every action taken by the French government is closely monitored."
@@ -48,9 +50,13 @@ FRA_milice_desc:0 "The Milice is a branch of the army specializing in tracking d
 FRA_organised_resistance:0 "Organized Resistance"
 FRA_organised_resistance_desc:0 "No longer mere groups of men and women doing what they could to irritate the German occupiers, the Résistance in France is now a collective effort from organized rebel cells, coordinating with eachother to cause as much damage as possible."
 FRA_gearing_for_war:0 "Gearing Up For War"
+FRA_victoryidea:0 "Victoire!"
+FRA_pushthemout:0 "The Liberation of France"
+FRA_pushthemout_desc:0 "It is every Frenchmen's duty to take up arms and push the vile German occupiers back to the Rhine."
 ########### flags #######
 helped_resistance:0 "§GHelped§! the Résistance."
 killed_resistance:0 "§RDestroyed§! the Résistance."
+fr_victory:0 "§MFrance§! has triumphed!"
 ######## tooltips #######
 1_FRA_tt:0 "§YFive Militias§! will spawn across the countryside."
 2_FRA_tt:0 "§RThe German Reich will be skeptical of this.§!"
