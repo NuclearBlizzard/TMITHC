@@ -377,7 +377,6 @@ continuous_focus_position = { x = 150 y = 3500 }
 					16 = { add_building_construction = { type = bunker province = 9725 level = 2 instant_build = yes } }
 					16 = { add_building_construction = { type = bunker province = 11491 level = 2 instant_build = yes } }
 					16 = { add_building_construction = { type = bunker province = 6949 level = 2 instant_build = yes } }
-					GER = { country_event = { days = 1 id = france.state.4 } }
 				}
 	}
 	
@@ -411,7 +410,6 @@ continuous_focus_position = { x = 150 y = 3500 }
 					30 = { add_extra_state_shared_building_slots = 3 }
 					30 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 					30 = { add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
-					GER = { country_event = { days = 1 id = france.state.5 } }
 						hidden_effect = {
 							every_owned_state = {
 							add_extra_state_shared_building_slots = 2
@@ -436,7 +434,6 @@ continuous_focus_position = { x = 150 y = 3500 }
 				}
 				
 				completion_reward = {
-					GER = { country_event = { days = 0 id = france.state.6 } }
 					add_ideas = FRA_gearing_for_war
 				}
 	}
@@ -472,7 +469,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 						target = GER
 						type = topple_government
 					}
-					GER = { country_event = { days = 0 id = france.state.7 } }
+					GER = { country_event = { days = 0 id = france.state.4 } }
 				}
 	}
 	
@@ -502,6 +499,382 @@ continuous_focus_position = { x = 150 y = 3500 }
 				completion_reward = {
 					add_ideas = FRA_victoryidea
 					remove_ideas = FRA_pushthemout
+				}
+	}
+	
+	#Focus: A New Order
+		focus = { 
+			id = FRA_aneworder
+			icon = GFX_FRA_navy
+			x = 6
+			y = 13
+			cost = 10
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_victoire }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_political_power = 150
+					add_stability = 0.05
+					add_war_support = 0.03
+					add_ideas = FRA_democracy
+				}
+	}
+	
+	#Focus: Secure Friendship with Britain
+		focus = { 
+			id = FRA_friendshipbritain
+			icon = GFX_FRA_handshake2
+			x = 0
+			y = 13
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_victoire }
+				prerequisite = { focus = FRA_deuxiemeentente }
+				
+				available = {
+					is_puppet = no
+					ENG = { 
+					has_government = neutrality 
+					has_country_flag = nationalist_civil_war
+					}
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_opinion_modifier = {
+						target = ENG
+						modifier = FRA_friendship_with_britain
+					}
+					ENG = {
+						add_opinion_modifier = {
+						target = FRA
+						modifier = FRA_friendship_with_britain
+						}
+					}
+				}
+	}
+	
+	#Focus: Strenghten Entente
+		focus = { 
+			id = FRA_strenghtenentente
+			icon = GFX_FRA_handshake2
+			x = 0
+			y = 14
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_friendshipbritain }
+				
+				available = {
+					is_puppet = no
+					is_in_faction = yes
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					every_country = {
+						limit = { is_in_faction_with = ROOT }
+						add_opinion_modifier = {
+							target = ROOT
+							modifier = FRA_friendship
+						}
+						add_ideas = FRA_advisorsidea
+					}
+					add_ideas = FRA_advisorsidea2
+				}
+	}
+	
+	#Focus: Entente Research Program
+		focus = { 
+			id = FRA_ententeresearch
+			icon = GFX_FRA_handshake
+			x = 0
+			y = 15
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_strenghtenentente }
+				
+				available = {
+					is_puppet = no
+					is_in_faction = yes
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					every_country = {
+						limit = { is_in_faction_with = ROOT }
+						add_to_tech_sharing_group = fra_entente_research
+					}
+					add_to_tech_sharing_group = fra_entente_research
+					add_research_slot = 1
+				}
+	}
+	
+	#Focus: Coordinated Production
+		focus = { 
+			id = FRA_coorpro
+			icon = GFX_FRA_handshake
+			x = 0
+			y = 16
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_ententeresearch }
+				
+				available = {
+					is_puppet = no
+					is_in_faction = yes
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					every_country = {
+						limit = { is_in_faction_with = ROOT }
+						add_offsite_building = { type = arms_factory level = 1 }
+						add_offsite_building = { type = industrial_complex level = 3 }
+					}
+					add_offsite_building = { type = arms_factory level = 2 }
+					add_offsite_building = { type = industrial_complex level = 3 }
+				}
+	}
+	
+	#Focus: The Second Tyrant
+		focus = { 
+			id = FRA_secondtyrant
+			icon = GFX_FRA_handshake
+			x = 9
+			y = 14
+			cost = 10
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_aneworder }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_opinion_modifier = {
+						target = ITA
+						modifier = FRA_hatred
+					}
+				}
+	}
+	
+	#Focus: Forts on the Rhone
+		focus = { 
+			id = FRA_fortrhone
+			icon = GFX_FRA_atlantikwall
+			x = 9
+			y = 15
+			cost = 10
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_secondtyrant }
+				
+				available = {
+					is_puppet = no
+				}
+				
+				bypass = {
+					has_war_with = ITA
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					country_event = { days = 0 id = france.resistance.10 }
+					20 = { add_building_construction = { type = bunker province = 9590 level = 3 instant_build = yes } }
+					20 = { add_building_construction = { type = bunker province = 11563 level = 3 instant_build = yes } }
+					20 = { add_building_construction = { type = bunker province = 6639 level = 2 instant_build = yes } }
+					20 = { add_building_construction = { type = bunker province = 11716 level = 2 instant_build = yes } }
+					20 = { add_building_construction = { type = bunker province = 9728 level = 2 instant_build = yes } }
+					20 = { add_building_construction = { type = bunker province = 6786 level = 3 instant_build = yes } }
+					20 = { add_building_construction = { type = bunker province = 6613 level = 4 instant_build = yes } }
+					22 = { add_building_construction = { type = bunker province = 11877 level = 2 instant_build = yes } }
+				}
+	}
+	
+	#Focus: Supply Resistance Groups
+		focus = { 
+			id = FRA_supplyresistance
+			icon = GFX_FRA_guns
+			x = 8
+			y = 16
+			cost = 10
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_fortrhone }
+				
+				available = {
+					is_puppet = no
+				}
+				
+				bypass = {
+					has_war_with = ITA
+					NOT = { CRO = is_in_faction_with = ITA }
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					CRO = {
+						limit = { is_in_faction_with = ITA }
+						add_ideas = FRA_unrest
+					}
+					ITA = {
+						country_event = { days = 7 id = france.resistance.11 }
+					}
+				}
+	}
+	
+	#Focus: Allies in the Middle-East
+		focus = { 
+			id = FRA_allymiddleeast
+			icon = GFX_FRA_guns
+			x = 10
+			y = 16
+			cost = 10
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_fortrhone }
+				
+				available = {
+					is_puppet = no
+					PER = {
+						NOT = { is_in_faction_with = ITA }
+					}
+				}
+				
+				bypass = {
+					has_war_with = ITA
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					PER = {
+						country_event = { days = 7 id = france.resistance.12 } #12-13-14-15
+					}
+				}
+	}
+	
+	#Focus: Montpellier Port
+		focus = { 
+			id = FRA_montpellierport
+			icon = GFX_FRA_guns
+			x = 8
+			y = 17
+			cost = 10
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_supplyresistance }
+				
+				available = {
+					is_puppet = no
+					controls_state = 22
+				}
+				
+				bypass = {
+					has_war_with = ITA
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					22 = { add_building_construction = { type = naval_base province = 9898 level = 6 instant_build = yes } }
+					22 = { add_building_construction = { type = dockyard level = 2 instant_build = yes } }
+					22 = { add_extra_state_shared_building_slots = 3 }
+				}
+	}
+	
+	#Focus: Fund Resistance in Provence
+		focus = { 
+			id = FRA_resistanceprovence
+			icon = GFX_FRA_fire
+			x = 10
+			y = 17
+			cost = 10
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_allymiddleeast }
+				
+				available = {
+					is_puppet = no
+				}
+				
+				bypass = {
+					has_war_with = ITA
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					country_event = { days = 1 id = france.resistance.16 }
+				}
+	}
+	
+	#Focus: Asian Theater
+		focus = { 
+			id = FRA_asiantheater
+			icon = GFX_FRA_handshake
+			x = 3
+			y = 14
+			cost = 10
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_aneworder }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					every_country = {
+						limit = { is_in_faction_with = JAP }
+						add_timed_idea = { idea = FRA_democracyinfluence days = 180 }
+					}
 				}
 	}
 	

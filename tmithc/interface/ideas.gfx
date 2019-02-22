@@ -3682,4 +3682,9 @@ spriteTypes = {
 		name = "GFX_idea_FRA_freedom"
 		texturefile = "gfx/interface/ideas/FRA_freedom.tga"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_advisors"
+		texturefile = "gfx/interface/ideas/FRA_advisors.tga"
+	}
 }
