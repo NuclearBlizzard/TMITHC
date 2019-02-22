@@ -252,7 +252,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 					create_corps_commander = {
 						name = "Charles De Gaulle"
 						picture = "Portrait_France_Charles_De_Gaulle.dds"
-						traits = { harsh_leader media_personality }
+						traits = { harsh_leader media_personality armor_officer }
 						skill = 3
 						attack_skill = 4
 						defense_skill = 2
@@ -461,12 +461,13 @@ continuous_focus_position = { x = 150 y = 3500 }
 				}
 				
 				completion_reward = {
-					add_stability = 0.05
-					add_war_support = 0.15
+					add_stability = 0.1
+					add_war_support = 0.25
 					set_politics = { ruling_party = democratic elections_allowed = no }
 					add_popularity = { ideology = democratic popularity = 0.2 }
 					add_ideas = FRA_pushthemout
 					remove_ideas = FRA_chained_republic
+					leave_faction = yes
 					declare_war_on = {
 						target = GER
 						type = topple_government
