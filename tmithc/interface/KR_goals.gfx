@@ -6,3 +6,8 @@ spriteTypes = {
 	name = "GFX_goal_continuous_air_production"
 	texturefile = "gfx/interface/goals/GER_Policy.tga"			
 	}	
+
+	SpriteType = {
+	name = "GFX_goal_death_of_Conducator"
+	texturefile = "gfx/interface/goals/Death_of_Antonescu.tga"			
+	}

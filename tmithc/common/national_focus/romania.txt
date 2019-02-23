@@ -16,4 +16,38 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1100 }
 
+		focus = {
+		id = ROM_death_of_leader
+		icon = GFX_goal_death_of_Conducator
+		mutually_exclusive = {  }
+		x = 3
+		y = 0
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
 }	

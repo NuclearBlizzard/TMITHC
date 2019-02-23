@@ -1946,4 +1946,8 @@ spriteTypes = {
 			name = "GFX_report_event_crown_prince"
 			texturefile = "gfx/event_pictures/report_event_crown_prince.tga"
 	}
+	spriteType = {
+			name = "GFX_report_event_antonescu_gone"
+			texturefile = "gfx/event_pictures/antonescu_dead.tga"
+	}
 }

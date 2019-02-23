@@ -1,0 +1,25 @@
+
+state={
+	id=187
+	name="STATE_187"
+	manpower = 622600
+	
+	state_category = rural
+	
+	resources={
+		chromium=23
+	}
+
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 5
+			dockyard = 1
+			8435 = { naval_base = 5 }
+			6550 = { naval_base = 4 }
+		}
+		add_core_of = GRE
+	}
+
+	provinces={ 3401 6550 8435 }
+}
