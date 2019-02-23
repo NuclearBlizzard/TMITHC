@@ -1,0 +1,67 @@
+﻿l_english:
+
+#COACountryCosmetics
+
+ COA_communism:0 "Soviet Republic of Australasia"
+ COA_communism_DEF:0 "SR Australasia"
+
+ COA_democratic:0 "Commonwealth of Australasia"
+ COA_democratic_DEF:0 "Australasia"
+
+ COA_neutrality:0 "Commonwealth of Australasia"
+ COA_neutrality_DEF:0 "Australasia"
+
+ COA_fascism:0 "Australasian State"
+ COA_fascism_DEF:0 "New Guard Australasia"
+
+ COA_fascism_ADJ:0 "Australasian"
+ COA_democratic_ADJ:0 "Australasian"
+ COA_neutrality_ADJ:0 "Australasian"
+ COA_communism_ADJ:0 "Australasian"
+
+
+#COAParties
+
+ COA_communism_party:0 "AWF"
+ COA_communism_party_long:0 "Australasian Workers Front"
+ COA_democratic_party:0 "ALP"
+ COA_democratic_party_long:0 "Australasian Labor Party"
+ COA_neutrality_party:0 "AUP"
+ COA_neutrality_party_long:0 "Australasian Unity Party"
+ COA_fascism_party:0 "ANUP"
+ COA_fascism_party_long:0 "Australasian National Socialist Party"
+
+#COAFlags
+
+
+#COAministers
+
+  COA_Robert_Menzies_Minister:0 "Robert Menzies"
+
+  #COA High Command
+
+  #COA Air Force
+
+  #COA Navy
+
+  #COA Army Leaders
+
+#COA opinions
+
+
+#COATooltips
+
+
+#COALeaderDescriptions
+
+#COADescriptions
+
+COA_60's_DESC:0 ""
+
+#COAideas
+
+
+
+#COAEvents
+
+#COANat.Focus
