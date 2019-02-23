@@ -83,9 +83,7 @@ create_country_leader = {
 	picture = "Michael_I.tga"
 	expire = "1965.1.1"
 	ideology = centrism
-	traits = {
-		#
-	}
+	traits = {  }
 }
 
 create_country_leader = {
@@ -94,9 +92,7 @@ create_country_leader = {
 	picture = "Nicolae_Ceausescu.tga"
 	expire = "1965.1.1"
 	ideology = leninism
-	traits = {
-		#
-	}
+	traits = {  }
 }
 
 create_country_leader = {
@@ -105,9 +101,7 @@ create_country_leader = {
 	picture = "Gheorghe_Tatarescu.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
-	traits = {
-		#
-	}
+	traits = {  }
 }
 
 

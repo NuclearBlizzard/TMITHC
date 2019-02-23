@@ -6,12 +6,13 @@ state={
 	resources={
 		aluminium=5
 		chromium=13
+		steel=7
 	}
 	
 	state_category = urban
 	
 	history={
-		owner = ITA
+		owner = ALB
 		victory_points = { 9914 10 }
 		victory_points = { 11767 5 }
 		buildings = {
@@ -22,6 +23,7 @@ state={
 			11767 = { naval_base = 4 }
 		}
 		add_core_of = ITA
+		add_core_of = ALB
 	}
 
 	provinces={ 914 3448 3884 3896 6900 9780 9875 9914 11762 11767 }
