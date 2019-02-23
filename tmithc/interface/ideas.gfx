@@ -3654,20 +3654,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/JAP_navy_dominant.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_FRA_chained"
-		texturefile = "gfx/interface/ideas/FRA_chained.tga"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_FRA_resistance"
-		texturefile = "gfx/interface/ideas/FRA_resistance.tga"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_FRA_milice"
-		texturefile = "gfx/interface/ideas/FRA_milice.tga"
-	}
-	spriteType = {
 		name = "GFX_idea_Covert_Operations"
 		texturefile = "gfx/interface/ideas/Covert_Operations.tga"
 	}
