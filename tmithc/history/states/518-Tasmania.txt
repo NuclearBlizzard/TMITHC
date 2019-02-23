@@ -3,14 +3,14 @@ state=
 	id=518
 	name="STATE_518"
 	manpower = 224000
-	
+
 	state_category = small_island
 
 	history=
 	{
-		owner = JAA
+		owner = COA
 		victory_points = {
-			2189 1 
+			2189 1
 		}
 		buildings = {
 			infrastructure = 5
@@ -18,7 +18,7 @@ state=
 				naval_base = 2
 			}
 		}
-		add_core_of = JAA
+		add_core_of = COA
 	}
 	provinces={
 		2183 2189 5181 5187 10665 12645
