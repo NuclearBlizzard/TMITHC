@@ -1256,31 +1256,6 @@ spriteTypes = {
 		name = "GFX_GER_policy"
 		texturefile = "gfx/interface/goals/GER_policy.tga"
 	}
-	
-	SpriteType = { 
-		name = "GFX_FRA_francisque"
-		texturefile = "gfx/interface/goals/FRA_francisque.tga"
-	}
-	
-	SpriteType = { 
-		name = "GFX_FRA_manydead"
-		texturefile = "gfx/interface/goals/FRA_manydead.tga"
-	}
-	
-	SpriteType = { 
-		name = "GFX_FRA_ironcross"
-		texturefile = "gfx/interface/goals/FRA_ironcross.tga"
-	}
-	
-	SpriteType = { 
-		name = "GFX_FRA_ssvolunteer"
-		texturefile = "gfx/interface/goals/FRA_ssvolunteer.tga"
-	}
-	
-	SpriteType = { 
-		name = "GFX_FRA_FRA_atlantikwall"
-		texturefile = "gfx/interface/goals/FRA_atlantikwall.tga"
-	}
 
 	SpriteType = {
 	name = "GFX_goal_death_of_Conducator"
