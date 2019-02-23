@@ -60,7 +60,10 @@ COA_60's_DESC:0 ""
 
 #COAideas
 
-
+COA_treaty_of_canberra:0 "Treaty of Canberra"
+COA_treaty_of_canberra_desc:0 "Following the collapse of the United Kingdom, Australia and the other dominions were left to fend for themselves. Facing certain defeat, Australia and New Zealand signed a seperate peace deal with the Japanese, known as the Treaty of Canberra, which saw both nations' armies limited and outlined the payment of reparations, among other things. This treaty lead to the basis of the union of New Zealand and Australia."
+COA_new_zealander_seperatism:0 "New Zealander Seperatism"
+COA_new_zealander_seperatism_desc:0 "With the defeat of the Allied Powers, Australia and New Zealand were left to fend for themselves in a Japanese dominated region. With peace signed, Australia and New Zealand united into a Commonwealth after the Treaty of Melbourne, formally creating the Commonwealth of Australasia. However, New Zealand has become the lesser member of the union, and the citizens of New Zealand feel animosity towards Australia. For the union to survive, the government must address these concerns."
 
 #COAEvents
 

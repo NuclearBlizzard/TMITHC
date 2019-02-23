@@ -10,6 +10,11 @@ set_technology = {
 	early_bomber = 1
 	CAS1 = 1
 }
+add_ideas = {
+				COA_treaty_of_canberra
+				COA_new_zealander_seperatism
+
+}
 
 1970.1.1 = {
 
@@ -110,7 +115,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "John McEwen"
 	desc = "POLITICS_JOHN_MCEWEN_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	picture = "COA_mcdonald.tga"
 	expire = "1980.1.1"
 	ideology = conservatism
 	traits = {
