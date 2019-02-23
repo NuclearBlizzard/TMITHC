@@ -118,5 +118,10 @@ spriteTypes = {
 		name = "GFX_idea_FRA_milice"
 		texturefile = "gfx/interface/ideas/FRA_milice.tga"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_constitution"
+		texturefile = "gfx/interface/ideas/FRA_constitution.tga"
+	}
 
 }
