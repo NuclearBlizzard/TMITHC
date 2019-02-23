@@ -499,6 +499,9 @@ continuous_focus_position = { x = 150 y = 3500 }
 				completion_reward = {
 					add_ideas = FRA_victoryidea
 					remove_ideas = FRA_pushthemout
+					hidden_effect = {
+						country_event = { days = 7 id = france.elections.1 }
+					}
 				}
 	}
 	
@@ -508,7 +511,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 			icon = GFX_FRA_navy
 			x = 6
 			y = 13
-			cost = 10
+			cost = 5
 			available_if_capitulated = yes
 				
 				prerequisite = { focus = FRA_victoire }
@@ -664,7 +667,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 		focus = { 
 			id = FRA_secondtyrant
 			icon = GFX_FRA_handshake
-			x = 9
+			x = 3
 			y = 14
 			cost = 10
 			available_if_capitulated = yes
@@ -691,7 +694,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 		focus = { 
 			id = FRA_fortrhone
 			icon = GFX_FRA_atlantikwall
-			x = 9
+			x = 3
 			y = 15
 			cost = 10
 			available_if_capitulated = yes
@@ -704,6 +707,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 				
 				bypass = {
 					has_war_with = ITA
+					ITA = { exists = no }
 				}
 			
 				ai_will_do = {
@@ -727,7 +731,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 		focus = { 
 			id = FRA_supplyresistance
 			icon = GFX_FRA_guns
-			x = 8
+			x = 2
 			y = 16
 			cost = 10
 			available_if_capitulated = yes
@@ -740,6 +744,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 				
 				bypass = {
 					has_war_with = ITA
+					ITA = { exists = no }
 					NOT = { CRO = is_in_faction_with = ITA }
 				}
 			
@@ -762,7 +767,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 		focus = { 
 			id = FRA_allymiddleeast
 			icon = GFX_FRA_guns
-			x = 10
+			x = 4
 			y = 16
 			cost = 10
 			available_if_capitulated = yes
@@ -770,6 +775,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 				prerequisite = { focus = FRA_fortrhone }
 				
 				available = {
+					ITA = { exists = no }
 					is_puppet = no
 					PER = {
 						NOT = { is_in_faction_with = ITA }
@@ -796,7 +802,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 		focus = { 
 			id = FRA_montpellierport
 			icon = GFX_FRA_guns
-			x = 8
+			x = 2
 			y = 17
 			cost = 10
 			available_if_capitulated = yes
@@ -809,6 +815,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 				}
 				
 				bypass = {
+					ITA = { exists = no }
 					has_war_with = ITA
 				}
 			
@@ -827,7 +834,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 		focus = { 
 			id = FRA_resistanceprovence
 			icon = GFX_FRA_fire
-			x = 10
+			x = 4
 			y = 17
 			cost = 10
 			available_if_capitulated = yes
@@ -839,6 +846,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 				}
 				
 				bypass = {
+					ITA = { exists = no }
 					has_war_with = ITA
 				}
 			
@@ -855,8 +863,8 @@ continuous_focus_position = { x = 150 y = 3500 }
 		focus = { 
 			id = FRA_crosstherhone
 			icon = GFX_FRA_fire
-			x = 9
-			y = 18
+			x = 3
+			y = 19
 			cost = 10
 			available_if_capitulated = yes
 				
@@ -867,12 +875,15 @@ continuous_focus_position = { x = 150 y = 3500 }
 				}
 				
 				bypass = {
+					ITA = { exists = no }
 					has_war_with = ITA
 				}
 			
 				ai_will_do = {
 					factor = 40
 				}
+				
+				will_lead_to_war_with = ITA
 				
 				completion_reward = {
 					declare_war_on = {
@@ -889,13 +900,13 @@ continuous_focus_position = { x = 150 y = 3500 }
 				}
 	}
 	
-	#Focus: Asian Theater
+	#Focus: Restore the Constitution
 		focus = { 
-			id = FRA_asiantheater
-			icon = GFX_FRA_handshake
-			x = 3
+			id = FRA_restorecons
+			icon = GFX_FRA_navy
+			x = 11
 			y = 14
-			cost = 10
+			cost = 5
 			available_if_capitulated = yes
 				
 				prerequisite = { focus = FRA_aneworder }
@@ -909,10 +920,344 @@ continuous_focus_position = { x = 150 y = 3500 }
 				}
 				
 				completion_reward = {
-					every_country = {
-						limit = { is_in_faction_with = JAP }
-						add_timed_idea = { idea = FRA_democracyinfluence days = 180 }
+					add_political_power = 75
+					add_stability = 0.05
+					add_ideas = FRA_constitution
+				}
+	}
+	
+	#Focus: Industrial Build-Up
+		focus = { 
+			id = FRA_industrialbuildup
+			icon = GFX_FRA_navy
+			relative_position_id = FRA_restorecons
+			x = -2
+			y = 1
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_restorecons }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+							OR = {
+								is_in_home_area = yes
+								NOT = {
+									owner = {
+										any_owned_state = {
+											free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+											}
+											is_in_home_area = yes
+										}
+									}
+								}
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
 					}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+							OR = {
+								is_in_home_area = yes
+								NOT = {
+									owner = {
+										any_owned_state = {
+											free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+											}
+											is_in_home_area = yes
+										}
+									}
+								}
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+							OR = {
+								is_in_home_area = yes
+								NOT = {
+									owner = {
+										any_owned_state = {
+											free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+											}
+											is_in_home_area = yes
+										}
+									}
+								}
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+	}
+	
+	#Focus: Military Manufacturing Capability
+		focus = { 
+			id = FRA_milmancap
+			icon = GFX_FRA_navy
+			relative_position_id = FRA_restorecons
+			x = -1
+			y = 2
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_restorecons }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+							}
+							OR = {
+								is_in_home_area = yes
+								NOT = {
+									owner = {
+										any_owned_state = {
+											free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+											}
+											is_in_home_area = yes
+										}
+									}
+								}
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+							}
+							OR = {
+								is_in_home_area = yes
+								NOT = {
+									owner = {
+										any_owned_state = {
+											free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+											}
+											is_in_home_area = yes
+										}
+									}
+								}
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+							}
+							OR = {
+								is_in_home_area = yes
+								NOT = {
+									owner = {
+										any_owned_state = {
+											free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+											}
+											is_in_home_area = yes
+										}
+									}
+								}
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+	}
+	
+	#Focus: Community Effort
+		focus = { 
+			id = FRA_communityeffort
+			icon = GFX_FRA_navy
+			relative_position_id = FRA_restorecons
+			x = -2
+			y = 3
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_industrialbuildup }
+				prerequisite = { focus = FRA_milmancap }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_ideas = FRA_communityeffortidea
+				}
+	}
+	
+	#Focus: Social Welfare
+		focus = { 
+			id = FRA_socialwelfare
+			icon = GFX_FRA_navy
+			relative_position_id = FRA_restorecons
+			x = 2
+			y = 1
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_restorecons }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_ideas = FRA_socialwelfareidea
+				}
+	}
+	
+	#Focus: A Liberal Democracy
+		focus = { 
+			id = FRA_liberaldemo
+			icon = GFX_FRA_navy
+			relative_position_id = FRA_restorecons
+			x = 1
+			y = 2
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_restorecons }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_popularity = { ideology = democratic popularity = 0.075 }
+					add_stability = 0.05
+					add_political_power = 100
+				}
+	}
+	
+	#Focus: Grand Monuments
+		focus = { 
+			id = FRA_grandmonuments
+			icon = GFX_FRA_navy
+			relative_position_id = FRA_restorecons
+			x = 2
+			y = 3
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_liberaldemo }
+				prerequisite = { focus = FRA_socialwelfare }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_popularity = { ideology = democratic popularity = 0.05 }
+					add_stability = 0.05
+					add_war_support = 0.05
+					add_political_power = 150
 				}
 	}
 	

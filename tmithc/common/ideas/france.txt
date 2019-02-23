@@ -179,6 +179,10 @@ ideas = {
 			allowed_civil_war {
 				always = no
 			}
+			
+			available = {
+				NOT = { has_war_with = FRA }
+			}
 
 			picture = FRA_advisors
 
@@ -240,6 +244,10 @@ ideas = {
 			allowed_civil_war {
 				always = no
 			}
+			
+			available = {
+				NOT = { has_war_with = FRA }
+			}
 
 			picture = chi_war_of_resistance3
 
@@ -270,6 +278,72 @@ ideas = {
 				army_armor_speed_factor = 0.1
 				army_attack_factor = 0.15
 				army_defence_factor = -0.15
+			}
+		}
+		
+		FRA_constitution = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war {
+				always = no
+			}
+			
+			available = {
+				is_subject = no
+			}
+
+			picture = FRA_constitution
+
+			removal_cost = -1
+
+			modifier = {
+				add_popularity = { ideology = democratic popularity = 0.1 }
+				drift_defence_factor = 0.25
+				democratic_drift = 0.03
+			}
+		}
+		
+		FRA_communityeffortidea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war {
+				always = no
+			}
+
+			picture = generic_foreign_capital
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+		
+		FRA_socialwelfareidea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war {
+				always = no
+			}
+
+			picture = air_support_focus
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				monthly_population = 0.25
 			}
 		}
 	}
