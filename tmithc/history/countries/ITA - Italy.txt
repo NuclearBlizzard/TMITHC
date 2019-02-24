@@ -110,6 +110,7 @@ puppet = MNT
 puppet = SER
 puppet = IRQ
 puppet = SAU
+puppet = ISR
 
 
 create_faction = med_pact

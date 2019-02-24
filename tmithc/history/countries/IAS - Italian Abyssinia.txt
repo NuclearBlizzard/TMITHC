@@ -46,15 +46,15 @@ set_politics = {
 	last_election = "1933.4.26"
 }
 
-set_convoys = 500
+set_convoys = 100
 set_stability = 0.75
 
 
 
 create_country_leader = {
-	name = "Italo Balbo"
+	name = "Prince Amadeo"
 	desc = "POLITICS_ITALO_BALBO_DESC"
-	picture = "IAS_italo.tga"
+	picture = "Prince_Amedeo.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

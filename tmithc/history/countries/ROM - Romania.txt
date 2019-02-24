@@ -45,6 +45,7 @@ add_ideas = {
 	ROM_Democratic_Underground
 	ROM_Unstable_Economy
 	ROM_Ukranian_Nationalists
+	ROM_figurehead_king_michael
 }
 
 set_convoys = 100

@@ -9,7 +9,7 @@ state={
 		steel=7
 	}
 	
-	state_category = urban
+	state_category = city
 	
 	history={
 		owner = ALB

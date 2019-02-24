@@ -20,7 +20,7 @@ focus_tree = {
 		id = ROM_death_of_leader
 		icon = GFX_goal_death_of_Conducator
 		mutually_exclusive = {  }
-		x = 3
+		x = 10
 		y = 0
 
 		cost = 1
@@ -46,8 +46,77 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_political_power = -300
 		}
 	}
 
+		focus = {
+		id = ROM_Militarist_Coup
+		icon = GFX_goal_Romania_Officers_Coup
+		mutually_exclusive = {  }
+		prerequisite = { focus = ROM_death_of_leader }
+		x = 8
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = ROM_Tudor_Takeover
+		icon = GFX_goal_generic_attack_allies
+		mutually_exclusive = {  }
+		prerequisite = { focus = ROM_death_of_leader }
+		x = 12
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
 }	
