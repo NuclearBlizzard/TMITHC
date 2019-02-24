@@ -1287,5 +1287,10 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/Death_of_Antonescu.tga"			
 	}
 
+	SpriteType = {
+	name = "GFX_goal_Romania_Officers_Coup"
+	texturefile = "gfx/interface/goals/Romania_Officers_Coup.tga"			
+	}
+
 
 }

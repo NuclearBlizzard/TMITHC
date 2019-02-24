@@ -2,25 +2,22 @@
 state={
 	id=554
 	name="STATE_554"
-	manpower = 547797
+	manpower = 1447797
 	
-	state_category = rural
+	state_category = town
 
 	history={
-		owner = ITA
-		victory_points = {
-			4111 3 
-		}
+		owner = ISR
+		victory_points = { 4111 10 }
 		buildings = {
 			infrastructure = 3
 			air_base = 1
 		}
-		add_core_of = SYR	
+		add_core_of = SYR
+		add_core_of = ISR
 
 	}
 
 
-	provinces={
-		1074 4111 4486 4550 7184 
-	}
+	provinces={ 1074 4111 4486 4550 7184 }
 }
