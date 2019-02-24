@@ -20,10 +20,9 @@ bookmarks = {
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
-			available = { has_dlc = "Waking the Tiger" }
 			ideas = {
-			GER_african_question
-			GER_ss
+				GER_african_question
+				GER_ss
 			}
 			focuses = {
 
