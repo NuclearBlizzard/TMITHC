@@ -17,7 +17,7 @@ focus_tree = {
 	#Prepare for Case E
 	focus = {
 		id = ITA_prepare_for_case_e
-		icon = xxx
+		icon = mussolini
 		
 		x = 9
 		y = 0
@@ -45,7 +45,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_reinstate_the_gran_consiglio
-		icon = xxx
+		icon = italian_fascism
 		
 		x = 0
 		y = 1
@@ -81,7 +81,7 @@ focus_tree = {
 	##Choose a Successor
 	focus = {
 		id = ITA_choose_a_successor
-		icon = xxx
+		icon = treaty4
 		
 		x = -1
 		y = 2
@@ -119,7 +119,7 @@ focus_tree = {
 	###Pietro Nenni
 	focus = {
 		id = ITA_the_former_traitor_pietro_nenni
-		icon = xxx
+		icon = attack_communism
 		
 		x = -6
 		y = 1
@@ -136,7 +136,7 @@ focus_tree = {
 		mutually_exclusive = { 
 			focus = ITA_the_corporatist_amintore_fanfani
 		}
-		available = { always = no }
+		available = { }
 		select_effect = { }
 		bypass = { has_country_flag = ITA_selected_nenni }
 		cancel = { }
@@ -154,6 +154,14 @@ focus_tree = {
 					ideology = fascism_ideology
 				}
 			}
+			hidden_effect = {
+				create_country_leader = {
+					name = "Pietro Nenni"
+					desc = "Pietro_Nenni_DESC"
+					picture = "Pietro_Nenni.dds"
+					ideology = leninism
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -162,7 +170,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_precautions_against_germany
-		icon = xxx
+		icon = defense
 		
 		x = -2
 		y = 1
@@ -174,7 +182,27 @@ focus_tree = {
 			focus = ITA_the_former_traitor_pietro_nenni
 		}
 		mutually_exclusive = { }
-		available = { }
+		available = {
+			OR = {
+				has_full_control_of_state = 158
+				has_full_control_of_state = 159
+				has_full_control_of_state = 39
+				has_full_control_of_state = 160
+				has_full_control_of_state = 736
+				has_full_control_of_state = 35
+				has_full_control_of_state = 735
+			}
+			is_neighbor_of = GER
+			GER = {
+				OR = {
+					has_full_control_of_state = 770
+					has_full_control_of_state = 3
+					has_full_control_of_state = 151
+					has_full_control_of_state = 153
+					has_full_control_of_state = 102
+				}
+			}
+		}
 		select_effect = { }
 		bypass = { }
 		cancel = { }
@@ -184,7 +212,49 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			if = {
+				limit = { has_full_control_of_state = 158 }
+				158 = {
+					add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 611 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 11570 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 6635 }
+				}
+			}
+			if = {
+				limit = { has_full_control_of_state = 159 }
+				159 = {
+					add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 607 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 9584 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 6661 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 11587 }
+				}
+			}
+			if = {
+				limit = { has_full_control_of_state = 39 }
+				39 = {
+					add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 6675 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 9630 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 11615 }
+				}
+			}
+			if = {
+				limit = { has_full_control_of_state = 160 }
+				160 = {
+					add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 3657 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 9613 }
+				}
+			}
+			if = {
+				limit = { has_full_control_of_state = 736 }
+				736 = {
+					add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 11595 }
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -193,7 +263,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_rivitalizzazione
-		icon = xxx
+		icon = industry_communism
 		
 		x = 0
 		y = 1
@@ -224,7 +294,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_legacy_of_the_psi
-		icon = xxx
+		icon = communism4
 		
 		x = 2
 		y = 1
@@ -255,7 +325,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_the_western_motorways
-		icon = xxx
+		icon = infrastructure
 		
 		x = -1
 		y = 2
@@ -294,7 +364,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_precautions_against_france
-		icon = xxx
+		icon = defense
 		
 		x = -1
 		y = 3
@@ -324,7 +394,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_legalize_labor_unions
-		icon = xxx
+		icon = union_negotiations
 		
 		x = 1
 		y = 2
@@ -373,7 +443,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_military_loyalty_tests
-		icon = xxx
+		icon = army_reform
 		
 		x = 3
 		y = 2
@@ -403,7 +473,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_mobilize_the_unemployed
-		icon = xxx
+		icon = communism5
 		
 		x = 1
 		y = 3
@@ -433,7 +503,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_the_grenoble_defensive_strongpoint
-		icon = xxx
+		icon = military_fort2
 		
 		x = -2
 		y = 4
@@ -466,7 +536,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_full_nationalization_of_heavy_industry
-		icon = xxx
+		icon = industry_military
 		
 		x = 0
 		y = 4
@@ -496,7 +566,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_unify_labor_policy
-		icon = xxx
+		icon = production2
 		
 		x = 2
 		y = 4
@@ -526,7 +596,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_defensive_mobilization_in_savoy
-		icon = xxx
+		icon = steel_production2
 		
 		x = -1
 		y = 5
@@ -559,7 +629,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_economic_youth_service
-		icon = xxx
+		icon = entente
 		
 		x = 1
 		y = 5
@@ -592,7 +662,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_aircraft_factory_reform
-		icon = xxx
+		icon = air_production
 		
 		x = 3
 		y = 5
@@ -621,10 +691,55 @@ focus_tree = {
 			base = 10
 		}
 	}
+	focus = {
+		id = ITA_the_end_of_fascism
+		icon = anti_fascism
+		
+		x = 0
+		y = 6
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_economic_youth_service
+		}	
+		prerequisite = {
+			focus = ITA_defensive_mobilization_in_savoy
+		}	
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.35
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.35
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
 	###Cesare Maria De Vecchi
 	focus = {
 		id = ITA_the_heir_apparent_cesare_maria_de_vecchi
-		icon = xxx
+		icon = fascism
 		
 		x = 0
 		y = 1
@@ -641,7 +756,7 @@ focus_tree = {
 		mutually_exclusive = { 
 			focus = ITA_the_corporatist_amintore_fanfani
 		}
-		available = { always = no }
+		available = { }
 		select_effect = { }
 		bypass = { has_country_flag = ITA_selected_de_vecchi }
 		cancel = { }
@@ -667,7 +782,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_secure_military_support
-		icon = xxx
+		icon = army_logistics
 		
 		x = -1
 		y = 1
@@ -698,7 +813,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_reinforce_albania
-		icon = xxx
+		icon = home_defense
 		
 		x = 2
 		y = 1
@@ -729,7 +844,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_additional_funding_for_the_navy
-		icon = xxx
+		icon = naval_dockyard
 		
 		x = -1
 		y = 2
@@ -760,7 +875,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_modernize_the_military_academies
-		icon = xxx
+		icon = military_academy
 		
 		x = -2
 		y = 3
@@ -792,7 +907,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_cater_to_visconi
-		icon = xxx
+		icon = escort_fighters
 		
 		x = -2
 		y = 4
@@ -823,7 +938,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_tighten_the_grip_on_croatia
-		icon = xxx
+		icon = banovina_of_croatia
 		
 		x = 1
 		y = 2
@@ -854,7 +969,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_reform_the_albanian_government
-		icon = xxx
+		icon = self_management
 		
 		x = 3
 		y = 2
@@ -886,7 +1001,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_demand_foreign_workers
-		icon = xxx
+		icon = demand_territory
 		
 		x = 1
 		y = 3
@@ -917,7 +1032,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_the_dalmatian_question
-		icon = xxx
+		icon = military_sphere
 		
 		x = 3
 		y = 3
@@ -949,7 +1064,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_national_ethnic_minority_service
-		icon = xxx
+		icon = military_mission2
 		
 		x = 0
 		y = 4
@@ -980,7 +1095,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_expand_the_armament_industry
-		icon = xxx
+		icon = industry_military
 		
 		x = 2
 		y = 4
@@ -1011,7 +1126,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_heavy_industry_investments
-		icon = xxx
+		icon = industry_civilian
 		
 		x = 2
 		y = 4
@@ -1042,7 +1157,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_militarize_south_tyrol
-		icon = xxx
+		icon = military_fort
 		
 		x = 1
 		y = 5
@@ -1075,198 +1190,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_coup_against_de_vecchi
-		icon = xxx
-		
-		x = 1
-		y = 6
-		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
-		
-		cost = 10
-		
-		prerequisite = {
-			focus = ITA_militarize_south_tyrol
-		}
-		mutually_exclusive = { 
-			focus = ITA_reaffirm_the_axis
-		}
-		available = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
-
-		cancel_if_invalid = yes
-		continue_if_invalid = yes
-		available_if_capitulated = no
-		
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			base = 10
-		}
-	}
-	focus = {
-		id = ITA_reaffirm_the_axis
-		icon = xxx
-		
-		x = 3
-		y = 6
-		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
-		
-		cost = 10
-		
-		prerequisite = {
-			focus = ITA_militarize_south_tyrol
-		}
-		mutually_exclusive = { 
-			focus = ITA_coup_against_de_vecchi
-		}
-		available = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
-
-		cancel_if_invalid = yes
-		continue_if_invalid = yes
-		available_if_capitulated = no
-		
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			base = 10
-		}
-	}
-	focus = {
-		id = ITA_invite_german_companies
-		icon = xxx
-		
-		x = 3
-		y = 7
-		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
-		
-		cost = 10
-		
-		prerequisite = {
-			focus = ITA_reaffirm_the_axis
-		}
-		mutually_exclusive = { }
-		available = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
-
-		cancel_if_invalid = yes
-		continue_if_invalid = yes
-		available_if_capitulated = no
-		
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			base = 10
-		}
-	}
-	focus = {
-		id = ITA_allow_german_garrisons
-		icon = xxx
-		
-		x = 2
-		y = 8
-		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
-		
-		cost = 10
-		
-		prerequisite = {
-			focus = ITA_invite_german_companies
-		}
-		mutually_exclusive = { focus = ITA_nationalize_german_assets }
-		available = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
-
-		cancel_if_invalid = yes
-		continue_if_invalid = yes
-		available_if_capitulated = no
-		
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			base = 10
-		}
-	}
-	focus = {
-		id = ITA_nationalize_german_assets
-		icon = xxx
-		
-		x = 4
-		y = 8
-		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
-		
-		cost = 10
-		
-		prerequisite = {
-			focus = ITA_invite_german_companies
-		}
-		mutually_exclusive = { focus = ITA_allow_german_garrisons }
-		available = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
-
-		cancel_if_invalid = yes
-		continue_if_invalid = yes
-		available_if_capitulated = no
-		
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			base = 10
-		}
-	}
-	focus = {
-		id = ITA_denounce_the_germans
-		icon = xxx
-		
-		x = 4
-		y = 9
-		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
-		
-		cost = 10
-		
-		prerequisite = {
-			focus = ITA_nationalize_german_assets
-		}
-		mutually_exclusive = { }
-		available = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
-
-		cancel_if_invalid = yes
-		continue_if_invalid = yes
-		available_if_capitulated = no
-		
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			base = 10
-		}
-	}
-	focus = {
 		id = ITA_prepare_for_war_in_the_western_mediterranean
-		icon = xxx
+		icon = coastal_fort
 		
 		x = -1
 		y = 6
@@ -1300,7 +1225,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_claim_the_balearic_islands
-		icon = xxx
+		icon = demand_territory3
 		
 		x = 0
 		y = 7
@@ -1332,7 +1257,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_ultimatum_to_spain
-		icon = xxx
+		icon = war3
 		
 		x = 0
 		y = 8
@@ -1361,10 +1286,200 @@ focus_tree = {
 			base = 10
 		}
 	}
+	focus = {
+		id = ITA_coup_against_de_vecchi
+		icon = close_air_support
+		
+		x = 1
+		y = 6
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_militarize_south_tyrol
+		}
+		mutually_exclusive = { 
+			focus = ITA_reaffirm_the_axis
+		}
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_reaffirm_the_axis
+		icon = align_with_germany
+		
+		x = 3
+		y = 6
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_militarize_south_tyrol
+		}
+		mutually_exclusive = { 
+			focus = ITA_coup_against_de_vecchi
+		}
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_invite_german_companies
+		icon = german_nationalism
+		
+		x = 3
+		y = 7
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_reaffirm_the_axis
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_allow_german_garrisons
+		icon = become_puppet
+		
+		x = 2
+		y = 8
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_invite_german_companies
+		}
+		mutually_exclusive = { focus = ITA_nationalize_german_assets }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_nationalize_german_assets
+		icon = gold_standard
+		
+		x = 4
+		y = 8
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_invite_german_companies
+		}
+		mutually_exclusive = { focus = ITA_allow_german_garrisons }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_denounce_the_germans
+		icon = war_against_germany
+		
+		x = 4
+		y = 9
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_nationalize_german_assets
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
 	###Amintore Fanfani
 	focus = {
 		id = ITA_the_corporatist_amintore_fanfani
-		icon = xxx
+		icon = consumer_goods
 		
 		x = 6
 		y = 1
@@ -1381,7 +1496,7 @@ focus_tree = {
 		mutually_exclusive = { 
 			focus = ITA_the_former_traitor_pietro_nenni
 		}
-		available = { always = no }
+		available = { }
 		select_effect = { }
 		bypass = { has_country_flag = ITA_selected_fanfani }
 		cancel = { }
@@ -1407,7 +1522,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_reform_colonial_economies
-		icon = xxx
+		icon = industry
 		
 		x = -2
 		y = 1
@@ -1419,7 +1534,7 @@ focus_tree = {
 			focus = ITA_the_corporatist_amintore_fanfani
 		}
 		mutually_exclusive = { }
-		available = { always = no }
+		available = { }
 		select_effect = { }
 		bypass = { }
 		cancel = { }
@@ -1438,7 +1553,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_assure_property_rights
-		icon = xxx
+		icon = economic_crisis
 		
 		x = 0
 		y = 1
@@ -1450,7 +1565,7 @@ focus_tree = {
 			focus = ITA_the_corporatist_amintore_fanfani
 		}
 		mutually_exclusive = { }
-		available = { always = no }
+		available = { }
 		select_effect = { }
 		bypass = { }
 		cancel = { }
@@ -1469,7 +1584,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_duty_of_labor
-		icon = xxx
+		icon = production
 		
 		x = 2
 		y = 1
@@ -1481,7 +1596,7 @@ focus_tree = {
 			focus = ITA_the_corporatist_amintore_fanfani
 		}
 		mutually_exclusive = { }
-		available = { always = no }
+		available = { }
 		select_effect = { }
 		bypass = { }
 		cancel = { }
@@ -1500,7 +1615,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_industrial_investments_in_croatia
-		icon = xxx
+		icon = industry_civilian
 		
 		x = -1
 		y = 2
@@ -1512,7 +1627,7 @@ focus_tree = {
 			focus = ITA_reform_colonial_economies
 		}
 		mutually_exclusive = { }
-		available = { always = no }
+		available = { }
 		select_effect = { }
 		bypass = { }
 		cancel = { }
@@ -1531,7 +1646,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_mobilize_the_automotive_industry
-		icon = xxx
+		icon = industry3
 		
 		x = 1
 		y = 2
@@ -1546,7 +1661,7 @@ focus_tree = {
 			focus = ITA_duty_of_labor
 		}
 		mutually_exclusive = { }
-		available = { always = no }
+		available = { }
 		select_effect = { }
 		bypass = { }
 		cancel = { }
@@ -1565,7 +1680,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_artillery_factories_in_campania
-		icon = xxx
+		icon = artillery2
 		
 		x = 3
 		y = 2
@@ -1580,7 +1695,7 @@ focus_tree = {
 			focus = ITA_duty_of_labor
 		}
 		mutually_exclusive = { }
-		available = { always = no }
+		available = { }
 		select_effect = { }
 		bypass = { }
 		cancel = { }
@@ -1599,7 +1714,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_coastal_railroads
-		icon = xxx
+		icon = infrastructure
 		
 		x = 2
 		y = 3
@@ -1611,7 +1726,7 @@ focus_tree = {
 			focus = ITA_mobilize_the_automotive_industry
 		}
 		mutually_exclusive = { }
-		available = { always = no }
+		available = { }
 		select_effect = { }
 		bypass = { }
 		cancel = { }
@@ -1630,7 +1745,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_tank_factories_in_lombardy
-		icon = xxx
+		icon = tanks4
 		
 		x = 0
 		y = 3
@@ -1642,7 +1757,7 @@ focus_tree = {
 			focus = ITA_mobilize_the_automotive_industry
 		}
 		mutually_exclusive = { }
-		available = { always = no }
+		available = { }
 		select_effect = { }
 		bypass = { }
 		cancel = { }
@@ -1661,7 +1776,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_aircraft_factories_in_lazio
-		icon = xxx
+		icon = fighters
 		
 		x = -2
 		y = 4
@@ -1673,7 +1788,7 @@ focus_tree = {
 			focus = ITA_tank_factories_in_lombardy
 		}
 		mutually_exclusive = { }
-		available = { always = no }
+		available = { }
 		select_effect = { }
 		bypass = { }
 		cancel = { }
@@ -1692,7 +1807,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_dockyards_in_genoa
-		icon = xxx
+		icon = naval_dockyard
 		
 		x = 0
 		y = 4
@@ -1704,7 +1819,7 @@ focus_tree = {
 			focus = ITA_tank_factories_in_lombardy
 		}
 		mutually_exclusive = { }
-		available = { always = no }
+		available = { }
 		select_effect = { }
 		bypass = { }
 		cancel = { }
@@ -1724,7 +1839,7 @@ focus_tree = {
 	##Begin Military Reform
 	focus = {
 		id = ITA_begin_military_reform
-		icon = xxx
+		icon = infantry_allies
 		
 		x = 15
 		y = 2
@@ -1758,7 +1873,7 @@ focus_tree = {
 	###Army Reform
 	focus = {
 		id = ITA_army_reform
-		icon = xxx
+		icon = tanks2
 		
 		x = -4
 		y = 1
@@ -1789,7 +1904,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_artillery_exercises
-		icon = xxx
+		icon = artillery
 		
 		x = -2
 		y = 1
@@ -1820,7 +1935,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_armor_models
-		icon = xxx
+		icon = tanks
 		
 		x = -1
 		y = 2
@@ -1854,7 +1969,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_reform_army_doctrine
-		icon = xxx
+		icon = army_doctrine
 		
 		x = 0
 		y = 1
@@ -1885,7 +2000,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_amphibious_commandos
-		icon = xxx
+		icon = amphibious_assault
 		
 		x = 2
 		y = 1
@@ -1917,7 +2032,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_additional_special_forces
-		icon = xxx
+		icon = special_forces
 		
 		x = 1
 		y = 2
@@ -1951,7 +2066,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_dominance_of_artillery
-		icon = xxx
+		icon = artillery
 		
 		x = -2
 		y = 3
@@ -1987,7 +2102,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_dominance_of_tanks
-		icon = xxx
+		icon = tanks3
 		
 		x = 0
 		y = 3
@@ -2023,7 +2138,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_dominance_of_strategy
-		icon = xxx
+		icon = infiltration
 		
 		x = 2
 		y = 3
@@ -2060,7 +2175,7 @@ focus_tree = {
 	###Naval Reform
 	focus = {
 		id = ITA_naval_reform
-		icon = xxx
+		icon = navy
 		
 		x = 0
 		y = 1
@@ -2091,7 +2206,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_prepare_for_naval_war
-		icon = xxx
+		icon = navy3
 		
 		x = 0
 		y = 1
@@ -2122,7 +2237,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_develop_capital_ships
-		icon = xxx
+		icon = battleships
 		
 		x = 0
 		y = 2
@@ -2153,7 +2268,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_develop_small_ships
-		icon = xxx
+		icon = destroyers
 		
 		x = 0
 		y = 4
@@ -2184,7 +2299,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_submarines
-		icon = xxx
+		icon = submarines
 		
 		x = 0
 		y = 5
@@ -2215,7 +2330,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_carrier_models
-		icon = xxx
+		icon = carriers
 		
 		x = 1
 		y = 3
@@ -2250,7 +2365,7 @@ focus_tree = {
 	###Air Reform
 	focus = {
 		id = ITA_air_reform
-		icon = xxx
+		icon = air_force
 		
 		x = 4
 		y = 1
@@ -2281,7 +2396,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_fighter_models
-		icon = xxx
+		icon = fighters
 		
 		x = -2
 		y = 1
@@ -2312,7 +2427,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_bomber_models
-		icon = xxx
+		icon = bombers
 		
 		x = 0
 		y = 1
@@ -2343,7 +2458,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_military_air_bases
-		icon = xxx
+		icon = air_defense
 		
 		x = 2
 		y = 1
@@ -2374,7 +2489,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_close_air_support_models
-		icon = xxx
+		icon = bombs
 		
 		x = -1
 		y = 2
@@ -2408,7 +2523,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_strategic_bombers
-		icon = xxx
+		icon = bombs2
 		
 		x = 1
 		y = 2
@@ -2440,7 +2555,7 @@ focus_tree = {
 	##Diplomatic Realignment
 	focus = {
 		id = ITA_diplomatic_realignment
-		icon = xxx
+		icon = improve_relations_green
 		
 		x = 26
 		y = 2
