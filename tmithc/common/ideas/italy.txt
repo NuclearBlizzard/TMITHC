@@ -1,0 +1,174 @@
+ideas = {
+	country = {
+		ITA_german_influence_in_italy_5 = {
+			allowed = { always = no }
+			available = {}
+			cancel = {
+				OR = {
+					has_war_with = GER
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.01
+				fascism_drift = 0.01
+				fascism_acceptance = 2
+				political_power_factor = -0.05
+				stability_factor = -0.02
+				war_support_factor = -0.01
+			}
+		}
+		ITA_german_influence_in_italy_15 = {
+			allowed = { always = no }
+			available = {}
+			cancel = {
+				OR = {
+					has_war_with = GER
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.02
+				fascism_drift = 0.02
+				fascism_acceptance = 4
+				political_power_factor = -0.1
+				stability_factor = -0.04
+				war_support_factor = -0.02
+			}
+		}
+		ITA_german_influence_in_italy_25 = {
+			allowed = { always = no }
+			available = {}
+			cancel = {
+				OR = {
+					has_war_with = GER
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.03
+				fascism_drift = 0.03
+				fascism_acceptance = 6
+				political_power_factor = -0.15
+				stability_factor = -0.06
+				war_support_factor = -0.03
+			}
+		}
+		ITA_german_influence_in_italy_35 = {
+			allowed = { always = no }
+			available = {}
+			cancel = {
+				OR = {
+					has_war_with = GER
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.04
+				fascism_drift = 0.04
+				fascism_acceptance = 8
+				political_power_factor = -0.2
+				stability_factor = -0.08
+				war_support_factor = -0.04
+			}
+		}
+		ITA_german_influence_in_italy_45 = {
+			allowed = { always = no }
+			available = {}
+			cancel = {
+				OR = {
+					has_war_with = GER
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				fascism_drift = 0.05
+				fascism_acceptance = 10
+				political_power_factor = -0.25
+				stability_factor = -0.1
+				war_support_factor = -0.05
+			}
+		}
+		ITA_german_influence_in_italy_55 = {
+			allowed = { always = no }
+			available = {}
+			cancel = {
+				OR = {
+					has_war_with = GER
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.06
+				fascism_drift = 0.06
+				fascism_acceptance = 12
+				political_power_factor = -0.3
+				stability_factor = -0.12
+				war_support_factor = -0.06
+			}
+		}
+		ITA_german_influence_in_italy_65 = {
+			allowed = { always = no }
+			available = {}
+			cancel = {
+				OR = {
+					has_war_with = GER
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.07
+				fascism_drift = 0.07
+				fascism_acceptance = 14
+				political_power_factor = -0.35
+				stability_factor = -0.14
+				war_support_factor = -0.07
+			}
+		}
+		ITA_german_influence_in_italy_75 = {
+			allowed = { always = no }
+			available = {}
+			cancel = {
+				OR = {
+					has_war_with = GER
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.08
+				fascism_drift = 0.08
+				fascism_acceptance = 16
+				political_power_factor = -0.4
+				stability_factor = -0.16
+				war_support_factor = -0.08
+			}
+		}
+		ITA_german_influence_in_italy_85 = {
+			allowed = { always = no }
+			available = {}
+			cancel = {
+				OR = {
+					has_war_with = GER
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.09
+				fascism_drift = 0.09
+				fascism_acceptance = 18
+				political_power_factor = -0.45
+				stability_factor = -0.18
+				war_support_factor = -0.09
+			}
+		}
+		ITA_german_influence_in_italy_95 = {
+			allowed = { always = no }
+			available = {}
+			cancel = {
+				OR = {
+					has_war_with = GER
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				fascism_drift = 0.1
+				fascism_acceptance = 20
+				political_power_factor = -0.5
+				stability_factor = -0.2
+				war_support_factor = -0.1
+			}
+		}
+	}
+}

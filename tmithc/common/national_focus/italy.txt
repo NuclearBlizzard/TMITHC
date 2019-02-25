@@ -34,7 +34,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			add_stability = 0.05
 		}
 
 		ai_will_do = {
@@ -65,7 +65,10 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			add_political_power = 150
+			hidden_effect = {
+				country_event = { id = italy.1 days = 103 }
+			}
 		}
 
 		ai_will_do = {
@@ -91,7 +94,7 @@ focus_tree = {
 		select_effect = { }
 		bypass = { 
 			OR = {
-				has_country_flag = ITA_selected_balbo
+				has_country_flag = ITA_selected_de_vecchi
 				has_country_flag = ITA_selected_fanfani
 				has_country_flag = ITA_selected_nenni
 			}
@@ -110,7 +113,7 @@ focus_tree = {
 			base = 10
 		}
 	}
-	###Amintore Fanfani
+	###Pietro Nenni
 	focus = {
 		id = ITA_the_former_traitor_pietro_nenni
 		icon = xxx
@@ -135,31 +138,37 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			effect_tooltip = {
+				create_country_leader = {
+					name = "Pietro Nenni"
+					desc = "Pietro_Nenni_DESC"
+					picture = "Pietro_Nenni.dds"
+					ideology = fascism_ideology
+				}
+			}
 		}
 
 		ai_will_do = {
 			base = 10
 		}
 	}
-	###Italo Balbo
 	focus = {
-		id = ITA_the_heir_apparent_italo_balbo
+		id = ITA_rivitalizzazione
 		icon = xxx
 		
 		x = 0
 		y = 1
-		relative_position_id = ITA_choose_a_successor
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
 		
 		cost = 10
 		
 		prerequisite = {
-			focus = ITA_choose_a_successor
+			focus = ITA_the_former_traitor_pietro_nenni
 		}
 		mutually_exclusive = { }
-		available = { always = no }
+		available = { }
 		select_effect = { }
-		bypass = { has_country_flag = ITA_selected_balbo }
+		bypass = { }
 		cancel = { }
 
 		cancel_if_invalid = yes
@@ -174,7 +183,165 @@ focus_tree = {
 			base = 10
 		}
 	}
-	###Pietro Nenni
+	focus = {
+		id = ITA_legacy_of_the_psi
+		icon = xxx
+		
+		x = 2
+		y = 1
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_the_former_traitor_pietro_nenni
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_the_western_motorways
+		icon = xxx
+		
+		x = -1
+		y = 2
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_rivitalizzazione
+		}
+		mutually_exclusive = { }
+		available = { 
+			has_full_control_of_state = 21
+			has_full_control_of_state = 32
+			has_full_control_of_state = 735
+			has_full_control_of_state = 158
+		}
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			21 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			32 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+			735 = { add_building_construction = { type = infrastructure level = 3 instant_build = yes } }
+			158 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_legalize_labor_unions
+		icon = xxx
+		
+		x = 1
+		y = 2
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_rivitalizzazione
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = -0.15 }
+			if = {
+				limit = {
+					has_full_control_of_state = 2
+				}
+				2 = { add_extra_state_shared_building_slots = 2 }
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 158
+				}
+				158 = { add_extra_state_shared_building_slots = 1 }
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 159
+				}
+				159 = { add_extra_state_shared_building_slots = 1 }
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	###Cesare Maria De Vecchi
+	focus = {
+		id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		icon = xxx
+		
+		x = 0
+		y = 1
+		relative_position_id = ITA_choose_a_successor
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_choose_a_successor
+		}
+		mutually_exclusive = { }
+		available = { always = no }
+		select_effect = { }
+		bypass = { has_country_flag = ITA_selected_de_vecchi }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			effect_tooltip = {
+				create_country_leader = {
+					name = "Cesare Maria De Vecchi"
+					desc = "Cesare_Maria_De_Vecchi_DESC"
+					picture = "Cesare_Maria_De_Vecchi.dds"
+					ideology = fascism_ideology
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	###Amintore Fanfani
 	focus = {
 		id = ITA_the_corporatist_amintore_fanfani
 		icon = xxx
@@ -199,7 +366,14 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			effect_tooltip = {
+				create_country_leader = {
+					name = "Amintore Fanfani"
+					desc = "Amintore_Fanfani_DESC"
+					picture = "Amintore_Fanfani.dds"
+					ideology = fascism_ideology
+				}
+			}
 		}
 
 		ai_will_do = {

@@ -1,0 +1,53 @@
+﻿add_namespace = italy_news
+
+#Mussolini's Death
+news_event = {
+	id = italy_news.1
+	title = italy_news.1.t
+	desc = italy_news.1.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy_news.1.ITA.o
+		trigger = {
+			original_tag = ITA
+		}
+	}
+	option = {
+		name = italy_news.1.ITA_puppet.o
+		trigger = {
+			NOT = { original_tag = ITA }
+			is_subject_of = ITA
+		}
+	}
+	option = {
+		name = italy_news.1.GER.o
+		trigger = { original_tag = GER }
+	}
+	option = {
+		name = italy_news.1.generic.fascism.o
+		trigger = { 
+			NOT = { original_tag = GER }
+			NOT = { original_tag = ITA }
+			NOT = { is_subject_of = ITA }
+			has_government = fascism
+		}
+	}
+	option = {
+		name = italy_news.1.generic.nonfascism.o
+		trigger = { 
+			NOT = { original_tag = GER }
+			NOT = { original_tag = ITA }
+			NOT = { is_subject_of = ITA }
+			NOT = { has_government = fascism }
+		}
+	}
+}
+
+#Successor: De Vecchi
+
+#Successor: Fanfani
+
+#Successor: Nenni

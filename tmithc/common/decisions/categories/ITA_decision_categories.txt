@@ -1,0 +1,14 @@
+decisions_german_influence_in_italy = {
+	icon = xxx
+	allowed = {
+		country_exists = ITA
+	}
+	visible = {
+		OR = {
+			original_tag = ITA
+			original_tag = GER
+			original_tag = SPR
+			is_subject_of = ITA
+		}
+	}
+}
