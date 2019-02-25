@@ -80,18 +80,6 @@ music = {
 }
 
 music = {
-	song = "Edelweiss"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			
-		}		
-	}	
-}
-
-music = {
 	song = "general_peace_3"
 	
 	chance = {
