@@ -11,6 +11,10 @@ add_ideas = {
 
 }
 
+JAP = { give_guarantee = PAN }
+
+give_military_access = PAN
+
 
 set_technology = {
 	infantry_weapons = 1

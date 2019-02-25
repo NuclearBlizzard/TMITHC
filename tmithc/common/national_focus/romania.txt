@@ -53,10 +53,284 @@ focus_tree = {
 		focus = {
 		id = ROM_Militarist_Coup
 		icon = GFX_goal_Romania_Officers_Coup
-		mutually_exclusive = {  }
+		mutually_exclusive = { focus = ROM_Tudor_Takeover }
 		prerequisite = { focus = ROM_death_of_leader }
-		x = 8
+		x = 7
 		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = 0.2 }
+		}
+	}
+
+		focus = {
+		id = ROM_sympathetic_whispers
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = ROM_Militarist_Coup }
+		x = 7
+		y = 2
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = ROM_sanatescu_government
+		icon = GFX_goal_Constantin_Sanatescu
+		mutually_exclusive = { focus = ROM_Racovita_Coup }
+		prerequisite = { focus = ROM_sympathetic_whispers }
+		x = 6
+		y = 3
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = ROM_democratic_backings
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = ROM_sanatescu_government }
+		x = 6
+		y = 4
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = ROM_Racovita_Coup
+		icon = GFX_goal_Mihal_Racovitza
+		mutually_exclusive = { focus = ROM_sanatescu_government }
+		prerequisite = { focus = ROM_sympathetic_whispers }
+		x = 8
+		y = 3
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = ROM_deal_with_opposition
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = ROM_Racovita_Coup }
+		x = 8
+		y = 4
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = ROM_strikers_at_Grivita
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = ROM_Militarist_Coup focus = ROM_Tudor_Takeover }
+		x = 10
+		y = 2
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = ROM_send_military
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = ROM_strikers_at_Grivita }
+		x = 10
+		y = 3
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = ROM_riots_in_Iasi
+		icon = GFX_goal_Urban_Revolt
+		prerequisite = { focus = ROM_send_military }
+		x = 10
+		y = 4
 
 		cost = 1
 
@@ -87,10 +361,10 @@ focus_tree = {
 
 		focus = {
 		id = ROM_Tudor_Takeover
-		icon = GFX_goal_generic_attack_allies
-		mutually_exclusive = {  }
+		icon = GFX_goal_Corneliu_Tudor
+		mutually_exclusive = { focus = ROM_Militarist_Coup }
 		prerequisite = { focus = ROM_death_of_leader }
-		x = 12
+		x = 13
 		y = 1
 
 		cost = 1
@@ -116,7 +390,146 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_popularity = { ideology = fascism popularity = -0.2 }
+			set_party_name = { ideology = fascism long_name = "Partidul România Mare" name = "PRM" }
+		}
+	}
+
+		focus = {
+		id = ROM_unpopular_leader
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = ROM_Tudor_Takeover }
+		x = 13
+		y = 2
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
 			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_country_leader_trait = ideological_crusader
+			add_country_leader_trait = backroom_backstabber
+		}
+	}
+
+		focus = {
+		id = ROM_rally_in_Bucharest
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ROM_unpopular_leader }
+		x = 12
+		y = 3
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.05 }
+		}
+	}
+
+		focus = {
+		id = ROM_rally_in_timisoara
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = ROM_unpopular_leader }
+		x = 14
+		y = 3
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.05 }
+		}
+	}
+
+		focus = {
+		id = ROM_local_holdings
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = ROM_rally_in_Bucharest }
+		prerequisite = { focus = ROM_rally_in_timisoara }
+		x = 13
+		y = 4
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.1 }
 		}
 	}
 }	

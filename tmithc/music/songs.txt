@@ -68,7 +68,7 @@ music = {
 }
 
 music = {
-	song = "Edelweiss"
+	song = "The End of the World"
 	
 	chance = {
 		modifier = {
