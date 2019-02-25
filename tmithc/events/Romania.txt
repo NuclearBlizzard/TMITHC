@@ -33,6 +33,10 @@ country_event = {
 	is_triggered_only = no
 
 	trigger = {
+		tag = ROM
+		AND = {
+			date > 1963.6.25
+		}
 	}
 
 	option = {
