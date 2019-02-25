@@ -103,3 +103,65 @@ create_country_leader = {
 	picture = "Benito_Mussolini.dds"
 	ideology = fascism_ideology
 }
+
+create_field_marshal = {
+	name = "Giovanni Messe"
+	picture = "generals/Giovanni_Messe.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Antonio Segni"
+	picture = "generals/Antonio_Segni.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Giulio Andreotti"
+	picture = "generals/Giulio_Andreotti.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Paolo E. Taviani"
+	picture = "generals/Paolo_Emilio_Taviani.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Randolfo Pacciardi"
+	picture = "generals/Randolfo_Pacciardi.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Roberto Tremelloni"
+	picture = "generals/Roberto_Tremelloni.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
