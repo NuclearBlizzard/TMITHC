@@ -7,11 +7,11 @@ spriteTypes = {
 	#########################################
 
 	SpriteType = {
-		name = "GFX_goal_continuous_air_production_shine"
-		texturefile = "gfx/interface/goals/GER_Policy.tga"
+		name = "GFX_goal_Urban_Revolt_shine"
+		texturefile = "gfx/interface/goals/City_Revolts.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_Policy.tga"
+			animationmaskfile = "gfx/interface/goals/City_Revolts.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -24,7 +24,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_Policy.tga"
+			animationmaskfile = "gfx/interface/goals/City_Revolts.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -39,11 +39,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_death_of_Conducator_shine"
-		texturefile = "gfx/interface/goals/Death_of_Antonescu.tga"
+		name = "GFX_goal_Mihal_Racovitza_shine"
+		texturefile = "gfx/interface/goals/Mihal_Racovitza_Coup.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Death_of_Antonescu.tga"
+			animationmaskfile = "gfx/interface/goals/Mihal_Racovitza_Coup.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -56,7 +56,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Death_of_Antonescu.tga"
+			animationmaskfile = "gfx/interface/goals/Mihal_Racovitza_Coup.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -71,11 +71,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_Romania_Officers_Coup_shine"
-		texturefile = "gfx/interface/goals/Romania_Officers_Coup.tga"
+		name = "GFX_goal_Leonard_Mociulschi_shine"
+		texturefile = "gfx/interface/goals/Leonard_Mociulschi.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Romania_Officers_Coup.tga"
+			animationmaskfile = "gfx/interface/goals/Leonard_Mociulschi.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -88,7 +88,39 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Romania_Officers_Coup.tga"
+			animationmaskfile = "gfx/interface/goals/Leonard_Mociulschi.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_Constantin_Sanatescu_shine"
+		texturefile = "gfx/interface/goals/Constantin_Sanatescu.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Constantin_Sanatescu.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Constantin_Sanatescu.tga"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
