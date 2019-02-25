@@ -22,7 +22,7 @@ decisions_german_influence_in_italy = {
 			base = 10
 		}
 		available = {
-			original_tag = GER
+			original_tag = ITA
 			ITA = { var_german_influence_in_italy < 1 }
 		}
 		complete_effect = {

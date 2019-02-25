@@ -1,7 +1,6 @@
 decisions_german_influence_in_italy = {
 	icon = xxx
 	allowed = {
-		country_exists = ITA
 	}
 	visible = {
 		OR = {
@@ -9,6 +8,21 @@ decisions_german_influence_in_italy = {
 			original_tag = GER
 			original_tag = SPR
 			is_subject_of = ITA
+		}
+		AND = {
+			OR = {
+				ITA = { has_idea = ITA_german_influence_in_italy_95 }
+				ITA = { has_idea = ITA_german_influence_in_italy_85 }
+				ITA = { has_idea = ITA_german_influence_in_italy_75 }
+				ITA = { has_idea = ITA_german_influence_in_italy_65 }
+				ITA = { has_idea = ITA_german_influence_in_italy_55 }
+				ITA = { has_idea = ITA_german_influence_in_italy_45 }
+				ITA = { has_idea = ITA_german_influence_in_italy_35 }
+				ITA = { has_idea = ITA_german_influence_in_italy_25 }
+				ITA = { has_idea = ITA_german_influence_in_italy_15 }
+				ITA = { has_idea = ITA_german_influence_in_italy_5 }
+			}
+			ITA = { is_subject = no }
 		}
 	}
 }
