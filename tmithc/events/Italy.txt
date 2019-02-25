@@ -1,1 +1,54 @@
 ﻿add_namespace = italy
+
+#Mussolini's Death
+country_event = {
+	id = italy.1
+	title = italy.1.t
+	desc = italy.1.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.1.o1
+		set_country_flag = ITA_death_of_the_duce
+	}
+}
+
+#The Question of Succession
+country_event = {
+	id = italy.2
+	title = italy.2.t
+	desc = italy.2.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {	#Balbo
+		name = italy.2.o1
+		hidden_effect = {
+			complete_national_focus = ITA_choose_a_successor
+			complete_national_focus = ITA_the_heir_apparent_italo_balbo
+		}
+		set_country_flag = ITA_selected_balbo
+		add_popularity = { ideology = fascism popularity = 0.05 }
+	}
+	option = {	#Fanfani
+		name = italy.2.o2
+		hidden_effect = {
+			complete_national_focus = ITA_choose_a_successor
+			complete_national_focus = ITA_the_corporatist_amintore_fanfani
+		}
+		set_country_flag = ITA_selected_fanfani
+		add_popularity = { ideology = democratic popularity = 0.05 }
+	}
+	option = {	#Nenni
+		name = italy.2.o3
+		hidden_effect = {
+			complete_national_focus = ITA_choose_a_successor
+			complete_national_focus = ITA_the_former_traitor_pietro_nenni
+		}
+		set_country_flag = ITA_selected_nenni
+		add_popularity = { ideology = communism popularity = 0.05 }
+	}
+}

@@ -3,9 +3,274 @@ focus_tree = {
 	
 	country = {
 		factor = 1
+		modifier = {
+			original_tag = ITA
+			add = 20
+		}
 	}
 	
 	default = yes
 	reset_on_civilwar = no
+	
+	#Prepare for Case E
+	focus = {
+		id = ITA_prepare_for_case_e
+		icon = xxx
+		
+		x = 7
+		y = 0
+		
+		cost = 10
+		
+		prerequisite = { }
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
 
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_reinstate_the_gran_consiglio
+		icon = xxx
+		
+		x = 0
+		y = 1
+		relative_position_id = ITA_prepare_for_case_e
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_prepare_for_case_e
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	##Choose a Successor
+	focus = {
+		id = ITA_choose_a_successor
+		icon = xxx
+		
+		x = -1
+		y = 2
+		relative_position_id = ITA_prepare_for_case_e
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_reinstate_the_gran_consiglio
+		}
+		mutually_exclusive = { }
+		available = { always = no }
+		select_effect = { }
+		bypass = { 
+			OR = {
+				has_country_flag = ITA_selected_balbo
+				has_country_flag = ITA_selected_fanfani
+				has_country_flag = ITA_selected_nenni
+			}
+		}
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	###Amintore Fanfani
+	focus = {
+		id = ITA_the_former_traitor_pietro_nenni
+		icon = xxx
+		
+		x = -5
+		y = 1
+		relative_position_id = ITA_choose_a_successor
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_choose_a_successor
+		}
+		mutually_exclusive = { }
+		available = { always = no }
+		select_effect = { }
+		bypass = { has_country_flag = ITA_selected_nenni }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	###Italo Balbo
+	focus = {
+		id = ITA_the_heir_apparent_italo_balbo
+		icon = xxx
+		
+		x = 0
+		y = 1
+		relative_position_id = ITA_choose_a_successor
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_choose_a_successor
+		}
+		mutually_exclusive = { }
+		available = { always = no }
+		select_effect = { }
+		bypass = { has_country_flag = ITA_selected_balbo }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	###Pietro Nenni
+	focus = {
+		id = ITA_the_corporatist_amintore_fanfani
+		icon = xxx
+		
+		x = 5
+		y = 1
+		relative_position_id = ITA_choose_a_successor
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_choose_a_successor
+		}
+		mutually_exclusive = { }
+		available = { always = no }
+		select_effect = { }
+		bypass = { has_country_flag = ITA_selected_fanfani }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	##Begin Military Reform
+	focus = {
+		id = ITA_begin_military_reform
+		icon = xxx
+		
+		x = 11
+		y = 2
+		relative_position_id = ITA_prepare_for_case_e
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_reinstate_the_gran_consiglio
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			army_experience = 5
+			navy_experience = 5
+			air_experience = 5
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	##Diplomatic Realignment
+	focus = {
+		id = ITA_diplomatic_realignment
+		icon = xxx
+		
+		x = 22
+		y = 2
+		relative_position_id = ITA_prepare_for_case_e
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_reinstate_the_gran_consiglio
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	
 }
