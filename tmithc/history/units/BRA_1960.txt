@@ -34,68 +34,13 @@ division_template = {
 
 units = {
 	##### Exército Brasileiro #####
-	division= {	# "1a Divisão de Infanteria"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 10980 # Rio de Janiero
-		division_template = "Divisão de Infanteria"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
-	division= {	# "2a Divisão de Infanteria"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 10513 # Sao Paulo
-		division_template = "Divisão de Infanteria"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
-	division= {	# "3a Divisão de Infanteria"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
-		location = 10447 # Porto Alegre
-		division_template = "Divisão de Infanteria"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
 	division= {	# "4a Divisão de Infanteria"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 4
 		}
-		location = 5168 # Recife
+		location = 5232 # Recife
 		division_template = "Divisão de Infanteria"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
-	division= {	# "5a Divisão de Infanteria"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 5
-		}
-		location = 8242 # Belo Horizonte
-		division_template = "Divisão de Infanteria"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
-	division= {	# "1a Divisão de Cavalaria"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 12853 # Belem
-		division_template = "Divisão de Cavalaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -105,7 +50,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 5156 # Curitiba
+		location = 5232 # Curitiba
 		division_template = "Divisão de Cavalaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -114,43 +59,9 @@ units = {
 
 
 	##### Naval OOB #####
-	navy = {				
-		name = "Marinha do Brasil"			
-		base = 10980 
-		location = 10980 # Rio de Janiero
-		ship = { name = "NRB Minas Gerais" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB São Paulo" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Bahia" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Rio Grande do Sul" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BRA } } }
-		# 1a Flotilla de Contratorpedeiros
-		ship = { name = "NRB Piaui" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Rio Grande do Norte" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Paraíba" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Alagoas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
-		# 2a Flotilla de Contratorpedeiros
-		ship = { name = "NRB Marnhão" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }	
-		ship = { name = "NRB Sergipe" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Santa Catharina" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Mato Grosso" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
-	}				
-	navy = {				
-		name = "Flotilha de Submarinos"			
-		base = 10980 
-		location = 10980 # Rio de Janiero
-		ship = { name = "NRB Humaytá" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Tupi" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Timbira" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Tamoio" definition = submarine equipment = { submarine_2 = { amount = 1 owner = BRA } } }
-	}				
-}
 
 
-air_wings = {
-	### Aviação Militar -- Rio de Janiero
-	500 = {
-		fighter_equipment_0 =  { owner = "BRA" amount = 24 }		# Fighter Air Group -- Boeing 256s, various other aircraft
-	}
-}
+
 
 
 
