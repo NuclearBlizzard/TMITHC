@@ -3,9 +3,2586 @@ focus_tree = {
 	
 	country = {
 		factor = 1
+		modifier = {
+			original_tag = ITA
+			add = 20
+		}
 	}
+	
+	continuous_focus_position = { x = 1 y = 0 }
 	
 	default = yes
 	reset_on_civilwar = no
+	
+	#Prepare for Case E
+	focus = {
+		id = ITA_prepare_for_case_e
+		icon = mussolini
+		
+		x = 9
+		y = 0
+		
+		cost = 10
+		
+		prerequisite = { }
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
 
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = 0.05
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_reinstate_the_gran_consiglio
+		icon = italian_fascism
+		
+		x = 0
+		y = 1
+		relative_position_id = ITA_prepare_for_case_e
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_prepare_for_case_e
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 150
+			hidden_effect = {
+				country_event = italy.3
+				country_event = { id = italy.1 days = 103 }
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	##Choose a Successor
+	focus = {
+		id = ITA_choose_a_successor
+		icon = treaty4
+		
+		x = -1
+		y = 2
+		relative_position_id = ITA_prepare_for_case_e
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_reinstate_the_gran_consiglio
+		}
+		mutually_exclusive = { }
+		available = { always = no }
+		select_effect = { }
+		bypass = { 
+			OR = {
+				has_country_flag = ITA_selected_de_vecchi
+				has_country_flag = ITA_selected_fanfani
+				has_country_flag = ITA_selected_nenni
+			}
+		}
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	###Pietro Nenni
+	focus = {
+		id = ITA_the_former_traitor_pietro_nenni
+		icon = attack_communism
+		
+		x = -6
+		y = 1
+		relative_position_id = ITA_choose_a_successor
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_choose_a_successor
+		}
+		mutually_exclusive = { 
+			focus = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		}
+		mutually_exclusive = { 
+			focus = ITA_the_corporatist_amintore_fanfani
+		}
+		available = { }
+		select_effect = { }
+		bypass = { has_country_flag = ITA_selected_nenni }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			effect_tooltip = {
+				create_country_leader = {
+					name = "Pietro Nenni"
+					desc = "Pietro_Nenni_DESC"
+					picture = "Pietro_Nenni.dds"
+					ideology = fascism_ideology
+				}
+			}
+			hidden_effect = {
+				create_country_leader = {
+					name = "Pietro Nenni"
+					desc = "Pietro_Nenni_DESC"
+					picture = "Pietro_Nenni.dds"
+					ideology = leninism
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_precautions_against_germany
+		icon = defense
+		
+		x = -2
+		y = 1
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_the_former_traitor_pietro_nenni
+		}
+		mutually_exclusive = { }
+		available = {
+			OR = {
+				has_full_control_of_state = 158
+				has_full_control_of_state = 159
+				has_full_control_of_state = 39
+				has_full_control_of_state = 160
+				has_full_control_of_state = 736
+				has_full_control_of_state = 35
+				has_full_control_of_state = 735
+			}
+			is_neighbor_of = GER
+			GER = {
+				OR = {
+					has_full_control_of_state = 770
+					has_full_control_of_state = 3
+					has_full_control_of_state = 151
+					has_full_control_of_state = 153
+					has_full_control_of_state = 102
+				}
+			}
+		}
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			if = {
+				limit = { has_full_control_of_state = 158 }
+				158 = {
+					add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 611 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 11570 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 6635 }
+				}
+			}
+			if = {
+				limit = { has_full_control_of_state = 159 }
+				159 = {
+					add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 607 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 9584 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 6661 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 11587 }
+				}
+			}
+			if = {
+				limit = { has_full_control_of_state = 39 }
+				39 = {
+					add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 6675 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 9630 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 11615 }
+				}
+			}
+			if = {
+				limit = { has_full_control_of_state = 160 }
+				160 = {
+					add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 3657 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 9613 }
+				}
+			}
+			if = {
+				limit = { has_full_control_of_state = 736 }
+				736 = {
+					add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 11595 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_rivitalizzazione
+		icon = industry_communism
+		
+		x = 0
+		y = 1
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_the_former_traitor_pietro_nenni
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_legacy_of_the_psi
+		icon = communism4
+		
+		x = 2
+		y = 1
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_the_former_traitor_pietro_nenni
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_the_western_motorways
+		icon = infrastructure
+		
+		x = -1
+		y = 2
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_rivitalizzazione
+		}
+		mutually_exclusive = { }
+		available = { 
+			has_full_control_of_state = 21
+			has_full_control_of_state = 32
+			has_full_control_of_state = 735
+			has_full_control_of_state = 158
+		}
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			21 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			32 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+			735 = { add_building_construction = { type = infrastructure level = 3 instant_build = yes } }
+			158 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_precautions_against_france
+		icon = defense
+		
+		x = -1
+		y = 3
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_the_western_motorways
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_legalize_labor_unions
+		icon = union_negotiations
+		
+		x = 1
+		y = 2
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_rivitalizzazione
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = -0.15 }
+			if = {
+				limit = {
+					has_full_control_of_state = 2
+				}
+				2 = { add_extra_state_shared_building_slots = 2 }
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 158
+				}
+				158 = { add_extra_state_shared_building_slots = 1 }
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 159
+				}
+				159 = { add_extra_state_shared_building_slots = 1 }
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_military_loyalty_tests
+		icon = army_reform
+		
+		x = 3
+		y = 2
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_legacy_of_the_psi
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_mobilize_the_unemployed
+		icon = communism5
+		
+		x = 1
+		y = 3
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_legalize_labor_unions
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_the_grenoble_defensive_strongpoint
+		icon = military_fort2
+		
+		x = -2
+		y = 4
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_precautions_against_france
+		}
+		prerequisite = {
+			focus = ITA_precautions_against_germany
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_full_nationalization_of_heavy_industry
+		icon = industry_military
+		
+		x = 0
+		y = 4
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_mobilize_the_unemployed
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_unify_labor_policy
+		icon = production2
+		
+		x = 2
+		y = 4
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_mobilize_the_unemployed
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_defensive_mobilization_in_savoy
+		icon = steel_production2
+		
+		x = -1
+		y = 5
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_the_grenoble_defensive_strongpoint
+		}
+		prerequisite = {
+			focus = ITA_full_nationalization_of_heavy_industry
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_economic_youth_service
+		icon = entente
+		
+		x = 1
+		y = 5
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_full_nationalization_of_heavy_industry
+		}
+		prerequisite = {
+			focus = ITA_unify_labor_policy
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_aircraft_factory_reform
+		icon = air_production
+		
+		x = 3
+		y = 5
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_unify_labor_policy
+			focus = ITA_cater_to_visconi
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_the_end_of_fascism
+		icon = anti_fascism
+		
+		x = 0
+		y = 6
+		relative_position_id = ITA_the_former_traitor_pietro_nenni
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_economic_youth_service
+		}	
+		prerequisite = {
+			focus = ITA_defensive_mobilization_in_savoy
+		}	
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.35
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.35
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	###Cesare Maria De Vecchi
+	focus = {
+		id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		icon = fascism
+		
+		x = 0
+		y = 1
+		relative_position_id = ITA_choose_a_successor
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_choose_a_successor
+		}
+		mutually_exclusive = { 
+			focus = ITA_the_former_traitor_pietro_nenni
+		}
+		mutually_exclusive = { 
+			focus = ITA_the_corporatist_amintore_fanfani
+		}
+		available = { }
+		select_effect = { }
+		bypass = { has_country_flag = ITA_selected_de_vecchi }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			effect_tooltip = {
+				create_country_leader = {
+					name = "Cesare Maria De Vecchi"
+					desc = "Cesare_Maria_De_Vecchi_DESC"
+					picture = "Cesare_Maria_De_Vecchi.dds"
+					ideology = fascism_ideology
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_secure_military_support
+		icon = army_logistics
+		
+		x = -1
+		y = 1
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_reinforce_albania
+		icon = home_defense
+		
+		x = 2
+		y = 1
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_additional_funding_for_the_navy
+		icon = naval_dockyard
+		
+		x = -1
+		y = 2
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_secure_military_support
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_modernize_the_military_academies
+		icon = military_academy
+		
+		x = -2
+		y = 3
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_additional_funding_for_the_navy
+			focus = ITA_military_loyalty_tests
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_cater_to_visconi
+		icon = escort_fighters
+		
+		x = -2
+		y = 4
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_modernize_the_military_academies
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_tighten_the_grip_on_croatia
+		icon = banovina_of_croatia
+		
+		x = 1
+		y = 2
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_reinforce_albania
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_reform_the_albanian_government
+		icon = self_management
+		
+		x = 3
+		y = 2
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_reinforce_albania
+			focus = ITA_reform_colonial_economies
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_demand_foreign_workers
+		icon = demand_territory
+		
+		x = 1
+		y = 3
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_tighten_the_grip_on_croatia
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_the_dalmatian_question
+		icon = military_sphere
+		
+		x = 3
+		y = 3
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_tighten_the_grip_on_croatia
+			focus = ITA_industrial_investments_in_croatia
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_national_ethnic_minority_service
+		icon = military_mission2
+		
+		x = 0
+		y = 4
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_demand_foreign_workers
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_expand_the_armament_industry
+		icon = industry_military
+		
+		x = 2
+		y = 4
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_demand_foreign_workers
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_heavy_industry_investments
+		icon = industry_civilian
+		
+		x = 2
+		y = 4
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_expand_the_armament_industry
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_militarize_south_tyrol
+		icon = military_fort
+		
+		x = 1
+		y = 5
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_national_ethnic_minority_service
+		}
+		prerequisite = {
+			focus = ITA_heavy_industry_investments
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_prepare_for_war_in_the_western_mediterranean
+		icon = coastal_fort
+		
+		x = -1
+		y = 6
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_additional_funding_for_the_navy
+		}
+		prerequisite = {
+			focus = ITA_cater_to_visconi
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_claim_the_balearic_islands
+		icon = demand_territory3
+		
+		x = 0
+		y = 7
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_prepare_for_war_in_the_western_mediterranean
+			focus = ITA_coup_against_de_vecchi
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_ultimatum_to_spain
+		icon = war3
+		
+		x = 0
+		y = 8
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_claim_the_balearic_islands
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_coup_against_de_vecchi
+		icon = close_air_support
+		
+		x = 1
+		y = 6
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_militarize_south_tyrol
+		}
+		mutually_exclusive = { 
+			focus = ITA_reaffirm_the_axis
+		}
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_reaffirm_the_axis
+		icon = align_with_germany
+		
+		x = 3
+		y = 6
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_militarize_south_tyrol
+		}
+		mutually_exclusive = { 
+			focus = ITA_coup_against_de_vecchi
+		}
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_invite_german_companies
+		icon = german_nationalism
+		
+		x = 3
+		y = 7
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_reaffirm_the_axis
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_allow_german_garrisons
+		icon = become_puppet
+		
+		x = 2
+		y = 8
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_invite_german_companies
+		}
+		mutually_exclusive = { focus = ITA_nationalize_german_assets }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_nationalize_german_assets
+		icon = gold_standard
+		
+		x = 4
+		y = 8
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_invite_german_companies
+		}
+		mutually_exclusive = { focus = ITA_allow_german_garrisons }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_denounce_the_germans
+		icon = war_against_germany
+		
+		x = 4
+		y = 9
+		relative_position_id = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_nationalize_german_assets
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	###Amintore Fanfani
+	focus = {
+		id = ITA_the_corporatist_amintore_fanfani
+		icon = consumer_goods
+		
+		x = 6
+		y = 1
+		relative_position_id = ITA_choose_a_successor
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_choose_a_successor
+		}
+		mutually_exclusive = { 
+			focus = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		}
+		mutually_exclusive = { 
+			focus = ITA_the_former_traitor_pietro_nenni
+		}
+		available = { }
+		select_effect = { }
+		bypass = { has_country_flag = ITA_selected_fanfani }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			effect_tooltip = {
+				create_country_leader = {
+					name = "Amintore Fanfani"
+					desc = "Amintore_Fanfani_DESC"
+					picture = "Amintore_Fanfani.dds"
+					ideology = fascism_ideology
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_reform_colonial_economies
+		icon = industry
+		
+		x = -2
+		y = 1
+		relative_position_id = ITA_the_corporatist_amintore_fanfani
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_the_corporatist_amintore_fanfani
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_assure_property_rights
+		icon = economic_crisis
+		
+		x = 0
+		y = 1
+		relative_position_id = ITA_the_corporatist_amintore_fanfani
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_the_corporatist_amintore_fanfani
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_duty_of_labor
+		icon = production
+		
+		x = 2
+		y = 1
+		relative_position_id = ITA_the_corporatist_amintore_fanfani
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_the_corporatist_amintore_fanfani
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_industrial_investments_in_croatia
+		icon = industry_civilian
+		
+		x = -1
+		y = 2
+		relative_position_id = ITA_the_corporatist_amintore_fanfani
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_reform_colonial_economies
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_mobilize_the_automotive_industry
+		icon = industry3
+		
+		x = 1
+		y = 2
+		relative_position_id = ITA_the_corporatist_amintore_fanfani
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_assure_property_rights
+		}
+		prerequisite = {
+			focus = ITA_duty_of_labor
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_artillery_factories_in_campania
+		icon = artillery2
+		
+		x = 3
+		y = 2
+		relative_position_id = ITA_the_corporatist_amintore_fanfani
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_artillery_exercises
+		}
+		prerequisite = {
+			focus = ITA_duty_of_labor
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_coastal_railroads
+		icon = infrastructure
+		
+		x = 2
+		y = 3
+		relative_position_id = ITA_the_corporatist_amintore_fanfani
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_mobilize_the_automotive_industry
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_tank_factories_in_lombardy
+		icon = tanks4
+		
+		x = 0
+		y = 3
+		relative_position_id = ITA_the_corporatist_amintore_fanfani
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_mobilize_the_automotive_industry
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_aircraft_factories_in_lazio
+		icon = fighters
+		
+		x = -2
+		y = 4
+		relative_position_id = ITA_the_corporatist_amintore_fanfani
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_tank_factories_in_lombardy
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_dockyards_in_genoa
+		icon = naval_dockyard
+		
+		x = 0
+		y = 4
+		relative_position_id = ITA_the_corporatist_amintore_fanfani
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_tank_factories_in_lombardy
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	##Begin Military Reform
+	focus = {
+		id = ITA_begin_military_reform
+		icon = infantry_allies
+		
+		x = 15
+		y = 2
+		relative_position_id = ITA_prepare_for_case_e
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_reinstate_the_gran_consiglio
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			army_experience = 5
+			navy_experience = 5
+			air_experience = 5
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	###Army Reform
+	focus = {
+		id = ITA_army_reform
+		icon = tanks2
+		
+		x = -4
+		y = 1
+		relative_position_id = ITA_begin_military_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_begin_military_reform
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_artillery_exercises
+		icon = artillery
+		
+		x = -2
+		y = 1
+		relative_position_id = ITA_army_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_army_reform
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_armor_models
+		icon = tanks
+		
+		x = -1
+		y = 2
+		relative_position_id = ITA_army_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_artillery_exercises
+		}
+		prerequisite = {
+			focus = ITA_reform_army_doctrine
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_reform_army_doctrine
+		icon = army_doctrine
+		
+		x = 0
+		y = 1
+		relative_position_id = ITA_army_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_army_reform
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_amphibious_commandos
+		icon = amphibious_assault
+		
+		x = 2
+		y = 1
+		relative_position_id = ITA_army_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_army_reform
+			focus = ITA_naval_reform
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_additional_special_forces
+		icon = special_forces
+		
+		x = 1
+		y = 2
+		relative_position_id = ITA_army_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_reform_army_doctrine
+		}
+		prerequisite = {
+			focus = ITA_amphibious_commandos
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_dominance_of_artillery
+		icon = artillery
+		
+		x = -2
+		y = 3
+		relative_position_id = ITA_army_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_artillery_exercises
+		}
+		mutually_exclusive = {
+			focus = ITA_dominance_of_tanks
+		}
+		mutually_exclusive = {
+			focus = ITA_dominance_of_strategy
+		}
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_dominance_of_tanks
+		icon = tanks3
+		
+		x = 0
+		y = 3
+		relative_position_id = ITA_army_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_armor_models
+		}
+		mutually_exclusive = {
+			focus = ITA_dominance_of_artillery
+		}
+		mutually_exclusive = {
+			focus = ITA_dominance_of_strategy
+		}
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_dominance_of_strategy
+		icon = infiltration
+		
+		x = 2
+		y = 3
+		relative_position_id = ITA_army_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_additional_special_forces
+		}
+		mutually_exclusive = {
+			focus = ITA_dominance_of_artillery
+		}
+		mutually_exclusive = {
+			focus = ITA_dominance_of_tanks
+		}
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	###Naval Reform
+	focus = {
+		id = ITA_naval_reform
+		icon = navy
+		
+		x = 0
+		y = 1
+		relative_position_id = ITA_begin_military_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_begin_military_reform
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_prepare_for_naval_war
+		icon = navy3
+		
+		x = 0
+		y = 1
+		relative_position_id = ITA_naval_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_naval_reform
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_develop_capital_ships
+		icon = battleships
+		
+		x = 0
+		y = 2
+		relative_position_id = ITA_naval_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_prepare_for_naval_war
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_develop_small_ships
+		icon = destroyers
+		
+		x = 0
+		y = 4
+		relative_position_id = ITA_naval_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_develop_capital_ships
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_submarines
+		icon = submarines
+		
+		x = 0
+		y = 5
+		relative_position_id = ITA_naval_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_develop_small_ships
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_carrier_models
+		icon = carriers
+		
+		x = 1
+		y = 3
+		relative_position_id = ITA_naval_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_develop_capital_ships
+		}
+		prerequisite = {
+			focus = ITA_fighter_models
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	###Air Reform
+	focus = {
+		id = ITA_air_reform
+		icon = air_force
+		
+		x = 4
+		y = 1
+		relative_position_id = ITA_begin_military_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_begin_military_reform
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_fighter_models
+		icon = fighters
+		
+		x = -2
+		y = 1
+		relative_position_id = ITA_air_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_air_reform
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_bomber_models
+		icon = bombers
+		
+		x = 0
+		y = 1
+		relative_position_id = ITA_air_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_air_reform
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_military_air_bases
+		icon = air_defense
+		
+		x = 2
+		y = 1
+		relative_position_id = ITA_air_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_air_reform
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_close_air_support_models
+		icon = bombs
+		
+		x = -1
+		y = 2
+		relative_position_id = ITA_air_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_fighter_models
+		}
+		prerequisite = {
+			focus = ITA_bomber_models
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	focus = {
+		id = ITA_strategic_bombers
+		icon = bombs2
+		
+		x = 1
+		y = 2
+		relative_position_id = ITA_air_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_bomber_models
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+		
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	##Diplomatic Realignment
+	focus = {
+		id = ITA_diplomatic_realignment
+		icon = improve_relations_green
+		
+		x = 26
+		y = 2
+		relative_position_id = ITA_prepare_for_case_e
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_reinstate_the_gran_consiglio
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 150
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+	
 }
