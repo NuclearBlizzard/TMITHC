@@ -85,6 +85,16 @@ bookmarks = {
 
 			}	
 		}
+		
+		"MEX"={
+		    minor = yes
+			history = "MEX_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+	
+		}
 
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"

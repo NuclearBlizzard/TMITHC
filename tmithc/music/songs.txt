@@ -68,6 +68,18 @@ music = {
 }
 
 music = {
+	song = "The End of the World"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			
+		}		
+	}	
+}
+
+music = {
 	song = "Edelweiss"
 	
 	chance = {

@@ -1,7 +1,7 @@
 ﻿capital = 495
 
 
-oob = "BRA_1936"
+oob = "BRA_1960"
 
 # Starting tech
 set_technology = {
@@ -49,7 +49,7 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Getúlio Vargas"
+	name = "Juscelino Kubitschek"
 	desc = "POLITICS_GETULIO_VARGAS_DESC"
 	picture = "Portrait_Brazil_Getulio_Vargas.dds"
 	expire = "1965.1.1"

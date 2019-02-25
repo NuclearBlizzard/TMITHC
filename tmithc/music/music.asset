@@ -2,7 +2,7 @@
 # MAIN THEME
 music = {
 	name = "maintheme"
-	file = "freeisacuck.ogg"
+	file = "free.ogg"
 	volume = 0.65
 }
 
@@ -23,13 +23,18 @@ music = {
 	volume = 0.65
 }
 music = {
+	name = "The End of the World"
+	file = "jap.ogg"
+	volume = 0.65
+}
+music = {
 	name = "general_peace_3"
 	file = "Viktor  Die Vokalisten-Berlin Boys and Stuttgart Girls.ogg"
 	volume = 0.65
 }
 music = {
 	name = "The Necklace"
-	file = "freeisacuck.ogg"
+	file = "free.ogg"
 	volume = 0.65
 }
 
