@@ -315,3 +315,190 @@ country_event = {
 		ai_chance = { base = 50 }
 	}
 }
+
+#Albania: Italy offers Support
+country_event = {
+	id = italy.13
+	title = italy.13.t
+	desc = italy.13.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.13.o1
+		44 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			add_building_construction = { type = anti_air_building level = 2 instant_build = yes }
+		}
+		105 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			add_building_construction = { type = anti_air_building level = 2 instant_build = yes }
+		}
+		add_autonomy_ratio = {
+			value = -0.3
+			localization = "Reinforcement of Albania"
+		}
+	}
+}
+
+#Italy demands Foreign Workers
+country_event = {
+	id = italy.14
+	title = italy.14.t
+	desc = italy.14.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {	#25000 Manpower
+		name = italy.14.o1
+		trigger = {
+			has_manpower > 25000
+		}
+		add_manpower = -25000
+		add_autonomy_ratio = {
+			value = 0.35
+			localization = "Excellent Service to the Overlord"
+		}
+		ITA = { country_event = { id = italy.15 hours = 5 } }
+		
+		ai_chance = {
+			base = 25
+			modifier = { ITA = { has_war = no } add = 10 }
+		}
+	}
+	option = {	#10000 Manpower
+		name = italy.14.o2
+		trigger = {
+			has_manpower > 10000
+		}
+		add_manpower = -10000
+		add_autonomy_ratio = {
+			value = 0.1
+			localization = "Commendable Service to the Overlord"
+		}
+		ITA = { country_event = { id = italy.16 hours = 10 } }
+		
+		ai_chance = {
+			base = 25
+			modifier = { original_tag = ALB add = 30 }
+			modifier = { has_autonomy_state = autonomy_integrated_puppet add = 10 }
+			modifier = { ITA = { has_war = no } add = 10 }
+		}
+	}
+	option = {	#5000 Manpower
+		name = italy.14.o3
+		add_manpower = -5000
+		ITA = { country_event = { id = italy.17 hours = 15 } }
+		
+		ai_chance = {
+			base = 50
+			modifier = { original_tag = SER add = 10 }
+			modifier = { original_tag = GRE add = 30 }
+			modifier = { has_autonomy_state = autonomy_dominion add = 25 }
+			modifier = { has_autonomy_state = autonomy_colony add = 10 }
+		}
+	}
+	option = {	#Defy the Italians
+		name = italy.14.o4
+		ITA = { country_event = { id = italy.18 hours = 20 } }
+		
+		ai_chance = {
+			base = 25
+			modifier = { original_tag = CRO add = 10 }
+			modifier = { ITA = { has_war = yes } add = 15 }
+		}
+	}
+}
+
+#[Puppet] sends 25000
+country_event = {
+	id = italy.15
+	title = italy.15.t
+	desc = italy.15.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.15.o1
+		add_manpower = 25000
+	}
+}
+
+#[Puppet] sends 10000
+country_event = {
+	id = italy.16
+	title = italy.16.t
+	desc = italy.16.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.16.o1
+		add_manpower = 10000
+	}
+}
+
+#[Puppet] sends 5000
+country_event = {
+	id = italy.17
+	title = italy.17.t
+	desc = italy.17.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.17.o1
+		add_manpower = 5000
+	}
+}
+
+#[Puppet] sends nothing!
+country_event = {
+	id = italy.18
+	title = italy.18.t
+	desc = italy.18.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {	#This must be punished!
+		name = italy.18.o1
+		add_political_power = -25
+		FROM = { add_autonomy_ratio = { value = -0.15 localization = "Punished for Insubordination" } }
+	}
+	
+	option = {	#We shall let it slide.
+		name = italy.18.o2
+		add_stability = -0.02
+		add_war_support = -0.01
+	}
+}
+
+#The Dalmatian Question
+country_event = {
+	id = italy.19
+	title = italy.19.t
+	desc = italy.19.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {	#Seize Dalmatia
+		name = italy.19.o1
+		CRO = { add_autonomy_ratio = { value = 0.8 localization = "Territorial Encroachment by Overlord" } }
+	}
+	
+	option = {	#Allow Dalmatia to be Croatian
+		name = italy.19.o2
+		CRO = { add_autonomy_ratio = { value = -0.25 localization = "Italian cession of Dalmatia" } }
+	}
+}

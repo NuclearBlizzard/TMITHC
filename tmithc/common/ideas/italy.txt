@@ -180,9 +180,11 @@ ideas = {
 				}
 			}
 			modifier = {
-				army_attack_factor = -0.3
+				army_attack_factor = -0.45
 				army_defence_factor = -0.3
 				production_speed_arms_factory_factor = -0.15
+				max_command_power = -30
+				command_power_gain = -0.3
 			}
 		}
 		ITA_military_purges_2 = {
@@ -194,9 +196,11 @@ ideas = {
 				}
 			}
 			modifier = {
-				army_attack_factor = -0.2
+				army_attack_factor = -0.3
 				army_defence_factor = -0.2
 				production_speed_arms_factory_factor = -0.1
+				max_command_power = -20
+				command_power_gain = -0.2
 			}
 		}
 		ITA_military_purges_1 = {
@@ -208,9 +212,11 @@ ideas = {
 				}
 			}
 			modifier = {
-				army_attack_factor = -0.1
+				army_attack_factor = -0.15
 				army_defence_factor = -0.1
 				production_speed_arms_factory_factor = -0.05
+				max_command_power = -10
+				command_power_gain = -0.1
 			}
 		}
 	}

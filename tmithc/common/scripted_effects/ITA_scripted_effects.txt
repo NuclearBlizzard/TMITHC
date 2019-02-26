@@ -42,49 +42,71 @@ german_influence_in_italy_end_mechanic = {
 }
 german_influence_in_italy_update = {
 	ITA = {
-		if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 85 compare = greater_than_or_equals } } } 
-			german_influence_in_italy_set_level_to_95 = yes
-			else = {
-				if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 85 compare = greater_than_or_equals } } }
-					german_influence_in_italy_set_level_to_85 = yes
-					else = {
-						if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 75 compare = greater_than_or_equals } } }
-							german_influence_in_italy_set_level_to_75 = yes
-							else = {
-								if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 65 compare = greater_than_or_equals } } }
-									german_influence_in_italy_set_level_to_65 = yes
-									else = {
-										if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 55 compare = greater_than_or_equals } } }
-											german_influence_in_italy_set_level_to_55 = yes
-											else = {
-												if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 45 compare = greater_than_or_equals } } }
-													german_influence_in_italy_set_level_to_45 = yes
-													else = {
-														if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 35 compare = greater_than_or_equals } } }
-															german_influence_in_italy_set_level_to_35 = yes
-															else = {
-																if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 25 compare = greater_than_or_equals } } }
-																	german_influence_in_italy_set_level_to_25 = yes
-																	else = {
-																		if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 15 compare = greater_than_or_equals } } }
-																			german_influence_in_italy_set_level_to_15 = yes
-																			else = { german_influence_in_italy_set_level_to_5 = yes }
-																		}
-																	}
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
+		if = { 
+			limit = { check_variable = { var_german_influence_in_italy < 11 } }
+			german_influence_in_italy_set_level_to_5 = yes
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 10 } 
+				check_variable = { var_german_influence_in_italy < 21 } 
 			}
+			german_influence_in_italy_set_level_to_15 = yes
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 20 } 
+				check_variable = { var_german_influence_in_italy < 31 } 
+			}
+			german_influence_in_italy_set_level_to_25 = yes
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 30 } 
+				check_variable = { var_german_influence_in_italy < 41 } 
+			}
+			german_influence_in_italy_set_level_to_35 = yes
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 40 } 
+				check_variable = { var_german_influence_in_italy < 51 } 
+			}
+			german_influence_in_italy_set_level_to_45 = yes
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 50 } 
+				check_variable = { var_german_influence_in_italy < 61 } 
+			}
+			german_influence_in_italy_set_level_to_55 = yes
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 60 } 
+				check_variable = { var_german_influence_in_italy < 71 } 
+			}
+			german_influence_in_italy_set_level_to_65 = yes
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 70 } 
+				check_variable = { var_german_influence_in_italy < 81 } 
+			}
+			german_influence_in_italy_set_level_to_75 = yes
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 80 } 
+				check_variable = { var_german_influence_in_italy < 91 } 
+			}
+			german_influence_in_italy_set_level_to_85 = yes
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 90 } 
+			}
+			german_influence_in_italy_set_level_to_95 = yes
 		}
 	}
 }
