@@ -1,5 +1,5 @@
 ﻿l_english:
- maintheme:0 "Edelweiss"
+ maintheme:0 "The Necklace"
  axis_war_1:0 "Axis Theme"
  allies_peace_1:0 "Yuki No Shingun"
  general_war_1:0 "Roei no Uta"
@@ -22,3 +22,4 @@
  comintern_peace_3:0 "Russian Victory"
  general_peace_2:0 "House of the Rising Sun"
  # NEW MUSIC NAMES HERE BELOW
+ rom_viata_complicata:0 "Viata Complicata"

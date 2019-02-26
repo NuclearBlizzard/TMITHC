@@ -16,4 +16,522 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1100 }
 
+		focus = {
+		id = ROM_death_of_leader
+		icon = antonescu
+		mutually_exclusive = {  }
+		x = 10
+		y = 0
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = -300
+		}
+	}
+
+		focus = {
+		id = ROM_Militarist_Coup
+		icon = romanian_officers
+		mutually_exclusive = { focus = ROM_Tudor_Takeover }
+		prerequisite = { focus = ROM_death_of_leader }
+		x = 7
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = neutrality popularity = 0.2 }
+		}
+	}
+
+		focus = {
+		id = ROM_sympathetic_whispers
+		icon = forceful_treaty
+		prerequisite = { focus = ROM_Militarist_Coup }
+		x = 7
+		y = 2
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = ROM_sanatescu_government
+		icon = constantin_sanatescu
+		mutually_exclusive = { focus = ROM_Racovita_Coup }
+		prerequisite = { focus = ROM_sympathetic_whispers }
+		x = 6
+		y = 3
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = ROM_democratic_backings
+		icon = self_management
+		prerequisite = { focus = ROM_sanatescu_government }
+		x = 6
+		y = 4
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = ROM_Racovita_Coup
+		icon = mihal_racovitza
+		mutually_exclusive = { focus = ROM_sanatescu_government }
+		prerequisite = { focus = ROM_sympathetic_whispers }
+		x = 8
+		y = 3
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = ROM_deal_with_opposition
+		icon = colonial_crackdown
+		prerequisite = { focus = ROM_Racovita_Coup }
+		x = 8
+		y = 4
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = ROM_strikers_at_Grivita
+		icon = war3
+		prerequisite = { focus = ROM_Militarist_Coup focus = ROM_Tudor_Takeover }
+		x = 10
+		y = 2
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = ROM_send_military
+		icon = dangerous_deal
+		prerequisite = { focus = ROM_strikers_at_Grivita }
+		x = 10
+		y = 3
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = ROM_riots_in_Iasi
+		icon = city_revolts
+		prerequisite = { focus = ROM_send_military }
+		x = 10
+		y = 4
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = ROM_Tudor_Takeover
+		icon = corneliu_tudor
+		mutually_exclusive = { focus = ROM_Militarist_Coup }
+		prerequisite = { focus = ROM_death_of_leader }
+		x = 13
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = -0.2 }
+			set_party_name = { ideology = fascism long_name = "Partidul România Mare" name = "PRM" }
+		}
+	}
+
+		focus = {
+		id = ROM_unpopular_leader
+		icon = dangerous_deal2
+		prerequisite = { focus = ROM_Tudor_Takeover }
+		x = 13
+		y = 2
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_country_leader_trait = ideological_crusader
+			add_country_leader_trait = backroom_backstabber
+		}
+	}
+
+		focus = {
+		id = ROM_rally_in_Bucharest
+		icon = diplomacy
+		prerequisite = { focus = ROM_unpopular_leader }
+		x = 12
+		y = 3
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.05 }
+		}
+	}
+
+		focus = {
+		id = ROM_rally_in_timisoara
+		icon = propaganda
+		prerequisite = { focus = ROM_unpopular_leader }
+		x = 14
+		y = 3
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.05 }
+		}
+	}
+
+		focus = {
+		id = ROM_local_holdings
+		icon = improve_relations_green
+		prerequisite = { focus = ROM_rally_in_Bucharest }
+		prerequisite = { focus = ROM_rally_in_timisoara }
+		x = 13
+		y = 4
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.1 }
+		}
+	}
+
+
 }	

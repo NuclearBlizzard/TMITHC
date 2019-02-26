@@ -20,22 +20,9 @@ bookmarks = {
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
-			available = { has_dlc = "Waking the Tiger" }
 			ideas = {
-			GER_african_question
-			GER_ss
-			}
-			focuses = {
-
-			}
-		}
-		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
-			available = { NOT = { has_dlc = "Waking the Tiger" } }
-			ideas = {
-			GER_african_question
-			GER_ss
+				GER_african_question
+				GER_ss
 			}
 			focuses = {
 
@@ -78,6 +65,31 @@ bookmarks = {
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
+			ideas = {
+
+			}
+	
+		}
+
+		"ROM"={
+			minor = yes
+			history = "ROM_60's_DESC"
+			ideology = fascism
+			ideas = {
+				ROM_revenge_against_Hungary
+				ROM_Democratic_Underground
+				ROM_Unstable_Economy
+				ROM_Ukranian_Nationalists
+			}
+			focuses = {
+
+			}	
+		}
+		
+		"MEX"={
+		    minor = yes
+			history = "MEX_GATHERING_STORM_DESC"
+			ideology = neutrality
 			ideas = {
 
 			}

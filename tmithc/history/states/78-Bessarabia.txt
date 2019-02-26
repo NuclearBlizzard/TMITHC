@@ -1,20 +1,20 @@
 state={
 	id=78
 	name="STATE_78"
-	manpower = 2863400
+	manpower = 2499001
 	
 	state_category = large_town
 	
 	history={
 		owner = ROM
+		victory_points = { 11686 10 }
+		victory_points = { 6600 1 }
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 2
+			infrastructure = 5
+			industrial_complex = 3
 			air_base = 4
-			dockyard = 1
-			6727 = { naval_base = 3 }
 		}
 		add_core_of = ROM
 	}
-	provinces={ 414 565 3407 3577 3701 3704 3707 3724 6600 6727 6743 9683 11686 11705 }
+	provinces={ 414 565 3577 3704 3707 3724 6600 6743 11686 11705 }
 }

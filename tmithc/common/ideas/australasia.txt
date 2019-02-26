@@ -1,0 +1,41 @@
+ideas = {
+
+		country = {
+				COA_treaty_of_canberra = {
+
+						allowed = {
+								always = yes
+						}
+
+						allowed_civil_war = {
+								always = yes
+						}
+
+						removal_cost = -1
+
+						modifier = {
+								political_power_gain = -0.5
+								stability_factor = -0.1
+								consumer_goods_factor = 0.1
+								justify_war_goal_time = 0.25
+						}
+				}
+
+				COA_new_zealander_seperatism = {
+
+						allowed = {
+								always = yes
+						}
+
+						allowed_civil war = {
+								always + yes
+						}
+
+						removal_cost = -1
+
+						modifier = {
+								stability_factor = -0.05
+								political_power_gain = -0.1
+								consumer_goods_factor = 0.05
+						}
+				}

@@ -11,11 +11,15 @@ add_ideas = {
 
 }
 
+JAP = { give_guarantee = PAN }
+
+give_military_access = PAN
+
 
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_recon = 1
 	tech_engineers = 1
 	motorised_infantry = 1
@@ -166,7 +170,7 @@ if = {
 }
 
 
-create_faction = cpps
+create_faction = "Greater East Asia Co-Prosperity Sphere"
 add_to_faction = JIC
 add_to_faction = SIA
 add_to_faction = JBM
@@ -179,25 +183,26 @@ add_to_faction = JSR
 add_to_faction = JPS
 add_to_faction = BHU
 add_to_faction = NEP
+add_to_faction = COA
 
 
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 0
 		}
 
 		fascism = {
 			popularity = 100
 		}
-		
+
 		communism = {
 			popularity = 0
 			#banned = no #default is no
 		}
 	}
-	
+
 	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -217,4 +222,3 @@ create_country_leader = {
 	}
 	id = 700 #Hirohito
 }
-

@@ -5,10 +5,13 @@ oob = "ITA_1936"
 set_research_slots = 4
 set_stability = 0.6
 set_war_support = 0.7
+
+set_variable = { var_german_influence_in_italy = 50 }
+german_influence_in_italy_update = yes
+
 add_ideas = {
-
+	
 }
-
 
 # Starting tech
 set_technology = {
@@ -68,41 +71,24 @@ if = {
 	limit = {
 		has_dlc = "Together for Victory"
 	}
-	set_autonomy = {
-		target = ITE
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
-		target = IAS
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
-		target = GRE
-		autonomous_state = autonomy_integrated_puppet
-	}
+	set_autonomy = { target = ITE autonomous_state = autonomy_integrated_puppet }
+	set_autonomy = { target = IAS autonomous_state = autonomy_integrated_puppet }
+	set_autonomy = { target = GRE autonomous_state = autonomy_integrated_puppet }
+	set_autonomy = { target = ALB autonomous_state = autonomy_integrated_puppet }
 	else = {
-		set_autonomy = {
-			target = ITE
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
-			target = IAS
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
-			target = GRE
-			autonomous_state = autonomy_puppet
-		}
+		set_autonomy = { target = ITE autonomous_state = autonomy_puppet }
+		set_autonomy = { target = IAS autonomous_state = autonomy_puppet }
+		set_autonomy = { target = GRE autonomous_state = autonomy_puppet }
+		set_autonomy = { target = ALB autonomous_state = autonomy_puppet }
 	}
 }
-
 
 puppet = CRO
 puppet = MNT
 puppet = SER
 puppet = IRQ
 puppet = SAU
-
+puppet = ISR
 
 create_faction = med_pact
 add_to_faction = BUL
@@ -113,45 +99,69 @@ add_to_faction = GRE
 
 create_country_leader = {
 	name = "Benito Mussolini"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "portrait_ita_benito_mussolini1.tga"
-	expire = "1965.1.1"
+	desc = "Benito_Mussolini_DESC"
+	picture = "Benito_Mussolini.dds"
 	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = ""
-	desc = "POLITICS__DESC"
-	picture = ""
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = ""
-	desc = "POLITICS__DESC"
-	picture = ""
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		
-	}
 }
 
 create_field_marshal = {
-	name = "Italo Balbo"
-	picture = "IAS_italo.tga"
-	traits = { career_officer politically_connected }
+	name = "Giovanni Messe"
+	picture = "generals/Giovanni_Messe.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Antonio Segni"
+	picture = "generals/Antonio_Segni.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Giulio Andreotti"
+	picture = "generals/Giulio_Andreotti.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Paolo E. Taviani"
+	picture = "generals/Paolo_Emilio_Taviani.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Randolfo Pacciardi"
+	picture = "generals/Randolfo_Pacciardi.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Roberto Tremelloni"
+	picture = "generals/Roberto_Tremelloni.dds"
+	traits = {  }
 	skill = 1
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
 }
-

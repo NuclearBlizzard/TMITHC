@@ -2,21 +2,22 @@
 state={
 	id=184
 	name="STATE_184"
-	manpower = 382500
+	manpower = 682500
 	
 	state_category = rural
 	
 	resources={
-		chromium=11 # was: 16
+		chromium=33
 	}
 
 	history={
 		owner = BUL
+		victory_points = { 9930 1 }
 		buildings = {
-			infrastructure = 4
+			infrastructure = 5
 		}
+		add_core_of = GRE
 		add_core_of = BUL
-		add_claim_by = BUL
 	}
 
 	provinces={

@@ -3,6 +3,21 @@ spriteTypes = {
 
 
 	SpriteType = {
-	name = "GFX_goal_continuous_air_production"
-	texturefile = "gfx/interface/goals/GER_Policy.tga"			
-	}	
+	name = "GFX_goal_Urban_Revolt"
+	texturefile = "gfx/interface/goals/City_Revolts.tga"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_Mihal_Racovitza"
+	texturefile = "gfx/interface/goals/Mihal_Racovitza_Coup.tga"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_Leonard_Mociulschi"
+	texturefile = "gfx/interface/goals/Leonard_Mociulschi.tga"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_Constantin_Sanatescu"
+	texturefile = "gfx/interface/goals/Constantin_Sanatescu.tga"			
+	}

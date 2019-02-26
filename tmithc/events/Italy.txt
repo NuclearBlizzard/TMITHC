@@ -1,1 +1,210 @@
 ﻿add_namespace = italy
+
+#Mussolini's Death
+country_event = {
+	id = italy.1
+	title = italy.1.t
+	desc = italy.1.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			create_country_leader = {
+				name = "Gran Consiglio del Fascismo"
+				desc = "Gran_Consiglio_DESC"
+				picture = "Gran_Consiglio.dds"
+				ideology = fascism_ideology
+			}
+			GER = {
+				country_event = { id = italy.4 days = 4 }
+			}
+			SPR = {
+				country_event = { id = italy.6 days = 7 }
+			}
+			country_event = { id = italy.2 days = 30 }
+		}
+	}
+	
+	option = {
+		name = italy.1.o1
+		set_country_flag = ITA_death_of_the_duce
+		hidden_effect = {
+			news_event = { id = italy_news.1 days = 1 }
+		}
+		german_influence_in_italy_increase_by_2 = yes
+	}
+}
+
+#The Question of Succession
+country_event = {
+	id = italy.2
+	title = italy.2.t
+	desc = italy.2.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {	#De Vecchi
+		name = italy.2.o1
+		add_war_support = 0.05
+		create_country_leader = {
+			name = "Cesare Maria De Vecchi"
+			desc = "Cesare_Maria_De_Vecchi_DESC"
+			picture = "Cesare_Maria_De_Vecchi.dds"
+			ideology = fascism_ideology
+		}
+		hidden_effect = {
+			complete_national_focus = ITA_choose_a_successor
+			complete_national_focus = ITA_the_heir_apparent_cesare_maria_de_vecchi
+		}
+		set_country_flag = ITA_selected_de_vecchi
+		add_popularity = { ideology = fascism popularity = 0.05 }
+		hidden_effect = {
+			news_event = { id = italy_news.2 days = 1 }
+		}
+		german_influence_in_italy_increase_by_5 = yes
+		ai_chance = {
+			base = 70
+		}
+	}
+	option = {	#Fanfani
+		name = italy.2.o2
+		add_stability = 0.05
+		create_country_leader = {
+			name = "Amintore Fanfani"
+			desc = "Amintore_Fanfani_DESC"
+			picture = "Amintore_Fanfani.dds"
+			ideology = fascism_ideology
+		}
+		hidden_effect = {
+			complete_national_focus = ITA_choose_a_successor
+			complete_national_focus = ITA_the_corporatist_amintore_fanfani
+		}
+		set_country_flag = ITA_selected_fanfani
+		add_popularity = { ideology = democratic popularity = 0.05 }
+		hidden_effect = {
+			news_event = { id = italy_news.3 days = 1 }
+		}
+		german_influence_in_italy_decrease_by_1 = yes
+		ai_chance = {
+			base = 20
+		}
+	}
+	option = {	#Nenni
+		name = italy.2.o3
+		add_stability = -0.1
+		add_war_support = -0.1
+		create_country_leader = {
+			name = "Pietro Nenni"
+			desc = "Pietro_Nenni_DESC"
+			picture = "Pietro_Nenni.dds"
+			ideology = fascism_ideology
+		}
+		hidden_effect = {
+			complete_national_focus = ITA_choose_a_successor
+			complete_national_focus = ITA_the_former_traitor_pietro_nenni
+		}
+		set_country_flag = ITA_selected_nenni
+		add_popularity = { ideology = communism popularity = 0.05 }
+		hidden_effect = {
+			news_event = { id = italy_news.4 days = 1 }
+		}
+		german_influence_in_italy_decrease_by_10 = yes
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+#Reinstatement of the Quadrumvirs
+country_event = {
+	id = italy.3
+	title = italy.3.t
+	desc = italy.3.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {	#It has to be done.
+		name = italy.3.o1
+		add_political_power = -50
+	}
+	option = {	#Withhold political assurances.
+		name = italy.3.o2
+		add_stability = -0.05
+	}
+}
+
+#Germany: The Question of Italian Succession
+country_event = {
+	id = italy.4
+	title = italy.4.t
+	desc = italy.4.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {	#Urge the Italians to select De Vecchi.
+		name = italy.4.o1
+		add_political_power = -50
+		ITA = { country_event = { id = italy.5 days = 7 } }
+		set_country_flag = GER_endorsed_de_vecchi
+		ai_chance = { base = 25 }
+	}
+	option = {	#This is not our fight.
+		name = italy.4.o2
+		ai_chance = { base = 75 }
+	}
+}
+
+#Germany endorses De Vecchi
+country_event = {
+	id = italy.5
+	title = italy.5.t
+	desc = italy.5.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {	#They shouldn't get involved in our affairs.
+		name = italy.5.o1
+	}
+}
+
+#Spain: The Question of Italian Succession
+country_event = {
+	id = italy.6
+	title = italy.6.t
+	desc = italy.6.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {	#Italy must choose Fanfani!
+		name = italy.6.o1
+		add_political_power = -50
+		ITA = { country_event = { id = italy.7 days = 7 } }
+		set_country_flag = SPR_endorsed_fanfani
+		ai_chance = { base = 40 }
+	}
+	option = {	#This is not our fight.
+		name = italy.6.o2
+		ai_chance = { base = 60 }
+	}
+}
+
+#Spain doubts Mussolini's testament
+country_event = {
+	id = italy.7
+	title = italy.7.t
+	desc = italy.7.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {	#They shouldn't get involved in our affairs.
+		name = italy.7.o1
+	}
+}

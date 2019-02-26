@@ -1,0 +1,325 @@
+﻿add_namespace = italy_news
+
+#Mussolini's Death
+news_event = {
+	id = italy_news.1
+	title = italy_news.1.t
+	desc = italy_news.1.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = italy_news.1.ITA.o
+		trigger = {
+			original_tag = ITA
+		}
+	}
+	option = {
+		name = italy_news.1.ITA_puppet.o
+		trigger = {
+			NOT = { original_tag = ITA }
+			is_subject_of = ITA
+		}
+	}
+	option = {
+		name = italy_news.1.GER.o
+		trigger = { original_tag = GER }
+	}
+	option = {
+		name = italy_news.1.generic.fascism.o
+		trigger = { 
+			NOT = { original_tag = GER }
+			NOT = { original_tag = ITA }
+			NOT = { is_subject_of = ITA }
+			has_government = fascism
+		}
+	}
+	option = {
+		name = italy_news.1.generic.nonfascism.o
+		trigger = { 
+			NOT = { original_tag = GER }
+			NOT = { original_tag = ITA }
+			NOT = { is_subject_of = ITA }
+			NOT = { has_government = fascism }
+		}
+	}
+}
+
+#Successor: De Vecchi
+news_event = {
+	id = italy_news.2
+	title = italy_news.2.t
+	desc = italy_news.2.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = italy_news.2.ITA.o
+		trigger = {
+			original_tag = ITA
+		}
+	}
+	option = {
+		name = italy_news.2.ITA_puppet.o1
+		trigger = {
+			NOT = { original_tag = ITA }
+			is_subject_of = ITA
+		}
+		add_political_power = -5
+		add_popularity = { ideology = fascism popularity = 0.01 }
+	}
+	option = {
+		name = italy_news.2.ITA_puppet.o2
+		trigger = {
+			NOT = { original_tag = ITA }
+			is_subject_of = ITA
+		}
+	}
+	option = {
+		name = italy_news.2.GER.o
+		trigger = { original_tag = GER }
+	}
+	option = {
+		name = italy_news.2.SPR.o
+		trigger = { original_tag = SPR }
+	}
+	option = {
+		name = italy_news.2.generic.fascism.o
+		trigger = { 
+			NOT = { original_tag = GER }
+			NOT = { original_tag = SPR }
+			NOT = { original_tag = ITA }
+			NOT = { is_subject_of = ITA }
+			has_government = fascism
+		}
+	}
+	option = {
+		name = italy_news.2.generic.nonfascism.o
+		trigger = { 
+			NOT = { original_tag = GER }
+			NOT = { original_tag = SPR }
+			NOT = { original_tag = ITA }
+			NOT = { is_subject_of = ITA }
+			NOT = { has_government = fascism }
+		}
+	}
+}
+
+#Successor: Fanfani
+news_event = {
+	id = italy_news.3
+	title = italy_news.3.t
+	desc = italy_news.3.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = italy_news.3.ITA.o
+		trigger = {
+			original_tag = ITA
+		}
+	}
+	option = {
+		name = italy_news.3.ITA_puppet.o1
+		trigger = {
+			NOT = { original_tag = ITA }
+			is_subject_of = ITA
+		}
+		add_political_power = -5
+		add_popularity = { ideology = fascism popularity = 0.01 }
+	}
+	option = {
+		name = italy_news.3.ITA_puppet.o2
+		trigger = {
+			NOT = { original_tag = ITA }
+			is_subject_of = ITA
+		}
+	}
+	option = {
+		name = italy_news.3.GER.o
+		trigger = { original_tag = GER }
+	}
+	option = {
+		name = italy_news.3.SPR.o
+		trigger = { original_tag = SPR }
+	}
+	option = {
+		name = italy_news.3.generic.fascism.o
+		trigger = { 
+			NOT = { original_tag = GER }
+			NOT = { original_tag = SPR }
+			NOT = { original_tag = ITA }
+			NOT = { is_subject_of = ITA }
+			has_government = fascism
+		}
+	}
+	option = {
+		name = italy_news.3.generic.nonfascism.o
+		trigger = { 
+			NOT = { original_tag = GER }
+			NOT = { original_tag = SPR }
+			NOT = { original_tag = ITA }
+			NOT = { is_subject_of = ITA }
+			NOT = { has_government = fascism }
+		}
+	}
+}
+
+#Successor: Nenni
+news_event = {
+	id = italy_news.4
+	title = italy_news.4.t
+	desc = italy_news.4.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = italy_news.4.ITA.o
+		trigger = {
+			original_tag = ITA
+		}
+	}
+	option = {
+		name = italy_news.4.ITA_puppet.o1
+		trigger = {
+			NOT = { original_tag = ITA }
+			is_subject_of = ITA
+		}
+		add_political_power = -5
+		add_popularity = { ideology = fascism popularity = -0.03 }
+	}
+	option = {
+		name = italy_news.4.ITA_puppet.o2
+		trigger = {
+			NOT = { original_tag = ITA }
+			is_subject_of = ITA
+		}
+	}
+	option = {
+		name = italy_news.4.GER.o
+		trigger = { original_tag = GER }
+	}
+	option = {
+		name = italy_news.4.SPR.o
+		trigger = { original_tag = SPR }
+	}
+	option = {
+		name = italy_news.4.generic.fascism.o
+		trigger = { 
+			NOT = { original_tag = GER }
+			NOT = { original_tag = SPR }
+			NOT = { original_tag = ITA }
+			NOT = { is_subject_of = ITA }
+			has_government = fascism
+		}
+	}
+	option = {
+		name = italy_news.4.generic.nonfascism.o
+		trigger = { 
+			NOT = { original_tag = GER }
+			NOT = { original_tag = SPR }
+			NOT = { original_tag = ITA }
+			NOT = { is_subject_of = ITA }
+			NOT = { has_government = fascism }
+		}
+	}
+}
+
+#Italy throws off the Nazi yoke
+news_event = {
+	id = italy_news.5
+	title = italy_news.5.t
+	desc = italy_news.5.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = italy_news.5.ITA.o
+		trigger = {
+			original_tag = ITA
+		}
+	}
+	option = {
+		name = italy_news.5.GER.o
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = italy_news.5.ITA_puppet.o
+		trigger = {
+			is_subject_of = ITA
+		}
+	}
+	option = {
+		name = italy_news.5.GER_puppet.o
+		trigger = {
+			is_subject_of = GER
+		}
+	}
+	option = {
+		name = italy_news.5.generic.o
+		trigger = {
+			NOT = { original_tag = ITA }
+			NOT = { original_tag = GER }
+			NOT = { is_subject_of = ITA }
+			NOT = { is_subject_of = GER }
+		}
+	}
+}
+
+#Italy becomes German puppet
+news_event = {
+	id = italy_news.6
+	title = italy_news.6.t
+	desc = italy_news.6.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = italy_news.6.ITA.o
+		trigger = {
+			original_tag = ITA
+		}
+	}
+	option = {
+		name = italy_news.6.GER.o
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = italy_news.6.ITA_puppet.o
+		trigger = {
+			is_subject_of = ITA
+		}
+	}
+	option = {
+		name = italy_news.6.GER_puppet.o
+		trigger = {
+			NOT = { original_tag = ITA }
+			is_subject_of = GER
+		}
+	}
+	option = {
+		name = italy_news.6.generic.o
+		trigger = {
+			NOT = { original_tag = ITA }
+			NOT = { original_tag = GER }
+			NOT = { is_subject_of = ITA }
+			NOT = { is_subject_of = GER }
+		}
+	}
+}

@@ -45,8 +45,8 @@ TUR = {
 	color_ui = rgb { 222 247 198 }
 }
 ALB = {
-	color = rgb { 149 45 102 }
-	color_ui = rgb { 194 59 133 }
+	color = rgb { 92 138 78 }
+	color_ui = rgb { 97 165 82 }
 }
 NOR = {
 	color = rgb { 111 71 71 }
@@ -285,7 +285,7 @@ ICE = {
 
 UKR = {
 	color = rgb { 0  80  230 }
-	color_ui = rgb { 0  80  230 }	
+	color_ui = rgb { 0  80  230 }
 }
 
 AZR = {
@@ -373,11 +373,11 @@ DDR = {
 }
 KOR = {
 	color = rgb { 255  240  195 }
-	color_ui = rgb { 255 248 229 }	
+	color_ui = rgb { 255 248 229 }
 }
 ISR = {
-	color = rgb { 152  130  191 }
-	color_ui = rgb { 152  130  191 }
+	color = rgb { 72 138 78 }
+	color_ui = rgb { 77 165 82 }
 }
 D01 = {
 	color = rgb { 200 100 31 }
@@ -622,7 +622,7 @@ RKO = {
 	color = rgb { 132 137 102 }
 	color_ui = rgb { 255 255 155 }
 }
-JAA = {
-	color = rgb { 57 143 97 }
+COA = {
+	color = rgb { 0 51 102 }
 	color_ui = rgb { 74 186 126 }
 }

@@ -1,0 +1,519 @@
+﻿division_template = {
+	name = "Divizia de Infanterie"			# Infantry Division
+
+	division_names_group = ROM_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
+		engineer = { x = 0 y = 1 }   
+	}
+}
+division_template = {
+	name = "Brigada de Munte"				# Mountain Brigade
+
+	division_names_group = ROM_MTN_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Brigada de Cavalerie" 				# Cavalry Brigade
+
+	division_names_group = ROM_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Grupul Blindate" 				# Armor Regiment
+	division_names_group = ROM_ARM_01
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		medium_tank_destroyer_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+
+units = {
+	######## LAND UNITS ########
+	##### Fortele Terestre Române #####
+	# Corp 1 Armata
+	division = {
+		#name = "Divizia 2 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11689
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		#name = "Divizia 3 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11672
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.3
+
+	}
+	division = {
+		#name = "Divizia 11 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 577
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+
+	}
+
+	# Corp 2 Armata
+	division = {
+		#name = "Divizia 1 Infanterie de Garda"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 52
+		}
+		location = 9617
+		division_template = "Divizia de Infanterie"			# Guards division: elite, latest equipment
+		start_experience_factor = 0.3
+	}
+	division = {
+		#name = "Divizia 9 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 11655
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		#name = "Divizia 10 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 9617
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		#name = "Brigada 1 Cavalerie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3575
+		division_template = "Brigada de Cavalerie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Grupul 1 Blindat “Mihai Viteazul”"
+		location = 9617
+		division_template = "Grupul Blindate"
+		start_experience_factor = 0.4
+		#force_equipment_variants = { advanced_medium_tank = { owner = "ROM" creator = "GER" amount = 50 } }
+		#force_equipment_variants = { improved_medium_tank = { owner = "ROM" creator = "GER" amount = 100 } }
+		#force_equipment_variants = { basic_medium_tank = { owner = "ROM" creator = "GER" amount = 150 } }
+
+	}
+
+
+	# Corp 3 Armata
+	division = {
+		#name = "Divizia 12 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 9635
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		#name = "Divizia 15 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 6706
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division = {
+		#name = "Divizia 21 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 9606
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+
+	# Corp 4 Armata
+	division = {
+		#name = "Divizia 7 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 7
+		}		
+		location = 11670
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		#name = "Divizia 8 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 8
+		}		
+		location = 11670
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		#name = "Divizia 14 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 14
+		}		
+		location = 476
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+
+	}
+	division = {
+		#name = "Brigada 6 Cavalerie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 6
+		}		
+		location = 754
+		division_template = "Brigada de Cavalerie"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6
+
+	}
+
+	# Corp 5 Armata
+	division = {
+		#name = "Divizia 5 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3694
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division = {
+		#name = "Divizia 6 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 6
+		}		
+		location = 3694
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}
+	division = {
+		#name = "Divizia 13 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 6697
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	# Corp 6 Armata
+	division = {
+		#name = "Divizia 16 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 6682
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		#name = "Divizia 17 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 6697
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		#name = "Divizia 18 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 696
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.4
+
+	}
+	division = {
+		#name = "Brigada 8 Cavalerie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 6455
+		division_template = "Brigada de Cavalerie"
+		start_experience_factor = 0.3
+
+	}
+
+	# Corp 7 Armata
+	division = {
+		#name = "Divizia 1 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 646
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		#name = "Divizia 4 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 696
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+
+	}
+	division = {
+		#name = "Divizia 19 Infanterie"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 690
+		division_template = "Divizia de Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+
+	}
+
+	# Corp Alpinisti
+	division = {
+		name = "Brigada 6 Operaţii Speciale"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 693
+		division_template = "Brigada de Munte"
+		start_experience_factor = 0.4
+
+	}
+	division = {
+		name = "Batalionul 1 Vânători de Munte"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3676
+		division_template = "Brigada de Munte"
+		start_experience_factor = 0.4
+
+	}
+	division = {
+		name = "Batalionul 2 Vânători de Munte"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 690
+		division_template = "Brigada de Munte"
+		start_experience_factor = 0.4
+
+	}
+	division = {
+		name = "Batalionul 3 Vânători de Munte „Sarmizegetusa”"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6679
+		division_template = "Brigada de Munte"
+		start_experience_factor = 0.5
+
+	}
+
+
+	##### NAVAL UNITS #####
+	navy = {				
+		name = "Flota Romania de Mare"			
+		base = 9635 
+		location = 9635 # Constanta
+		ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+		ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+		ship = { name = "NMS Regele Ferdinand" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM version_name = "Regele Ferdinand Class" } } }
+		ship = { name = "NMS Regina Maria" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM version_name = "Regele Ferdinand Class" } } }
+	}				
+}
+
+
+### Fortele Aeriene Regale ale României (FFAR) ###
+air_wings = {
+	46 = {
+		# Grup 1 Avion de Vanatoare -- PZL P.11 fighters
+		fighter_equipment_0 = {
+			owner = "ROM" 
+			creator = "POL"
+			amount = 48
+		}
+	}
+	79 = {
+		# Grup 2 Avion de Vanatoare -- IAR 14, 15 fighters
+		fighter_equipment_0 = {
+			owner = "ROM" 
+			amount = 24
+		}
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ROM"
+		}
+		requested_factories = 2
+		progress = 0.87
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ROM"
+		}
+		requested_factories = 1
+		progress = 0.19
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "ROM"
+		}
+		requested_factories = 1
+		progress = 0.24
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "ROM" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+
+	### Under Contruction Notes ###
+	# SS: Delfinul class (x1) ("NMS Delfinul")
+	add_equipment_production = {
+		equipment = {
+			type = submarine_1
+			creator = "ROM"
+		}
+		requested_factories = 1
+		progress = 0.50
+		amount = 1
+	}
+}

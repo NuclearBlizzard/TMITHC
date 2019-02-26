@@ -1,6 +1,6 @@
 ﻿capital = 46
 
-oob = "ROM_1936"
+oob = "ROM_1960"
 
 set_research_slots = 3
 set_stability = 0.6
@@ -10,38 +10,65 @@ set_war_support = 0.6
 set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
+	tech_military_police = 1
 	tech_mountaineers = 1
+	tech_mountaineers2 = 1
+	tech_mountaineers3 = 1
 	motorised_infantry = 1
 	gwtank = 1
 	basic_light_tank = 1
+	improved_light_tank = 1
+	improved_light_td = 1
+	basic_medium_tank = 1
+	basic_medium_td = 1
+	improved_medium_tank = 1
+	advanced_medium_tank = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	gw_artillery = 1
 	early_fighter = 1
 	early_submarine = 1
 	early_destroyer = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	improved_oil_processing = 1
+	advanced_oil_processing = 1
+	modern_oil_processing = 1
+	rubber_processing = 1
+	improved_rubber_processing = 1
+	advanced_rubber_processing = 1
+	modern_rubber_processing = 1
 }
 
-set_convoys = 10
+add_ideas = {
+	ROM_revenge_against_Hungary
+	ROM_Democratic_Underground
+	ROM_Unstable_Economy
+	ROM_Ukranian_Nationalists
+	ROM_figurehead_king_michael
+}
+
+set_convoys = 100
 
 
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 10
+			popularity = 12
 		}
 
 		fascism = {
-			popularity = 60
+			popularity = 45
 		}
 		
 		communism = {
 			popularity = 3
+			banned = yes
 		}
 		
 		neutrality = { 
-			popularity = 27
+			popularity = 40
 		}
 	}
 	
@@ -54,34 +81,28 @@ set_politics = {
 create_country_leader = {
 	name = "Mihai I"
 	desc = "POLITICS_MIHAI_I_DESC"
-	picture = ""
+	picture = "Michael_I.tga"
 	expire = "1965.1.1"
 	ideology = centrism
-	traits = {
-		#
-	}
+	traits = {  }
 }
 
 create_country_leader = {
 	name = "Nicolae Ceausescu"
 	desc = "POLITICS_CEAUSESCU_DESC"
-	picture = ""
+	picture = "Nicolae_Ceausescu.tga"
 	expire = "1965.1.1"
 	ideology = leninism
-	traits = {
-		#
-	}
+	traits = {  }
 }
 
 create_country_leader = {
-	name = "Gheorghe Tatarescu"
+	name = "Gheorghe Tătărescu"
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
-	picture = ""
+	picture = "Gheorghe_Tatarescu.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
-	traits = {
-		#
-	}
+	traits = {  }
 }
 
 
@@ -91,47 +112,78 @@ create_country_leader = {
 	picture = "Ion_Antonescu.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		dictator
-	}
+	traits = { dictator }
 }
 
 create_field_marshal = {
-	name = "Petre Dumitrescu"
-	gfx = GFX_Portrait_romania_petre_dumitrescu
-	traits = { offensive_doctrine logistics_wizard }
+	name = "Ilie Şteflea"
+	portrait_path = "gfx/leaders/ROM/Field Marshals/Ilie_Steflea.tga"
+	traits = { substance_abuser organisational_leader }
 	skill = 4
 	attack_skill = 4
-	defense_skill = 4
+	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 3
 }
 
 create_field_marshal = {
-	name = "Ion Antonescu"
-	picture = "Portrait_Romania_Ion_Antonescu.dds"
-	traits = { offensive_doctrine }
+	name = "Constantin Sănătescu"
+	portrait_path = "gfx/leaders/ROM/Field Marshals/Constantin_Sanatescu.tga"
+	traits = { defensive_doctrine logistics_wizard inflexible_strategist }
 	skill = 4
-	attack_skill = 4
+	attack_skill = 2
 	defense_skill = 4
 	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Constantin Trestioreanu"
+	portrait_path = "gfx/leaders/ROM/Field Marshals/Constantin_Trestioreanu.tga"
+	traits = { fast_planner aggressive_assaulter inspirational_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Paul Teodorescu"
+	portrait_path = "gfx/leaders/ROM/Field Marshals/Paul_Teodorescu.tga"
+	traits = { organisational_leader }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
 	logistics_skill = 3
 }
 
 create_corps_commander = {
-	name = "Ioan Mihail Racovita"
-	gfx = GFX_Portrait_romania_ioan_mihail_racovita
-	traits = { hill_fighter }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
+	name = "Ioan Mihail Racoviţă"
+	portrait_path = "gfx/leaders/ROM/Generals/Mihail_Racovita.tga"
+	traits = { hill_fighter ranger cavalry_leader }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
 	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Constantin C. Claps"
+	portrait_path = "gfx/leaders/ROM/Generals/Constantin_Claps.tga"
+	traits = { brilliant_strategist infantry_leader infantry_expert }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
 	logistics_skill = 2
 }
 
 create_corps_commander = {
 	name = "Gheorghe Avramescu"
-	gfx = GFX_Portrait_romania_gheorghe_avramescu
+	portrait_path = "gfx/leaders/ROM/Generals/Gheorghe_Avramescu.tga"
 	traits = { }
 	skill = 3
 	attack_skill = 3
@@ -139,23 +191,124 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 3
 }
-create_navy_leader = {
-	name = "Horia Macellariu"
-	gfx = "GFX_Portrait_romania_horia_macellariu"
-	traits = { spotter }
+
+create_corps_commander = {
+	name = "Leonard Mociulschi"
+	portrait_path = "gfx/leaders/ROM/Generals/Leonard_Mociulschi.tga"
+	traits = { trait_mountaineer winter_specialist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+} 
+
+create_corps_commander = {
+	name = "Edgar Rădulescu"
+	portrait_path = "gfx/leaders/ROM/Generals/Edgar_Radulescu.tga"
+	traits = { armor_officer panzer_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+} 
+
+create_corps_commander = {
+	name = "Septimiu Pretorian"
+	portrait_path = "gfx/leaders/ROM/Generals/Septimiu_Pretorian.tga"
+	traits = { infantry_leader winter_specialist }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 
-### Ship Variants ###
+create_corps_commander = {
+	name = "Corneliu Dragalina"
+	portrait_path = "gfx/leaders/ROM/Generals/Corneliu_Dragalina.tga"
+	traits = { panzer_leader winter_specialist }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
 
-create_equipment_variant = {
-	name = "Regele Ferdinand Class"
-	type = destroyer_1
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 1
-		ship_anti_air_upgrade = 1
-	}
+create_corps_commander = {
+	name = "Gheorghe Manoliu"
+	portrait_path = "gfx/leaders/ROM/Generals/Gheorghe_Manoliu.tga"
+	traits = { fortress_buster ranger trait_mountaineer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Gheorghe G. Marinescu"
+	portrait_path = "gfx/leaders/ROM/Generals/Gheorghe_Gh_Marinescu.tga"
+	traits = { commando trait_engineer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Corneliu Teodorini"
+	portrait_path = "gfx/leaders/ROM/Generals/Corneliu_Teodorini.tga"
+	traits = { urban_assault_specialist trait_engineer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Dumitru Dămăceanu"
+	portrait_path = "gfx/leaders/ROM/Generals/Dumitru_Damaceanu.tga"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ioan Dumitrache"
+	portrait_path = "gfx/leaders/ROM/Generals/Ioan_Dumitrache.tga"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Horia Macellariu"
+	portrait_path = "gfx/leaders/ROM/Admirals/Horia_Macellariu.tga"
+	traits = { spotter }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Nicolae Şova"
+	portrait_path = "gfx/leaders/ROM/Admirals/Nicolae_Sova.tga"
+	traits = { superior_tactician blockade_runner }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Nicolae Macici"
+	portrait_path = "gfx/leaders/ROM/Admirals/Nicolae_Macici.tga"
+	traits = { seawolf }
+	skill = 2
 }

@@ -1,1 +1,70 @@
 ﻿add_namespace = romania
+
+country_event = {
+	id = romania.1
+	title = romania.1.t
+	desc = romania.1.d	
+	picture = GFX_report_event_antonescu_gone
+
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+		tag = ROM
+		AND = {
+			date > 1963.6.25
+		}
+	}
+
+	option = {
+		name = romania.1.a
+		ai_chance = { factor = 100 }
+
+	}
+}
+
+country_event = {
+	id = romania.2
+	title = romania.2.t
+	desc = romania.2.d	
+	picture = 
+
+	fire_only_once = yes
+	is_triggered_only = no
+
+	trigger = {
+		tag = ROM
+		AND = {
+			date > 1963.6.25
+		}
+	}
+
+	option = {
+		name = romania.2.a
+		ai_chance = { factor = 100 }
+		set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		set_party_name = { ideology = neutrality long_name = "Guvernul militar" name = "GV" }
+		create_country_leader = {
+			name = "Constantin Sănătescu"
+			desc = "POLITICS_SANATESCU_DESC"
+			picture = "Constantin_Sanatescu.tga"
+			expire = 1990.1.1
+			ideology = centrism
+			traits = {  }
+		}
+	hidden_effect = {
+		create_country_leader = {
+			name = "Corneliu Vadim Tudor"
+			desc = "POLITICS_TUDOR_DESC"
+			picture = "Corneliu_Tudor.tga"
+			expire = 1990.1.1
+			ideology = fascism_ideology
+			traits = {  }
+		}
+		set_party_name = { ideology = fascism long_name = "Partidul România Mare" name = "PRM" }
+		}
+	}
+}

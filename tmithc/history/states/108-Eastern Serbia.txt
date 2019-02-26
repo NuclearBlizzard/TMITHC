@@ -2,19 +2,22 @@
 state={
 	id=108
 	name="STATE_108" # Morava
-	manpower = 1533000
+	manpower = 1933000
 	
-	state_category = town
+	state_category = city
 	
 	resources={
-		steel=3 # was: 4
+		steel=23
+		tungsten=3
 	}
 
 	history={
 		owner = SER
 		buildings = {
-			infrastructure = 4
+			infrastructure = 6
 		}
+		victory_points = { 6953 5 }
+		victory_points = { 9602 1 }
 		add_core_of = YUG
 		add_core_of = SER 
 	}
