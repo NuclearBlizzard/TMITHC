@@ -120,7 +120,11 @@ FRA_hatred:0 "Hatred"
 ########## other weird stuff ##########
 fra_entente_research:0 "Deuxième Entente Research Program"
 ######### cosmetic tags ########
-FRA_cosmetic_rep_democratic:0 "French Republic"
-FRA_cosmetic_rep_democratic_DEF:0 "The Fourth French Republic"
+FRA_republica_democratic:0 "French Republic"
+FRA_republica_democratic_DEF:0 "the Fourth French Republic"
+FRA_republica_fascism:0 "French Republic"
+FRA_republica_fascism_DEF:0 "the Fourth French Republic"
+FRA_republica_communism:0 "French Republic"
+FRA_republica_communism_DEF:0 "the Fourth French Republic"
 FRA_democratic_party_gaulle_long:0 "Parti Républicaine du Progrés et Liberté"
 FRA_democratic_party_gaulle:0 "PRPL"
