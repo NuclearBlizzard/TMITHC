@@ -1189,6 +1189,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/france/vichy_france.dds"			
 	}
 	
+	SpriteType = {
+		name = "french_monument"
+		texturefile = "gfx/interface/goals/france/french_monument.dds"			
+	}
+	
+	SpriteType = {
+		name = "french_constitution1"
+		texturefile = "gfx/interface/goals/france/french_constitution1.dds"			
+	}
+	
+	SpriteType = {
+		name = "french_renault"
+		texturefile = "gfx/interface/goals/france/french_renault.dds"
+	}
+	
 	#Germany
 
 	SpriteType = {
