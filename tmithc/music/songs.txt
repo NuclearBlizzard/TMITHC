@@ -24,7 +24,7 @@ music = {
 				}
 			}
 		modifier = {
-			factor = 10
+			factor = 2
 			tag = ROM
 		}
 	}

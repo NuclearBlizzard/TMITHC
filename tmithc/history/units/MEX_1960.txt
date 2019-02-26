@@ -230,30 +230,30 @@ units = {
 		name = "Unitary Mexican Naval Forces"			
 		base = 10889 
 		location = 10889 # Oaxaca
-		ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
-		ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Valle" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Victorian" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Valle" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Victorian" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Valle" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Victorian" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Valle" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Huracan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Valle" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Huracan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Valle" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Huracan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Valle" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Huracan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Valle" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Huracan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Valle" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Huracan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Valle" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Huracan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Valle" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Huracan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Valle" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
+		ship = { name = "ARM Huracan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MEX } } }
 	}				
 }
 
