@@ -6,6 +6,7 @@ focus_tree = {
 	}
 	
 	reset_on_civilwar = no
+	default = yes
 
 	focus = {
 		id = army_effort

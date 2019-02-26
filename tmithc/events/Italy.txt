@@ -208,3 +208,110 @@ country_event = {
 		name = italy.7.o1
 	}
 }
+
+#Germany: Italy defies us!
+country_event = {
+	id = italy.8
+	title = italy.8.t
+	desc = italy.8.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.8.o1
+		ai_chance = { base = 20 }
+		add_political_power = -200
+		ITA = { country_event = { id = italy.10 days = 3 } }
+	}
+	
+	option = {
+		name = italy.8.o2
+		add_stability = -0.02
+		german_influence_in_italy_decrease_by_3 = yes
+		ai_chance = { base = 80 }
+	}
+}
+
+#Spain: Italy defies us!
+country_event = {
+	id = italy.9
+	title = italy.9.t
+	desc = italy.9.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.9.o1
+	}
+}
+
+#Germany demands South Tyrol
+country_event = {
+	id = italy.10
+	title = italy.10.t
+	desc = italy.10.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.10.o1
+		GER = { country_event = { id = italy.11 days = 3 } }
+		ai_chance = { base = 50 }
+	}
+	
+	option = {
+		name = italy.10.o2
+		GER = { country_event = { id = italy.12 days = 3 } }
+		ai_chance = { base = 50 }
+	}
+}
+
+#Italy folds
+country_event = {
+	id = italy.11
+	title = italy.11.t
+	desc = italy.11.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.11.o1
+	}
+}
+
+#Italy defies us
+country_event = {
+	id = italy.12
+	title = italy.12.t
+	desc = italy.12.d
+	picture = GFX_WIP
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.12.o1
+		add_war_support = 0.03
+		add_political_power = -50
+		create_wargoal = {
+			type = take_state_focus
+			generator = { 39 }
+			target = ITA
+		}
+		ai_chance = { base = 50 }
+	}
+	
+	option = {
+		name = italy.12.o2
+		add_stability = -0.10
+		add_war_support = -0.10
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		ai_chance = { base = 50 }
+	}
+}

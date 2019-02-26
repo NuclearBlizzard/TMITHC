@@ -285,7 +285,27 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			if = {
+				limit = { has_full_control_of_state = 2 }
+				2 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				}
+			}
+			if = {
+				limit = { has_full_control_of_state = 162 }
+				162 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				}
+			}
+			if = {
+				limit = { has_full_control_of_state = 159 }
+				159 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -316,7 +336,14 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
 		}
 
 		ai_will_do = {
@@ -376,7 +403,10 @@ focus_tree = {
 			focus = ITA_the_western_motorways
 		}
 		mutually_exclusive = { }
-		available = { }
+		available = {
+			has_full_control_of_state = 21
+			has_full_control_of_state = 32
+		}
 		select_effect = { }
 		bypass = { }
 		cancel = { }
@@ -386,6 +416,32 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			if = {
+				limit = { has_full_control_of_state = 21 }
+				21 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 3589 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 780 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 762 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 11713 }
+				}
+			}
+			if = {
+				limit = { has_full_control_of_state = 32 }
+				32 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 958 }
+					add_building_construction = { type = bunker level = 2 instant_build = yes province = 11849 }
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -465,6 +521,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			ITA_military_purges_downgrade = yes
 		}
 
 		ai_will_do = {
@@ -495,6 +552,27 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			if = {
+				limit = {
+					has_full_control_of_state = 2
+				}
+				2 = { add_extra_state_shared_building_slots = 1 }
+				2 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 158
+				}
+				158 = { add_extra_state_shared_building_slots = 1 }
+				158 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 117
+				}
+				117 = { add_extra_state_shared_building_slots = 1 }
+				117 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			}
 		}
 
 		ai_will_do = {
@@ -518,7 +596,9 @@ focus_tree = {
 			focus = ITA_precautions_against_germany
 		}
 		mutually_exclusive = { }
-		available = { }
+		available = { 
+			has_full_control_of_state = 32
+		}
 		select_effect = { }
 		bypass = { }
 		cancel = { }
@@ -528,6 +608,12 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			32 = {
+				add_building_construction = { type = air_base level = 5 instant_build = yes }
+				add_building_construction = { type = anti_air_building level = 2 instant_build = yes }
+				add_building_construction = { type = bunker level = 4 instant_build = yes province = 3589 }
+				add_building_construction = { type = bunker level = 1 instant_build = yes province = 780 }
+			}
 		}
 
 		ai_will_do = {
@@ -558,6 +644,20 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			if = {
+				limit = {
+					has_full_control_of_state = 117
+				}
+				117 = { add_extra_state_shared_building_slots = 1 }
+				117 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 114
+				}
+				114 = { add_extra_state_shared_building_slots = 1 }
+				114 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			}
 		}
 
 		ai_will_do = {
@@ -588,6 +688,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			add_stability = 0.05
 		}
 
 		ai_will_do = {
@@ -611,7 +712,11 @@ focus_tree = {
 			focus = ITA_full_nationalization_of_heavy_industry
 		}
 		mutually_exclusive = { }
-		available = { }
+		available = { 
+			has_full_control_of_state = 735
+			has_full_control_of_state = 21
+			has_full_control_of_state = 32
+		}
 		select_effect = { }
 		bypass = { }
 		cancel = { }
@@ -621,6 +726,9 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			32 = { add_resource = { type = steel amount = 3 } }
+			21 = { add_resource = { type = steel amount = 5 } }
+			735 = { add_resource = { type = steel amount = 11 } }
 		}
 
 		ai_will_do = {
@@ -654,6 +762,22 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			if = {
+				limit = { has_full_control_of_state = 162 }
+				162 = { add_extra_state_shared_building_slots = 2 }
+			}
+			if = {
+				limit = { has_full_control_of_state = 2 }
+				2 = { add_extra_state_shared_building_slots = 2 }
+			}
+			if = {
+				limit = { has_full_control_of_state = 160 }
+				160 = { add_extra_state_shared_building_slots = 2 }
+			}
+			if = {
+				limit = { has_full_control_of_state = 162 }
+				162 = { add_extra_state_shared_building_slots = 2 }
+			}
 		}
 
 		ai_will_do = {
@@ -685,6 +809,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
+			
 		}
 
 		ai_will_do = {
@@ -791,7 +916,8 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 
 		ai_will_do = {
@@ -822,7 +948,11 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			add_tech_bonus = {
+				category = industry
+				bonus = 0.5
+				uses = 1
+			}
 		}
 
 		ai_will_do = {
@@ -859,7 +989,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			add_popularity = { ideology = communism popularity = 0.05 }
 		}
 
 		ai_will_do = {
@@ -890,7 +1020,10 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GER
+			}
 		}
 
 		ai_will_do = {
@@ -921,7 +1054,10 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SPR
+			}
 		}
 
 		ai_will_do = {
@@ -996,7 +1132,8 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			add_command_power = 50
+			ITA_military_purges_downgrade = yes
 		}
 
 		ai_will_do = {
@@ -1090,7 +1227,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			ITA_military_purges_downgrade = yes
 		}
 
 		ai_will_do = {
@@ -1875,7 +2012,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			ITA_military_purges_downgrade = yes
 		}
 
 		ai_will_do = {
@@ -2017,7 +2154,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_ally_spain
-		icon = major_alliance
+		icon = major_alliance3
 		
 		x = 0
 		y = 3
@@ -2110,7 +2247,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_invite_bulgaria
-		icon = major_alliance2
+		icon = major_alliance
 		
 		x = -1
 		y = 4
@@ -2141,7 +2278,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_invite_turkey
-		icon = major_alliance2
+		icon = major_alliance
 		
 		x = -1
 		y = 5
@@ -2352,7 +2489,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			ITA_military_purges_downgrade = yes
 		}
 
 		ai_will_do = {
@@ -2486,7 +2623,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-		
+			ITA_military_purges_downgrade = yes
 		}
 
 		ai_will_do = {

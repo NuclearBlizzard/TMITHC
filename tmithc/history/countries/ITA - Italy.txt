@@ -10,7 +10,10 @@ set_variable = { var_german_influence_in_italy = 50 }
 german_influence_in_italy_update = yes
 
 add_ideas = {
+	limited_conscription
+	limited_exports
 	
+	ITA_military_purges_3
 }
 
 # Starting tech

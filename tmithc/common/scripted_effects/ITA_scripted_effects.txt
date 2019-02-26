@@ -1,3 +1,31 @@
+ITA_military_purges_downgrade = {
+	if = {
+		limit = {
+			NOT = { has_idea = ITA_military_purges_1 }
+			NOT = { has_idea = ITA_military_purges_2 }
+			NOT = { has_idea = ITA_military_purges_3 }
+		}
+		army_experience = 25
+	}
+	if = {
+		limit = { has_idea = ITA_military_purges_1 }
+		remove_ideas = ITA_military_purges_1
+	}
+	if = {
+		limit = { has_idea = ITA_military_purges_2 }
+		swap_ideas = {
+			remove_idea = ITA_military_purges_2
+			add_idea = ITA_military_purges_1
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_military_purges_3 }
+		swap_ideas = {
+			remove_idea = ITA_military_purges_3
+			add_idea = ITA_military_purges_2
+		}
+	}
+}
 german_influence_in_italy_end_mechanic = {
 	ITA = {
 		remove_ideas = ITA_german_influence_in_italy_5
