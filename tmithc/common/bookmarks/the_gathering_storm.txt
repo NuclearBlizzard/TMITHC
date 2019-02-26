@@ -95,6 +95,23 @@ bookmarks = {
 			}
 	
 		}
+		
+		"FRA"={
+		    minor = yes
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				FRA_chained_republic
+				FRA_milice
+				FRA_active_resistance
+			}
+			focuses = {
+				FRA_embraceresistance
+				FRA_francisque
+				FRA_loyaltogermany
+			}
+	
+		}
 
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
