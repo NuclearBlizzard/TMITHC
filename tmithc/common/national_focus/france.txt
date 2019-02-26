@@ -10,12 +10,12 @@ focus_tree = {
 		}
 	}
 
-continuous_focus_position = { x = 150 y = 1900 }
+continuous_focus_position = { x = 150 y = 3500 }
 
 	#Focus: Francisque
 		focus = { 
 			id = FRA_francisque
-			icon = GFX_FRA_francisque
+			icon = vichy_france
 			x = 12
 			y = 0
 			cost = 5
@@ -32,10 +32,12 @@ continuous_focus_position = { x = 150 y = 1900 }
 
 	}
 	
+########### FREEDOM PATH ########
+	
 	#Focus: Memoirs Resistance thing
 		focus = { 
 			id = FRA_manydead
-			icon = GFX_FRA_redrivers
+			icon = french_casualties
 			x = 6
 			y = 1
 			cost = 5
@@ -50,6 +52,1303 @@ continuous_focus_position = { x = 150 y = 1900 }
 				completion_reward = {
 					add_war_support = -0.05
 					country_event = { days = 0 id = france.state.2 }
+		}
+
+	}
+	
+	#Focus: Strike the Maquis
+		focus = { 
+			id = FRA_resistance1
+			icon = french_fire
+			x = 5
+			y = 2
+			cost = 10
+			available_if_capitulated = yes
+			
+				prerequisite = { focus = FRA_manydead }
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					country_event = { days = 1 id = france.resistance.1 } #to 3
+		}
+
+	}
+	
+	#Focus: Strike the Vendéens
+		focus = { 
+			id = FRA_resistance2
+			icon = french_fire
+			x = 7
+			y = 2
+			cost = 10
+			available_if_capitulated = yes
+			
+				prerequisite = { focus = FRA_manydead }
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					country_event = { days = 1 id = france.resistance.4 } #to 6
+		}
+
+	}
+	
+	#Focus: Secure Countryside
+		focus = { 
+			id = FRA_securecountryside
+			icon = french_fascism
+			x = 6
+			y = 3
+			cost = 10
+			available_if_capitulated = yes
+			
+				prerequisite = { focus = FRA_resistance1 }
+				prerequisite = { focus = FRA_resistance2 }
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_stability = 0.05
+					add_political_power = 50
+					country_event = { days = 1 id = france.resistance.7 }
+		}
+
+	}
+	
+	#Focus: Embrace the Résistance
+		focus = { 
+			id = FRA_embraceresistance
+			icon = french_resistance
+			x = 3
+			y = 4
+			cost = 10
+			available_if_capitulated = yes
+			
+				available = {
+				has_country_flag = helped_resistance
+				}
+				
+				mutually_exclusive = { focus = FRA_loyaltogermany }
+			
+				prerequisite = { focus = FRA_securecountryside }
+			
+				ai_will_do = {
+					factor = 80
+				}
+				
+				completion_reward = {
+					add_manpower = 5000
+					add_stability = 0.05
+					add_war_support = 0.05
+					add_popularity = { ideology = democratic popularity = 0.05 }
+					add_political_power = 75
+					country_event = { days = 1 id = france.resistance.8 }
+		}
+
+	}
+	
+	#Focus: Approach Résistance
+		focus = { 
+			id = FRA_approachresistance
+			icon = french_diplomacy
+			x = 3
+			y = 5
+			cost = 10
+			available_if_capitulated = yes
+			
+				prerequisite = { focus = FRA_embraceresistance }
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_manpower = 500
+					add_popularity = { ideology = democratic popularity = 0.05 }
+		}
+
+	}
+	
+	#Focus: Gain Trust
+		focus = { 
+			id = FRA_gaintrust
+			icon = french_diplomacy2
+			x = 4
+			y = 6
+			cost = 10
+			available_if_capitulated = yes
+			
+				prerequisite = { focus = FRA_approachresistance }
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_manpower = 500
+					add_popularity = { ideology = democratic popularity = 0.05 }
+		}
+
+	}
+	
+	#Focus: Organize the Cells
+		focus = { 
+			id = FRA_organizecells
+			icon = french_diplomacy
+			x = 2
+			y = 6
+			cost = 10
+			available_if_capitulated = yes
+			
+				prerequisite = { focus = FRA_approachresistance }
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					swap_ideas = {
+						remove_idea = FRA_active_resistance
+						add_idea = FRA_organised_resistance
+					}
+		}
+
+	}
+	
+	#Focus: New Commanders
+		focus = { 
+			id = FRA_newcommanders
+			icon = french_conscription
+			x = 2
+			y = 7
+			cost = 10
+			available_if_capitulated = yes
+			
+				prerequisite = { focus = FRA_organizecells }
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					create_corps_commander = {
+						name = "Jean de Lattre de Tassigny"
+						picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+						traits = { trickster brilliant_strategist }
+						skill = 3
+						attack_skill = 2
+						defense_skill = 4
+						planning_skill = 3
+						logistics_skill = 4
+					}
+						
+					create_corps_commander = {
+						name = "Charles De Gaulle"
+						picture = "portrait_fra_degaulle.tga"
+						traits = { harsh_leader media_personality armor_officer }
+						skill = 3
+						attack_skill = 4
+						defense_skill = 2
+						planning_skill = 3
+						logistics_skill = 2
+					}
+				}
+	}
+	
+	#Focus: Form Militias
+		focus = { 
+			id = FRA_militia
+			icon = french_militia
+			x = 4
+			y = 7
+			cost = 10
+			available_if_capitulated = yes
+			
+				prerequisite = { focus = FRA_gaintrust }
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_manpower = 15000
+					add_war_support = 0.03
+					custom_effect_tooltip = 1_FRA_tt
+					hidden_effect = {
+					load_oob = "FRA_militia"
+				}
+		}
+
+	}
+	
+	#Focus: Reform the Milice
+		focus = { 
+			id = FRA_milicefocus
+			icon = french_militia2
+			x = 3
+			y = 8
+			cost = 10
+			available_if_capitulated = yes
+			
+				prerequisite = { focus = FRA_militia }
+				prerequisite = { focus = FRA_newcommanders }
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_manpower = 20000
+					add_stability = 0.1
+					add_war_support = 0.1
+					add_political_power = 50
+					custom_effect_tooltip = 2_FRA_tt
+					GER = { country_event = { days = 1 id = france.state.3 } }
+				}
+	}
+	
+	#Focus: Join the Deuxième Entente ################################################### PLACEHOLDER
+		focus = { 
+			id = FRA_deuxiemeentente
+			icon = entente
+			x = 0
+			y = 9
+			cost = 1
+			available_if_capitulated = yes
+			
+				prerequisite = { focus = FRA_milicefocus }
+				
+				available = {
+					ENG = { 
+					has_government = neutrality 
+					has_country_flag = nationalist_civil_war
+					}
+					has_war_with = GER
+				}
+			
+				ai_will_do = {
+					factor = 200
+				}
+				
+				completion_reward = {
+					ENG = { add_to_faction = FRA }
+					set_rule = {
+						can_create_factions = yes
+					}
+				}
+	}
+	
+	#Focus: Forts on the Seine
+		focus = { 
+			id = FRA_fortseine
+			icon = french_forts
+			x = 6
+			y = 9
+			cost = 4
+			available_if_capitulated = yes
+			
+				prerequisite = { focus = FRA_milicefocus }
+				
+				available = {
+					controls_state = 15
+					controls_state = 16
+				}
+			
+				ai_will_do = {
+					factor = 400
+				}
+				
+				completion_reward = {
+					country_event = { days = 0 id = france.resistance.9 }
+					15 = { add_building_construction = { type = bunker province = 9434 level = 3 instant_build = yes } }
+					15 = { add_building_construction = { type = bunker province = 11563 level = 3 instant_build = yes } }
+					15 = { add_building_construction = { type = bunker province = 6599 level = 2 instant_build = yes } }
+					15 = { add_building_construction = { type = bunker province = 9578 level = 2 instant_build = yes } }
+					15 = { add_building_construction = { type = bunker province = 3549 level = 2 instant_build = yes } }
+					16 = { add_building_construction = { type = bunker province = 9523 level = 3 instant_build = yes } }
+					16 = { add_building_construction = { type = bunker province = 11506 level = 4 instant_build = yes } }
+					16 = { add_building_construction = { type = bunker province = 9725 level = 2 instant_build = yes } }
+					16 = { add_building_construction = { type = bunker province = 11491 level = 2 instant_build = yes } }
+					16 = { add_building_construction = { type = bunker province = 6949 level = 2 instant_build = yes } }
+				}
+	}
+	
+	#Focus: Seize Factories
+		focus = { 
+			id = FRA_seizefac
+			icon = french_factories
+			x = 6
+			y = 10
+			cost = 4
+			available_if_capitulated = yes
+			
+				prerequisite = { focus = FRA_fortseine }
+				
+				available = {
+					controls_state = 15
+					controls_state = 16
+					controls_state = 30
+				}
+			
+				ai_will_do = {
+					factor = 400
+				}
+				
+				completion_reward = {
+					15 = { add_extra_state_shared_building_slots = 2 }
+					15 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+					16 = { add_extra_state_shared_building_slots = 3 }
+					16 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+					16 = { add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
+					30 = { add_extra_state_shared_building_slots = 3 }
+					30 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+					30 = { add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
+						hidden_effect = {
+							every_owned_state = {
+							add_extra_state_shared_building_slots = 2
+							}
+						}
+				}
+	}
+	
+	#Focus: Production's Fast kek
+		focus = { 
+			id = FRA_production
+			icon = french_guns
+			x = 6
+			y = 11
+			cost = 4
+			available_if_capitulated = yes
+			
+				prerequisite = { focus = FRA_seizefac }
+			
+				ai_will_do = {
+					factor = 400
+				}
+				
+				completion_reward = {
+					add_ideas = FRA_gearing_for_war
+				}
+	}
+	
+	#Focus: La Liberté ou la Mort
+		focus = { 
+			id = FRA_libertyordeath
+			icon = french_republic
+			x = 3
+			y = 9
+			cost = 4
+			available_if_capitulated = yes
+			
+				prerequisite = { focus = FRA_milicefocus }
+				
+				available = {
+					
+				}
+			
+				ai_will_do = {
+					factor = 150
+				}
+				
+				completion_reward = {
+					add_stability = 0.1
+					add_war_support = 0.25
+					set_politics = { ruling_party = democratic elections_allowed = no }
+					add_popularity = { ideology = democratic popularity = 0.2 }
+					add_ideas = FRA_pushthemout
+					remove_ideas = FRA_chained_republic
+					leave_faction = yes
+					declare_war_on = {
+						target = GER
+						type = topple_government
+					}
+					GER = { country_event = { days = 0 id = france.state.4 } }
+				}
+	}
+	
+	#Focus: Victoire!
+		focus = { 
+			id = FRA_victoire
+			icon = french_victory
+			x = 3
+			y = 12
+			cost = 1
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_libertyordeath }
+				
+				available = {
+					has_country_flag = fr_victory
+				}
+				
+				bypass = {
+					has_country_flag = fr_victory
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_ideas = FRA_victoryidea
+					remove_ideas = FRA_pushthemout
+					hidden_effect = {
+						country_event = { days = 7 id = france.elections.1 }
+					}
+				}
+	}
+	
+	#Focus: A New Order
+		focus = { 
+			id = FRA_aneworder
+			icon = global_community
+			x = 6
+			y = 13
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_victoire }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_political_power = 150
+					add_stability = 0.05
+					add_war_support = 0.03
+					add_ideas = FRA_democracy
+				}
+	}
+	
+	#Focus: Secure Friendship with Britain
+		focus = { 
+			id = FRA_friendshipbritain
+			icon = align_with_britain
+			x = 0
+			y = 12
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_deuxiemeentente }
+				
+				available = {
+					is_puppet = no
+					ENG = { 
+					has_government = neutrality 
+					has_country_flag = nationalist_civil_war
+					}
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_opinion_modifier = {
+						target = ENG
+						modifier = FRA_friendship_with_britain
+					}
+					ENG = {
+						add_opinion_modifier = {
+						target = FRA
+						modifier = FRA_friendship_with_britain
+						}
+					}
+				}
+	}
+	
+	#Focus: Strenghten Entente
+		focus = { 
+			id = FRA_strenghtenentente
+			icon = entente
+			x = 0
+			y = 13
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_friendshipbritain focus = FRA_victoire }
+				
+				available = {
+					is_puppet = no
+					is_in_faction = yes
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					every_country = {
+						limit = { is_in_faction_with = ROOT }
+						add_opinion_modifier = {
+							target = ROOT
+							modifier = FRA_friendship
+						}
+						add_ideas = FRA_advisorsidea
+					}
+					add_ideas = FRA_advisorsidea2
+				}
+	}
+	
+	#Focus: Entente Research Program
+		focus = { 
+			id = FRA_ententeresearch
+			icon = tech_sharing
+			x = 0
+			y = 14
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_strenghtenentente }
+				
+				available = {
+					is_puppet = no
+					is_in_faction = yes
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					every_country = {
+						limit = { is_in_faction_with = ROOT }
+						add_to_tech_sharing_group = fra_entente_research
+					}
+					add_to_tech_sharing_group = fra_entente_research
+					add_research_slot = 1
+				}
+	}
+	
+	#Focus: Coordinated Production
+		focus = { 
+			id = FRA_coorpro
+			icon = industry_democratic
+			x = 0
+			y = 15
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_ententeresearch }
+				
+				available = {
+					is_puppet = no
+					is_in_faction = yes
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					every_country = {
+						limit = { is_in_faction_with = ROOT }
+						add_offsite_building = { type = arms_factory level = 1 }
+						add_offsite_building = { type = industrial_complex level = 3 }
+					}
+					add_offsite_building = { type = arms_factory level = 2 }
+					add_offsite_building = { type = industrial_complex level = 3 }
+				}
+	}
+	
+	#Focus: The Second Tyrant
+		focus = { 
+			id = FRA_secondtyrant
+			icon = war_in_europe
+			x = 3
+			y = 14
+			cost = 10
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_aneworder }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_opinion_modifier = {
+						target = ITA
+						modifier = FRA_hatred
+					}
+				}
+	}
+	
+	#Focus: Forts on the Rhone
+		focus = { 
+			id = FRA_fortrhone
+			icon = french_forts
+			x = 3
+			y = 15
+			cost = 10
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_secondtyrant }
+				
+				available = {
+					is_puppet = no
+				}
+				
+				bypass = {
+					has_war_with = ITA
+					ITA = { exists = no }
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					country_event = { days = 0 id = france.resistance.10 }
+					20 = { add_building_construction = { type = bunker province = 11563 level = 3 instant_build = yes } }
+					20 = { add_building_construction = { type = bunker province = 11716 level = 2 instant_build = yes } }
+					20 = { add_building_construction = { type = bunker province = 9728 level = 2 instant_build = yes } }
+					20 = { add_building_construction = { type = bunker province = 6786 level = 3 instant_build = yes } }
+					20 = { add_building_construction = { type = bunker province = 6613 level = 4 instant_build = yes } }
+					22 = { add_building_construction = { type = bunker province = 11877 level = 2 instant_build = yes } }
+				}
+	}
+	
+	#Focus: Supply Resistance Groups
+		focus = { 
+			id = FRA_supplyresistance
+			icon = city_revolts
+			x = 2
+			y = 16
+			cost = 10
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_fortrhone }
+				
+				available = {
+					is_puppet = no
+				}
+				
+				bypass = {
+					has_war_with = ITA
+					ITA = { exists = no }
+					NOT = { CRO = is_in_faction_with = ITA }
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					CRO = {
+						limit = { is_in_faction_with = ITA }
+						add_ideas = FRA_unrest
+					}
+					ITA = {
+						country_event = { days = 7 id = france.resistance.11 }
+					}
+				}
+	}
+	
+	#Focus: Allies in the Middle-East
+		focus = { 
+			id = FRA_allymiddleeast
+			icon = military_deal
+			x = 4
+			y = 16
+			cost = 10
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_fortrhone }
+				
+				available = {
+					ITA = { exists = no }
+					is_puppet = no
+					PER = {
+						NOT = { is_in_faction_with = ITA }
+					}
+				}
+				
+				bypass = {
+					has_war_with = ITA
+					NOT = { country_exists = PER }
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					PER = {
+						country_event = { days = 7 id = france.resistance.12 } #12-13-14-15
+					}
+				}
+	}
+	
+	#Focus: Montpellier Port
+		focus = { 
+			id = FRA_montpellierport
+			icon = navy3
+			x = 2
+			y = 17
+			cost = 10
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_supplyresistance }
+				
+				available = {
+					is_puppet = no
+					controls_state = 22
+				}
+				
+				bypass = {
+					ITA = { exists = no }
+					has_war_with = ITA
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					22 = { add_building_construction = { type = naval_base province = 9898 level = 6 instant_build = yes } }
+					22 = { add_building_construction = { type = dockyard level = 2 instant_build = yes } }
+					22 = { add_extra_state_shared_building_slots = 3 }
+				}
+	}
+	
+	#Focus: Fund Resistance in Provence
+		focus = { 
+			id = FRA_resistanceprovence
+			icon = espionage2
+			x = 4
+			y = 17
+			cost = 10
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_allymiddleeast }
+				
+				available = {
+					is_puppet = no
+				}
+				
+				bypass = {
+					ITA = { exists = no }
+					has_war_with = ITA
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					country_event = { days = 1 id = france.resistance.16 }
+				}
+	}
+	
+	#Focus: Cross the Rhone
+		focus = { 
+			id = FRA_crosstherhone
+			icon = french_militia
+			x = 3
+			y = 19
+			cost = 10
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_resistanceprovence focus = FRA_montpellierport }
+				
+				available = {
+					is_puppet = no
+				}
+				
+				bypass = {
+					ITA = { exists = no }
+					has_war_with = ITA
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				will_lead_to_war_with = ITA
+				
+				completion_reward = {
+					declare_war_on = {
+						target = ITA
+						type = topple_government
+					}
+					add_timed_idea = {
+						idea = FRA_fastdeployment
+						days = 30
+					}
+					hidden_effect = {
+						country_event = { days = 1 id = france.news.tmithc.1 }
+					}
+				}
+	}
+	
+	#Focus: A New Constitution
+		focus = { 
+			id = FRA_newcons
+			icon = french_constitution1
+			x = 11
+			y = 14
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_aneworder }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					retire_country_leader = yes
+					add_political_power = 75
+					add_stability = 0.05
+					add_ideas = FRA_constitution
+					set_cosmetic_tag = FRA_cosmetic_rep
+					set_party_name = { 
+						ideology = democratic 
+						long_name = FRA_democratic_party_gaulle_long 
+						name = FRA_democratic_party_gaulle 
+					}
+				}
+	}
+	
+	#Focus: Industrial Build-Up
+		focus = { 
+			id = FRA_industrialbuildup
+			icon = industry_civilian
+			relative_position_id = FRA_newcons
+			x = -2
+			y = 1
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_newcons }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+							OR = {
+								is_in_home_area = yes
+								NOT = {
+									owner = {
+										any_owned_state = {
+											free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+											}
+											is_in_home_area = yes
+										}
+									}
+								}
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+							OR = {
+								is_in_home_area = yes
+								NOT = {
+									owner = {
+										any_owned_state = {
+											free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+											}
+											is_in_home_area = yes
+										}
+									}
+								}
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+							OR = {
+								is_in_home_area = yes
+								NOT = {
+									owner = {
+										any_owned_state = {
+											free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+											}
+											is_in_home_area = yes
+										}
+									}
+								}
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+	}
+	
+	#Focus: Military Manufacturing Capability
+		focus = { 
+			id = FRA_milmancap
+			icon = tank_production
+			relative_position_id = FRA_newcons
+			x = -1
+			y = 2
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_newcons }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+							}
+							OR = {
+								is_in_home_area = yes
+								NOT = {
+									owner = {
+										any_owned_state = {
+											free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+											}
+											is_in_home_area = yes
+										}
+									}
+								}
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+							}
+							OR = {
+								is_in_home_area = yes
+								NOT = {
+									owner = {
+										any_owned_state = {
+											free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+											}
+											is_in_home_area = yes
+										}
+									}
+								}
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = arms_factory
+								size > 0
+								include_locked = yes
+							}
+							OR = {
+								is_in_home_area = yes
+								NOT = {
+									owner = {
+										any_owned_state = {
+											free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+											}
+											is_in_home_area = yes
+										}
+									}
+								}
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+	}
+	
+	#Focus: Community Effort
+		focus = { 
+			id = FRA_communityeffort
+			icon = union_negotiations
+			relative_position_id = FRA_newcons
+			x = -2
+			y = 3
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_industrialbuildup }
+				prerequisite = { focus = FRA_milmancap }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_ideas = FRA_communityeffortidea
+				}
+	}
+	
+	#Focus: Social Welfare
+		focus = { 
+			id = FRA_socialwelfare
+			icon = democracy4
+			relative_position_id = FRA_newcons
+			x = 2
+			y = 1
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_newcons }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_ideas = FRA_socialwelfareidea
+				}
+	}
+	
+	#Focus: A Liberal Democracy
+		focus = { 
+			id = FRA_liberaldemo
+			icon = national_unity
+			relative_position_id = FRA_newcons
+			x = 1
+			y = 2
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_newcons }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_popularity = { ideology = democratic popularity = 0.075 }
+					add_stability = 0.05
+					add_political_power = 100
+				}
+	}
+	
+	#Focus: Grand Monuments
+		focus = { 
+			id = FRA_grandmonuments
+			icon = french_monument
+			relative_position_id = FRA_newcons
+			x = 2
+			y = 3
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_liberaldemo }
+				prerequisite = { focus = FRA_socialwelfare }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_popularity = { ideology = democratic popularity = 0.05 }
+					add_stability = 0.05
+					add_war_support = 0.05
+					add_political_power = 150
+					hidden_effect = {
+						16 = {
+							add_manpower = 120000
+						}
+					}
+				}
+	}
+	
+	#Focus: Nationalise Companies
+		focus = { 
+			id = FRA_nationalisecom
+			icon = french_renault
+			relative_position_id = FRA_newcons
+			x = 0
+			y = 4
+			cost = 5
+			available_if_capitulated = yes
+				
+				prerequisite = { focus = FRA_newcons }
+				prerequisite = { focus = FRA_communityeffort }
+				prerequisite = { focus = FRA_grandmonuments }
+				
+				available = {
+					is_puppet = no
+				}
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_popularity = { ideology = democratic popularity = 0.05 }
+					add_stability = 0.05
+					add_political_power = 50
+					custom_effect_tooltip = 3_FRA_tt
+				}
+	}
+	
+################# SUBMISSION PATH ###########
+	
+	#Focus: With the Reich
+		focus = { 
+			id = FRA_loyaltogermany
+			icon = GFX_FRA_puppet
+			x = 12
+			y = 4
+			cost = 10
+			available_if_capitulated = yes
+			
+				available = {
+				has_country_flag = killed_resistance
+				}
+				
+				mutually_exclusive = { focus = FRA_embraceresistance }
+			
+				prerequisite = { focus = FRA_securecountryside }
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_popularity = { ideology = fascism popularity = 0.05 }
+					add_political_power = 50
+		}
+
+	}
+	
+	#Focus: The Iron Cross
+		focus = { 
+			id = FRA_ironcross
+			icon = GFX_FRA_ironcross
+			x = 11
+			y = 1
+			cost = 5
+			available_if_capitulated = yes
+			
+				prerequisite = { focus = FRA_francisque }
+			
+				ai_will_do = {
+					factor = 40
+				}
+				
+				completion_reward = {
+					add_popularity = { ideology = fascism popularity = 0.05 }
+					add_political_power = 25
 		}
 
 	}
