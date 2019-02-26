@@ -7,6 +7,24 @@ add = 10
 tag = JPR
 } 
 } 
+#Focus for Bengal Intergration
+focus = { 
+id = India_bengalintergration
+icon = GFX_goal_molotov_ribbentrop_pact
+x = 11
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = India_thebengalguaranteeact } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+puppet= JBD
+ } 
+
+ } 
+
 #Focus for The Netaji
 focus = { 
 id = India_thenetaji
@@ -17,6 +35,9 @@ cost = 1
 available_if_capitulated = yes 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_political_power= 50
  } 
 
  } 
@@ -63,6 +84,9 @@ prerequisite = { focus = India_thenetaji }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = { 
+army_experience= 25
+ } 
 
  } 
 
@@ -87,11 +111,14 @@ id = India_oustingofmahatmaghandi
 icon = GFX_goal_generic_neutrality_focus
 x = 13
 y = 2
-cost = 10
+cost = 5
 available_if_capitulated = yes 
 prerequisite = { focus = India_thenetaji } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_stability= -0.15
  } 
 
  } 
@@ -107,6 +134,12 @@ available_if_capitulated = yes
 prerequisite = { focus = India_returnoftheindiannationalists } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_opinion_modifier= { 
+target = FRA 
+modifier = medium_increase 
+}
  } 
 
  } 
@@ -213,6 +246,12 @@ prerequisite = { focus = India_britishsecondclasscitizens }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = { 
+diplomatic_relation= { 
+country = JBD 
+relation = non_aggression_pact 
+}
+ } 
 
  } 
 
@@ -242,6 +281,9 @@ available_if_capitulated = yes
 prerequisite = { focus = India_deportthemuslims } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_state_core= 443
  } 
 
  } 
@@ -302,6 +344,12 @@ available_if_capitulated = yes
 prerequisite = { focus = India_purchaseofgoa } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_opinion_modifier= { 
+target = RNC 
+modifier = medium_increase
+}
  } 
 
  } 
@@ -463,6 +511,93 @@ available_if_capitulated = yes
 prerequisite = { focus = India_armchennai } 
 ai_will_do = { 
  factor = 1
+ } 
+
+ } 
+
+#Focus for New Artillery Divisions
+focus = { 
+id = India_newartillerydivisions
+icon = GFX_goal_generic_army_artillery2
+x = 33
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = India_newarmoreddivisions } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Improve Relations with the Japanese
+focus = { 
+id = India_improverelationswiththejapanese
+icon = GFX_focus_chi_collaboration_with_the_japanese
+x = 4
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = India_hostthegeacps1960conference } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_opinion_modifier= { 
+target = JAP 
+modifier = medium_increase 
+}
+ } 
+
+ } 
+
+#Focus for Carrier Dreams
+focus = { 
+id = India_carrierdreams
+icon = GFX_goal_generic_navy_carrier
+x = 19
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = India_indiannationalnavy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for New Airbases
+focus = { 
+id = India_newairbases
+icon = GFX_goal_generic_build_airforce
+x = 24
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = India_newairforcedivisions } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for War with the Pakis
+focus = { 
+id = India_warwiththepakis
+icon = GFX_goal_generic_attack_allies
+x = 15
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = India_attempttotakeareaeastoftheindus } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+create_wargoal= { 
+type = annex_everything 
+target = PAK
+}
  } 
 
  } 

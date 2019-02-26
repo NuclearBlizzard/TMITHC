@@ -184,8 +184,8 @@ create_country_leader = {
 }
 
 create_corps_commander = {
-	name = "Luis Farell"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+	name = "Mario Arturo Acosta Chaparro"
+	portrait_path = "gfx/leaders/MEX/mario.dds"
 	traits = { }
 	skill = 3
     attack_skill = 4
@@ -195,8 +195,8 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Gildardo Magaña"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	name = "Guillermo Galván"
+	portrait_path = "gfx/leaders/MEX/gal.dds"
 	traits = { desert_fox }
 	skill = 3
     attack_skill = 2
@@ -206,8 +206,8 @@ create_corps_commander = {
 }
 
 create_navy_leader = {
-	name = "Paul Suarez"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
+	name = "Marco Antonio Peyrot González"
+	portrait_path = "gfx/leaders/MEX/marco.dds"
 	traits = { superior_tactician }
 	skill = 3
 }
