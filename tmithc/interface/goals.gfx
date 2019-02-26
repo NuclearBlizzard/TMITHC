@@ -1096,97 +1096,97 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "french_casualties"
-		texturefile = "gfx/interface/goals/economy/french_casualties.dds"			
+		texturefile = "gfx/interface/goals/france/french_casualties.dds"			
 	}
 
 	SpriteType = {
 		name = "french_conscription"
-		texturefile = "gfx/interface/goals/economy/french_conscription.dds"			
+		texturefile = "gfx/interface/goals/france/french_conscription.dds"			
 	}
 
 	SpriteType = {
 		name = "french_diplomacy"
-		texturefile = "gfx/interface/goals/economy/french_diplomacy.dds"			
+		texturefile = "gfx/interface/goals/france/french_diplomacy.dds"			
 	}
 
 	SpriteType = {
 		name = "french_diplomacy2"
-		texturefile = "gfx/interface/goals/economy/french_diplomacy2.dds"			
+		texturefile = "gfx/interface/goals/france/french_diplomacy2.dds"			
 	}
 
 	SpriteType = {
 		name = "french_factories"
-		texturefile = "gfx/interface/goals/economy/french_factories.dds"			
+		texturefile = "gfx/interface/goals/france/french_factories.dds"			
 	}
 
 	SpriteType = {
 		name = "french_fascism"
-		texturefile = "gfx/interface/goals/economy/french_fascism.dds"			
+		texturefile = "gfx/interface/goals/france/french_fascism.dds"			
 	}
 
 	SpriteType = {
 		name = "french_fire"
-		texturefile = "gfx/interface/goals/economy/french_fire.dds"			
+		texturefile = "gfx/interface/goals/france/french_fire.dds"			
 	}
 
 	SpriteType = {
 		name = "french_forts"
-		texturefile = "gfx/interface/goals/economy/french_forts.dds"			
+		texturefile = "gfx/interface/goals/france/french_forts.dds"			
 	}
 
 	SpriteType = {
 		name = "french_guns"
-		texturefile = "gfx/interface/goals/economy/french_guns.dds"			
+		texturefile = "gfx/interface/goals/france/french_guns.dds"			
 	}
 
 	SpriteType = {
 		name = "french_iron_cross"
-		texturefile = "gfx/interface/goals/economy/french_iron_cross.dds"			
+		texturefile = "gfx/interface/goals/france/french_iron_cross.dds"			
 	}
 
 	SpriteType = {
 		name = "french_militia"
-		texturefile = "gfx/interface/goals/economy/french_militia.dds"			
+		texturefile = "gfx/interface/goals/france/french_militia.dds"			
 	}
 
 	SpriteType = {
 		name = "french_militia2"
-		texturefile = "gfx/interface/goals/economy/french_militia2.dds"			
+		texturefile = "gfx/interface/goals/france/french_militia2.dds"			
 	}
 
 	SpriteType = {
 		name = "french_navy"
-		texturefile = "gfx/interface/goals/economy/french_navy.dds"			
+		texturefile = "gfx/interface/goals/france/french_navy.dds"			
 	}
 
 	SpriteType = {
 		name = "french_puppet"
-		texturefile = "gfx/interface/goals/economy/french_puppet.dds"			
+		texturefile = "gfx/interface/goals/france/french_puppet.dds"			
 	}
 
 	SpriteType = {
 		name = "french_republic"
-		texturefile = "gfx/interface/goals/economy/french_republic.dds"			
+		texturefile = "gfx/interface/goals/france/french_republic.dds"			
 	}
 
 	SpriteType = {
 		name = "french_resistance"
-		texturefile = "gfx/interface/goals/economy/french_resistance.dds"			
+		texturefile = "gfx/interface/goals/france/french_resistance.dds"			
 	}
 
 	SpriteType = {
 		name = "french_ss"
-		texturefile = "gfx/interface/goals/economy/french_ss.dds"			
+		texturefile = "gfx/interface/goals/france/french_ss.dds"			
 	}
 
 	SpriteType = {
 		name = "french_victory"
-		texturefile = "gfx/interface/goals/economy/french_victory.dds"			
+		texturefile = "gfx/interface/goals/france/french_victory.dds"			
 	}
 
 	SpriteType = {
 		name = "vichy_france"
-		texturefile = "gfx/interface/goals/economy/vichy_france.dds"			
+		texturefile = "gfx/interface/goals/france/vichy_france.dds"			
 	}
 	
 	#Germany
