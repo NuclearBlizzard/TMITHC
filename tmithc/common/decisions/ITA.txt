@@ -8,10 +8,14 @@ decisions_german_influence_in_italy = {
 		}
 		available = {
 			original_tag = GER
-			ITA = { var_german_influence_in_italy > 99 }
+			custom_trigger_tooltip = {
+				tooltip = "German Influence in Italy over 99."
+				ITA = { check_variable = { var_german_influence_in_italy > 99 } }
+			}
 		}
 		complete_effect = {
 			puppet = ITA
+			hidden_effect = { ITA = { news_event = { id = italy_news.6 hours = 6 } } }
 		}
 	}
 	
@@ -23,10 +27,14 @@ decisions_german_influence_in_italy = {
 		}
 		available = {
 			original_tag = ITA
-			ITA = { var_german_influence_in_italy < 1 }
+			custom_trigger_tooltip = {
+				tooltip = "German Influence in Italy under 1."
+				ITA = { check_variable = { var_german_influence_in_italy < 1 } }
+			}
 		}
 		complete_effect = {
 			german_influence_in_italy_end_mechanic = yes
+			hidden_effect = { ITA = { news_event = { id = italy_news.5 hours = 6 } } }
 		}
 	}
 	
