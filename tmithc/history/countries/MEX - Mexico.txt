@@ -17,6 +17,10 @@ create_faction = "Latin Federation"
 add_to_faction = "COL"
 add_to_faction = "BRA"
 
+add_ideas = {
+        MEX_TEST
+}
+
 1939.1.1 = {
 
 	add_political_power = 1198

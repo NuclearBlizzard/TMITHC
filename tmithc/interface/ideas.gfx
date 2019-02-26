@@ -164,7 +164,13 @@ spriteTypes = {
 		name = "GFX_idea_saf_soviet_advisers"
 		texturefile = "gfx/interface/ideas/idea_saf_soviet_advisers.dds"
 	}
-
+	
+	### MEX
+		
+	spriteType = {
+		name = "MEX_TEST"
+		texturefile = "gfx/interface/ideas/MEX/mextest1.tga"
+	}
 
 	### GER
 
