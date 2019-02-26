@@ -79,18 +79,18 @@ FRA_active_resistance
 create_country_leader = {
 	name = "Charles de Gaulle"
 	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	picture = "portrait_fra_degaulle.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = liberalism
 	traits = {
 		
 	}
 }
 
 create_country_leader = {
-	name = "Édouard Daladier"
+	name = "Maurice Gamelin"
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-	picture = "Portrait_France_Edouard_Daladier.dds"
+	picture = "portrait_fra_gamelin.tga"
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
