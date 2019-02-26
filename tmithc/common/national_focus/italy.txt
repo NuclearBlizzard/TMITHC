@@ -26,9 +26,9 @@ focus_tree = {
 		
 		prerequisite = { }
 		mutually_exclusive = { }
-		available = { }
+		available = { has_country_leader = { name = "Benito Mussolini" } }
 		select_effect = { }
-		bypass = { }
+		bypass = { NOT = { has_country_leader = { name = "Benito Mussolini" } } }
 		cancel = { }
 
 		cancel_if_invalid = yes
@@ -109,7 +109,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			
+			#Maybe add a tooltip, but no big deal.
 		}
 
 		ai_will_do = {
