@@ -1,114 +1,149 @@
 ideas = {
-	
 	country = {
-		JAP_navy_dominant_high = {
-
+		JAP_Taishi_Okamura = {
+			
 			allowed = {
 				always = no
 			}
 
-			allowed_civil_war {
-				always = yes
+			allowed_civil_war = {
+				has_government = fascism
 			}
-
-			picture = JAP_navy_dominant
 
 			removal_cost = -1
 
+			picture = Taishi_Okamura
+			
 			modifier = {
-				production_speed_dockyard_factor = 0.15	
-				production_speed_arms_factory_factor = -0.25
-				industrial_capacity_dockyard = 0.15
-				industrial_capacity_factory = -0.25
+				add_stability= 0.02
 			}
 		}
-		
-		JAP_navy_dominant_low = {
-
-			allowed = {
+		JAP_Hirohito_Yakuza = {
+			
+		     allowed = {
 				always = no
 			}
 
-			allowed_civil_war {
-				always = yes
+			allowed_civil_war = {
+				has_government = fascism
 			}
-
-			picture = JAP_navy_dominant
 
 			removal_cost = -1
 
+			picture = Hirohito_Yakuza
+			
 			modifier = {
-				production_speed_dockyard_factor = 0.1			
-				production_speed_arms_factory_factor = -0.15
-				industrial_capacity_dockyard = 0.15
-				industrial_capacity_factory = -0.1
+				add_stability= 0.05
 			}
 		}
-		
-		JAP_army_navy_balanced = {
-
-			allowed = {
+		JAP_Instability = {
+			
+		     allowed = {
 				always = no
 			}
 
-			allowed_civil_war {
-				always = yes
+			allowed_civil_war = {
+				has_government = fascism
 			}
-
-			picture = JAP_army_balanced
 
 			removal_cost = -1
 
+			picture = Instability
+			
 			modifier = {
-				political_power_gain = 0.35
-				stability_factor = 0.05
+				add_stability= -0.50
 			}
 		}
-		
-		JAP_army_dominant_low = {
-
-			allowed = {
+		JAP_Yakuza_Law = {
+			
+		     allowed = {
 				always = no
 			}
 
-			allowed_civil_war {
-				always = yes
+			allowed_civil_war = {
+				has_government = fascism
 			}
-
-			picture = JAP_army_dominant
 
 			removal_cost = -1
 
+			picture = Yakuza_book
+			
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
-				production_speed_dockyard_factor = -0.15
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = -0.15
+				add_war_support= 5
 			}
 		}
-		
-		JAP_army_dominant_high = {
-
-			allowed = {
+		JAP_Film = {
+			
+		     allowed = {
 				always = no
 			}
 
-			allowed_civil_war {
-				always = yes
+			allowed_civil_war = {
+				has_government = fascism
 			}
-
-			picture = JAP_army_dominant
 
 			removal_cost = -1
 
+			picture = Filmreel
+			
 			modifier = {
-				production_speed_arms_factory_factor = 0.15
-				production_speed_dockyard_factor = -0.25
-				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = -0.25
+				add_stability= 0.05
 			}
 		}
+		JAP_Navy = {
+			
+		     allowed = {
+				always = no
+			}
 
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = Filmreel
+			
+			modifier = {
+				add_stability= 0.05
+			}
+		}
+		JAP_Army = {
+			
+		     allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = Filmreel
+			
+			modifier = {
+				add_stability= 0.05
+			}
+		}
+		JAP_Neutral = {
+			
+		     allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = Facepalm
+			
+			modifier = {
+				add_stability= -0.10
+				add_war_support= -5
+			}
+		}
 	}
-
 }
