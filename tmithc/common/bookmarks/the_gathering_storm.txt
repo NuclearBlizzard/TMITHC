@@ -42,7 +42,7 @@ bookmarks = {
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-
+				JAP_Instability
 			}	
 			
 		}
