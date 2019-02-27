@@ -3708,7 +3708,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_Instability"
-		texturefile = "gfx/interface/ideas/entername.tga"
+		texturefile = "gfx/interface/ideas/Instability.tga"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_Taishi_Okamura"
