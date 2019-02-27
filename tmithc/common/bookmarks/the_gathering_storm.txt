@@ -91,9 +91,15 @@ bookmarks = {
 			history = "MEX_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-
+				MEX_TEST
+				MEX_TEST1
+				MEX_TEST2
 			}
-	
+			focuses = {
+				MEX_western_focus
+				MEX_friendship_treaty_with_italy
+				MEX_reinforce_old_alliances
+			}	
 		}
 		
 		"FRA"={

@@ -171,6 +171,11 @@ spriteTypes = {
 		name = "MEX_TEST"
 		texturefile = "gfx/interface/ideas/MEX/mextest1.tga"
 	}
+	
+	spriteType = {
+		name = "MEX_TEST1"
+		texturefile = "gfx/interface/ideas/MEX/mextest2.tga"
+	}
 
 	### GER
 

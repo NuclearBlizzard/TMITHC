@@ -13,17 +13,20 @@ set_technology = {
     basic_destroyer = 1
 }
 
+add_ideas = {
+MEX_TEST
+MEX_TEST1
+MEX_TEST2
+}
+
+
 create_faction = "Latin Federation"
 add_to_faction = "COL"
 add_to_faction = "BRA"
 
-add_ideas = {
-        MEX_TEST
-}
-
 1939.1.1 = {
 
-	add_political_power = 1198
+	add_political_power = 200
 	
 	#generic focuses
 	complete_national_focus = army_effort

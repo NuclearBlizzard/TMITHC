@@ -183,4 +183,11 @@
  MEX_expand_the_submarine_fleet:0 "Expand the Submarine Fleet"
  MEX_expand_the_submarine_fleet_desc:1 "Rather than challenge the enemy head-on with our inferior navy, we should focus on submarines to harass the enemy and target their merchant shipping."
  panslavic_workers_congress:0 "Pan-Slavic Worker's Congress"
+ 
+ 
+ 
+ ## Yes
+MEX_TEST:0 "The Ideological Dispute"
+MEX_TEST1:0 "Central America United"
+MEX_TEST2:0 "Power of the Hispanic People"
 
