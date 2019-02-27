@@ -3702,4 +3702,20 @@ spriteTypes = {
 		name = "gfx_idea_new_zealander_seperatism"
 		texturefile = "gfx/interface/idea/idea_generic_flexible_foreign_policy2.tga"
 	}
+		spriteType = {
+		name = "GFX_idea_JAP_Yakuza_Law"
+		texturefile = "gfx/interface/ideas/Yakuza_book.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Instability"
+		texturefile = "gfx/interface/ideas/entername.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Taishi_Okamura"
+		texturefile = "gfx/interface/ideas/Taishi_Okamura.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Hirohito_Yakuza"
+		texturefile = "gfx/interface/ideas/Hirohito_Yakuza.tga"
+	}
 }
