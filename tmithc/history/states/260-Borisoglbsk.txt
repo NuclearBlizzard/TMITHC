@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = RKU
+		owner = SOV
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1

@@ -12,7 +12,7 @@ state={
 	}
 
 	history={
-		owner = JPS
+		owner = USA
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2
@@ -32,15 +32,15 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = JPS
+		add_core_of = USA
 		victory_points = {
-			9814 25
+			9814 30
 		}
 		victory_points = {
 			1562 15 
 		}
 		victory_points = {
-			9671 30
+			9671 25
 		}
 		victory_points = {
 			9713 1 

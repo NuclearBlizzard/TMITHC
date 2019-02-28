@@ -2,7 +2,7 @@
 state={
 	id=28
 	name="STATE_28" # Alsace-Lorraine
-	manpower = 3015600
+	manpower = 1915600
 	
 	state_category = city
 	resources={
@@ -10,7 +10,9 @@ state={
 	}
 
 	history={
-		owner = GER
+		owner = FRA
+		#victory_points = { 6529 1 }
+		#victory_points = { 549 1 }
 		victory_points = { 678 5 }
 		victory_points = { 9503 5 }
 		victory_points = { 9559 10 }
@@ -49,7 +51,12 @@ state={
 			air_base = 5
 
 		}
-		add_core_of = GER
+		add_core_of = FRA
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 4
+			}
+		}
 	}
 
 	provinces={

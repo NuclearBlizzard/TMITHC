@@ -6,8 +6,11 @@ state={
 	state_category = tiny_island
 
 	history={
-		owner = RKC
-		add_core_of = RKC
+		add_core_of = BAH
+		owner = ENG
+		victory_points = {
+			10254 1
+		}
 		buildings = {
 			infrastructure = 4
 			10254 = {
@@ -21,6 +24,7 @@ state={
 			}
 		}
 	}
+
 	provinces={
 		4647 7245 10254 
 	}

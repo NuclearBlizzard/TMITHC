@@ -6,13 +6,18 @@ state={
 	}
 
 	history={
-		owner = RKK
+		owner = SOV
 		buildings = {
 			infrastructure = 3
 
 		}
-		add_core_of = RKK
-
+		add_core_of = SOV
+		victory_points = {
+			9628 3
+		}
+		victory_points = {
+			9663 1
+		}
 	}
 
 	provinces={

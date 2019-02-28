@@ -14,5 +14,4 @@ opinion_modifiers = {
 		months = 18
 		decay = 1
 	}
-	
 }

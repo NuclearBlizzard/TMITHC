@@ -12,7 +12,10 @@ state={
 	}
 
 	history={
-		owner = JPR
+		victory_points = {
+			2054 1
+		}
+		owner = RAJ
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

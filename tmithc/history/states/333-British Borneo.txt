@@ -12,7 +12,7 @@ state=
 
 	history=
 	{
-		owner = JEI
+		owner = MAL
 		victory_points = {
 			7371 1
 		}
@@ -25,7 +25,7 @@ state=
 				naval_base = 2
 			}
 		}
-		add_core_of = JEI
+		add_core_of = MAL
 	}
 
 	provinces={

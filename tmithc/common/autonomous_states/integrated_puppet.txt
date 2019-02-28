@@ -5,6 +5,8 @@ autonomy_state = {
 	
 	min_freedom_level = 0.0
 	
+	manpower_influence = 1.0
+	
 	rule = {
 		can_not_declare_war = yes
 		can_decline_call_to_war = no
@@ -35,15 +37,11 @@ autonomy_state = {
 	}
 
 	allowed = {
-		OR = {
-			AND = {
-				NOT = { OVERLORD = { original_tag = GER } }
-				NOT = { OVERLORD = { original_tag = JAP } }
-			}
-			AND = {
-				NOT = { has_government = fascism }
-				NOT = { has_government = neutrality }
-			}
+		has_dlc = "Together for Victory"
+
+		if = {
+			limit = { has_dlc = "Death or Dishonor" }
+			NOT = { has_government = fascism }
 		}
 	}
 	

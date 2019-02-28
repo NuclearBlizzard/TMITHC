@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = RKU
+		owner = SOV
 		buildings = {
 			infrastructure = 5
 		}

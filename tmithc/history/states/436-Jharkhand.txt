@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = JPR
+		owner = RAJ
 		buildings = {
 			infrastructure = 4
 		}

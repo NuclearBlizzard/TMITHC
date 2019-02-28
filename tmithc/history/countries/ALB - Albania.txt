@@ -16,7 +16,7 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 100
+			popularity = 0
 		}
 		
 		communism = {
@@ -24,27 +24,38 @@ set_politics = {
 		}
 		
 		neutrality = { 
-			popularity = 0
+			popularity = 100
 		}
 	}
 	
-	ruling_party = fascism
-	last_election = "1960.1.1"
+	ruling_party = neutrality
+	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-set_convoys = 20
+set_convoys = 5
 
+#Victor Emmanuel III of Italy after 39
 create_country_leader = {
-	name = "Umberto II di Savoia"
-	desc = ""
-	picture = "Umberto_Savoia.tga"	
-	expire = "1990.1.1"
-	ideology = fascism_ideology
+	name = "King Zog"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Albania_King_Zog.dds"
+	expire = "1965.1.1"
+	ideology = despotism
 	traits = {
 		#
 	}
 }
 
+create_field_marshal = {
+	name = "Xhemal Aranitasi"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
 

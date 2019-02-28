@@ -2,51 +2,36 @@
 # MAIN THEME
 music = {
 	name = "maintheme"
-	file = "freeisacuck.ogg"
+	file = "hoi4mainthemeallies.ogg"
 	volume = 0.65
 }
 
 # General Peace:
 music = {
 	name = "general_peace_1"
-	file = "Dei Partei Damen - Nowhere to Run.ogg"
+	file = "general_peace_heartsofmen.ogg"
 	volume = 0.65
 }
 music = {
 	name = "general_peace_2"
-	file = "Wilbert Eckart  Volksmusik Stars - House of the Rising Sun.ogg"
-	volume = 0.65
-}
-music = {
-	name = "Edelweiss"
-	file = "Edelweiss.ogg"
-	volume = 0.65
-}
-music = {
-	name = "The End of the World"
-	file = "jap.ogg"
+	file = "thewarends.ogg"
 	volume = 0.65
 }
 music = {
 	name = "general_peace_3"
-	file = "Viktor  Die Vokalisten-Berlin Boys and Stuttgart Girls.ogg"
-	volume = 0.65
-}
-music = {
-	name = "The Necklace"
-	file = "free.ogg"
+	file = "asongforthechildrenofww2.ogg"
 	volume = 0.65
 }
 
 # General war:
 music = {
 	name = "general_war_1"
-	file = "Roei no Uta.ogg"
+	file = "general_war_bringforththetanks.ogg"
 	volume = 0.65
 }
 music = {
 	name = "general_war_2"
-	file = "Battotai.ogg"
+	file = "general_war_theattack.ogg"
 	volume = 0.65
 }
 
@@ -54,12 +39,12 @@ music = {
 # Allies Peace:
 music = {
 	name = "allies_peace_1"
-	file = "Yuki no Shingun.ogg"
+	file = "allies_peace_morningofdday.ogg"
 	volume = 0.65
 }
 music = {
 	name = "allies_peace_2"
-	file = "The Rolling Stones - Paint It, Black.ogg"
+	file = "endofthetour.ogg"
 	volume = 0.65
 }
 
@@ -67,12 +52,12 @@ music = {
 # Allies War:
 music = {
 	name = "allies_war_1"
-	file = "Erika.ogg"
+	file = "wearesoldiers.ogg"
 	volume = 0.65
 }
 music = {
 	name = "allies_war_2"
-	file = "Im Wald im grünen Walde.ogg"
+	file = "allies_war_theroyalairforce.ogg"
 	volume = 0.65
 }
 
@@ -80,7 +65,7 @@ music = {
 # Axis Peace:
 music = {
 	name = "axis_peace_1"
-	file = "Wilbert Eckart  Volksmusik Stars - House of the Rising Sun.ogg"
+	file = "axis_peace_krakow.ogg"
 	volume = 0.65
 }
 music = {
@@ -98,7 +83,7 @@ music = {
 }
 music = {
 	name = "axis_war_2"
-	file = "Song of the Kamikaze Pilots.ogg"
+	file = "heavywater.ogg"
 	volume = 0.65
 }
 music = {
@@ -117,13 +102,13 @@ music = {
 
 music = {
 	name = "comintern_peace_1"
-	file = "Red Army Choir Lets Go.ogg"
+	file = "motherrussia.ogg"
 	volume = 0.65
 }
 
 music = {
 	name = "comintern_peace_2"
-	file = "Polyushka Polye.ogg"
+	file = "theredarmy.ogg"
 	volume = 0.65
 }
 
@@ -150,13 +135,5 @@ music = {
 music = {
 	name = "comintern_war_3"
 	file = "thegreatpatrioticwar.ogg"
-	volume = 0.65
-}
-
-	# ROMANIA:
-
-music = {
-	name = "rom_viata_complicata"
-	file = "rom_viata_complicata.ogg"
 	volume = 0.65
 }
