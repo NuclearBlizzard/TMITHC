@@ -1,0 +1,559 @@
+focus_tree = {
+	id = JapanesePacificStates
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JPS
+		}
+	}
+	default = no
+	focus = {
+		id = pacific_air_force
+		icon = GFX_goal_unknown
+		cost = 0,00
+		x = 4
+		y = 0
+
+	}
+	focus = {
+		id = refit_pacific_army
+		icon = GFX_goal_unknown
+		cost = 0,00
+		x = 11
+		y = 0
+
+	}
+	focus = {
+		id = path_of_pacific
+		icon = GFX_goal_unknown
+		cost = 0,00
+		x = 24
+		y = 1
+
+	}
+	focus = {
+		id = naval_aviation
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = pacific_air_force
+		}
+		mutually_exclusive = {
+			focus = focus_on_land
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = a_zero_of_our_own
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = naval_aviation
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = long_distance_fighter_supp
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = a_zero_of_our_own
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = naval_expertise
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = long_distance_fighter_supp
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = focus_on_land
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = pacific_air_force
+		}
+		mutually_exclusive = {
+			focus = naval_aviation
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = precise_strikes
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = focus_on_land
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = support_divebombers
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = precise_strikes
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = ensure_air_dominance
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = support_divebombers
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = back_to_past
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = ensure_air_dominance
+			focus = naval_expertise
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = japanese_dominance
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = refit_pacific_army
+		}
+		mutually_exclusive = {
+			focus = native_units
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = request_jap_mariness
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = japanese_dominance
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = strike_from_sea
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = request_jap_mariness
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = logistical_expertise
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = strike_from_sea
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = superior_planning
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = japanese_dominance
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = officer_initiative
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = superior_planning
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = dig_in
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = officer_initiative
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = warrior_spirit
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = dig_in
+			focus = logistical_expertise
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = native_units
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = refit_pacific_army
+		}
+		mutually_exclusive = {
+			focus = japanese_dominance
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = support_rifleman
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = native_units
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = fill_reserves
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = support_rifleman
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = deadly_firepower
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = fill_reserves
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = tank_development
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = native_units
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = mobile_infantry
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = tank_development
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = combined_arms
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = mobile_infantry
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = fierce_defenders
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = combined_arms
+		}
+		prerequisite = {
+			focus = deadly_firepower
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = begin_japanization
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = path_of_pacific
+		}
+		mutually_exclusive = {
+			focus = native_representation
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = bring_japanese_admin
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = begin_japanization
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = request_ships
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = bring_japanese_admin
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = encourage_settlement
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = request_ships
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = invite_jap_industrialists
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = bring_japanese_admin
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = favor_jap_corp
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = invite_jap_industrialists
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = employ_kempeitai
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = encourage_settlement
+		}
+		prerequisite = {
+			focus = favor_jap_corp
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = native_representation
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = path_of_pacific
+		}
+		mutually_exclusive = {
+			focus = begin_japanization
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = limited_local_autonomy
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = native_representation
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = local_development
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = limited_local_autonomy
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = native_police_officers
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = local_development
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = californian_bus_interests
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = native_police_officers
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = crush_autonomy
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = employ_kempeitai
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = native_forced_labor
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = crush_autonomy
+		}
+		x = 19
+		y = 8
+
+	}
+	focus = {
+		id = direct_rule_from_tokyo
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = native_forced_labor
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = united_ind_dev_board
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = native_representation
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = resources_for_jap
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = united_ind_dev_board
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = trust_japan
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = resources_for_jap
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = meet_weapon_exp
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = trust_japan
+		}
+		x = 25
+		y = 6
+
+	}
+	focus = {
+		id = prosperity_under_japan
+		icon = GFX_goal_unknown
+		cost = 0,00
+		prerequisite = {
+			focus = meet_weapon_exp
+		}
+		prerequisite = {
+			focus = californian_bus_interests
+		}
+		x = 24
+		y = 7
+
+	}
+}
