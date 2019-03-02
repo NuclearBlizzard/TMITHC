@@ -42,7 +42,7 @@ bookmarks = {
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-
+				JAP_Instability
 			}	
 			
 		}
@@ -90,7 +90,30 @@ bookmarks = {
 			history = "MEX_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-
+				MEX_TEST
+				MEX_TEST1
+				MEX_TEST2
+			}
+			focuses = {
+				MEX_western_focus
+				MEX_friendship_treaty_with_italy
+				MEX_reinforce_old_alliances
+			}	
+		}
+		
+		"FRA"={
+		    minor = yes
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				FRA_chained_republic
+				FRA_milice
+				FRA_active_resistance
+			}
+			focuses = {
+				FRA_embraceresistance
+				FRA_francisque
+				FRA_loyaltogermany
 			}
 	
 		}

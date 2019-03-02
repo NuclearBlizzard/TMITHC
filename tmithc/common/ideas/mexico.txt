@@ -1,0 +1,58 @@
+ideas = {
+
+	country = {
+		MEX_TEST1 = {
+
+			picture = Covert_Operations
+			
+			removal_cost = -1
+
+			allowed = {
+				original_tag = MEX
+			}
+			
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				conscription = 0.005
+				army_morale_factor = 0.1
+				fascism_drift = 0.07
+			}
+		}
+	
+		MEX_TEST = {
+
+			picture = Covert_Operations
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			modifier = {
+				democratic_drift = 0.09
+				neutrality_drift = 0.05
+				stability_factor = -0.3
+				war_support_factor = -0.3
+			}
+		}
+		
+		MEX_TEST2 = {
+
+			picture = Covert_Operations
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			modifier = {
+				political_power_gain = 0.25
+				justify_war_goal_time = -0.50
+				max_planning = 0.15
+				recon_factor = 0.05
+				decryption_factor = 0.05
+			}
+		}

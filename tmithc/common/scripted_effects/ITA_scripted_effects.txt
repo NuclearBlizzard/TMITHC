@@ -1,342 +1,137 @@
+ITA_military_purges_downgrade = {
+	if = {
+		limit = {
+			NOT = { has_idea = ITA_military_purges_1 }
+			NOT = { has_idea = ITA_military_purges_2 }
+			NOT = { has_idea = ITA_military_purges_3 }
+		}
+		army_experience = 25
+	}
+	if = {
+		limit = { has_idea = ITA_military_purges_1 }
+		remove_ideas = ITA_military_purges_1
+	}
+	if = {
+		limit = { has_idea = ITA_military_purges_2 }
+		swap_ideas = {
+			remove_idea = ITA_military_purges_2
+			add_idea = ITA_military_purges_1
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_military_purges_3 }
+		swap_ideas = {
+			remove_idea = ITA_military_purges_3
+			add_idea = ITA_military_purges_2
+		}
+	}
+}
 german_influence_in_italy_end_mechanic = {
+	german_influence_in_italy_remove_all = yes
+}
+german_influence_in_italy_remove_all = {
 	ITA = {
-		remove_ideas = ITA_german_influence_in_italy_5
-		remove_ideas = ITA_german_influence_in_italy_15
-		remove_ideas = ITA_german_influence_in_italy_25
-		remove_ideas = ITA_german_influence_in_italy_35
-		remove_ideas = ITA_german_influence_in_italy_45
-		remove_ideas = ITA_german_influence_in_italy_55
-		remove_ideas = ITA_german_influence_in_italy_65
-		remove_ideas = ITA_german_influence_in_italy_75
-		remove_ideas = ITA_german_influence_in_italy_85
-		remove_ideas = ITA_german_influence_in_italy_95
+		if = { limit = { has_idea = ITA_german_influence_in_italy_5 } remove_ideas = ITA_german_influence_in_italy_5 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_15 } remove_ideas = ITA_german_influence_in_italy_15 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_25 } remove_ideas = ITA_german_influence_in_italy_25 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_35 } remove_ideas = ITA_german_influence_in_italy_35 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_45 } remove_ideas = ITA_german_influence_in_italy_45 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_55 } remove_ideas = ITA_german_influence_in_italy_55 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_65 } remove_ideas = ITA_german_influence_in_italy_65 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_75 } remove_ideas = ITA_german_influence_in_italy_75 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_85 } remove_ideas = ITA_german_influence_in_italy_85 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_95 } remove_ideas = ITA_german_influence_in_italy_95 }
 	}
 }
 german_influence_in_italy_update = {
 	ITA = {
-		if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 85 compare = greater_than_or_equals } } } 
-			german_influence_in_italy_set_level_to_95 = yes
-			else = {
-				if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 85 compare = greater_than_or_equals } } }
-					german_influence_in_italy_set_level_to_85 = yes
-					else = {
-						if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 75 compare = greater_than_or_equals } } }
-							german_influence_in_italy_set_level_to_75 = yes
-							else = {
-								if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 65 compare = greater_than_or_equals } } }
-									german_influence_in_italy_set_level_to_65 = yes
-									else = {
-										if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 55 compare = greater_than_or_equals } } }
-											german_influence_in_italy_set_level_to_55 = yes
-											else = {
-												if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 45 compare = greater_than_or_equals } } }
-													german_influence_in_italy_set_level_to_45 = yes
-													else = {
-														if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 35 compare = greater_than_or_equals } } }
-															german_influence_in_italy_set_level_to_35 = yes
-															else = {
-																if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 25 compare = greater_than_or_equals } } }
-																	german_influence_in_italy_set_level_to_25 = yes
-																	else = {
-																		if = { limit = { ITA = { check_variable = { var = var_german_influence_in_italy value = 15 compare = greater_than_or_equals } } }
-																			german_influence_in_italy_set_level_to_15 = yes
-																			else = { german_influence_in_italy_set_level_to_5 = yes }
-																		}
-																	}
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-german_influence_in_italy_set_level_to_95 = {
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_85 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_85 add_idea = ITA_german_influence_in_italy_95 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_75 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_75 add_idea = ITA_german_influence_in_italy_95 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_65 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_65 add_idea = ITA_german_influence_in_italy_95 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_55 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_55 add_idea = ITA_german_influence_in_italy_95 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_45 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_45 add_idea = ITA_german_influence_in_italy_95 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_35 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_35 add_idea = ITA_german_influence_in_italy_95 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_25 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_25 add_idea = ITA_german_influence_in_italy_95 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_15 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_15 add_idea = ITA_german_influence_in_italy_95 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_5 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_5 add_idea = ITA_german_influence_in_italy_95 } } }
-	ITA = {
-		if = {
-			limit = {
-				NOT = { has_idea = ITA_german_influence_in_italy_95 }
-				NOT = { has_idea = ITA_german_influence_in_italy_85 }
-				NOT = { has_idea = ITA_german_influence_in_italy_75 }
-				NOT = { has_idea = ITA_german_influence_in_italy_65 }
-				NOT = { has_idea = ITA_german_influence_in_italy_55 }
-				NOT = { has_idea = ITA_german_influence_in_italy_45 }
-				NOT = { has_idea = ITA_german_influence_in_italy_35 }
-				NOT = { has_idea = ITA_german_influence_in_italy_25 }
-				NOT = { has_idea = ITA_german_influence_in_italy_15 }
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy < 11 }
 				NOT = { has_idea = ITA_german_influence_in_italy_5 }
 			}
-			add_ideas = ITA_german_influence_in_italy_95
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_5
 		}
-	}
-}
-german_influence_in_italy_set_level_to_85 = {
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_85 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_95 add_idea = ITA_german_influence_in_italy_85 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_75 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_75 add_idea = ITA_german_influence_in_italy_85 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_65 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_65 add_idea = ITA_german_influence_in_italy_85 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_55 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_55 add_idea = ITA_german_influence_in_italy_85 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_45 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_45 add_idea = ITA_german_influence_in_italy_85 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_35 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_35 add_idea = ITA_german_influence_in_italy_85 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_25 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_25 add_idea = ITA_german_influence_in_italy_85 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_15 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_15 add_idea = ITA_german_influence_in_italy_85 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_5 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_5 add_idea = ITA_german_influence_in_italy_85 } } }
-	ITA = {
-		if = {
-			limit = {
-				NOT = { has_idea = ITA_german_influence_in_italy_95 }
-				NOT = { has_idea = ITA_german_influence_in_italy_85 }
-				NOT = { has_idea = ITA_german_influence_in_italy_75 }
-				NOT = { has_idea = ITA_german_influence_in_italy_65 }
-				NOT = { has_idea = ITA_german_influence_in_italy_55 }
-				NOT = { has_idea = ITA_german_influence_in_italy_45 }
-				NOT = { has_idea = ITA_german_influence_in_italy_35 }
-				NOT = { has_idea = ITA_german_influence_in_italy_25 }
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 10 } 
+				check_variable = { var_german_influence_in_italy < 21 } 
 				NOT = { has_idea = ITA_german_influence_in_italy_15 }
-				NOT = { has_idea = ITA_german_influence_in_italy_5 }
 			}
-			add_ideas = ITA_german_influence_in_italy_85
-		}
-	}
-}
-german_influence_in_italy_set_level_to_75 = {
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_85 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_95 add_idea = ITA_german_influence_in_italy_75 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_75 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_85 add_idea = ITA_german_influence_in_italy_75 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_65 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_65 add_idea = ITA_german_influence_in_italy_75 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_55 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_55 add_idea = ITA_german_influence_in_italy_75 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_45 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_45 add_idea = ITA_german_influence_in_italy_75 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_35 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_35 add_idea = ITA_german_influence_in_italy_75 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_25 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_25 add_idea = ITA_german_influence_in_italy_75 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_15 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_15 add_idea = ITA_german_influence_in_italy_75 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_5 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_5 add_idea = ITA_german_influence_in_italy_75 } } }
-	ITA = {
-		if = {
-			limit = {
-				NOT = { has_idea = ITA_german_influence_in_italy_95 }
-				NOT = { has_idea = ITA_german_influence_in_italy_85 }
-				NOT = { has_idea = ITA_german_influence_in_italy_75 }
-				NOT = { has_idea = ITA_german_influence_in_italy_65 }
-				NOT = { has_idea = ITA_german_influence_in_italy_55 }
-				NOT = { has_idea = ITA_german_influence_in_italy_45 }
-				NOT = { has_idea = ITA_german_influence_in_italy_35 }
-				NOT = { has_idea = ITA_german_influence_in_italy_25 }
-				NOT = { has_idea = ITA_german_influence_in_italy_15 }
-				NOT = { has_idea = ITA_german_influence_in_italy_5 }
-			}
-			add_ideas = ITA_german_influence_in_italy_75
-		}
-	}
-}
-german_influence_in_italy_set_level_to_65 = {
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_85 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_95 add_idea = ITA_german_influence_in_italy_65 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_75 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_85 add_idea = ITA_german_influence_in_italy_65 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_65 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_75 add_idea = ITA_german_influence_in_italy_65 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_55 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_55 add_idea = ITA_german_influence_in_italy_65 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_45 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_45 add_idea = ITA_german_influence_in_italy_65 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_35 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_35 add_idea = ITA_german_influence_in_italy_65 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_25 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_25 add_idea = ITA_german_influence_in_italy_65 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_15 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_15 add_idea = ITA_german_influence_in_italy_65 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_5 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_5 add_idea = ITA_german_influence_in_italy_65 } } }
-	ITA = {
-		if = {
-			limit = {
-				NOT = { has_idea = ITA_german_influence_in_italy_95 }
-				NOT = { has_idea = ITA_german_influence_in_italy_85 }
-				NOT = { has_idea = ITA_german_influence_in_italy_75 }
-				NOT = { has_idea = ITA_german_influence_in_italy_65 }
-				NOT = { has_idea = ITA_german_influence_in_italy_55 }
-				NOT = { has_idea = ITA_german_influence_in_italy_45 }
-				NOT = { has_idea = ITA_german_influence_in_italy_35 }
-				NOT = { has_idea = ITA_german_influence_in_italy_25 }
-				NOT = { has_idea = ITA_german_influence_in_italy_15 }
-				NOT = { has_idea = ITA_german_influence_in_italy_5 }
-			}
-			add_ideas = ITA_german_influence_in_italy_65
-		}
-	}
-}
-german_influence_in_italy_set_level_to_55 = {
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_85 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_95 add_idea = ITA_german_influence_in_italy_55 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_75 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_85 add_idea = ITA_german_influence_in_italy_55 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_65 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_75 add_idea = ITA_german_influence_in_italy_55 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_55 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_65 add_idea = ITA_german_influence_in_italy_55 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_45 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_45 add_idea = ITA_german_influence_in_italy_55 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_35 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_35 add_idea = ITA_german_influence_in_italy_55 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_25 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_25 add_idea = ITA_german_influence_in_italy_55 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_15 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_15 add_idea = ITA_german_influence_in_italy_55 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_5 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_5 add_idea = ITA_german_influence_in_italy_55 } } }
-	ITA = {
-		if = {
-			limit = {
-				NOT = { has_idea = ITA_german_influence_in_italy_95 }
-				NOT = { has_idea = ITA_german_influence_in_italy_85 }
-				NOT = { has_idea = ITA_german_influence_in_italy_75 }
-				NOT = { has_idea = ITA_german_influence_in_italy_65 }
-				NOT = { has_idea = ITA_german_influence_in_italy_55 }
-				NOT = { has_idea = ITA_german_influence_in_italy_45 }
-				NOT = { has_idea = ITA_german_influence_in_italy_35 }
-				NOT = { has_idea = ITA_german_influence_in_italy_25 }
-				NOT = { has_idea = ITA_german_influence_in_italy_15 }
-				NOT = { has_idea = ITA_german_influence_in_italy_5 }
-			}
-			add_ideas = ITA_german_influence_in_italy_55
-		}
-	}
-}
-german_influence_in_italy_set_level_to_45 = {
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_85 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_95 add_idea = ITA_german_influence_in_italy_45 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_75 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_85 add_idea = ITA_german_influence_in_italy_45 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_65 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_75 add_idea = ITA_german_influence_in_italy_45 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_55 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_65 add_idea = ITA_german_influence_in_italy_45 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_45 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_55 add_idea = ITA_german_influence_in_italy_45 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_35 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_35 add_idea = ITA_german_influence_in_italy_45 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_25 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_25 add_idea = ITA_german_influence_in_italy_45 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_15 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_15 add_idea = ITA_german_influence_in_italy_45 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_5 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_5 add_idea = ITA_german_influence_in_italy_45 } } }
-	ITA = {
-		if = {
-			limit = {
-				NOT = { has_idea = ITA_german_influence_in_italy_95 }
-				NOT = { has_idea = ITA_german_influence_in_italy_85 }
-				NOT = { has_idea = ITA_german_influence_in_italy_75 }
-				NOT = { has_idea = ITA_german_influence_in_italy_65 }
-				NOT = { has_idea = ITA_german_influence_in_italy_55 }
-				NOT = { has_idea = ITA_german_influence_in_italy_45 }
-				NOT = { has_idea = ITA_german_influence_in_italy_35 }
-				NOT = { has_idea = ITA_german_influence_in_italy_25 }
-				NOT = { has_idea = ITA_german_influence_in_italy_15 }
-				NOT = { has_idea = ITA_german_influence_in_italy_5 }
-			}
-			add_ideas = ITA_german_influence_in_italy_45
-		}
-	}
-}
-german_influence_in_italy_set_level_to_35 = {
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_35 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_35 add_idea = ITA_german_influence_in_italy_35 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_85 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_85 add_idea = ITA_german_influence_in_italy_35 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_75 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_75 add_idea = ITA_german_influence_in_italy_35 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_65 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_65 add_idea = ITA_german_influence_in_italy_35 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_55 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_55 add_idea = ITA_german_influence_in_italy_35 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_45 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_45 add_idea = ITA_german_influence_in_italy_35 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_25 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_25 add_idea = ITA_german_influence_in_italy_35 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_15 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_15 add_idea = ITA_german_influence_in_italy_35 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_5 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_5 add_idea = ITA_german_influence_in_italy_35 } } }
-	ITA = {
-		if = {
-			limit = {
-				NOT = { has_idea = ITA_german_influence_in_italy_95 }
-				NOT = { has_idea = ITA_german_influence_in_italy_85 }
-				NOT = { has_idea = ITA_german_influence_in_italy_75 }
-				NOT = { has_idea = ITA_german_influence_in_italy_65 }
-				NOT = { has_idea = ITA_german_influence_in_italy_55 }
-				NOT = { has_idea = ITA_german_influence_in_italy_45 }
-				NOT = { has_idea = ITA_german_influence_in_italy_35 }
-				NOT = { has_idea = ITA_german_influence_in_italy_25 }
-				NOT = { has_idea = ITA_german_influence_in_italy_15 }
-				NOT = { has_idea = ITA_german_influence_in_italy_5 }
-			}
-			add_ideas = ITA_german_influence_in_italy_35
-		}
-	}
-}
-german_influence_in_italy_set_level_to_25 = {
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_95 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_25 add_idea = ITA_german_influence_in_italy_25 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_85 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_85 add_idea = ITA_german_influence_in_italy_25 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_75 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_75 add_idea = ITA_german_influence_in_italy_25 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_65 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_65 add_idea = ITA_german_influence_in_italy_25 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_55 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_55 add_idea = ITA_german_influence_in_italy_25 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_45 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_45 add_idea = ITA_german_influence_in_italy_25 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_35 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_35 add_idea = ITA_german_influence_in_italy_25 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_15 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_15 add_idea = ITA_german_influence_in_italy_25 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_5 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_5 add_idea = ITA_german_influence_in_italy_25 } } }
-	ITA = {
-		if = {
-			limit = {
-				NOT = { has_idea = ITA_german_influence_in_italy_95 }
-				NOT = { has_idea = ITA_german_influence_in_italy_85 }
-				NOT = { has_idea = ITA_german_influence_in_italy_75 }
-				NOT = { has_idea = ITA_german_influence_in_italy_65 }
-				NOT = { has_idea = ITA_german_influence_in_italy_55 }
-				NOT = { has_idea = ITA_german_influence_in_italy_45 }
-				NOT = { has_idea = ITA_german_influence_in_italy_35 }
-				NOT = { has_idea = ITA_german_influence_in_italy_25 }
-				NOT = { has_idea = ITA_german_influence_in_italy_15 }
-				NOT = { has_idea = ITA_german_influence_in_italy_5 }
-			}
-			add_ideas = ITA_german_influence_in_italy_25
-		}
-	}
-}
-german_influence_in_italy_set_level_to_15 = {
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_95 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_15 add_idea = ITA_german_influence_in_italy_15 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_85 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_85 add_idea = ITA_german_influence_in_italy_15 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_75 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_75 add_idea = ITA_german_influence_in_italy_15 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_65 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_65 add_idea = ITA_german_influence_in_italy_15 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_55 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_55 add_idea = ITA_german_influence_in_italy_15 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_45 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_45 add_idea = ITA_german_influence_in_italy_15 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_35 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_35 add_idea = ITA_german_influence_in_italy_15 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_25 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_25 add_idea = ITA_german_influence_in_italy_15 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_5 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_5 add_idea = ITA_german_influence_in_italy_15 } } }
-	ITA = {
-		if = {
-			limit = {
-				NOT = { has_idea = ITA_german_influence_in_italy_95 }
-				NOT = { has_idea = ITA_german_influence_in_italy_85 }
-				NOT = { has_idea = ITA_german_influence_in_italy_75 }
-				NOT = { has_idea = ITA_german_influence_in_italy_65 }
-				NOT = { has_idea = ITA_german_influence_in_italy_55 }
-				NOT = { has_idea = ITA_german_influence_in_italy_45 }
-				NOT = { has_idea = ITA_german_influence_in_italy_35 }
-				NOT = { has_idea = ITA_german_influence_in_italy_25 }
-				NOT = { has_idea = ITA_german_influence_in_italy_15 }
-				NOT = { has_idea = ITA_german_influence_in_italy_5 }
-			}
+			german_influence_in_italy_remove_all = yes
 			add_ideas = ITA_german_influence_in_italy_15
 		}
-	}
-}
-german_influence_in_italy_set_level_to_5 = {
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_95 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_85 add_idea = ITA_german_influence_in_italy_5 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_85 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_85 add_idea = ITA_german_influence_in_italy_5 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_75 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_75 add_idea = ITA_german_influence_in_italy_5 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_65 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_65 add_idea = ITA_german_influence_in_italy_5 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_55 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_55 add_idea = ITA_german_influence_in_italy_5 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_45 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_45 add_idea = ITA_german_influence_in_italy_5 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_35 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_35 add_idea = ITA_german_influence_in_italy_5 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_25 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_25 add_idea = ITA_german_influence_in_italy_5 } } }
-	ITA = { if = { limit = { has_idea = ITA_german_influence_in_italy_15 } swap_ideas = { remove_idea = ITA_german_influence_in_italy_15 add_idea = ITA_german_influence_in_italy_5 } } }
-	ITA = {
-		if = {
-			limit = {
-				NOT = { has_idea = ITA_german_influence_in_italy_95 }
-				NOT = { has_idea = ITA_german_influence_in_italy_85 }
-				NOT = { has_idea = ITA_german_influence_in_italy_75 }
-				NOT = { has_idea = ITA_german_influence_in_italy_65 }
-				NOT = { has_idea = ITA_german_influence_in_italy_55 }
-				NOT = { has_idea = ITA_german_influence_in_italy_45 }
-				NOT = { has_idea = ITA_german_influence_in_italy_35 }
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 20 } 
+				check_variable = { var_german_influence_in_italy < 31 } 
 				NOT = { has_idea = ITA_german_influence_in_italy_25 }
-				NOT = { has_idea = ITA_german_influence_in_italy_15 }
-				NOT = { has_idea = ITA_german_influence_in_italy_5 }
 			}
-			add_ideas = ITA_german_influence_in_italy_5
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_25
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 30 } 
+				check_variable = { var_german_influence_in_italy < 41 } 
+				NOT = { has_idea = ITA_german_influence_in_italy_35 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_35
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 40 } 
+				check_variable = { var_german_influence_in_italy < 51 } 
+				NOT = { has_idea = ITA_german_influence_in_italy_45 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_45
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 50 } 
+				check_variable = { var_german_influence_in_italy < 61 } 
+				NOT = { has_idea = ITA_german_influence_in_italy_55 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_55
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 60 } 
+				check_variable = { var_german_influence_in_italy < 71 } 
+				NOT = { has_idea = ITA_german_influence_in_italy_65 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_65
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 70 } 
+				check_variable = { var_german_influence_in_italy < 81 } 
+				NOT = { has_idea = ITA_german_influence_in_italy_75 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_75
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 80 } 
+				check_variable = { var_german_influence_in_italy < 91 } 
+				NOT = { has_idea = ITA_german_influence_in_italy_85 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_85
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 90 } 
+				NOT = { has_idea = ITA_german_influence_in_italy_95 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_95
 		}
 	}
 }

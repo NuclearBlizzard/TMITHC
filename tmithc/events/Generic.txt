@@ -1,0 +1,20 @@
+﻿add_namespace = generic
+
+#[From] requests to join our alliance
+country_event = {
+	id = generic.1
+	title = "[From.GetName] wants to join our alliance."
+	desc = "[From.GetName] has sent a diplomatic delegation to our government and has formally submiited a request the right to join our alliance."
+	picture = GFX_xxx
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Sure."
+		add_to_faction = FROM
+	}
+	
+	option = {
+		name = "No."
+	}
+}

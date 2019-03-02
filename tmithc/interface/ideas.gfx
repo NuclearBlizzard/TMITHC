@@ -164,7 +164,18 @@ spriteTypes = {
 		name = "GFX_idea_saf_soviet_advisers"
 		texturefile = "gfx/interface/ideas/idea_saf_soviet_advisers.dds"
 	}
-
+	
+	### MEX
+		
+	spriteType = {
+		name = "MEX_TEST"
+		texturefile = "gfx/interface/ideas/MEX/mextest1.tga"
+	}
+	
+	spriteType = {
+		name = "MEX_TEST1"
+		texturefile = "gfx/interface/ideas/MEX/mextest2.tga"
+	}
 
 	### GER
 
@@ -3690,5 +3701,21 @@ spriteTypes = {
 	spriteType = {
 		name = "gfx_idea_new_zealander_seperatism"
 		texturefile = "gfx/interface/idea/idea_generic_flexible_foreign_policy2.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_JAP_Yakuza_Law"
+		texturefile = "gfx/interface/ideas/Yakuza_book.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Instability"
+		texturefile = "gfx/interface/ideas/Instability.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Taishi_Okamura"
+		texturefile = "gfx/interface/ideas/Taishi_Okamura.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Hirohito_Yakuza"
+		texturefile = "gfx/interface/ideas/Hirohito_Yakuza.tga"
 	}
 }

@@ -13,13 +13,20 @@ set_technology = {
     basic_destroyer = 1
 }
 
+add_ideas = {
+MEX_TEST
+MEX_TEST1
+MEX_TEST2
+}
+
+
 create_faction = "Latin Federation"
 add_to_faction = "COL"
 add_to_faction = "BRA"
 
-1970.1.1 = {
+1939.1.1 = {
 
-	add_political_power = 1198
+	add_political_power = 200
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -70,17 +77,18 @@ add_to_faction = "BRA"
 }
 
 
+
 set_convoys = 200
 
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
+			popularity = 1
 		}
 
 		fascism = {
-			popularity = 50
+			popularity = 25
 		}
 		
 		communism = {
@@ -88,7 +96,7 @@ set_politics = {
 		}
 		
 		neutrality = { 
-			popularity = 99
+			popularity = 73
 		}
 	}
 	
@@ -112,9 +120,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Salvador Abascal"
+	name = "Manuel Torres Bueno"
 	desc = "POLITICS_SALVADOR_ABASCAL_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+	picture = "gfx/leaders/MEX/man.dds"
 	expire = "1965.1.1"
 	ideology = falangism
 	traits = {
@@ -123,9 +131,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Manuel Gómez Morín"
+	name = "Luis H. Álvarez"
 	desc = "POLITICS_MANUEL_GOMEZ_MORIN_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	picture = "gfx/leaders/MEX/l.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -134,9 +142,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Dionisio Encina"
+	name = "Arnoldo Martínez Verdugo"
 	desc = "POLITICS_DIONISIO_ENCINA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+	picture = "gfx/leaders/MEX/arn.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -144,48 +152,9 @@ create_country_leader = {
 	}
 }
 
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-		democratic = { 
-			popularity = 1
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 1
-		}
-		
-		neutrality = { 
-			popularity = 98
-		}
-	}
-	
-	ruling_party = neutrality
-		last_election = "1934.7.1"
-		election_frequency = 72
-		elections_allowed = no
-	}
-
-	create_country_leader = { #from 1940, but he's prettier so he gets to win early
-		name = "Adolfo López Mateos"
-		desc = "POLITICS_LAZARO_CARDENAS_DESC"
-		picture = "Portrait_Mexico_Lazaro_Cardenas.dds"
-		expire = "1965.1.1"
-		ideology = neutrality
-		traits = {
-			#
-		}
-	}
-}
-
 create_corps_commander = {
-	name = "Luis Farell"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+	name = "Mario Arturo Acosta Chaparro"
+	portrait_path = "gfx/leaders/MEX/mario.dds"
 	traits = { }
 	skill = 3
     attack_skill = 4
@@ -195,8 +164,8 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Gildardo Magaña"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	name = "Guillermo Galván"
+	portrait_path = "gfx/leaders/MEX/gal.dds"
 	traits = { desert_fox }
 	skill = 3
     attack_skill = 2
@@ -206,8 +175,8 @@ create_corps_commander = {
 }
 
 create_navy_leader = {
-	name = "Paul Suarez"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_2.dds"
+	name = "Marco Antonio Peyrot González"
+	portrait_path = "gfx/leaders/MEX/marco.dds"
 	traits = { superior_tactician }
 	skill = 3
 }
