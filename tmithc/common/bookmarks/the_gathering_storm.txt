@@ -79,7 +79,6 @@ bookmarks = {
 				ROM_revenge_against_Hungary
 				ROM_Democratic_Underground
 				ROM_Unstable_Economy
-				ROM_Ukranian_Nationalists
 			}
 			focuses = {
 
