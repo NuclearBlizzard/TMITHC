@@ -1,0 +1,26 @@
+#Germany refuses claims on Canada
+country_event = {
+	id = neutral.1
+	title = neutral.1.t
+	desc = neutral.1.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+
+
+
+#Time for revenge, earlier than expected.
+	option = {
+		name = neutral.1.a
+		ai_chance = { factor = 50 }
+		create_wargoal = { 
+				type = take_state_focus
+				target = USA
+				generator = { 332 331 730 } 
+	}
+
+#Rethink our options
+	option = {
+		name = neutral.1.b
+		ai_chance = { factor = 50 }
+		add_political_power = 150

@@ -49,3 +49,52 @@ country_event = {
 		}
 	}
 }
+
+
+
+
+
+
+
+## American Request For Labrador
+country_event = {
+	id = germany.2
+	title = germany.2.t
+	desc = germany.2.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+
+	#Give it up
+	option = {
+		name = germany.2.a
+		ai_chance = { factor = 80 }
+		332 = {
+			if = {
+				limit = { is_owned_by = GER }
+				add_core_of = NEU
+			}
+		}
+		331 = {
+			if = {
+				limit = { is_owned_by = GER }
+				add_core_of = NEU
+			}
+		}
+		730 = {
+			if = {
+				limit = { is_owned_by = GER }
+				add_core_of = NEU
+			}
+		}
+	
+		add_political_power = 150
+		add_stability = 0.10
+}
+
+	#Let them fight for it
+	option = {
+		name = germany.2.b
+		ai_chance = { factor = 20 }
+		NEU = { country_event = { id = neutral.1} }
+

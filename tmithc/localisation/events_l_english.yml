@@ -2268,6 +2268,12 @@ germany.1.d:0 "The Führer is Dead! The Führer has died peacefully in his sleep
 germany.1.a:0 "Appoint Martin Heusmann as our new Head of State."
 germany.1.b:0 "Heinrich Himmler is a better choice for the future of the German people!"
 
+germany.2.t:0 "Americans Request Labrador"
+germany.2.d:0 "The Americans in the former Neutral Zone have come to us with a proposition. Considering they have taken our former ally of Canada, annexed it, and indoctrinated their citizens, they now state that they have rightful claims to our territories in Labrador and Newfoundland. Considering their incredibly fast industrialization, it may be wise to get rid of some pointless Canadian land, as long as we still have our territories in the former USA."
+germany.2.a:0 "Give it up."
+germany.2.b:0 "Let them fight for it."
+
+
 nazireich.1.t:0 "The arrest of George Lincoln Rockwell"
 nazireich.1.d:0 "The leader of the Nazi States of America has been arrested after accusations of treason and various other crimes against the Reich's will and direction. His replacement will be John Smith a more loyal puppet for the American regime."
 nazireich.1.a:0 "John Smith for a better future of the American people!"
@@ -2275,3 +2281,9 @@ nazireich.1.a:0 "John Smith for a better future of the American people!"
 japan.1.t:0 "Emperor Hirohito is dead!"
 japan.1.d:0 " "
 japan.1.a:0 "We lost our beloved leader..."
+
+neutral.1.t:0 "Nazis deny Labrador"
+neutral.1.d:0 "The Nazis have denied our rightful claims of the Canadian territories of Labrador and Newfoundland. "
+neutral.1.a:0 "Time for revenge, earlier than expected."
+neutral.1.b:0 "Rethink our options."
+
