@@ -61,6 +61,7 @@ set_convoys = 400
 
 puppet = JAA
 puppet = JPR
+puppet = CHI
 
 give_military_access = PAN
 JAP = { give_guarantee = PAN }
@@ -132,7 +133,7 @@ if = {
 			autonomous_state = autonomy_puppet
 		}
 		set_autonomy = {
-			target = JIC
+			target = CHI
 			autonomous_state = autonomy_puppet
 		}
 		set_autonomy = {
