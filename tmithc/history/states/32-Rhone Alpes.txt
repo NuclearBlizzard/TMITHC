@@ -2,7 +2,7 @@
 state={
 	id=32
 	name="STATE_32" 
-	manpower = 1167500
+	manpower = 1567500
 	
 	state_category = city
 	
@@ -12,7 +12,7 @@ state={
 	}
 
 	history={
-		owner = FRA
+		owner = ITA
 		buildings = {
 			infrastructure = 6
 		}
