@@ -1,9 +1,9 @@
 state={
 	id=785
 	name="STATE_785"
-	manpower = 1580000
+	manpower = 3980000
 	
-	state_category = town
+	state_category = large_city
 	resources={
 		steel=20 # was: 112
 		aluminium=4 # was: 22
@@ -11,9 +11,9 @@ state={
 	
 	history={
 		victory_points = {
-			11420 5
+			11420 10
 		}
-		owner = FRA
+		owner = GER
 		add_core_of = FRA
 		buildings = {
 			infrastructure = 8

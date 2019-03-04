@@ -2,10 +2,10 @@ state={
 	id=735
 	name="STATE_735"
 
-	state_category = town
+	state_category = city
 
 	history={
-		owner = FRA
+		owner = ITA
 		add_core_of = FRA
 		victory_points = {
 			778 1 
@@ -14,16 +14,16 @@ state={
 			9909 5 
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 6
 			9909 = {
-				naval_base = 2
+				naval_base = 4
 			}		
 		}
 	}
 
 	provinces={
-		764 778 3764 3959 3961 6609 6975 9603 9736 9745 9909 11573 
+		764 778 3764 3959 6609 6975 9603 9736 9745 9909 11573 
 	}
-	manpower=907500
+	manpower=1457500
 	buildings_max_level_factor=1.000
 }

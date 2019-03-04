@@ -2,12 +2,12 @@
 state={
 	id=52
 	name="STATE_52"
-	manpower = 2679413
+	manpower = 4979413
 	resources={
 		aluminium=18 # was: 30
 	}
 	
-	state_category = city
+	state_category = large_city
 
 	history={
 		owner = GER
@@ -19,8 +19,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 2
-			industrial_complex = 1
+			arms_factory = 3
+			industrial_complex = 2
 			air_base = 6
 		}
 		add_core_of = GER

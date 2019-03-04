@@ -2,33 +2,33 @@
 state={
 	id=21
 	name="STATE_21" # Provence
-	manpower = 2060400
+	manpower = 4890400
 	resources={
 		aluminium=60 # was: 120
 	}
 
-	state_category = city
+	state_category = metropolis
 
 	history={
-		owner = FRA
+		owner = ITA
 		victory_points = {
-			911 1 
+			911 5
 		}
 		victory_points = {
-			11834 10
+			11834 25
 		}
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 1
-			dockyard = 2
-			fuel_silo = 1
+			infrastructure = 8
+			industrial_complex = 2
+			dockyard = 3
+			fuel_silo = 2
 			air_base = 10
 			911 = {
 				naval_base = 10
 				coastal_bunker = 1
 			}
 			11834 = {
-				naval_base = 3
+				naval_base = 5
 				coastal_bunker = 1
 			}
 		}
@@ -41,6 +41,6 @@ state={
 	}
 
 	provinces={
-		911 956 958 3762 3928 11834 11849 11875 
+		911 956 958 3762 3928 11834 11849 11875 3961
 	}
 }
