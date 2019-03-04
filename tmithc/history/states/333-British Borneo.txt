@@ -12,7 +12,7 @@ state=
 
 	history=
 	{
-		owner = MAL
+		owner = JAP
 		victory_points = {
 			7371 1
 		}

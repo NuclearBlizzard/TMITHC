@@ -546,6 +546,10 @@ JBD = {
 	color = rgb { 124 166 147 }
 	color_ui = hsv { 0.18 0.3 0.9 }
 }
+JIC = {
+	color = rgb { 124 170 150 }
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
 SOV = {
 	color = rgb { 135 41 50 }
 	color_ui = rgb { 163 17 31 }

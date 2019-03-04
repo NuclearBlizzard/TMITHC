@@ -29,7 +29,6 @@ set_politics = {
 	parties = {
 		democratic = { 
 			popularity = 2
-			#banned = yes #default is no
 		}
 
 		fascism = {
@@ -38,11 +37,11 @@ set_politics = {
 		
 		communism = {
 			popularity = 0
-			#banned = yes #default is no
+			#banned = no #default is no
 		}
 		
 		neutrality = { 
-			#banned = yes #default is no
+			popularity = 0
 		}
 	}
 	
