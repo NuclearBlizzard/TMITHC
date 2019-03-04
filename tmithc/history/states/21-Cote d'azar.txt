@@ -2,7 +2,7 @@
 state={
 	id=21
 	name="STATE_21" # Provence
-	manpower = 3890400
+	manpower = 3990400
 	resources={
 		aluminium=60 # was: 120
 	}
@@ -41,6 +41,6 @@ state={
 	}
 
 	provinces={
-		911 956 958 3762 3928 11834 11849 11875 3961
+		911 956 958 3762 3928 9736 11834 11849 11875 3961
 	}
 }
