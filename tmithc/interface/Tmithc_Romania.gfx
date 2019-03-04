@@ -1,0 +1,15 @@
+spriteTypes = {	
+	
+	#Romania
+		
+		#Ministers#
+
+	spriteType = {
+		name = "GFX_idea_Michael_I_Political_Advisor"
+		texturefile = "gfx/interface/ideas/ROM/Michael_Minister.tga"
+		}
+
+	spriteType = {
+		name = "GFX_idea_Petre_Political_Advisor"
+		texturefile = "gfx/interface/ideas/ROM/Petre_Minister.tga"
+		}

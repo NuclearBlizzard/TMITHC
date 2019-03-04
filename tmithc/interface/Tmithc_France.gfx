@@ -1,0 +1,127 @@
+spriteTypes = {	
+
+	######## GOALS #########
+
+	SpriteType = { 
+		name = "GFX_FRA_francisque"
+		texturefile = "gfx/interface/goals/FRA_francisque.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_manydead"
+		texturefile = "gfx/interface/goals/FRA_manydead.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_ironcross"
+		texturefile = "gfx/interface/goals/FRA_ironcross.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_ssvolunteer"
+		texturefile = "gfx/interface/goals/FRA_ssvolunteer.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_atlantikwall"
+		texturefile = "gfx/interface/goals/FRA_atlantikwall.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_fire"
+		texturefile = "gfx/interface/goals/FRA_fire.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_conscription"
+		texturefile = "gfx/interface/goals/FRA_conscription.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_fascism"
+		texturefile = "gfx/interface/goals/FRA_fascism.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_resistancefocus"
+		texturefile = "gfx/interface/goals/FRA_resistancefocus.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_puppet"
+		texturefile = "gfx/interface/goals/FRA_puppet.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_handshake"
+		texturefile = "gfx/interface/goals/FRA_handshake.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_handshake2"
+		texturefile = "gfx/interface/goals/FRA_handshake2.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_militia"
+		texturefile = "gfx/interface/goals/FRA_militia.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_milice"
+		texturefile = "gfx/interface/goals/FRA_milice.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_standwithbritain"
+		texturefile = "gfx/interface/goals/FRA_standwithbritain.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_guns"
+		texturefile = "gfx/interface/goals/FRA_guns.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_factories"
+		texturefile = "gfx/interface/goals/FRA_factories.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_republic"
+		texturefile = "gfx/interface/goals/FRA_republic.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_victoire"
+		texturefile = "gfx/interface/goals/FRA_victoire.tga"
+	}
+	
+	SpriteType = { 
+		name = "GFX_FRA_navy"
+		texturefile = "gfx/interface/goals/FRA_navy.tga"
+	}
+
+	###### IDEAS #########
+
+	spriteType = {
+		name = "GFX_idea_FRA_chained"
+		texturefile = "gfx/interface/ideas/FRA_chained.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_resistance"
+		texturefile = "gfx/interface/ideas/FRA_resistance.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_milice"
+		texturefile = "gfx/interface/ideas/FRA_milice.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_constitution"
+		texturefile = "gfx/interface/ideas/FRA_constitution.tga"
+	}
+
+}
