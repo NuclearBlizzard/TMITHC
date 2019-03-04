@@ -10,7 +10,9 @@ set_country_flag = monroe_doctrine
 set_war_support = 0.1
 set_convoys = 10
 
-1939.1.1 = {
+
+
+1959.1.1 = {
 
 	add_political_power = 1198
 	
@@ -49,7 +51,8 @@ set_convoys = 10
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
-		fuel_silos = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -61,11 +64,11 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 100
+			popularity = 3
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 97
 		}
 		
 		communism = {
@@ -74,10 +77,10 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = democratic
-	last_election = "1932.6.5"
+	ruling_party = fascism
+	last_election = "1958.6.5"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 create_country_leader = {
@@ -85,22 +88,22 @@ create_country_leader = {
 	desc = "POLITICS_HARMODIO_ARIAS_MADRID_DESC"
 	picture = "GFX_portrait_panama_harmodio_arias_madrid"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = fascism_ideology
 	traits = {
 		#
 	}
 }
 
-1939.1.1 = {
+1959.1.1 = {
 	set_politics = {
 
 		parties = {
 			democratic = { 
-				popularity = 100
+				popularity = 40
 			}
 
 			fascism = {
-				popularity = 0
+				popularity = 60
 			}
 			
 			communism = {
@@ -109,29 +112,18 @@ create_country_leader = {
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = nazism
 		last_election = "1936.6.7"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 
 	create_country_leader = {
-		name = "Juan Demóstenes Arosemena"
+		name = "Arnulfo Arias"
 		desc = "POLITICS_JUAN_DEMOSTENES_AROSEMENA_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
+		picture = "GFX_portrait_panama_harmodio_arias_madrid"
 		expire = "1965.1.1"
-		ideology = liberalism
-		traits = {
-			#
-		}
-	}
-
-	create_country_leader = {
-		name = "July Portocarrero"
-		desc = "POLITICS_JULY_PORTOCARRERO_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
-		expire = "1965.1.1"
-		ideology = marxism
+		ideology = nazism
 		traits = {
 			#
 		}

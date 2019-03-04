@@ -16,7 +16,6 @@ set_technology = {
 	early_fighter = 1
 	early_bomber = 1
 	CAS1 = 1
-	fuel_silos = 1
 }
 
 set_research_slots = 3
@@ -25,43 +24,34 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 65
+			popularity = 2
 		}
 
 		neutrality = { 
-			popularity = 20
+			popularity = 0
 		}
 
 		fascism = {
-			popularity = 5
+			popularity = 98
 		}
 		
 		communism = {
-			popularity = 10
+			popularity = 0
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = fascism
 	last_election = "1935.5.19"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Edvard Beneš"
-	desc = "POLITICS_EDVARD_BENES_DESC"
-	picture = "Portrait_Czech_Edvard_Benes.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
+
 
 create_country_leader = {
-	name = "Jaroslav Krejčí"
+	name = "Konstantin von Neurath"
 	desc = "POLITICS_JAROSLAV_KREJCI_DESC"
-	picture = "Portrait_Czech_Jaroslav_Krejci.dds"
+	picture = "portrait_cze_konsantin.tga"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
@@ -69,16 +59,7 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Klement Gottwald"
-	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
-	picture = "Portrait_Czech_Klement_Gottwald.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
+
 
 create_field_marshal = {
 	name = "Vojtěch Luža"
@@ -124,24 +105,4 @@ create_corps_commander = {
     logistics_skill = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	add_ideas = {
-		CZE_skoda_works
-		CZE_divided_nation
-}
-	give_guarantee = YUG
-	give_guarantee = ROM
-}
-
-if = {
-	limit = {
-		NOT = { has_dlc = "Death or Dishonor" }
-	}
-	add_ideas = {
-		CZE_fortification_focus
-	}
-}
 

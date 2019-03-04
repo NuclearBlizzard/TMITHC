@@ -4,7 +4,29 @@ music = {
 	chance = {
 		modifier = {
 			factor = 0.5
+			NOT = {
+					tag = ROM
+				}
 		}		
+	}
+}
+
+# Romania ######################
+
+music = {
+	song = "rom_viata_complicata"
+
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = {
+					tag = ROM
+				}
+			}
+		modifier = {
+			factor = 2
+			tag = ROM
+		}
 	}
 }
 
@@ -16,7 +38,7 @@ music = {
 		modifier = {
 			factor = 1
 
-			has_war = no
+		
 		}		
 	}	
 }
@@ -28,7 +50,31 @@ music = {
 		modifier = {
 			factor = 1
 
-			has_war = no
+			
+		}		
+	}	
+}
+
+music = {
+	song = "The Necklace"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			
+		}		
+	}	
+}
+
+music = {
+	song = "The End of the World"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			
 		}		
 	}	
 }
@@ -40,7 +86,7 @@ music = {
 		modifier = {
 			factor = 1
 
-			has_war = no
+			
 		}		
 	}
 }
@@ -52,8 +98,7 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = no
-			has_government = democratic
+			
 		}		
 	}	
 }
@@ -65,8 +110,7 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = no
-			has_government = democratic
+			
 		}		
 	}	
 }
@@ -78,8 +122,6 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = no
-			has_government = fascism
 		}		
 	}	
 }
@@ -91,8 +133,7 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = no
-			has_government = fascism
+			
 		}		
 	}	
 }
@@ -106,7 +147,7 @@ music = {
 		modifier = {
 			factor = 1
 
-			has_war = yes
+			
 		}		
 	}	
 }
@@ -130,7 +171,7 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = yes
+			
 			has_government = fascism
 		}		
 	}	
@@ -143,7 +184,7 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = yes
+			
 			has_government = fascism
 		}		
 	}	
@@ -169,7 +210,7 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = yes
+			
 			has_government = fascism
 		}		
 	}	
@@ -182,8 +223,7 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = yes
-			has_government = democratic
+			
 		}		
 	}	
 }
@@ -195,8 +235,7 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = yes
-			has_government = democratic
+			
 		}		
 	}	
 }
@@ -208,8 +247,7 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = no
-			has_government = communism
+			
 		}		
 	}	
 }

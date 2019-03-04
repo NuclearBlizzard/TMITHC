@@ -1,0 +1,98 @@
+﻿l_english:
+
+#ROMCountryCosmetics
+
+ ROM_communism:0 "Socialist Republic of Romania"
+ ROM_communism_DEF:0 "Communist Romania"
+
+ ROM_democratic:0 "Romania"
+ ROM_democratic_DEF:0 "Romania"
+
+ ROM_neutrality:0 "Kingdom of Romania"
+ ROM_neutrality_DEF:0 "The Kingdom of Romania"
+
+ ROM_fascism:0 "Legionary State of Romania"
+ ROM_fascism_DEF:0 "Legionary Romania"
+
+ ROM_fascism_ADJ:0 "Romanian"
+ ROM_democratic_ADJ:0 "Romanian"
+ ROM_neutrality_ADJ:0 "Romanian"
+ ROM_communism_ADJ:0 "Romanian"
+
+
+#ROMParties
+
+ ROM_communism_party:0 "PCR"
+ ROM_communism_party_long:0 "Partidul Comunist Roman"
+ ROM_democratic_party:0 "PNL"
+ ROM_democratic_party_long:0 "Partidul Naţional Liberal"
+ ROM_neutrality_party:0 "FSN"
+ ROM_neutrality_party_long:0 "Frontul Salvării Naţionale"
+ ROM_fascism_party:0 "GdF"
+ ROM_fascism_party_long:0 "Garda de Fier"
+
+#ROMFlags
+
+
+#ROMministers
+
+  ROM_Michael_1_Minister:0 "Michael I"
+  ROM_Petre_Minister:0 "Petre Roman"
+
+  #ROM High Command
+
+  #ROM Air Force
+
+  #ROM Navy
+
+  #ROM Army Leaders
+
+#ROM opinions
+
+
+#RomTooltips
+
+
+#ROMLeaderDescriptions
+
+#ROMDescriptions
+ROM_60's_DESC:0 "A nation devastated by the War, Romania suffered over two million casualties throughout the course of the war. The nation now comes upon a new era, unable to support itself without German aid. The loss of Northern Transylvania, and well as Southern Dobrogea still lays bitter in the back of the people's minds. Germany also promising more land from Ukraine, but never following through on their promise. Anti-German sentiment is beginning to spread in Romania, as ethnic clashes still boil over in Northern Transylvania as Romanians are forced out of their homes by the Hungarians. Romania may soon turn guns oh her former allies..."
+
+#ROMideas
+
+ROM_revenge_against_Hungary:0 "The Transylvanian Dispute"
+ROM_revenge_against_Hungary_desc:0 "The loss of Northern Transylvania has greatly affected the Romanian people in every aspect of life. Many people, including Ion Antonescu are very open about regaining the region. From being seperated from family, or the loss of the great amount of resources in the region, or the farms and food surplus, the loss of Northern Transylvania has affected every part of Romanian life, and there is almost no one who wants to go on willingly let the Hungarians oppress and systematically genocide the Romanian population. The army, as well as the government are all open about regaining our lost lands, causing a great rift between us and our allies."
+ROM_Democratic_Underground:0 "Democratic Underground"
+ROM_Democratic_Underground_desc:0 "Due to the regime being slow to respond to growing domestic issues within the state, many more... rebellious factions are beginning to form and flourish within the poor regions of the North and West. The PNL has seen a great rise in popularity. As well as an urge for Michael to take power once more, as the monarchy gains power by the day. Democratic protests are common within the larger cities, despite all other parties being outlawed. The situation, if left unattended, may lead to the spark that makes the kettle that is Romania finally boil over..."
+ROM_Unstable_Economy:0 "Suffering Economy"
+ROM_Unstable_Economy_desc:0 "With the closing of the Second World War, Romania came out on the side of the victors; only, the spoils of war were not enjoyed by her. The Romanian economy suffered greatly during the war, from the loss of so much territory, the constant bombings by Russia and America, and from Germany taking so much without care. All of these things combined with the unstable leadership, the Romanian economy has never recovered, leaving many poor and jobless. With the influx of refugees from Occupied North Transylvania, bringing in even more homeless, Romania is on the verge of famine as the farmers try to keep up with growing demand. The few industries that remain, are mostly German owned companies, and none of the money goes to the central government. The scars of a risky alliance showing after so many years."
+ROM_Ukranian_Nationalists:0 "The Scars of December Second"
+ROM_Ukranian_Nationalists_desc:0 "On the night of December 2nd, 1951, while attempting to break up a riot within the Northern Industrial Sector of Odessa, two members of the Transnistrian Guard, Petru Dragalina, and Teodor Marinescu were shot and killed by a Ukranian National. This incident shocked the nation to its core, and the general populance demanded change with how the police operated within Transnistria. Many raids were conducted on areas suspected to be supporting Ukranian Nationalism. This deeply infuriated the Ukranians within the nation, leading to more riots, and strikes as more and more were arrested. Operation Odessa was a military operation that led to an all out gunfight with Ukranian Nationalists outside of Vinnystia. The military swiftly routed the enemy, however suffered many casualties that angered the general population even more. Despite all attempts to settle tensions, the region is still dangerous and Romanians in the area are under constant threat of turning up missing, or dead. The Secret Police, and well as the military, are now forced to keep constant watch over the lands across the Dniester River. For now, resistance has ceased, and life is normal within the region, but, how long will peace last..."
+#ROMEvents
+
+romania.1.t:0 "The Conducător has been Assassinated!"
+romania.1.d:0 "Ion Antonescu, the Conducător, 87 years old, has finally met his demise at the hands of three assassins. While driving home, he was flagged down by a group of men who were having vehicle issues. Antonescu stopped to offer them a ride to get out of the storm, and was shot on the spot as he exited his vehicle. He was discovered this morning by local officals after his wife reported him missing. He had been shot three times in the chest, and left to bleed to death in the freezing cold. His car, still running when the police arrived, was splattered and smeared with his blood. His body had been covered in the fresh snow, his shirt bloody with three bullet holes punched through the thin fabric. One through the left lung, one through the heart, and the final shattering his spine. The word "târfă" cut into his forehead with a dagger, leaving his desecrated body in the road. Antonescu, a veteran of both World Wars, and the leader of the country, has met his bloody end. His fate sealed Christmas night. His family are demanding that the assassins be brought in and hanged, and the people of the country are mourning. Antonescu is to be buried his family cemetary. A bloody end for one of the greatest men in Romanian history."
+romania.1.a:0 "We will all remember him..."
+romania.2.t:0 "Martial Law Declared"
+romania.2.d:0 "With the death of Antonescu, many groups within the Chamber of Councils have formed. Many different parties splitting off and becoming their own ideas, some promoting ideas that Antonescu would not hold dear. Rioting and angry protestors fill the streets as well. Marshal Sănătescu thus has made the decision to declare Martial Law, and stomp out any resistance while the government tries to save itself from collapse."
+romania.2.a:0 "Sănătescu Better be Right"
+#ROMNat.Focus
+
+ROM_death_of_leader:0 "The Death of Antonescu"
+ROM_death_of_leader_desc:0 "The Conducător has died, leaving in his place a mourning populance and a speechless people. Where will the country go now, who will lead. No one will ever fill the shoes of Antonescu however. Să se odihnească în pace..."
+ROM_Militarist_Coup:0 "Militarist Junta"
+ROM_Militarist_Coup_desc:0 "-"
+ROM_send_military:0 "Send the Military"
+ROM_riots_in_Iasi:0 "Iasi Rebellion"
+ROM_Tudor_Takeover:0 "Tudor's Takeover"
+ROM_Tudor_Takeover_desc:0 "-"
+ROM_sympathetic_whispers:0 "Sympathies in the Central Council"
+ROM_sanatescu_government:0 "Sanatescu's Government"
+ROM_democratic_backings:0 "Kickstart Democracy"
+ROM_Racovita_Coup:0 "Racovitza's Revenge"
+ROM_deal_with_opposition:0 "Clean up the Opposition"
+ROM_strikers_at_Grivita:0 "The Grivita Strike"
+ROM_unpopular_leader:0 "The Unpopular Jingoist"
+ROM_rally_in_Bucharest:0 "A Speech in Bucuresti"
+ROM_rally_in_timisoara:0 "Popular Support in Banat"
+ROM_local_holdings:0 "A Connection with the People"
