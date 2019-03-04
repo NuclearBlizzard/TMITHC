@@ -4,7 +4,7 @@ state={
 	provinces={
 		506 6464
 	}
-	manpower=1000000
+	manpower=1010000
 	resources={
 		steel=19 # was: 60
 		aluminium=7 # was: 20
@@ -14,11 +14,12 @@ state={
 		victory_points = {
 			6464 5
 		}
-		owner = POL
+		owner = GER
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
 		}
-		add_core_of = POL
+		add_core_of = GER
+		add_claim_by = POL
 	}
 }

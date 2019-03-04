@@ -2,9 +2,9 @@
 state={
 	id=148
 	name="STATE_148"
-	manpower = 121737
+	manpower = 281737
 	
-	state_category = rural
+	state_category = town
 	
 	resources={
 		steel=7 # was: 8
@@ -13,7 +13,7 @@ state={
 	history={
 		owner = FIN
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 		}
 		add_core_of = FIN
 	}

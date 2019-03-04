@@ -1,31 +1,29 @@
 state={
 	id=731
 	name="STATE_731"
-	manpower=1155700
+	manpower=1589700
 	
-	state_category = town
+	state_category = city
 
 	history={
-		owner = GRE
+		owner = BUL
 		victory_points = {
-			11818 5 
+			11818 10
 		}
-		#victory_points = {
-		#	3844 1
-		#}
 		buildings = {
-			infrastructure = 5
-			arms_factory = 1
+			infrastructure = 6
+			arms_factory = 2
 			industrial_complex = 2
+			dockyard = 1
 			air_base = 2
 			11818 = {
-				naval_base = 3
+				naval_base = 6
 
 			}
 
 		}
 		add_core_of = GRE
-		add_claim_by = BUL
+		add_core_of = BUL
 
 	}
 	

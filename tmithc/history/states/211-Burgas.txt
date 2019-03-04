@@ -2,27 +2,27 @@
 state={
 	id=211
 	name="STATE_211"
-	manpower = 1575499
+	manpower = 1875499
 
 
-	state_category = town
+	state_category = city
 
 	history={
 		owner = BUL
 		victory_points = {
-			9783 5
+			9783 10
 		}
 		victory_points = {
 			9902 3
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 2
+			infrastructure = 6
+			industrial_complex = 3
 			9783 = {
-				naval_base = 3
+				naval_base = 6
 			}
 			9902 = {
-				naval_base = 1
+				naval_base = 2
 			}
 		}
 		add_core_of = BUL

@@ -2,7 +2,7 @@
 state={
 	id=20
 	name="STATE_20" # Rhone
-	manpower = 7373200
+	manpower = 5073200
 	resources={
 		steel=60 # was: 128
 		aluminium=35 # was: 72
@@ -24,8 +24,8 @@ state={
 		add_core_of = FRA
 		1939.1.1 = {
 			buildings = {
-				arms_factory = 4
-				industrial_complex = 4
+				arms_factory = 2
+				industrial_complex = 2
 			}
 		}
 	}

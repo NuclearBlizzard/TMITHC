@@ -2,7 +2,7 @@
 state={
 	id=150
 	name="STATE_150" # Savo
-	manpower = 611100
+	manpower = 841100
 	
 	state_category = town
 	
@@ -12,8 +12,8 @@ state={
 	history={
 		owner = FIN
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 5
+			industrial_complex = 3
 		}
 		add_core_of = FIN
 	}

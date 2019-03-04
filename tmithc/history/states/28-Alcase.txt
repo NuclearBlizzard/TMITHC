@@ -2,7 +2,7 @@
 state={
 	id=28
 	name="STATE_28" # Alsace-Lorraine
-	manpower = 7695600
+	manpower = 4195600
 	
 	state_category = metropolis
 	resources={

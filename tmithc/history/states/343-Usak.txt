@@ -2,12 +2,12 @@
 state={
 	id=343
 	name="STATE_343" # Afyon
-	manpower = 955763
+	manpower = 1155763
 	resources={
 		chromium=25 # was: 32
 	}
 	
-	state_category = rural
+	state_category = town
 
 	history={
 		owner = TUR
@@ -18,8 +18,9 @@ state={
 			9878 1 
 		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 2
 		}
 		add_core_of = TUR
 	}

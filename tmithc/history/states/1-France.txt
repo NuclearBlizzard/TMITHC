@@ -2,7 +2,7 @@
 state={
 	id=1
 	name="STATE_1" # Corsica
-	manpower = 622900
+	manpower = 422900
 	
 	state_category = city
 

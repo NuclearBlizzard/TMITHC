@@ -2,7 +2,7 @@
 state={
 	id=103
 	name="STATE_103" # Dalmatia
-	manpower = 2431700
+	manpower = 1831700
 
 	state_category = city
 

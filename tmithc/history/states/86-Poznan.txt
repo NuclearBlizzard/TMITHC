@@ -1,18 +1,18 @@
 state={
 	id=86
 	name="STATE_86"
-	manpower = 2106500
+	manpower = 2406500
 	
 	
-	state_category = city
+	state_category = large_city
 	history={
-		owner = POL
+		owner = GER
 		victory_points = {
 			6558 10
 		}
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 1
+			industrial_complex = 3
 			11232 = {
 				bunker = 1
 
@@ -27,10 +27,8 @@ state={
 			}
 			air_base = 3
 		}
-		add_core_of = POL
-		1938.3.12 = {
-			add_claim_by = GER
-		}
+		add_core_of = GER
+		add_claim_by = POL
 	}
 
 	provinces={
