@@ -1,75 +1,79 @@
 ideas = {
 
 	country = {
-		ROM_revenge_against_soviet = {
+		ROM_revenge_against_Hungary = {
 
-			picture = anti_soviet_pact
+			picture = End_Hungary
 			
 			removal_cost = -1
 
 			allowed = {
 				original_tag = ROM
 			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-			}
 			
 			modifier = {
-				fascism_drift = 0.1
-				fascism_acceptance = 100
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				conscription = 0.005
+				army_morale_factor = 0.1
+				fascism_drift = 0.07
 			}
 		}
 	
-		ROM_revenge_against_germany = {
+		ROM_Democratic_Underground = {
 
-			picture = generic_communism_drift_bonus
+			picture = Covert_Operations
 
 			removal_cost = -1
 			
 			allowed = {
 				original_tag = ROM
 			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = fascism
-				}
-			}
 			
 			modifier = {
-				communism_drift = 0.1
-				communism_acceptance = 100
+				democratic_drift = 0.02
+				neutrality_drift = 0.03
+				stability_factor = -0.1
+				war_support_factor = -0.1
 			}
 		}
 
-		ROM_romanian_volunteer_brigades = {
+		ROM_Unstable_Economy = {
 
-			picture = generic_volunteer_expedition_bonus
+			picture = Suffering_Economy
 
 			removal_cost = -1
 			
 			allowed = {
 				original_tag = ROM
 			}
-
-			allowed_civil_war = {
-
-			}
-
-			rule = { can_send_volunteers = yes }
 			
 			modifier = {
-				send_volunteer_divisions_required = -1
-				send_volunteer_size = 1
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				production_speed_dockyard_factor = -0.1
+				production_speed_industrial_complex_factor = -0.05
 			}
 		}
 
-		ROM_fortify_the_borders = {
+		ROM_Ukranian_Nationalists = {
 
-			picture = generic_fortify_the_borders
+			picture = Ukranian_Resistance
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			modifier = {
+			
+			}
+		}
+
+		ROM_figurehead_king_michael = {
 
 			removal_cost = -1
 			
@@ -80,10 +84,10 @@ ideas = {
 			allowed_civil_war = {
 
 			}
-
+			
 			modifier = {
-				production_speed_bunker_factor = 0.2
-				production_speed_coastal_bunker_factor = 0.2
+				stability_factor = 0.05
+				neutrality_drift = 0.01
 			}
 		}
 
@@ -296,23 +300,6 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.15
 				political_power_gain = -0.25
-			}
-		}
-
-		ROM_figurehead_king_michael = {
-
-			removal_cost = -1
-			
-			allowed = {
-				original_tag = ROM
-			}
-
-			allowed_civil_war = {
-
-			}
-			
-			modifier = {
-				stability_factor = 0.05
 			}
 		}
 
@@ -657,7 +644,7 @@ ideas = {
 			equipment_bonus = {
 				heavy_cruiser = { #If you change this - Change the custom tooltip too: ROM_coastal_defense_ships_tech_tt
 					armor_value = 0.2
-					lg_attack = 0.1
+					attack = 0.1
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -678,16 +665,17 @@ ideas = {
 
 			}
 			
-			equipment_bonus = { #If you change this - Change the custom tooltip too: ROM_coastal_defense_ships_tech_tt
-				ship_hull_cruiser = {
+			equipment_bonus = {
+				heavy_cruiser = { #If you change this - Change the custom tooltip too: ROM_coastal_defense_ships_tech_tt
 					armor_value = 0.2
-					hg_attack = 0.1
+					attack = 0.1
 					build_cost_ic = -0.1
 					instant = yes
 				}
 			
-				ship_hull_light = {
+				destroyer = { #If you change this - Change the custom tooltip too: ROM_coastal_defense_ships_tech_tt
 					torpedo_attack = 0.2
+					fire_range = -0.2
 					instant = yes
 				}
 			}
@@ -696,123 +684,29 @@ ideas = {
 
 	political_advisor = {
 
-		ROM_iuliu_maniu = {
+		ROM_Petre_Minister = {
 
-			picture = generic_democratic_reformer_western_european_2d
+			picture = Petre_Political_Advisor
 
 			allowed = {
 				original_tag = ROM
-			}
-			
-			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
 			}
 			
 			traits = { democratic_reformer }
 		}
 
-		ROM_gheorghe_gheorghiu_dej = {
+		ROM_Michael_1_Minister = {
 
-			picture = generic_communist_revolutionary_western_european_2d
-
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus = ROM_appoint_soviet_friendly_government
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
+			picture = Michael_I_Political_Advisor
 
 			allowed = {
 				original_tag = ROM
 			}
 			
-			traits = { communist_revolutionary }
-		}
-
-		ROM_gheorghe_argeseanu = {
-
-			picture = generic_army_europe_4
-
-			allowed = {
-				original_tag = ROM
-			}
-			
-			traits = { silent_workhorse }
-		}
-
-		ROM_nicolae_malaxa = {
-
-			picture = idea_nicolae_malaxa
-
-			allowed = {
-				original_tag = ROM
-				has_dlc = "Death or Dishonor"
-			}
-			
-			traits = { captain_of_industry }
-		}
-
-		ROM_armand_calinescu = {
-
-			picture = generic_army_europe_5
-				
-			allowed = {
-				original_tag = ROM
-			}
-			
-			traits = { prince_of_terror }
-		}
-
-		ROM_petru_groza = {
-
-			picture = generic_political_advisor_europe_2
-
-			allowed = {
-				original_tag = ROM
-			}
-			
-			traits = { backroom_backstabber }
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-		ROM_mihail_sturdza = {
-
-			picture = generic_fascist_demagogue_western_european_2d
-
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus = ROM_appoint_german_friendly_government
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}			
-
-			allowed = {
-				original_tag = ROM
-			}
-			
-			traits = { fascist_demagogue }
-			ai_will_do = {
-				factor = 0
-			}
+			traits = { staunch_monarchist }
 		}
 	}
+
 
 	theorist = {
 
@@ -1066,7 +960,7 @@ ideas = {
 			cost = 50
 
 			available = {
-				has_completed_focus = ROM_mobile_tank_destroyers
+				
 			}
 			
 			allowed = {
@@ -1165,7 +1059,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = ROM_coastal_defense_navy
+				
 			}
 			
 			research_bonus = {
@@ -1173,15 +1067,24 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				ship_hull_light = {
-					lg_attack = 0.1
+				destroyer = {
+					attack = 0.1
 					naval_range = -0.5
 					build_cost_ic = -0.20
 				}
-				ship_hull_cruiser = {
-					lg_attack = 0.1
+				light_cruiser = {
+					attack = 0.1
 					naval_range = -0.5
 					build_cost_ic = -0.20
+				}
+				heavy_cruiser = {					
+					shore_bombardment = 0.1
+				}
+				battle_cruiser = {					
+					shore_bombardment = 0.1
+				}
+				battleship = { 					
+					shore_bombardment = 0.1
 				}
 			}
 			
@@ -1202,7 +1105,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = ROM_black_sea_dominance
+				
 			}
 			
 			research_bonus = {
@@ -1210,13 +1113,18 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				ship_hull_cruiser = {
-					hg_attack = 0.2
+				heavy_cruiser = {
+					attack = 0.2
 					naval_range = -0.5
 					armor_value = 0.2
 				}
-				ship_hull_heavy = {
-					hg_attack = 0.2
+				battle_cruiser = {
+					attack = 0.2
+					naval_range = -0.5
+					armor_value = 0.2
+				}
+				battleship = {
+					attack = 0.2
 					naval_range = -0.5
 					armor_value = 0.2
 				}
@@ -1397,9 +1305,6 @@ ideas = {
 
 			allowed = {
 				original_tag = ROM
-				NOT = {
-					has_dlc = "Death or Dishonor"
-				}
 			}
 			
 			research_bonus = {
@@ -1422,12 +1327,7 @@ ideas = {
 			picture = generic_air_manufacturer_2
 
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus = ROM_invest_in_the_iar
-				}
+
 			}
 
 			cost = 50
