@@ -534,7 +534,7 @@ JPR = {
 	color = rgb { 121  130  96 }
 	color_ui = rgb { 200  10  10 }
 }
-JIC = {
+CHI = {
 	color = rgb { 123 151 69 }
 	color_ui = rgb { 200  10  10 }
 }
