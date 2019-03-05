@@ -95,6 +95,8 @@
  AUS_neutrality_ADJ:0 "Austrian"
  AUS_democratic_ADJ:0 "Austrian"
  AUS_communism_ADJ:0 "Austrian"
+ AMM_fascism:0 "The Republic of Amazonia"
+ AMM_fascism_DEF:0 "The Republic of Amazonia"
  EST_fascism:0 "Terra Mariana"
  EST_fascism_DEF:0 "Terra Mariana"
  EST_neutrality:0 "Estonia"

@@ -66,6 +66,7 @@ puppet = RKK
 puppet = RKT
 puppet = RKO
 puppet = RKC
+puppet = AMM
 
 
 set_research_slots = 4
@@ -113,6 +114,7 @@ add_to_faction = VEN
 add_to_faction = NOR
 add_to_faction = RKO
 add_to_faction = CAN
+add_to_faction = AMM
 
 add_ideas = {
 	GER_african_question
