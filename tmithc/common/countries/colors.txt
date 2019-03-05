@@ -16,6 +16,10 @@ POL = {
 	color = rgb { 197 92 106 }
 	color_ui = rgb { 255 120 138 }
 }
+HAH = {
+	color = rgb { 56 125 43 }
+	color_ui = rgb { 230 255 122 }
+}
 AUS = {
 	color = rgb { 194 198 215 }
 	color_ui = rgb { 255 255 255 }
@@ -572,10 +576,6 @@ JSR = {
 }
 CRO = {
 	color = rgb { 161 142 99 }
-	color_ui = rgb { 230 255 122 }
-}
-GAB = {
-	color = rgb { 56 125 43 }
 	color_ui = rgb { 230 255 122 }
 }
 JSA = {

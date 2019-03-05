@@ -8,7 +8,7 @@ state={
 	
 
 	history={
-		owner = PRU
+		owner = JSA
 		buildings = {
 			infrastructure = 3
 		}
