@@ -499,6 +499,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 				completion_reward = {
 					add_ideas = FRA_victoryidea
 					remove_ideas = FRA_pushthemout
+					remove_ideas = FRA_organised_resistance
 					hidden_effect = {
 						country_event = { days = 7 id = france.elections.1 }
 					}
@@ -774,7 +775,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 				prerequisite = { focus = FRA_fortrhone }
 				
 				available = {
-					ITA = { exists = no }
+					ITA = { exists = yes }
 					is_puppet = no
 					PER = {
 						NOT = { is_in_faction_with = ITA }
@@ -783,6 +784,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 				
 				bypass = {
 					has_war_with = ITA
+					NOT = { country_exists = ITA }
 					NOT = { country_exists = PER }
 				}
 			
