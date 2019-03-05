@@ -113,7 +113,7 @@ bookmarks = {
 			}
 			focuses = {
 				FRA_embraceresistance
-				FRA_francisque
+				FRA_francisqu
 				FRA_loyaltogermany
 			}
 	
