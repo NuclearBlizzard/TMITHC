@@ -116,22 +116,37 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_FRA_chained"
-		texturefile = "gfx/interface/ideas/FRA_chained.dds"
+		texturefile = "gfx/interface/ideas/FRA/FRA_chained.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_FRA_resistance"
-		texturefile = "gfx/interface/ideas/FRA_resistance.dds"
+		texturefile = "gfx/interface/ideas/FRA/FRA_resistance.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_FRA_milice"
-		texturefile = "gfx/interface/ideas/FRA_milice.dds"
+		texturefile = "gfx/interface/ideas/FRA/FRA_milice.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_FRA_constitution"
-		texturefile = "gfx/interface/ideas/FRA_constitution.dds"
+		texturefile = "gfx/interface/ideas/FRA/FRA_constitution.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_freedom"
+		texturefile = "gfx/interface/ideas/FRA/FRA_freedom.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_gunresistance"
+		texturefile = "gfx/interface/ideas/FRA/FRA_gunresistance.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_victoire"
+		texturefile = "gfx/interface/ideas/FRA/FRA_victoire.dds"
 	}
 
 }
