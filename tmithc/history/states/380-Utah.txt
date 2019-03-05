@@ -10,7 +10,7 @@ state= {
 	}
 
 	history={
-		owner = USA
+		owner = JPS
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1

@@ -38,7 +38,7 @@ set_convoys = 5
 
 
 create_country_leader = {
-	name = "Nobusuke Tagomi"
+	name = "Kōichirō Asakai"
 	picture = "portrait_jps_nobusuke_tagomi.tga"
 	expire = "1965.1.1"
 	ideology = nazism

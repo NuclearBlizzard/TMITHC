@@ -103,6 +103,18 @@ if = {
 		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
+		target = MON
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = SIK
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = TIB
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
 		target = JBM
 		autonomous_state = autonomy_integrated_puppet
 	}
@@ -112,6 +124,10 @@ if = {
 	}
 	set_autonomy = {
 		target = JIC
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = NEP
 		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
@@ -169,6 +185,22 @@ if = {
 		}
 		set_autonomy = {
 			target = JBM
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = TIB
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = NEP
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = SIK
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = MON
 			autonomous_state = autonomy_puppet
 		}
 		set_autonomy = {
@@ -235,6 +267,7 @@ add_to_faction = NZL
 add_to_faction = SIK
 add_to_faction = TIB
 add_to_faction = MON
+add_to_faction = NEP
 
 
 set_politics = {
