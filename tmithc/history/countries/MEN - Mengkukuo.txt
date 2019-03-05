@@ -1,16 +1,20 @@
-﻿capital = 323
+﻿capital = 611
 
-oob = "NEP_1936"
+oob = "MEN_1936"
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
-	tech_mountaineers = 1
+	
 }
-set_war_support = 0.1
-set_stability = 0.8
+
 1939.1.1 = {
 
+	add_to_war = {
+		targeted_alliance = JAP
+		enemy = CHI
+		hostility_reason = puppet
+	}
+	
 	add_political_power = 1198
 	
 	#generic focuses
@@ -18,36 +22,30 @@ set_stability = 0.8
 	complete_national_focus = equipment_effort
 	complete_national_focus = motorization_effort
 	complete_national_focus = aviation_effort
-	complete_national_focus = construction_effort_2
-	complete_national_focus = production_effort_2
-	complete_national_focus = infrastructure_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "NEP_1939"
+	oob = "MEN_1939"
 	set_technology = {
-		gw_artillery = 1
-		tech_support = 1		
-		tech_engineers = 1
-		infantry_weapons1 = 1
-		support_weapons = 1
-
 		#doctrines
-		air_superiority = 1
-
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
 		radio_detection = 1
+		mechanical_computing = 1
 
 		#industry
 		basic_machine_tools = 1
 		improved_machine_tools = 1
+		advanced_machine_tools = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -60,18 +58,20 @@ set_politics = {
 	parties = {
 		democratic = { 
 			popularity = 0
+			banned = yes
 		}
 
 		fascism = {
-			popularity = 100
+			popularity = 80
 		}
 		
 		communism = {
 			popularity = 0
+			banned = yes
 		}
-		
-		neutrality = { 
-			popularity = 0
+
+		neutrality = {
+			popularity = 20
 		}
 	}
 	
@@ -82,40 +82,15 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Mahendra Bir Bikram Shah"
-	desc = "POLITICS_JUDDHA_RANA_DESC"
-	picture = "gfx/leaders/NEP/fuck12.tga"
+	name = "Prince Demchugdongrub"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "GFX_portrait_men_demchugdongrub"
 	expire = "1965.1.1"
-	ideology = falangism
+	ideology = rexism
 	traits = {
-		#
+		spirit_of_genghis
 	}
 }
 
 1939.1.1 = {
-	set_politics = {
-
-		parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 0
-		}
-		
-		neutrality = { 
-			popularity = 100
-		}
-	}
-	
-	ruling_party = neutrality
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
 }

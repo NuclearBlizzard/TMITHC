@@ -246,6 +246,62 @@ CHI = {
     }
 }
 
+NEP = {
+    add_popularity = { ideology = fascism popularity = 1 }
+    add_popularity = { ideology = naturalism popularity = 0.3 }
+    set_politics = {
+        ruling_party = fascism
+        last_election = "1959.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+}
+
+SIK = {
+    add_popularity = { ideology = fascism popularity = 1 }
+    add_popularity = { ideology = naturalism popularity = 0.3 }
+    set_politics = {
+        ruling_party = fascism
+        last_election = "1959.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+}
+
+TIB = {
+    add_popularity = { ideology = fascism popularity = 1 }
+    add_popularity = { ideology = naturalism popularity = 0.3 }
+    set_politics = {
+        ruling_party = fascism
+        last_election = "1959.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+}
+
+MON = {
+    add_popularity = { ideology = fascism popularity = 1 }
+    add_popularity = { ideology = naturalism popularity = 0.3 }
+    set_politics = {
+        ruling_party = fascism
+        last_election = "1959.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+}
+
+COA = {
+    add_popularity = { ideology = fascism popularity = 1 }
+    add_popularity = { ideology = naturalism popularity = 0.3 }
+    set_politics = {
+        ruling_party = fascism
+        last_election = "1959.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+}
+
+
 
 create_faction = cpps
 add_to_faction = CHI
