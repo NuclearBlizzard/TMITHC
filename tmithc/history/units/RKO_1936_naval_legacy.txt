@@ -1,0 +1,27 @@
+﻿units= {
+
+	##### Naval OOB #####
+	fleet = {
+		name = "Nacionalinis Jūrų Laivynas"			
+		naval_base = 9340 # Riga
+		task_force = {				
+			name = "Karinio Jūrų Laivyno Būrys"			
+			location = 9340 # Riga
+			ship = { name = "Estija" pride_of_the_fleet = yes definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Latvija" definition = battleship equipment = { battleship_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Nugalėtojas" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Pergalė" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Teisingumas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Madmanas" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = RKO } } }
+			ship = { name = "Naujas" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = RKO } } }
+			ship = { name = "Paskutinis" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = RKO } } }
+			ship = { name = "Dosnus" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Atvykimo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Jaunimas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Fantastinis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Stebuklas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Premjeras" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RKO } } }
+		}				
+	}
+} 
+
