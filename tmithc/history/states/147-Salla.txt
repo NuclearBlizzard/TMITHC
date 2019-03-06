@@ -2,9 +2,9 @@ state=
 {
 	id=147
 	name="STATE_147"
-	manpower = 4630
+	manpower = 8980
 	
-	state_category = enclave
+	state_category = rural
 	
 	history = {	
 		owner = FIN

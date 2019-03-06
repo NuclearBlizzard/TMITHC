@@ -2,9 +2,9 @@
 state={
 	id=344
 	name="STATE_344"
-	manpower = 727198
+	manpower = 1027198
 	
-	state_category = town
+	state_category = large_town
 
 	history={
 		owner = TUR
@@ -12,14 +12,15 @@ state={
 			9893 1
 		}
 		victory_points = {
-			11746 1 
+			11746 5
 		}
 		victory_points = {
-			886 1 
+			886 1
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 2
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 1
 			11746 = {
 				naval_base = 3
 			}

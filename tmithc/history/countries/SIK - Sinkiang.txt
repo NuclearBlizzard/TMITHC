@@ -18,17 +18,17 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 0
-			banned = yes
+			popularity = 98
+			banned = no
 		}
 		
 		communism = {
-			popularity = 100
+			popularity = 2
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = communism
+	ruling_party = fascism
 	last_election = "1936.1.1"
 }
 
@@ -37,7 +37,7 @@ create_country_leader = {
 	desc = "POLITICS_SHENG_SHICAI_DESC"
 	picture = "SIK_sheng.tga"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = falangism
 	traits = {
 		#
 	}

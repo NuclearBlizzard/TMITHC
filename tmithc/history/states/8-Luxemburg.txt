@@ -3,23 +3,24 @@ state=
 	id=8
 	name="STATE_8"
 	
-	state_category = town
+	state_category = metropolis
 	
-	manpower = 294748
+	manpower = 846110
 	resources={
 		steel=5 # was: 8
 	}
 
 	history=
 	{
-		owner = LUX
+		owner = GER
 		buildings = {
-			infrastructure = 6
-			arms_factory = 1
+			infrastructure = 8
+			arms_factory = 2
 			industrial_complex = 3
 		}
-		victory_points = { 6583 5 }
+		victory_points = { 6583 25 }
 		add_core_of = LUX
+		add_core_of = GER
 	}
 
 	provinces=

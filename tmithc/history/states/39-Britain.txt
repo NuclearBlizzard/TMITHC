@@ -2,9 +2,9 @@
 state={
 	id=39
 	name="STATE_39" # South Tyrol
-	manpower = 641650
+	manpower = 601650
 	
-	state_category = town
+	state_category = large_town
 	
 	resources={
 		aluminium=14 # was: 22

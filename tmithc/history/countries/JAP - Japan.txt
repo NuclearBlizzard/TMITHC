@@ -83,11 +83,15 @@ if = {
 		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
-		target = JIC
+		target = CHI
 		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
 		target = SIA
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = JEI
 		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
@@ -99,11 +103,39 @@ if = {
 		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
+		target = MON
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = SIK
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = TIB
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
 		target = JBM
 		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
 		target = JEI
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = JIC
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = NEP
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = NZL
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = COA
 		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
@@ -132,7 +164,11 @@ if = {
 			autonomous_state = autonomy_puppet
 		}
 		set_autonomy = {
-			target = JIC
+			target = CHI
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = JEI
 			autonomous_state = autonomy_puppet
 		}
 		set_autonomy = {
@@ -143,8 +179,28 @@ if = {
 			target = JBD
 			autonomous_state = autonomy_puppet
 		}
+			set_autonomy = {
+			target = COA
+			autonomous_state = autonomy_puppet
+		}
 		set_autonomy = {
 			target = JBM
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = TIB
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = NEP
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = SIK
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = MON
 			autonomous_state = autonomy_puppet
 		}
 		set_autonomy = {
@@ -160,7 +216,15 @@ if = {
 			autonomous_state = autonomy_puppet
 		}
 		set_autonomy = {
+			target = JIC
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
 			target = JSA
+			autonomous_state = autonomy_puppet
+		}
+		set_autonomy = {
+			target = NZL
 			autonomous_state = autonomy_puppet
 		}
 		set_autonomy = {
@@ -171,9 +235,76 @@ if = {
 	}
 }
 
+CHI = {
+    add_popularity = { ideology = fascism popularity = 1 }
+    add_popularity = { ideology = naturalism popularity = 0.3 }
+    set_politics = {
+        ruling_party = fascism
+        last_election = "1959.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+}
+
+NEP = {
+    add_popularity = { ideology = fascism popularity = 1 }
+    add_popularity = { ideology = naturalism popularity = 0.3 }
+    set_politics = {
+        ruling_party = fascism
+        last_election = "1959.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+}
+
+SIK = {
+    add_popularity = { ideology = fascism popularity = 1 }
+    add_popularity = { ideology = naturalism popularity = 0.3 }
+    set_politics = {
+        ruling_party = fascism
+        last_election = "1959.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+}
+
+TIB = {
+    add_popularity = { ideology = fascism popularity = 1 }
+    add_popularity = { ideology = naturalism popularity = 0.3 }
+    set_politics = {
+        ruling_party = fascism
+        last_election = "1959.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+}
+
+MON = {
+    add_popularity = { ideology = fascism popularity = 1 }
+    add_popularity = { ideology = naturalism popularity = 0.3 }
+    set_politics = {
+        ruling_party = fascism
+        last_election = "1959.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+}
+
+COA = {
+    add_popularity = { ideology = fascism popularity = 1 }
+    add_popularity = { ideology = naturalism popularity = 0.3 }
+    set_politics = {
+        ruling_party = fascism
+        last_election = "1959.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
+}
+
+
 
 create_faction = cpps
-add_to_faction = JIC
+add_to_faction = CHI
 add_to_faction = SIA
 add_to_faction = JBM
 add_to_faction = JBD
@@ -183,7 +314,15 @@ add_to_faction = AST
 add_to_faction = RNC
 add_to_faction = JSR
 add_to_faction = JPS
+add_to_faction = JEI
 add_to_faction = BHU
+add_to_faction = NEP
+add_to_faction = COA
+add_to_faction = JIC
+add_to_faction = NZL
+add_to_faction = SIK
+add_to_faction = TIB
+add_to_faction = MON
 add_to_faction = NEP
 
 

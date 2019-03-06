@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = SOV
+		owner = RKL
 		buildings = {
 			infrastructure = 1
 			12530 = {

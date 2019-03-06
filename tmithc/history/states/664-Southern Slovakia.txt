@@ -1,33 +1,26 @@
 state={
 	id=664
 	name="STATE_664"
-	manpower = 854300
+	manpower = 1094300
 	resources={
 		steel=13 # was: 20
 		chromium = 3 # was: 4
 	}
 	
-	state_category = town
+	state_category = large_town
 	
 	history={
-		owner = CZE
+		owner = HUN
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 3
+			industrial_complex = 4
 		}
 		victory_points = {
 			6573 1 
 		}
-		add_core_of = CZE
-		add_claim_by = HUN
+		add_core_of = HUN
+		add_core_of = SLO
 
-		1939.3.14 = {
-			owner = HUN
-			controller = HUN
-			remove_claim_by = HUN
-			add_core_of = HUN
-			add_core_of = SLO
-		}
 	}
 	
 	provinces={

@@ -13,7 +13,7 @@ state={
 	}
 
 	history={
-		owner = USA
+		owner = JPS
 		buildings = {
 			infrastructure = 4
 		}

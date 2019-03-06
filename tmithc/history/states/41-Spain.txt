@@ -2,26 +2,27 @@
 state={
 	id=41
 	name="STATE_41" # Madrid
-	manpower = 2269659
+	manpower = 5569659
 
-	state_category = city
+	state_category = metropolis
 
 	resources={
-		aluminium=1 # was: 2
+		aluminium=2 # was: 2
+		steel=10
 	}
 
 	history={
 		owner = SPR
 		victory_points = {
-			3938 30
+			3938 50
 		}
 		victory_points = {
-			858 1
+			858 10
 		}
 		buildings = {
-			infrastructure = 6
-			arms_factory = 2
-			industrial_complex = 3
+			infrastructure = 8
+			arms_factory = 4
+			industrial_complex = 4
 			air_base = 6
 		}
 		add_core_of = SPR

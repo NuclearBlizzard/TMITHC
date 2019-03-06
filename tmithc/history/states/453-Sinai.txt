@@ -8,13 +8,16 @@ state={
 	
 	
 	history = {
-		owner = ENG
+<<<<<<< HEAD
+		owner = ITE
+=======
+>>>>>>> 87f7a123c999f37affb9e3c47104bf7c97d03033
 		buildings = {
 			infrastructure = 2
 		}
 
 		add_core_of = EGY
-
+		add_core_of = ITE
 	}
 
 	provinces={

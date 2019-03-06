@@ -2,9 +2,9 @@
 state={
 	id=179
 	name="STATE_179"
-	manpower = 1122200
+	manpower = 1422200
 	
-	state_category = town
+	state_category = city
 
 	history={
 		owner = POR
@@ -20,6 +20,7 @@ state={
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
+			arms_factory = 1
 			3790 = {
 				naval_base = 2
 			}

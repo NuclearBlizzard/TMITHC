@@ -3,125 +3,150 @@ spriteTypes = {
 	######## GOALS #########
 
 	SpriteType = { 
-		name = "GFX_FRA_francisque"
-		texturefile = "gfx/interface/goals/FRA_francisque.tga"
+		name = "vichy_france"
+		texturefile = "gfx/interface/goals/france/vichy_france.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_manydead"
-		texturefile = "gfx/interface/goals/FRA_manydead.tga"
+		name = "french_casualties"
+		texturefile = "gfx/interface/goals/france/french_casualties.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_ironcross"
-		texturefile = "gfx/interface/goals/FRA_ironcross.tga"
+		name = "french_iron_cross"
+		texturefile = "gfx/interface/goals/france/french_iron_cross.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_ssvolunteer"
-		texturefile = "gfx/interface/goals/FRA_ssvolunteer.tga"
+		name = "french_ss"
+		texturefile = "gfx/interface/goals/france/french_ss.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_atlantikwall"
-		texturefile = "gfx/interface/goals/FRA_atlantikwall.tga"
+		name = "french_forts"
+		texturefile = "gfx/interface/goals/france/french_forts.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_fire"
-		texturefile = "gfx/interface/goals/FRA_fire.tga"
+		name = "french_fire"
+		texturefile = "gfx/interface/goals/france/french_fire.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_conscription"
-		texturefile = "gfx/interface/goals/FRA_conscription.tga"
+		name = "french_conscription"
+		texturefile = "gfx/interface/goals/france/french_conscription.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_fascism"
-		texturefile = "gfx/interface/goals/FRA_fascism.tga"
+		name = "french_fascism"
+		texturefile = "gfx/interface/goals/france/french_fascism.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_resistancefocus"
-		texturefile = "gfx/interface/goals/FRA_resistancefocus.tga"
+		name = "french_resistance"
+		texturefile = "gfx/interface/goals/france/french_resistance.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_puppet"
-		texturefile = "gfx/interface/goals/FRA_puppet.tga"
+		name = "french_puppet"
+		texturefile = "gfx/interface/goals/france/french_puppet.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_handshake"
-		texturefile = "gfx/interface/goals/FRA_handshake.tga"
+		name = "french_diplomacy"
+		texturefile = "gfx/interface/goals/france/french_diplomacy.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_handshake2"
-		texturefile = "gfx/interface/goals/FRA_handshake2.tga"
+		name = "french_diplomacy2"
+		texturefile = "gfx/interface/goals/france/french_diplomacy2.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_militia"
-		texturefile = "gfx/interface/goals/FRA_militia.tga"
+		name = "french_militia"
+		texturefile = "gfx/interface/goals/france/french_militia.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_milice"
-		texturefile = "gfx/interface/goals/FRA_milice.tga"
+		name = "french_militia2"
+		texturefile = "gfx/interface/goals/france/french_militia2.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_standwithbritain"
-		texturefile = "gfx/interface/goals/FRA_standwithbritain.tga"
+		name = "french_guns"
+		texturefile = "gfx/interface/goals/france/french_guns.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_guns"
-		texturefile = "gfx/interface/goals/FRA_guns.tga"
+		name = "french_factories"
+		texturefile = "gfx/interface/goals/france/french_factories.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_factories"
-		texturefile = "gfx/interface/goals/FRA_factories.tga"
+		name = "french_republic"
+		texturefile = "gfx/interface/goals/france/french_republic.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_republic"
-		texturefile = "gfx/interface/goals/FRA_republic.tga"
+		name = "french_victory"
+		texturefile = "gfx/interface/goals/france/french_victory.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_victoire"
-		texturefile = "gfx/interface/goals/FRA_victoire.tga"
+		name = "french_navy"
+		texturefile = "gfx/interface/goals/france/french_navy.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_FRA_navy"
-		texturefile = "gfx/interface/goals/FRA_navy.tga"
+		name = "french_monument"
+		texturefile = "gfx/interface/goals/france/french_monument.dds"
+	}
+	
+	SpriteType = { 
+		name = "french_renault"
+		texturefile = "gfx/interface/goals/france/french_renault.dds"
+	}
+	
+	SpriteType = { 
+		name = "french_constitution1"
+		texturefile = "gfx/interface/goals/france/french_constitution1.dds"
 	}
 
 	###### IDEAS #########
 
 	spriteType = {
 		name = "GFX_idea_FRA_chained"
-		texturefile = "gfx/interface/ideas/FRA_chained.tga"
+		texturefile = "gfx/interface/ideas/FRA/FRA_chained.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_FRA_resistance"
-		texturefile = "gfx/interface/ideas/FRA_resistance.tga"
+		texturefile = "gfx/interface/ideas/FRA/FRA_resistance.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_FRA_milice"
-		texturefile = "gfx/interface/ideas/FRA_milice.tga"
+		texturefile = "gfx/interface/ideas/FRA/FRA_milice.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_FRA_constitution"
-		texturefile = "gfx/interface/ideas/FRA_constitution.tga"
+		texturefile = "gfx/interface/ideas/FRA/FRA_constitution.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_freedom"
+		texturefile = "gfx/interface/ideas/FRA/FRA_freedom.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_gunresistance"
+		texturefile = "gfx/interface/ideas/FRA/FRA_gunresistance.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_FRA_victoire"
+		texturefile = "gfx/interface/ideas/FRA/FRA_victoire.dds"
 	}
 
 }

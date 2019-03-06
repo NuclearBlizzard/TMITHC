@@ -2,27 +2,29 @@
 state={
 	id=13
 	name="STATE_13"
-	manpower = 730660
+	manpower = 1230660
 	resources={
-		steel=2 # was: 3
+		steel=4 # was: 3
+		tungsten= 18
 	}
-	state_category = town
+	state_category = city
 	history={
-		owner = EST
+		owner = RKO
 		victory_points = {
-			3152 5 
+			3152 10
 		}
 		buildings = {
-			infrastructure = 5
+			infrastructure = 6
 			arms_factory = 1
 			industrial_complex = 3
+			dockyard = 1
 			air_base = 2
 			3152 = {
-				naval_base = 3
-				coastal_bunker = 1
+				naval_base = 6
 			}
 		}
 		add_core_of = EST
+		add_core_of = RKO
 	}
 
 	provinces={

@@ -2,25 +2,25 @@
 state={
 	id=49
 	name="STATE_49" # Ankara
-	manpower = 770758
+	manpower = 1390758
 	resources={
 		chromium=11 # was: 16
 	}
 	
-	state_category = town
+	state_category = city
 
 	history={
 		owner = TUR
 		victory_points = {
-			11747 10 
+			11747 15
 		}
 		victory_points = {
-			3951 1
+			3951 5
 		}
 		buildings = {
-			infrastructure = 4
-			arms_factory = 2
-			industrial_complex = 2
+			infrastructure = 6
+			arms_factory = 3
+			industrial_complex = 3
 			air_base = 3
 		}
 		add_core_of = TUR

@@ -17,7 +17,7 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 100
 		}
 		
 		communism = {
@@ -26,11 +26,11 @@ set_politics = {
 		}
 		
 		neutrality = { 
-			popularity = 100
+			popularity = 0
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -41,7 +41,7 @@ create_country_leader = {
 	desc = "POLITICS_TENZIN_GYATSO_DESC"
 	picture = "TIB_Tenzin_Gyatso.tga"
 	expire = "1990.1.1"
-	ideology = despotism
+	ideology = falangism
 	traits = {
 		#
 	}

@@ -2,25 +2,26 @@
 state={
 	id=171
 	name="STATE_171"
-	manpower = 2295085
+	manpower = 2625085
 	
-	state_category = city
+	state_category = large_city
 
 	history={
 		owner = SPR
 		victory_points = {
-			758 3
+			758 10
 		}
 		victory_points = {
-			6734 1
+			6734 5
 		}
 		buildings = {
-			infrastructure = 6
-			dockyard = 2
-			arms_factory = 1
+			infrastructure = 7
+			dockyard = 3
+			arms_factory = 2
+			industrial_complex = 1
 			air_base = 2
 			758 = {
-				naval_base = 6
+				naval_base = 8
 			}
 		}
 		add_core_of = SPR

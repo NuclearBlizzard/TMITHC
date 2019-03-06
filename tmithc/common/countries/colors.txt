@@ -16,8 +16,16 @@ POL = {
 	color = rgb { 197 92 106 }
 	color_ui = rgb { 255 120 138 }
 }
+HAH = {
+	color = rgb { 56 125 43 }
+	color_ui = rgb { 230 255 122 }
+}
 AUS = {
 	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
+}
+AMM = {
+	color = rgb { 150 192 215 }
 	color_ui = rgb { 255 255 255 }
 }
 EST = {
@@ -475,6 +483,10 @@ GER = {
 	color = rgb { 78 78 78 }
 	color_ui = rgb { 138 155 116 }
 }
+RBM = {
+	color = rgb { 80 50 60 }
+	color_ui = rgb { 138 155 116 }
+}
 ROM = {
 	color = rgb { 198 183 87 }
 	color_ui = rgb { 255 255 120 }
@@ -534,7 +546,7 @@ JPR = {
 	color = rgb { 121  130  96 }
 	color_ui = rgb { 200  10  10 }
 }
-JIC = {
+CHI = {
 	color = rgb { 123 151 69 }
 	color_ui = rgb { 200  10  10 }
 }
@@ -544,6 +556,10 @@ JBM = {
 }
 JBD = {
 	color = rgb { 124 166 147 }
+	color_ui = hsv { 0.18 0.3 0.9 }
+}
+JIC = {
+	color = rgb { 124 170 150 }
 	color_ui = hsv { 0.18 0.3 0.9 }
 }
 SOV = {
@@ -568,10 +584,6 @@ JSR = {
 }
 CRO = {
 	color = rgb { 161 142 99 }
-	color_ui = rgb { 230 255 122 }
-}
-GAB = {
-	color = rgb { 56 125 43 }
 	color_ui = rgb { 230 255 122 }
 }
 JSA = {

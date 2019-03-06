@@ -22,17 +22,17 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 98
 			banned = yes
 		}
 		
 		communism = {
-			popularity = 100
+			popularity = 2
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = communism
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -43,7 +43,7 @@ create_country_leader = {
 	desc = "POLITICS_CHOIBALSAN_DESC"
 	picture = "MON_khorloogiin.tga"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = falangism
 	traits = {
 		#
 	}

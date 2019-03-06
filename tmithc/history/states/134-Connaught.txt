@@ -3,14 +3,15 @@ state=
 {
 	id=134
 	name="STATE_134"
-	manpower = 667100
+	manpower = 967100
 	
-	state_category = town
+	state_category = city
 
 	history=
 	{
 		owner = IRE
 		buildings = {
+			industrial_complex = 3
 			infrastructure = 6
 		}
 		add_core_of = IRE

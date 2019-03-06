@@ -2,7 +2,7 @@
 state={
 	id=212
 	name="STATE_212"
-	manpower = 2611100
+	manpower = 2931100
 	
 	state_category = city
 
@@ -12,15 +12,15 @@ state={
 			6923 5
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 6
 			arms_factory = 3
-			industrial_complex =2
+			industrial_complex = 3
 			air_base = 2
 		}
 		add_core_of = BUL
 	}
 
 	provinces={
-		878 893 3796 3819 3937 3952 6814 6842 6923 6952 6982 9610 9862 11813 
+		878 893 3796 11905 9791 6990 3819 3937 3952 6814 6842 6923 6952 6982 9610 9862 11813 
 	}
 }

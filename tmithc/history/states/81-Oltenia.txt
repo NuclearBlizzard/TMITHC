@@ -1,19 +1,19 @@
 state={
 	id=81
 	name="STATE_81"
-	manpower=1519300
+	manpower=1819300
 	
 	
-	state_category = rural
+	state_category = large_town
 	
 	history={
 		victory_points = {
-			6652 1
+			6652 3
 		}
 		owner = ROM
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 2
+			industrial_complex = 4
 		}
 		add_core_of = ROM
 	}

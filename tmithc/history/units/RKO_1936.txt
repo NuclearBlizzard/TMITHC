@@ -1,0 +1,187 @@
+﻿division_template = {
+	name = "Pėstininkų Skyrius"		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Intervencijos Pajėgos"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Motorizuotas Skyrius" 
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }     
+	}
+}
+
+
+units = {
+	### RK Ostland Units ###	
+	division = {
+		name = "Pėstininkų Skyrius"
+		location = 6296
+		division_template = "Pėstininkų Skyrius"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Pėstininkų Skyrius"
+		location = 9304
+		division_template = "Pėstininkų Skyrius"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Pėstininkų Skyrius"
+		location = 3320
+		division_template = "Pėstininkų Skyrius"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Pėstininkų Skyrius"
+		location = 327
+		division_template = "Pėstininkų Skyrius"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Pėstininkų Skyrius"
+		location = 6314
+		division_template = "Pėstininkų Skyrius"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Pėstininkų Skyrius"
+		location = 9262
+		division_template = "Pėstininkų Skyrius"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Pėstininkų Skyrius"
+		location = 9340
+		division_template = "Pėstininkų Skyrius"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Pėstininkų Skyrius"
+		location = 9240
+		division_template = "Pėstininkų Skyrius"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "Pėstininkų Skyrius"
+		location = 9221
+		division_template = "Pėstininkų Skyrius"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Pėstininkų Skyrius"
+		location = 496
+		division_template = "Pėstininkų Skyrius"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Pėstininkų Skyrius"
+		location = 4640
+		division_template = "Pėstininkų Skyrius"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Intervencijos Pajėgos"
+		location = 11222
+		division_template = "Intervencijos Pajėgos"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Intervencijos Pajėgos"
+		location = 6296
+		division_template = "Intervencijos Pajėgos"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+}
+##### Air Force #####
+air_wings = {
+	12 = { 
+		fighter_equipment_0 =  {
+			owner = "RKO" 
+			amount = 125
+		}
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "RKO"
+		}
+		requested_factories = 1
+		progress = 0.40
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "RKO"
+		}
+		requested_factories = 1
+		progress = 0.20
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "RKO"
+		}
+		requested_factories = 1
+		progress = 0.80
+		efficiency = 100
+	}
+}

@@ -9,7 +9,8 @@ state=
 	
 	history= {
 		add_core_of = SUD
-		owner = ENG
+		add_core_of = ITE
+		owner = ITE
 		buildings = {
 			infrastructure = 0
 		}

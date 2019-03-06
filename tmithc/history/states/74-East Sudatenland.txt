@@ -2,9 +2,9 @@ state=
 {
 	id=74
 	name="STATE_74"
-	manpower = 820000
+	manpower = 920000
 	
-	state_category = rural
+	state_category = town
 	
 	
 	history=
@@ -12,17 +12,14 @@ state=
 		victory_points = {
 			3583 5
 		}
-		owner = CZE
+		owner = GER
 		buildings = {
 			infrastructure = 7
 			arms_factory = 1
 		}
 		add_core_of = CZE
+		add_core_of = RBM
 
-		1938.9.30 = {
-			owner = GER
-			controller = GER
-		}
 	}
 	provinces= {
 		421 3414 3583 6485

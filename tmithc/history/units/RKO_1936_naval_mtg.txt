@@ -1,0 +1,32 @@
+﻿units= {
+
+	##### Naval OOB #####
+	fleet = {
+		name = "Nacionalinis Jūrų Laivynas"			
+		naval_base = 9340 # Riga
+		task_force = {				
+			name = "Karinio Jūrų Laivyno Būrys"			
+			location = 9340 # Riga
+			ship = { name = "Estija" pride_of_the_fleet = yes definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Latvija" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Nugalėtojas" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Pergalė" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Teisingumas" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = RKO } } }
+			ship = { name = "Madmanas" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = RKO } } }
+			ship = { name = "Naujas" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = RKO } } }
+			ship = { name = "Paskutinis" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = RKO } } }
+			ship = { name = "Dosnus" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Atvykimo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Jaunimas" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Fantastinis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Stebuklas" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Laivas 1" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Laivas 2" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Laivas 3" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Laivas 4" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Laivas 5" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RKO } } }
+			ship = { name = "Laivas 6" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RKO } } }
+		}				
+	}
+} 
+
