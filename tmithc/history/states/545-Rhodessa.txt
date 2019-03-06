@@ -1,18 +1,24 @@
 state={
 	id=545
 	
-	state_category = pastoral
+	state_category = rural
+	
+	resources={
+		chromium= 28
+		rubber= 12
+	}
 	
 	name="STATE_545"
 
 	history={
 		owner = ZIM
 		buildings = {
-			infrastructure = 3
-
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
 		}
 		victory_points = {
-			10929 1 
+			10929 3
 		}
 		add_core_of = ZIM
 	}
@@ -20,6 +26,6 @@ state={
 	provinces={
 		1874 2151 2216 4851 7842 10929
 	}
-	manpower=1171336
+	manpower=1891336
 	buildings_max_level_factor=1.000
 }

@@ -12,7 +12,7 @@ state={
 			9962 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 
 		}
 	}
@@ -20,6 +20,6 @@ state={
 	provinces={
 		9962
 	}
-	manpower=1716564
+	manpower=2116564
 	buildings_max_level_factor=1.000
 }
