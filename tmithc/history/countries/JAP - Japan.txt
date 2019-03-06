@@ -103,18 +103,6 @@ if = {
 		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
-		target = MON
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
-		target = SIK
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
-		target = TIB
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
 		target = JBM
 		autonomous_state = autonomy_integrated_puppet
 	}
@@ -124,10 +112,6 @@ if = {
 	}
 	set_autonomy = {
 		target = JIC
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
-		target = NEP
 		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
@@ -188,22 +172,6 @@ if = {
 			autonomous_state = autonomy_puppet
 		}
 		set_autonomy = {
-			target = TIB
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
-			target = NEP
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
-			target = SIK
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
-			target = MON
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
 			target = JBM
 			autonomous_state = autonomy_puppet
 		}
@@ -246,60 +214,7 @@ CHI = {
     }
 }
 
-NEP = {
-    add_popularity = { ideology = fascism popularity = 1 }
-    add_popularity = { ideology = naturalism popularity = 0.3 }
-    set_politics = {
-        ruling_party = fascism
-        last_election = "1959.1.1"
-        election_frequency = 48
-        elections_allowed = no
-    }
-}
 
-SIK = {
-    add_popularity = { ideology = fascism popularity = 1 }
-    add_popularity = { ideology = naturalism popularity = 0.3 }
-    set_politics = {
-        ruling_party = fascism
-        last_election = "1959.1.1"
-        election_frequency = 48
-        elections_allowed = no
-    }
-}
-
-TIB = {
-    add_popularity = { ideology = fascism popularity = 1 }
-    add_popularity = { ideology = naturalism popularity = 0.3 }
-    set_politics = {
-        ruling_party = fascism
-        last_election = "1959.1.1"
-        election_frequency = 48
-        elections_allowed = no
-    }
-}
-
-MON = {
-    add_popularity = { ideology = fascism popularity = 1 }
-    add_popularity = { ideology = naturalism popularity = 0.3 }
-    set_politics = {
-        ruling_party = fascism
-        last_election = "1959.1.1"
-        election_frequency = 48
-        elections_allowed = no
-    }
-}
-
-COA = {
-    add_popularity = { ideology = fascism popularity = 1 }
-    add_popularity = { ideology = naturalism popularity = 0.3 }
-    set_politics = {
-        ruling_party = fascism
-        last_election = "1959.1.1"
-        election_frequency = 48
-        elections_allowed = no
-    }
-}
 
 
 
@@ -316,14 +231,9 @@ add_to_faction = JSR
 add_to_faction = JPS
 add_to_faction = JEI
 add_to_faction = BHU
-add_to_faction = NEP
 add_to_faction = COA
 add_to_faction = JIC
 add_to_faction = NZL
-add_to_faction = SIK
-add_to_faction = TIB
-add_to_faction = MON
-add_to_faction = NEP
 
 
 set_politics = {
