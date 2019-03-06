@@ -1,0 +1,169 @@
+﻿division_template = {
+	name = "Dywizja Piechoty"		
+	division_names_group = POL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Zmotoryzowany Oddział Piechoty"
+	division_names_group = POL_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Brygada Kawalerii" 
+	division_names_group = POL_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }     
+	}
+}
+
+
+units = {
+	### General Gouvernment Units ###	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3544
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 9427
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 11398
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 106
+		}
+		location = 12562
+		division_template = "Brygada Kawalerii" 
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11479
+		division_template = "Zmotoryzowany Oddział Piechoty" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 524
+		division_template = "Zmotoryzowany Oddział Piechoty" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+##### Air Force #####
+air_wings = {
+	10 = { 
+		fighter_equipment_0 =  {
+			owner = "RKG" 
+			amount = 195
+		}
+		CAS_equipment_1 =  {
+			owner = "RKG" 
+			amount = 75
+		}
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "RKG"
+		}
+		requested_factories = 2
+		progress = 0.20
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "RKG"
+		}
+		requested_factories = 1
+		progress = 0.20
+		efficiency = 100
+	}
+}
