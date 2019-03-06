@@ -24,6 +24,14 @@ AUS = {
 	color = rgb { 194 198 215 }
 	color_ui = rgb { 255 255 255 }
 }
+RUS = {
+	color = rgb { 0 127 14 }
+	color_ui = rgb { 0 127 14 }
+}
+URL = {
+	color = rgb { 142 142 128 }
+	color_ui = rgb { 142 142 128 }
+}
 AMM = {
 	color = rgb { 150 192 215 }
 	color_ui = rgb { 255 255 255 }

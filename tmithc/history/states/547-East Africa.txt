@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = RKA
+		owner = ENG
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -22,7 +22,6 @@ state={
 			5210 1
 		}
 		add_core_of = KEN
-		add_core_of = RKA
 	}
 
 	provinces={

@@ -8,9 +8,8 @@ state=
 	
 	history=
 	{
-		owner = IAS
+		owner = ITA
 		add_core_of = ERI
-		add_core_of = IAS
 		victory_points = {
 			12766 1
 		}

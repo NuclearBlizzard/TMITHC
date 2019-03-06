@@ -1,0 +1,41 @@
+spriteTypes = {	
+
+	#### Modded goal icons
+
+	SpriteType = {
+	name = "GFX_focus_soviet_union_flag"
+	texturefile = "gfx/interface/goals/focus_soviet_union_flag.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_beria_gensec"
+	texturefile = "gfx/interface/goals/focus_beria_gensec.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_khrushchev_gensec"
+	texturefile = "gfx/interface/goals/focus_khrushchev_gensec.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_molotov_gensec"
+	texturefile = "gfx/interface/goals/focus_molotov_gensec.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_brezhnev_gensec"
+	texturefile = "gfx/interface/goals/focus_brezhnev_gensec.dds"			
+	}
+	SpriteType = {
+	name = "GFX_goal_generic_wheat"
+	texturefile = "gfx/interface/goals/goal_generic_wheat.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_komsomol_ussr"
+	texturefile = "gfx/interface/goals/focus_komsomol_ussr.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_soviet_destroy_enemies"
+	texturefile = "gfx/interface/goals/focus_soviet_destroy_enemies.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_legacy_of_stalin"
+	texturefile = "gfx/interface/goals/focus_legacy_of_stalin.dds"			
+	}
+}
