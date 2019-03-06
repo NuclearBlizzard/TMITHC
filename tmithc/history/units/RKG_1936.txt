@@ -130,6 +130,7 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
+}
 ##### Air Force #####
 air_wings = {
 	10 = { 
