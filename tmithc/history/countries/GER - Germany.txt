@@ -51,6 +51,7 @@ puppet = ARG
 puppet = UKR
 puppet = RKV
 puppet = LIT
+puppet = RBM
 puppet = RKU
 puppet = ARM
 puppet = USA

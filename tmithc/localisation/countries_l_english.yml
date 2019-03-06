@@ -1316,8 +1316,8 @@
  RKM_neutrality_ADJ:0 "Russian"
  RKM_communism_ADJ:0 "Soviet"
 
- RKG_fascism:0 "Generalgouvernment"
- RKG_fascism_DEF:0 "Generalgouvernment"
+ RKG_fascism:0 "General Gouvernment"
+ RKG_fascism_DEF:0 "General Gouvernment"
  RKG_democratic:0 "Russian Federation"
  RKG_democratic_DEF:0 "the Russian Federation"
  RKG_neutrality:0 "Russia"
@@ -1328,6 +1328,9 @@
  RKG_democratic_ADJ:0 "Russian"
  RKG_neutrality_ADJ:0 "Russian"
  RKG_communism_ADJ:0 "Soviet"
+ 
+ RBM_fascism:0 "Reichsprotektorat Böhmen und Mähren"
+ RBM_fascism_DEF:0 "Reichsprotektorat Böhmen und Mähren"
 
  RKL_fascism:0 "Reichskommisariat Ural"
  RKL_fascism_DEF:0 "Reichskommisariat Ural"

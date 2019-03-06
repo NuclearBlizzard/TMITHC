@@ -10,19 +10,13 @@ state={
 	}
 
 	history={
-		owner = SOV
+		owner = RKL
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
 		}
 		victory_points = {
 			6338 10
-		}
-		add_core_of = SOV
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 2
-			}
 		}
 	}
 

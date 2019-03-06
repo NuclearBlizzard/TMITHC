@@ -6,7 +6,7 @@ state={
 	state_category = town
 
 	history={
-		owner = SER
+		owner = HUN
 		controller = SER
 
 		buildings = {
@@ -16,6 +16,6 @@ state={
 	}
 
 	provinces={
-		614 3614 6643 11787
+		614 3614 6643 11580 11787
 	}
 }
