@@ -5,8 +5,8 @@
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		mechanized_equipment_1 = { x = 1 y = 0 }
-		mechanized_equipment_1 = { x = 1 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
 		motorized = { x = 2 y = 0 }
 		motorized = { x = 2 y = 1 }
 	}
