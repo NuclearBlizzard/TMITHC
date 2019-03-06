@@ -2,24 +2,23 @@
 state={
 	id=3
 	name="STATE_3"
-	manpower = 5211689
+	manpower = 2211689
 	resources={
 		aluminium=18 # was: 28
 	}
 
-	state_category = metropolis
+	state_category = large_city
 
 
 	history={
 		owner = GER
 		victory_points = { 9620 15 }
 		buildings = {
-			infrastructure = 8
+			infrastructure = 6
 			arms_factory = 4
 			industrial_complex = 4
 			air_base = 4
 		}
-		add_core_of = SWI
 		add_core_of = GER
 	}
 

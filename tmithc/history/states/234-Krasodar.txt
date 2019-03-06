@@ -16,9 +16,6 @@ state={
 			3720 1 
 		}
 		victory_points = {
-			719 3
-		}
-		victory_points = {
 			3734 5
 		}
 		buildings = {
@@ -29,7 +26,7 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = SOV
+		add_core_of = RKK
 	}
 
 	provinces={

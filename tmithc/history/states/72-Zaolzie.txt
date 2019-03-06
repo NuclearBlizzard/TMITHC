@@ -1,7 +1,7 @@
 state={
 	id=72
 	name="STATE_72"
-	manpower = 192000
+	manpower = 152000
 	
 	state_category = rural
 	
@@ -11,7 +11,7 @@ state={
 			infrastructure = 6
 			industrial_complex = 1
 		}
-		add_core_of = SLO
+		add_core_of = RKG
 
 	}
 

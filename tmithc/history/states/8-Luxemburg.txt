@@ -3,9 +3,9 @@ state=
 	id=8
 	name="STATE_8"
 	
-	state_category = metropolis
+	state_category = town
 	
-	manpower = 846110
+	manpower = 294748
 	resources={
 		steel=5 # was: 8
 	}
@@ -14,12 +14,11 @@ state=
 	{
 		owner = GER
 		buildings = {
-			infrastructure = 8
-			arms_factory = 2
+			infrastructure = 6
+			arms_factory = 1
 			industrial_complex = 3
 		}
-		victory_points = { 6583 25 }
-		add_core_of = LUX
+		victory_points = { 6583 5 }
 		add_core_of = GER
 	}
 

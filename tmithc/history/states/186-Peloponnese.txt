@@ -2,33 +2,19 @@
 state={
 	id=186
 	name="STATE_186"
-	manpower=1245000
+	manpower=945000
 	
-	state_category = city
+	state_category = town
 
 	history={
-		victory_points = {
-			7211 5
-		}
-		victory_points = {
-			7096 1
-		}
-		victory_points = {
-			11965 1
-		}
 		owner = GRE
+		victory_points = { 4078 1 }
 		buildings = {
-			infrastructure = 7
+			infrastructure = 5
 			arms_factory = 1
-			industrial_complex = 2
-			11965 = {
-				naval_base = 2
-
-			}
-			7211 = {
-				naval_base = 4
-
-			}
+			industrial_complex = 1
+			11965 = { naval_base = 1 }
+			4193 = { naval_base = 3 }
 
 		}
 		add_core_of = GRE

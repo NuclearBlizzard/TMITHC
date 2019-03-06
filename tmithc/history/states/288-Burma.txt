@@ -11,7 +11,6 @@ state={
 	}
 
 	history={
-		add_core_of = BRM
 		owner = JBM
 		victory_points = {
 			1330 5 

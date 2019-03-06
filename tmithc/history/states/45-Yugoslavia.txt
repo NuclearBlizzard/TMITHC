@@ -3,23 +3,21 @@ state={
 	name="STATE_45"
 
 	history={
-		victory_points = { 619 3 }
 		owner = HUN
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 1
+			infrastructure = 5
 
 		}
-		add_core_of = HUN
+		add_core_of = YUG
 		add_core_of = SER
-		add_core_of = CRO
+		add_core_of = HUN
 
 	}
 
 	provinces={
 		619 3617 3623 9608 9621
 	}
-	manpower=390621
+	manpower=325668
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 }

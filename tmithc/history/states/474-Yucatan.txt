@@ -2,7 +2,7 @@
 state={
 	id=474
 	name="STATE_474"
-	manpower = 440289
+	manpower = 1440289
 	
 	state_category = rural
 
@@ -10,6 +10,7 @@ state={
 		owner = MEX
 		buildings = {
 			infrastructure = 3
+			arms_factory = 1
 			air_base = 1
 			4904 = {
 				naval_base = 2
@@ -19,15 +20,6 @@ state={
 			}
 		}
 		add_core_of = MEX
-		#victory_points = {
-		#	12715 3
-		#}
-		victory_points = {
-			4904 1
-		}
-		#victory_points = {
-		#	4965 5
-		#}
 	}
 
 	provinces={

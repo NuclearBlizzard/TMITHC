@@ -32,15 +32,15 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = USA
+		add_core_of = JPS
 		victory_points = {
-			9814 30
+			9814 25
 		}
 		victory_points = {
 			1562 15 
 		}
 		victory_points = {
-			9671 25
+			9671 30
 		}
 		victory_points = {
 			9713 1 

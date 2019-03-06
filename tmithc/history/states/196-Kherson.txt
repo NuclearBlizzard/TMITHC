@@ -11,9 +11,6 @@ state={
 	}
 
 	history={
-		victory_points = {
-			721 1
-		}
 		owner = RKU
 		buildings = {
 			infrastructure = 5

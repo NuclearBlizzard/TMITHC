@@ -1,0 +1,15 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_report_event_brezhnev_smile"
+		texturefile = "gfx/event_pictures/report_event_brezhnev_smile.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_khrushchev_speech"
+		texturefile = "gfx/event_pictures/report_event_khrushchev_speech.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_molotov_coalition"
+		texturefile = "gfx/event_pictures/report_event_molotov_coalition.dds"
+	}
+}

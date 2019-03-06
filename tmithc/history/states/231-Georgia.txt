@@ -21,6 +21,9 @@ state={
 			}
 
 		}
+		add_core_of = RKK
+		add_core_of = GEO
+
 	}
 
 	provinces={

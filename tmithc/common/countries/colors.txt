@@ -16,16 +16,8 @@ POL = {
 	color = rgb { 197 92 106 }
 	color_ui = rgb { 255 120 138 }
 }
-HAH = {
-	color = rgb { 56 125 43 }
-	color_ui = rgb { 230 255 122 }
-}
 AUS = {
 	color = rgb { 194 198 215 }
-	color_ui = rgb { 255 255 255 }
-}
-AMM = {
-	color = rgb { 150 192 215 }
 	color_ui = rgb { 255 255 255 }
 }
 EST = {
@@ -483,10 +475,6 @@ GER = {
 	color = rgb { 78 78 78 }
 	color_ui = rgb { 138 155 116 }
 }
-RBM = {
-	color = rgb { 80 50 60 }
-	color_ui = rgb { 138 155 116 }
-}
 ROM = {
 	color = rgb { 198 183 87 }
 	color_ui = rgb { 255 255 120 }
@@ -586,6 +574,10 @@ CRO = {
 	color = rgb { 161 142 99 }
 	color_ui = rgb { 230 255 122 }
 }
+GAB = {
+	color = rgb { 56 125 43 }
+	color_ui = rgb { 230 255 122 }
+}
 JSA = {
 	color = rgb { 128  158  118 }
 	color_ui = rgb { 200  10  10 }
@@ -637,4 +629,12 @@ RKO = {
 COA = {
 	color = rgb { 0 51 102 }
 	color_ui = rgb { 74 186 126 }
+}
+RUS = {
+	color = rgb { 0 127 14 }
+	color_ui = rgb { 0 127 14 }
+}
+URL = {
+	color = rgb { 142 142 128 }
+	color_ui = rgb { 142 142 128 }
 }

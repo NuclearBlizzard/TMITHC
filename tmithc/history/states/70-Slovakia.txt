@@ -1,9 +1,9 @@
 state={
 	id=70
 	name="STATE_70"
-	manpower = 1890500
+	manpower = 1230500
 	
-	state_category = large_city
+	state_category = city
 	
 	resources={
 		tungsten=1 # was: 2
@@ -12,19 +12,15 @@ state={
 	history={
 		owner = SLO
 		victory_points = {
-			9692 15
-		}
-		victory_points = {
-			11539 5
+			9692 10 
 		}
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 4
-			arms_factory = 3
-			air_base = 6
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 3
 		}
 		add_core_of = SLO
-
 	}
 
 	provinces={

@@ -8,7 +8,7 @@ state={
 
 	history={
 		owner = JEI
-		add_core_of = INS
+		add_core_of = JEI
 		buildings = {
 			infrastructure = 3
 			1574 = {

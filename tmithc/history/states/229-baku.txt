@@ -8,15 +8,15 @@ state={
 	history={
 		owner = RKK
 		victory_points = {
-			7661 10 
+			7661 1 
 		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
-			fuel_silo = 1
 			air_base = 1
+
 		}
-		add_core_of = SOV
+		add_core_of = RKK
 		add_core_of = AZR
 
 	}

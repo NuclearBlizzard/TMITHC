@@ -7,9 +7,9 @@ state={
 	state_category = city
 
 	history={
-		owner = SOV
+		owner = URL
 		victory_points = {
-			1821 5
+			1821 1 
 		}
 		buildings = {
 			infrastructure = 6
@@ -19,6 +19,7 @@ state={
 
 		}
 		add_core_of = SOV
+		add_core_of = URL
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 3
