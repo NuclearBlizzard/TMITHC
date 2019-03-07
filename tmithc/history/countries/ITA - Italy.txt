@@ -6,6 +6,14 @@ set_research_slots = 4
 set_stability = 0.6
 set_war_support = 0.7
 
+puppet = CRO
+puppet = IRQ
+puppet = SAU
+create_faction = med_pact
+add_to_faction = GRE
+add_to_faction = BUL
+add_to_faction = SER
+
 set_variable = { var_german_influence_in_italy = 45 }
 german_influence_in_italy_update = yes
 
@@ -84,10 +92,8 @@ set_politics = {
 set_autonomy = { target = ITE autonomous_state = autonomy_colony }
 set_autonomy = { target = IAS autonomous_state = autonomy_colony }
 set_autonomy = { target = ISR autonomous_state = autonomy_colony }
-set_autonomy = { target = GRE autonomous_state = autonomy_dominion }
 set_autonomy = { target = ALB autonomous_state = autonomy_integrated_puppet }
 set_autonomy = { target = CRO autonomous_state = autonomy_dominion }
-set_autonomy = { target = SER autonomous_state = autonomy_dominion }
 
 diplomatic_relation = { country = SAU relation = guarantee active = yes }
 diplomatic_relation = { country = IRQ relation = guarantee active = yes }
