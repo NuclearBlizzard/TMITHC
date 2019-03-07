@@ -54,6 +54,7 @@ state=
 		}
 		add_core_of = CZE
 		add_core_of = GER
+		add_core_of = RBM
 
 	}
 	provinces=

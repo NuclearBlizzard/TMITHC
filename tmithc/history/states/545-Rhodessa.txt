@@ -11,7 +11,7 @@ state={
 	name="STATE_545"
 
 	history={
-		owner = ENG
+		owner = ZIM
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2

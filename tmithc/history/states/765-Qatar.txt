@@ -6,7 +6,7 @@ state={
 	state_category = pastoral
 
 	history={
-		add_core_of = SAU
+		add_core_of = QAT
 		owner = TUR
 		victory_points = {
 			8051 1

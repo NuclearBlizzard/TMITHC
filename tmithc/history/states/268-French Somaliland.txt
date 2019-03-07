@@ -7,8 +7,9 @@ state={
 	state_category = enclave
 
 	history={
-		owner = FRA
+		owner = IAS
 		add_core_of = DJI
+		add_core_of = IAS
 		victory_points = {
 			8124 1
 		}
