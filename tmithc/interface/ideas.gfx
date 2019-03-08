@@ -3668,7 +3668,14 @@ spriteTypes = {
 		name = "GFX_idea_FRA_chained"
 		texturefile = "gfx/interface/ideas/FRA_chained.tga"
 	}
-
+	spriteType = {
+		name = "GFX_idea_obama"
+		texturefile = "gfx/interface/ideas/obama.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_jew"
+		texturefile = "gfx/interface/ideas/jew.tga"
+	}
 	spriteType = {
 		name = "GFX_idea_FRA_resistance"
 		texturefile = "gfx/interface/ideas/FRA_resistance.tga"
@@ -3681,6 +3688,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_Covert_Operations"
 		texturefile = "gfx/interface/ideas/Covert_Operations.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_mexico"
+		texturefile = "gfx/interface/ideas/mexico.tga"
 	}
 	spriteType = {
 		name = "GFX_idea_Suffering_Economy"
