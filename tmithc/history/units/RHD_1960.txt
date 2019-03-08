@@ -1,0 +1,93 @@
+﻿division_template = {
+	name = "Rhodesian Korps"		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		military_police = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+
+
+
+units = {
+	### German Rhodesian Korps ###	
+	division = {
+		name = "1. Brigade"
+		location = 10929
+		division_template = "Rhodesian Korps"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2. Brigade"
+		location = 10929
+		division_template = "Rhodesian Korps"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3. Brigade"
+		location = 10929
+		division_template = "Rhodesian Korps"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3. Brigade"
+		location = 10929
+		division_template = "Rhodesian Korps"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4. Brigade"
+		location = 10929
+		division_template = "Rhodesian Korps"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+}
+
+### Air Forces ###
+air_wings = {
+	#Rhodesia
+	545 = {
+		fighter_equipment_0 = { owner = "RHD" amount = 25 }
+	}
+}
+
+instant_effect = {
+
+    add_manpower = 50000
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "RHD"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "RHD"
+		}
+		requested_factories = 1
+		progress = 0.55
+		efficiency = 100
+	}	
+
+}
+

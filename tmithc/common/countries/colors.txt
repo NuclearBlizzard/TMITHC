@@ -371,6 +371,10 @@ ZIM = {
 	color = rgb { 7 7 239 }
 	color_ui = rgb { 7 7 239 }
 }
+RHD = {
+	color = rgb { 110 115 78 }
+	color_ui = rgb { 252 182 112 }
+}
 BOT = {
 	color = rgb { 11 132 112 }
 	color_ui = rgb { 11 132 112 }

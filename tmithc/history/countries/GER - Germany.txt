@@ -48,6 +48,7 @@ set_technology = {
 puppet = RKA
 puppet = RKM
 puppet = ARG
+puppet = RHD
 puppet = UKR
 puppet = RKV
 puppet = LIT

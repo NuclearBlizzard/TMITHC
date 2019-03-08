@@ -119,6 +119,7 @@ MAN = "countries/Manchukou.txt"
 
 RKA = "countries/Reichskommisariat Afrika.txt"
 RBM = "countries/RBM.txt"
+RHD = "countries/Rhodesia.txt"
 RKM = "countries/Reichskommisariat Moskowien.txt"
 RKU = "countries/Reichskommisariat Ukraine.txt"
 RKK = "countries/Reichskommisariat Kaukasus.txt"
