@@ -5,7 +5,7 @@ state={
 	state_category = small_island
 
 	history={
-		owner = JPS
+		owner = JAP
 		buildings = {
 			infrastructure = 1
 			13048 = {
