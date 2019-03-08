@@ -205,54 +205,11 @@ music = {
 	}	
 }
 
-music = {
-	song = "comintern_peace_3"
-	
-	chance = {
-		modifier = {
-			factor = 2
 
 
-		}		
-	}	
-}
 
 
-music = {
-	song = "comintern_war_1"
-	
-	chance = {
-		modifier = {
-			factor = 2
 
-
-		}		
-	}	
-}
-
-music = {
-	song = "comintern_war_2"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-
-		}		
-	}	
-}
-
-music = {
-	song = "comintern_war_3"
-	
-	chance = {
-		modifier = {
-			factor = 2
-
-
-		}		
-	}	
-}
 
 music = {
 	song = "When We"
