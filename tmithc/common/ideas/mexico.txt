@@ -3,7 +3,7 @@ ideas = {
 	country = {
 		MEX_TEST1 = {
 
-			picture = Covert_Operations
+			picture = jew
 			
 			removal_cost = -1
 
@@ -22,7 +22,7 @@ ideas = {
 	
 		MEX_TEST = {
 
-			picture = Covert_Operations
+			picture = obama
 
 			removal_cost = -1
 			
@@ -40,7 +40,7 @@ ideas = {
 		
 		MEX_TEST2 = {
 
-			picture = Covert_Operations
+			picture = mexico
 
 			removal_cost = -1
 			
