@@ -147,7 +147,7 @@ music = {
 		modifier = {
 			factor = 1
 
-			has_war = yes
+
 		}		
 	}	
 }
@@ -160,7 +160,7 @@ music = {
 			factor = 2
 
 			
-			has_government = fascism
+
 		}		
 	}	
 }
@@ -173,7 +173,7 @@ music = {
 			factor = 2
 
 			
-			has_government = fascism
+
 		}		
 	}	
 }
@@ -185,8 +185,7 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = yes
-			has_government = fascism
+
 		}		
 	}	
 }
@@ -198,8 +197,7 @@ music = {
 		modifier = {
 			factor = 2
 
-			
-			has_government = fascism
+
 		}		
 	}	
 }
@@ -247,8 +245,7 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = no
-			has_government = communism
+
 		}		
 	}	
 }
@@ -260,8 +257,7 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = no
-			has_government = communism
+
 		}		
 	}	
 }
@@ -274,8 +270,7 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = yes
-			has_government = communism
+
 		}		
 	}	
 }
@@ -287,8 +282,7 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = yes
-			has_government = communism
+
 		}		
 	}	
 }
@@ -300,8 +294,7 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = yes
-			has_government = communism
+
 		}		
 	}	
 }
