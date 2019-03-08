@@ -305,3 +305,8 @@ music = {
 		}		
 	}	
 }
+
+music = {
+	song = "When We"
+	song = "What A Time it Was"
+}
