@@ -1697,8 +1697,8 @@
  JAA_neutrality_ADJ:0 "Australian"
  JAA_communism_ADJ:0 "Australian"
  
- RHD_fascism:0 "Reichskommisariat Rhodesia und Nyasaland"
- RHD_fascism_DEF:0 "Reichskommisariat Rhodesia und Nyasaland"
+ RHD_fascism:0 "Reichskommisariat Rhodesia"
+ RHD_fascism_DEF:0 "Reichskommisariat Rhodesia"
 
  JPR_fascism:0 "Japanese Raj"
  JPR_fascism_DEF:0 "Japanese Raj"
