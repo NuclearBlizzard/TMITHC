@@ -56,18 +56,6 @@ music = {
 }
 
 music = {
-	song = "The Necklace"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			
-		}		
-	}	
-}
-
-music = {
 	song = "The End of the World"
 	
 	chance = {

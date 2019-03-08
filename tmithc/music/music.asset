@@ -37,7 +37,86 @@ music = {
 	file = "free.ogg"
 	volume = 0.65
 }
-
+music = {
+	name = "When We"
+	file = "WhenWe.ogg"
+	volume = 0.65
+}
+music = {
+	name = "What A Time it Was"
+	file = "WhataTimeitWas.ogg"
+	volume = 0.65
+}
+music = {
+	name = "The Siege at Elands River"
+	file = "TheSiegeatElandsRiver.ogg"
+	volume = 0.65
+}
+music = {
+	name = "The Shangani Patrol"
+	file = "TheShanganiPatrol.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Südwesterlied"
+	file = "Südwesterlied.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Rhodies Everywhere"
+	file = "Rhodies Everywhere.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Rhodesians Never Die"
+	file = "RhodesiansNeverDie.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Marching With The Diggers"
+	file = "MarchingWiththeDiggers.ogg"
+	volume = 0.65
+}
+music = {
+	name = "George"
+	file = "George.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Erikain Afrikaans"
+	file = "ErikainAfrikaans.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Daisy"
+	file = "Daisy.ogg"
+	volume = 0.65
+}
+music = {
+	name = "BSAP"
+	file = "BSAP.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Another Tough Day In Africa"
+	file = "AnotherToughDayinAfrica.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Afrika Korps Lied.ogg"
+	file = "AfrikaKorpsLied.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Goodbye Britania.ogg"
+	file = "GoodbyeBritania.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Woalle Straßen Enden"
+	file = "WoalleStraßenenden.ogg"
+	volume = 0.65
+}
 # General war:
 music = {
 	name = "general_war_1"
