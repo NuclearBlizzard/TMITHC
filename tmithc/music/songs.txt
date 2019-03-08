@@ -91,28 +91,11 @@ music = {
 	}	
 }
 
-music = {
-	song = "allies_peace_2"
-	
-	chance = {
-		modifier = {
-			factor = 2
 
-			
-		}		
-	}	
-}
 
-music = {
-	song = "axis_peace_1"
-	
-	chance = {
-		modifier = {
-			factor = 2
 
-		}		
-	}	
-}
+
+
 
 music = {
 	song = "axis_peace_2"
@@ -152,18 +135,8 @@ music = {
 	}	
 }
 
-music = {
-	song = "axis_war_1"
-	
-	chance = {
-		modifier = {
-			factor = 2
 
-			
 
-		}		
-	}	
-}
 
 music = {
 	song = "axis_war_2"
@@ -178,29 +151,11 @@ music = {
 	}	
 }
 
-music = {
-	song = "axis_war_3"
-	
-	chance = {
-		modifier = {
-			factor = 2
 
 
-		}		
-	}	
-}
-
-music = {
-	song = "axis_war_4"
-	
-	chance = {
-		modifier = {
-			factor = 2
 
 
-		}		
-	}	
-}
+
 
 music = {
 	song = "allies_war_1"
