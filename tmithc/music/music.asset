@@ -13,11 +13,6 @@ music = {
 	volume = 0.65
 }
 music = {
-	name = "general_peace_2"
-	file = "Wilbert Eckart  Volksmusik Stars - House of the Rising Sun.ogg"
-	volume = 0.65
-}
-music = {
 	name = "Edelweiss"
 	file = "Edelweiss.ogg"
 	volume = 0.65
@@ -194,3 +189,99 @@ music = {
 	file = "rom_viata_complicata.ogg"
 	volume = 0.65
 }
+
+
+
+
+
+
+
+
+	# Music V4 Tom is Gay:
+	
+music = {
+	name = "Comrades The Voices"
+	file = "ComradesTheVoices.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Aint I Right"
+	file = "AintIRight.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Westerwald"
+	file = "Westerwald.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Vichy France"
+	file = "VichyFrance.ogg"
+	volume = 0.65
+}
+music = {
+	name = "SS-March"
+	file = "SSMarch.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Show A Restoration"
+	file = "ShowaRestorationSong.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Madagaskar"
+	file = "Madagaskar.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Le chant du Diable"
+	file = "LechantduDiable.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Katjuscha German"
+	file = "KatjuschaGerman.ogg"
+	volume = 0.65
+}
+music = {
+	name = "In Einem Polenstadtchen"
+	file = "IneinemPolenstadtchen.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Horst Wessel Lied"
+	file = "HorstWesselLied.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Hohei no Honryo"
+	file = "HoheinoHonryo.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Heia Safari"
+	file = "HeiaSafari.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Wir sind des Geyers schwarzer Haufen"
+	file = "HaufenSoldatenlied.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Haselnuss"
+	file = "Haselnuss.ogg"
+	volume = 0.65
+}
+music = {
+	name = "German Submarine"
+	file = "GermanSubmarineSong.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Funkerlied"
+	file = "Funkerlied.ogg"
+	volume = 0.65
+}
+

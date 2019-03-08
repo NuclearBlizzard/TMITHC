@@ -354,3 +354,57 @@ music = {
 music = {
 	song = "Woalle Straßen Enden"
 }
+
+###### V3
+
+music = {
+	song = "Comrades The Voices"
+}
+music = {
+	song = "Aint I Right"
+}
+music = {
+	song = "Westerwald"
+}
+music = {
+	song = "Vichy France"
+}
+music = {
+	song = "SS-March"
+}
+music = {
+	song = "Show A Restoration"
+}
+music = {
+	song = "Madagaskar"
+}
+music = {
+	song = "Le chant du Diable"
+}
+music = {
+	song = "Katjuscha German"
+}
+music = {
+	song = "In Einem Polenstadtchen"
+}
+music = {
+	song = "Horst Wessel Lied"
+}
+music = {
+	song = "Hohei no Honryō"
+}
+music = {
+	song = "Heia Safari"
+}
+music = {
+	song = "Wir sind des Geyers schwarzer Haufen"
+}
+music = {
+	song = "Haselnuss"
+}
+music = {
+	song = "German Submarine"
+}
+music = {
+	song = "Funkerlied"
+}
