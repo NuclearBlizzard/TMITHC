@@ -308,5 +308,49 @@ music = {
 
 music = {
 	song = "When We"
+}
+music = {
 	song = "What A Time it Was"
+}
+music = {
+	song = "The Siege at Elands River"
+}
+music = {
+	song = "The Shangani Patrol"
+}
+music = {
+	song = "Südwesterlied"
+}
+music = {
+	song = "Rhodies Everywhere"
+}
+music = {
+	song = "Rhodesians Never Die"
+}
+music = {
+	song = "Marching With The Diggers"
+}
+music = {
+	song = "George"
+}
+music = {
+	song = "Erikain Afrikaans"
+}
+music = {
+	song = "Daisy"
+}
+music = {
+	song = "BSAP"
+}
+music = {
+	song = "Another Tough Day In Africa"
+}
+music = {
+	song = "Afrika Korps Lied"
+}
+music = {
+	song = "Goodbye Britania"
+}
+music = {
+	song = "Woalle Straßen Enden"
 }
