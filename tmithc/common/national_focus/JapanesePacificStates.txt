@@ -1,13 +1,19 @@
-10 = {
+focus_tree = {
 	id = JapanesePacificStates
+	
 	country = {
 		factor = 0
+		
 		modifier = {
 			add = 10
-			tag = AFG
+			tag = JPS
 		}
 	}
+	
 	default = no
+
+	continuous_focus_position = { x = 50 y = 1350 }
+	
 	focus = {
 		id = pacific_air_force
 		icon = GFX_goal_unknown
