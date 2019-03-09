@@ -104,7 +104,7 @@ focus_tree = {
 		}
 
 		available = {
-			ITA = {
+			JAP = {
 				NOT = { has_war_with = ROOT }
 				exists = yes
 				has_capitulated = no
@@ -124,7 +124,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			ITA = {
+			JAP = {
 				add_opinion_modifier = {
 					target = ROOT
 					modifier = large_increase
@@ -149,12 +149,7 @@ focus_tree = {
 		}
 
 		available = {
-			ENG = {
-				NOT = { has_war_with = ROOT }
-				exists = yes
-				has_capitulated = no
-			}
-			FRA = {
+			GER = {
 				NOT = { has_war_with = ROOT }
 				exists = yes
 				has_capitulated = no
@@ -174,7 +169,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			ENG = {
+			GER = {
 				add_opinion_modifier = { 
 						target = ROOT
 						modifier = large_increase
@@ -186,22 +181,7 @@ focus_tree = {
 				}
 			}
 			add_relation_modifier = {
-				target = ENG
-				modifier = MEX_western_license
-			}
-			FRA = {
-				add_opinion_modifier = { 
-						target = ROOT
-						modifier = large_increase
-					}
-				add_ai_strategy = {
-					type = protect
-					id = "MEX"
-					value = 100
-				}
-			}
-			add_relation_modifier = {
-				target = FRA
+				target = GER
 				modifier = MEX_western_license
 			}
 		}
@@ -218,15 +198,15 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 80
+			factor = 9
 		}
 
 		available = {
-
+			
 		}
 
 		bypass = {
-
+			
 		}
 
 		cancel_if_invalid = yes
@@ -238,7 +218,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = MEX_idea_foreign_capital
+			add_political_power = 300
 		}
 	}
 
@@ -275,10 +255,20 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = MEX_idea_slovene_nationalism
-			ITA = {
+			JAP = {
 				add_opinion_modifier = { 
 						target = ROOT
 						modifier = huge_increase
+					}
+			}
+		}
+		
+		completion_reward = {
+			remove_ideas = MEX_idea_slovene_nationalism
+			GER = {
+				add_opinion_modifier = { 
+						target = ROOT
+						modifier = large_decrease
 					}
 			}
 		}
@@ -296,7 +286,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 60
+			factor = 40
 		}
 
 		available = {
@@ -316,7 +306,23 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = MEX_idea_orthodox_church_support
+			remove_ideas = MEX_idea_slovene_nationalism
+			JAP = {
+				add_opinion_modifier = { 
+						target = ROOT
+						modifier = large_decrease
+					}
+			}
+		}
+		
+		completion_reward = {
+			remove_ideas = MEX_idea_slovene_nationalism
+			GER = {
+				add_opinion_modifier = { 
+						target = ROOT
+						modifier = huge_increase
+					}
+			}
 		}
 	}
 
@@ -651,9 +657,22 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MEX_idea_slovene_nationalism
-				add_idea = MEX_idea_slovene_nationalism_2
+			remove_ideas = MEX_idea_slovene_nationalism
+			JAP = {
+				add_opinion_modifier = { 
+						target = ROOT
+						modifier = large_decrease
+					}
+			}
+		}
+		
+		completion_reward = {
+			remove_ideas = MEX_idea_slovene_nationalism
+			GER = {
+				add_opinion_modifier = { 
+						target = ROOT
+						modifier = huge_increase
+					}
 			}
 		}
 	}

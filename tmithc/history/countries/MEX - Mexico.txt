@@ -152,13 +152,13 @@ create_country_leader = {
 	}
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Mario Arturo Acosta Chaparro"
 	portrait_path = "gfx/leaders/MEX/mario.dds"
-	traits = { }
-	skill = 3
-    attack_skill = 4
-    defense_skill = 1
+	traits = { desert_fox }
+	skill = 4
+    attack_skill = 5
+    defense_skill = 3
     planning_skill = 2
     logistics_skill = 3
 }
@@ -168,7 +168,7 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/MEX/gal.dds"
 	traits = { desert_fox }
 	skill = 3
-    attack_skill = 2
+    attack_skill = 3
     defense_skill = 2
     planning_skill = 3
     logistics_skill = 3
