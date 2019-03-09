@@ -1542,8 +1542,8 @@
  JPS_neutrality_ADJ:0 "Japanese"
  JPS_communism_ADJ:0 "Japanese"
 
- USA_fascism:0 "Nazi America"
- USA_fascism_DEF:0 "Nazi America"
+ USA_fascism:0 "American Reich"
+ USA_fascism_DEF:0 "American Reich"
  USA_democratic:0 "United States"
  USA_democratic_DEF:0 "the United States"
  USA_neutrality:0 "Confederate States"
