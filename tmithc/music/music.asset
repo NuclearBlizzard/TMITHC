@@ -9,7 +9,7 @@ music = {
 # General Peace:
 music = {
 	name = "general_peace_1"
-	file = "Dei Partei Damen - Nowhere to Run.ogg"
+	file = "PleaseJustWork"
 	volume = 0.65
 }
 music = {
@@ -53,13 +53,13 @@ music = {
 	volume = 0.65
 }
 music = {
-	name = "Südwesterlied"
-	file = "Südwesterlied.ogg"
+	name = "Sudwesterlied"
+	file = "Sudwesterlied.ogg"
 	volume = 0.65
 }
 music = {
 	name = "Rhodies Everywhere"
-	file = "Rhodies Everywhere.ogg"
+	file = "RhodiesEverywhere.ogg"
 	volume = 0.65
 }
 music = {
@@ -108,8 +108,8 @@ music = {
 	volume = 0.65
 }
 music = {
-	name = "Woalle Straßen Enden"
-	file = "WoalleStraßenenden.ogg"
+	name = "Woalle Strassen Enden"
+	file = "WoalleStrassenenden.ogg"
 	volume = 0.65
 }
 # General war:
@@ -256,7 +256,7 @@ music = {
 }
 music = {
 	name = "Hohei no Honryo"
-	file = "HoheinoHonryo1.ogg"
+	file = "HoheinoHonryo.ogg"
 	volume = 0.65
 }
 music = {
