@@ -65,9 +65,9 @@ create_country_leader = {
 
 
 create_country_leader = {
-	name = "D. F. Malan"
+	name = "Charles Robberts Swart"
 	desc = "POLITICS_DF_MALAN_DESC"
-	picture = "GFX_SAF_daniel_malan"
+	picture = "gfx/leaders/SAF/saf.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

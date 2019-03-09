@@ -58,7 +58,6 @@ puppet = ARM
 puppet = USA
 puppet = BOL
 puppet = HAH
-puppet = SAF
 puppet = CUB
 puppet = CZE
 puppet = RKG
