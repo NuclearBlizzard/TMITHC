@@ -224,7 +224,7 @@ music = {
 	song = "The Shangani Patrol"
 }
 music = {
-	song = "Südwesterlied"
+	song = "Sudwesterlied"
 }
 music = {
 	song = "Rhodies Everywhere"
@@ -257,7 +257,7 @@ music = {
 	song = "Goodbye Britania"
 }
 music = {
-	song = "Woalle Straßen Enden"
+	song = "Woalle Strassen Enden"
 }
 
 ###### V3
@@ -296,7 +296,7 @@ music = {
 	song = "Horst Wessel Lied"
 }
 music = {
-	song = "Hohei no Honryō"
+	song = "Hohei no Honryo"
 }
 music = {
 	song = "Heia Safari"
