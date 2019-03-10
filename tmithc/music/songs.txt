@@ -331,3 +331,6 @@ music = {
 music = {
 	song = "Cara al Sol"
 }
+music = {
+	song = "El himno de ricardo"
+}
