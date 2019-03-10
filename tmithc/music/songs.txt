@@ -313,3 +313,21 @@ music = {
 music = {
 	song = "Funkerlied"
 }
+music = {
+	song = "Inno della XMAS"
+}
+music = {
+	song = "Our steps are heard!"
+}
+music = {
+	song = "Ustaska se Vojska Dize"
+}
+music = {
+	song = "Istrcale Zagrebacke Frajle"
+}
+music = {
+	song = "Lore, Lore"
+}
+music = {
+	song = "Cara al Sol"
+}
