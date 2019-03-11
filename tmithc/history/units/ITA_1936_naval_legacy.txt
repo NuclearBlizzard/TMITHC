@@ -1,7 +1,5 @@
-﻿
-units= {
-	##### NAVAL UNITS #####
-	### ITALY ###
+﻿units= {
+	### ITALIAN EMPIRE ###
 	fleet = {
 		name = "Comando Navale Ionio e Basso Adriatico"			
 		naval_base = 11837 # Taranto, Italy
