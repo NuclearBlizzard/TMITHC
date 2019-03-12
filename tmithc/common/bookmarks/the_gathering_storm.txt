@@ -25,17 +25,20 @@ bookmarks = {
 				GER_ss
 			}
 			focuses = {
-
+				
 			}
 		}
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-
+				ITA_military_purges_3
+				ITA_german_influence_in_italy_45
 			}	
 			focuses = {
-
+				ITA_the_former_traitor_pietro_nenni
+				ITA_the_heir_apparent_cesare_maria_de_vecchi
+				ITA_the_corporatist_amintore_fanfani
 			}		
 		}
 		"JAP"={
