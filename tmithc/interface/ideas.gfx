@@ -3729,4 +3729,22 @@ spriteTypes = {
 		name = "GFX_idea_JAP_Hirohito_Yakuza"
 		texturefile = "gfx/interface/ideas/Hirohito_Yakuza.tga"
 	}
+	spriteType = {
+		name = "GFX_idea_NEU_Axis_Infiltration"
+		texturefile = "gfx/interface/ideas/NEU_Axis_Infiltration.tga"
+	}
+    spriteType = {
+		name = "GFX_idea_NEU_No_Army"
+		texturefile = "gfx/interface/ideas/NEU_No_Army.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_NEU_No_Established_Industry"
+		texturefile = "gfx/interface/ideas/NEU_No_Established_Industry.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_NEU_Anarchy"
+		texturefile = "gfx/interface/ideas/NEU_Anarchy.tga"
+	}
+
 }
+
