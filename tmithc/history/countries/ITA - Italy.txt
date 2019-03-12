@@ -29,6 +29,7 @@ add_ideas = {
 	limited_exports
 	
 	ITA_military_purges_3
+	ITA_german_influence_in_italy_45
 }
 
 # Starting tech
