@@ -1969,6 +1969,7 @@ focus_tree = {
 		
 		completion_reward = {
 			german_influence_in_italy_decrease_by_10 = yes
+			add_ideas = ITA_nationalized_assets
 		}
 
 		ai_will_do = {
