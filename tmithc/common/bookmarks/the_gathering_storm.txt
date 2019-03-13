@@ -119,8 +119,24 @@ bookmarks = {
 				FRA_francisqu
 				FRA_loyaltogermany
 			}
-	
 		}
+		
+		"NEU"={
+		    minor = yes
+			history = "NEU_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				NEU_No_Army
+				NEU_Anarchy
+				NEU_No_Established_Industry
+			}
+			
+			focuses = {
+			}	
+		}	
+
+
+		
 
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"

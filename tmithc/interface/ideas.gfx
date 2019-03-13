@@ -3741,7 +3741,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_NEU_No_Established_Industry"
-		texturefile = "gfx/interface/ideas/NEU_No_Established_Industry.tga"
+		texturefile = "gfx/interface/ideas/Suffering_Economy.tga"
 	}
 	spriteType = {
 		name = "GFX_idea_NEU_Anarchy"
