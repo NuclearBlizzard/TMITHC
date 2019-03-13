@@ -1,6 +1,7 @@
 ideas = {
 	
 	country  = {	
+		
 		NEU_Axis_Infiltration = {
 			
 			allowed = {
@@ -40,7 +41,7 @@ ideas = {
 				stability_factor = -1
 				war_support_factor = -1
 			}
-
+		}
 
 		NEU_No_Established_Industry = {
 			
@@ -61,7 +62,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.7
 
 			}
-
+		}
 
 		NEU_No_Army = {
 			
@@ -87,4 +88,5 @@ ideas = {
 
 		}
 
+	}
 }

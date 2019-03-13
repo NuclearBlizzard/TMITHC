@@ -3729,6 +3729,8 @@ spriteTypes = {
 		name = "GFX_idea_JAP_Hirohito_Yakuza"
 		texturefile = "gfx/interface/ideas/Hirohito_Yakuza.tga"
 	}
+	
+	#Neutral zone spirits
 	spriteType = {
 		name = "GFX_idea_NEU_Axis_Infiltration"
 		texturefile = "gfx/interface/ideas/NEU_Axis_Infiltration.tga"
