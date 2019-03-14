@@ -318,7 +318,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 200
 		}
-	}
 
 		
 		completion_reward = {
@@ -633,7 +632,7 @@ focus_tree = {
 
 	focus = {
 		id = MEX_limited_self_government
-		icon = GFX_goal_anschluss
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = MEX_attract_foreign_capital }
 		mutually_exclusive = { focus = MEX_ban_slovene_nationalist_parties }
 		x = 1
@@ -727,7 +726,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = -200
 		}
-	}
 		
 		completion_reward = {
 			remove_ideas = MEX_idea_slovene_nationalism
