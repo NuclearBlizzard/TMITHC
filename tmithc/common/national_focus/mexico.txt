@@ -23,7 +23,7 @@ focus_tree = {
 #		y = 0
 #		relative_position_id = 
 #
-#		cost = 10
+#		cost = 12
 #
 #		ai_will_do = {
 #			factor = 1
@@ -61,7 +61,7 @@ focus_tree = {
 		x = 15
 		y = 0
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 200
@@ -97,7 +97,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_western_focus
 
-		cost = 5
+		cost = 8
 
 		ai_will_do = {
 			factor = 80
@@ -137,7 +137,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_western_focus
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -172,7 +172,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_western_focus
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 9
@@ -208,7 +208,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_attract_foreign_capital
 
-		cost = 5
+		cost = 8
 
 		ai_will_do = {
 			factor = 40
@@ -258,7 +258,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_ban_slovene_nationalist_parties
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -314,7 +314,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_ban_slovene_nationalist_parties
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -354,7 +354,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_ban_slovene_nationalist_parties
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 80
@@ -390,7 +390,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_ban_slovene_nationalist_parties
 
-		cost = 5
+		cost = 8
 
 		ai_will_do = {
 			factor = 60
@@ -429,7 +429,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = MEX_ban_slovene_nationalist_parties
 
-		cost = 5
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -472,7 +472,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = MEX_ban_slovene_nationalist_parties
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 100
@@ -508,7 +508,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_join_axis
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -576,7 +576,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = MEX_ban_slovene_nationalist_parties
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 100
@@ -617,7 +617,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_attract_foreign_capital
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -667,7 +667,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_limited_self_government
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -722,7 +722,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_limited_self_government
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 80
@@ -760,7 +760,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_limited_self_government
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -800,7 +800,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_limited_self_government
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -841,7 +841,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = MEX_limited_self_government
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 80
@@ -884,7 +884,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = MEX_limited_self_government
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -921,7 +921,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = MEX_limited_self_government
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 100
@@ -962,7 +962,7 @@ focus_tree = {
 		x = 13
 		y = 0
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -1006,7 +1006,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_recognize_the_soviet_union
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 200
@@ -1046,7 +1046,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_recognize_the_soviet_union
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 150
@@ -1094,7 +1094,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_abolish_the_monarchy
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1141,7 +1141,7 @@ focus_tree = {
 		x = 9
 		y = 
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 80
@@ -1180,7 +1180,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_industrialization_program
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 70
@@ -1222,7 +1222,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_expand_the_mining_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1289,7 +1289,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_rare_minerals_exploitation
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1342,7 +1342,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_expand_the_mining_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1421,7 +1421,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_industrialization_program
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 100
@@ -1457,7 +1457,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_develop_civilian_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1512,7 +1512,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_develop_civilian_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 80
@@ -1578,7 +1578,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = MEX_develop_civilian_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1629,7 +1629,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_develop_slovenian_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1674,7 +1674,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_expand_the_mining_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -1725,7 +1725,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_develop_military_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -1765,7 +1765,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_develop_military_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1809,7 +1809,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_local_self_management
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 100
@@ -1854,7 +1854,7 @@ focus_tree = {
 		x = 19
 		y = 20
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1899,7 +1899,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_modernize_the_air_force
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1934,7 +1934,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_local_developers
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -1982,7 +1982,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_local_developers
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -2029,7 +2029,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_local_developers
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -2076,7 +2076,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_local_developers
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -2117,7 +2117,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_local_developers
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -2157,7 +2157,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_local_developers
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 20
@@ -2207,7 +2207,7 @@ focus_tree = {
 		x = 22
 		y = 0
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 70
@@ -2246,7 +2246,7 @@ focus_tree = {
 		y = 1
 		relative_position_id =  MEX_army_modernization
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -2289,7 +2289,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_motorize_the_cavalry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -2334,7 +2334,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_motorize_the_cavalry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -2380,7 +2380,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_motorize_the_cavalry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 25
@@ -2426,7 +2426,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_army_modernization
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 70
@@ -2466,7 +2466,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_small_arms
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 70
@@ -2506,7 +2506,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_small_arms
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -2546,7 +2546,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_army_modernization
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 70
@@ -2586,7 +2586,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_mountain_brigades
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -2626,7 +2626,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_mountain_brigades
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -2666,7 +2666,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_mountain_brigades
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 10
@@ -2706,7 +2706,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_army_modernization
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 70
@@ -2747,7 +2747,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_army_maneuvers
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 30
@@ -2789,7 +2789,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_army_maneuvers
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -2835,7 +2835,7 @@ focus_tree = {
 		x = 19
 		y = 5
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -2877,7 +2877,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_expand_the_split_shipyards
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 20
@@ -2919,7 +2919,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_expand_the_split_shipyards
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 20
@@ -2961,7 +2961,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_expand_the_split_shipyards
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 30
@@ -3003,7 +3003,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_expand_the_split_shipyards
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 20
@@ -3045,7 +3045,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_expand_the_split_shipyards
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 20
@@ -3087,7 +3087,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = MEX_expand_the_split_shipyards
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -3129,7 +3129,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_expand_the_Mexican_shipyards
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 30
@@ -3222,7 +3222,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_expand_the_Mexican_shipyards
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 20
