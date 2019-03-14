@@ -1259,7 +1259,7 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 277
 				}
-				227 = {
+				474= {
 					add_resource = {
 						type = tungsten
 						amount = 8
@@ -1271,7 +1271,7 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 474
 				}
-				109 = {
+				277 = {
 					add_resource = {
 						type = chromium
 						amount = 8
@@ -1323,7 +1323,7 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 485
 				}
-				45 = {
+				485 = {
 					add_resource = {
 						type = oil
 						amount = 8
@@ -1788,7 +1788,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			108 = {
+			475 = {
 				add_resource = {
 					type = steel
 					amount = 16
