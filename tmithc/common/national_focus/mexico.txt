@@ -58,7 +58,7 @@ focus_tree = {
 		id = MEX_western_focus
 		icon = GFX_goal_generic_position_armies
 		mutually_exclusive = { focus = MEX_recognize_the_soviet_union }
-		x = 2
+		x = 15
 		y = 0
 
 		cost = 10
@@ -231,7 +231,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
 			JAP = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -241,7 +240,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
 			GER = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -283,7 +281,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
 			JAP = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -298,7 +295,6 @@ focus_tree = {
 
 		
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
 			GER = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -401,11 +397,7 @@ focus_tree = {
 		}
 
 		available = {
-			ITA = {
-				NOT = { has_war_with = ROOT }
-				exists = yes
-				has_capitulated = no
-			}
+
 		}
 
 		bypass = {
@@ -648,7 +640,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
 			JAP = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -658,7 +649,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
 			GER = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -700,7 +690,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
+			#remove_ideas = MEX_idea_slovene_nationalism
 			JAP = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -714,7 +704,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
+			#remove_ideas = MEX_idea_slovene_nationalism
 			GER = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -777,11 +767,7 @@ focus_tree = {
 		}
 
 		available = {
-			BUL = {
-				NOT = { has_war_with = ROOT }
-				exists = yes
-				has_capitulated = no
-			}
+
 		}
 
 		bypass = {
@@ -834,7 +820,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = MEX_idea_croatian_opposition
+			#remove_ideas = MEX_idea_croatian_opposition
 			release = NIC
 			release = COS
 			set_autonomy = { target = NIC autonomy_state = autonomy_integrated_puppet }
@@ -905,17 +891,7 @@ focus_tree = {
 		}
 
 		available = {
-			ENG = {
-				NOT = { has_war_with = ROOT }
-				has_capitulated = no
-				is_faction_leader = yes
-			}
-			NOT = {
-				any_other_country = {
-					is_in_faction_with = ENG
-					has_war_with = MEX
-				}
-			}
+
 		}
 
 		bypass = {
@@ -952,7 +928,7 @@ focus_tree = {
 		}
 
 		available = {
-			is_in_faction_with = ENG
+
 		}
 
 		bypass = {
@@ -983,7 +959,7 @@ focus_tree = {
 		id = MEX_recognize_the_soviet_union
 		icon = entente
 		mutually_exclusive = { focus = MEX_western_focus }
-		x = 8
+		x = 13
 		y = 0
 
 		cost = 10
@@ -1097,7 +1073,7 @@ focus_tree = {
 			add_stability = -0.10
 		}
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
+			#remove_ideas = MEX_idea_slovene_nationalism
 			NEU = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -1125,11 +1101,9 @@ focus_tree = {
 		}
 
 		available = {
-			is_in_faction = no
 		}
 
 		bypass = {
-			is_in_faction = yes
 		}
 
 		cancel_if_invalid = yes
@@ -1164,8 +1138,8 @@ focus_tree = {
 	focus = {
 		id = MEX_industrialization_program
 		icon = GFX_goal_generic_construction
-		x = 12
-		y = 0
+		x = 9
+		y = 
 
 		cost = 10
 
@@ -1236,7 +1210,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = MEX_idea_expanded_mining_industry
+			add_stability = 0.01
 		}
 	}
 
@@ -1263,8 +1237,8 @@ focus_tree = {
 
 		available = {
 			OR = {
-				has_full_control_of_state = 227
-				has_full_control_of_state = 477
+				has_full_control_of_state = 277
+				has_full_control_of_state = 474
 			}
 		}
 
@@ -1283,7 +1257,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_full_control_of_state = 227
+					has_full_control_of_state = 277
 				}
 				227 = {
 					add_resource = {
@@ -1295,7 +1269,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_full_control_of_state = 477
+					has_full_control_of_state = 474
 				}
 				109 = {
 					add_resource = {
@@ -1454,9 +1428,7 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				has_idea = MEX_idea_croatian_opposition
-			}
+
 		}
 
 		bypass = {
@@ -1503,7 +1475,6 @@ focus_tree = {
 				has_full_control_of_state = 481
 				has_full_control_of_state = 478
 				has_full_control_of_state = 485
-				has_full_control_of_state = 227
 		}
 
 		bypass = {
@@ -1688,7 +1659,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = MEX_idea_local_self_management
+			add_political_power = 100
 		}
 	}
 
@@ -1765,12 +1736,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				has_full_control_of_state = 45
-				has_full_control_of_state = 105
-				has_full_control_of_state = 107
-				has_full_control_of_state = 108
-			}
+
 		}
 
 		bypass = {
@@ -1785,54 +1751,9 @@ focus_tree = {
 
 		}
 
+
 		completion_reward = {
-			if = {
-				limit = { has_full_control_of_state = 45 }
-				45 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-
-			if = {
-				limit = { has_full_control_of_state = 105 }
-				105 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-
-			if = {
-				limit = { has_full_control_of_state = 107 }
-				107 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-
-			if = {
-				limit = { has_full_control_of_state = 108 }
-				108 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
+			add_stability = 0.01
 		}
 	}
 
@@ -1895,7 +1816,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_full_control_of_state = 277
+			has_full_control_of_state = 478
 		}
 
 		bypass = {
@@ -1911,7 +1832,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			104 = {
+			478 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1931,7 +1852,7 @@ focus_tree = {
 		id = MEX_modernize_the_air_force
 		icon = GFX_goal_generic_air_doctrine
 		x = 19
-		y = 0
+		y = 20
 
 		cost = 10
 
@@ -2039,7 +1960,7 @@ focus_tree = {
 			custom_effect_tooltip = MEX_designer_tt
 
 			random_owned_controlled_state = {
-				prioritize = { 107 }
+				prioritize = { 477 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
 				}
@@ -2086,7 +2007,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = MEX_designer_tt
 			random_owned_controlled_state = {
-				prioritize = { 107 }
+				prioritize = { 480 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
 				}
@@ -2133,7 +2054,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = MEX_designer_tt
 			random_owned_controlled_state = {
-				prioritize = { 107 }
+				prioritize = { 481 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
 				}
@@ -2283,7 +2204,7 @@ focus_tree = {
 	focus = {
 		id = MEX_army_modernization
 		icon = GFX_goal_generic_army_doctrines
-		x = 26
+		x = 22
 		y = 0
 
 		cost = 10
@@ -2911,8 +2832,8 @@ focus_tree = {
 		id = MEX_expand_the_split_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
 		mutually_exclusive = { focus = MEX_expand_the_Mexican_shipyards }
-		x = 20
-		y = 4
+		x = 19
+		y = 5
 
 		cost = 10
 
@@ -3237,7 +3158,7 @@ focus_tree = {
 			#forts on coast and harbor
 			if = {
 				limit = { has_full_control_of_state = 476 }
-				103 = {
+				476 = {
 					custom_effect_tooltip = MEX_coastal_defense_effect_tt1
 					custom_effect_tooltip = MEX_coastal_defense_effect_tt2
 					hidden_effect = {
@@ -3265,7 +3186,7 @@ focus_tree = {
 			
 			if = {
 				limit = { has_full_control_of_state = 474 }
-				105 = {
+				477 = {
 					custom_effect_tooltip = MEX_coastal_defense_effect_tt1
 					custom_effect_tooltip = MEX_coastal_defense_effect_tt2
 					hidden_effect = {
