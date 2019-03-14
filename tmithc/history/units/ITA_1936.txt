@@ -330,16 +330,6 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 25
-		} 
-		location = 3786
-		division_template = "Divisione di Fanteria"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
 			name_order = 26
 		} 
 		location = 9914 
