@@ -8,64 +8,14 @@ on_actions = {
 			#Intro Event
 			every_country = {
 				limit = { is_ai = no }
-				news_event = { id = dynamic_wp_news.1 }				
+				news_event = { id = static_OBAMA_news.1 }				
 			}
 			
-			##Settings Event
-			#	random_country = {
-			#		limit = { is_ai = no }
-			#		
-			#		country_event = { id = dynamic_wp_config.1   }	
-			#	}
+
 								
 		}
 			
 	}
 	
-	##Use on_declare_war for both country flags (dw_ai_war, dw_player_war ). Add exception for nations at war with each other at game start and keep an event file to distribute the flag regardless
-	##Ececute event to activate your scripted trigger
-	
-	on_declare_war = {
-		
-		effect = {
-			
-			if = {
-				limit = {
-					FROM = {
-						OR = {
-							has_idea = american_protection_drift_democratic
-							has_idea = american_protection_drift_communism
-							has_idea = american_protection_drift_fascism
-							has_idea = american_protection_defence_democratic
-							has_idea = american_protection_defence_communism
-							has_idea = american_protection_defence_fascism
-						}
-					}
-					NOT = { 
-						tag = USA
-						is_in_faction_with = USA # I guess USA will not go to war with someone they are in faction with
-						has_war_with = USA
-						#USA = { has_war_with = FROM } Should USA enforce peace in a nation it is already at war with?
-					}
-					OR = {
-						has_idea = american_protection_drift_democratic
-						has_idea = american_protection_drift_communism
-						has_idea = american_protection_drift_fascism
-						has_idea = american_protection_defence_democratic
-						has_idea = american_protection_defence_communism
-						has_idea = american_protection_defence_fascism
-					}
-				}				
-				FROM = { country_event = { id = usa.16 days = 1 } }
-			}
-		
-		
-		}
-	
-	
-	}
 
-			
-
-	
 }
