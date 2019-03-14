@@ -23,7 +23,7 @@ focus_tree = {
 #		y = 0
 #		relative_position_id = 
 #
-#		cost = 10
+#		cost = 12
 #
 #		ai_will_do = {
 #			factor = 1
@@ -58,10 +58,10 @@ focus_tree = {
 		id = MEX_western_focus
 		icon = GFX_goal_generic_position_armies
 		mutually_exclusive = { focus = MEX_recognize_the_soviet_union }
-		x = 2
+		x = 15
 		y = 0
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 200
@@ -97,7 +97,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_western_focus
 
-		cost = 5
+		cost = 8
 
 		ai_will_do = {
 			factor = 80
@@ -137,7 +137,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_western_focus
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -172,7 +172,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_western_focus
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 9
@@ -208,7 +208,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_attract_foreign_capital
 
-		cost = 5
+		cost = 8
 
 		ai_will_do = {
 			factor = 40
@@ -231,7 +231,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
 			JAP = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -241,7 +240,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
 			GER = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -260,7 +258,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_ban_slovene_nationalist_parties
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -283,7 +281,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
 			JAP = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -298,7 +295,6 @@ focus_tree = {
 
 		
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
 			GER = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -318,7 +314,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_ban_slovene_nationalist_parties
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -358,7 +354,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_ban_slovene_nationalist_parties
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 80
@@ -394,18 +390,14 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_ban_slovene_nationalist_parties
 
-		cost = 5
+		cost = 8
 
 		ai_will_do = {
 			factor = 60
 		}
 
 		available = {
-			ITA = {
-				NOT = { has_war_with = ROOT }
-				exists = yes
-				has_capitulated = no
-			}
+
 		}
 
 		bypass = {
@@ -437,7 +429,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = MEX_ban_slovene_nationalist_parties
 
-		cost = 5
+		cost = 8
 
 		ai_will_do = {
 			factor = 50
@@ -480,7 +472,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = MEX_ban_slovene_nationalist_parties
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 100
@@ -516,7 +508,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_join_axis
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -584,7 +576,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = MEX_ban_slovene_nationalist_parties
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 100
@@ -625,7 +617,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_attract_foreign_capital
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -648,7 +640,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
 			JAP = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -658,7 +649,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
 			GER = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -677,7 +667,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_limited_self_government
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -700,7 +690,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
+			#remove_ideas = MEX_idea_slovene_nationalism
 			JAP = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -714,7 +704,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
+			#remove_ideas = MEX_idea_slovene_nationalism
 			GER = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -732,7 +722,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_limited_self_government
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 80
@@ -770,18 +760,14 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_limited_self_government
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
 		}
 
 		available = {
-			BUL = {
-				NOT = { has_war_with = ROOT }
-				exists = yes
-				has_capitulated = no
-			}
+
 		}
 
 		bypass = {
@@ -814,7 +800,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_limited_self_government
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -834,7 +820,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			remove_ideas = MEX_idea_croatian_opposition
+			#remove_ideas = MEX_idea_croatian_opposition
 			release = NIC
 			release = COS
 			set_autonomy = { target = NIC autonomy_state = autonomy_integrated_puppet }
@@ -855,7 +841,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = MEX_limited_self_government
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 80
@@ -898,24 +884,14 @@ focus_tree = {
 		y = 5
 		relative_position_id = MEX_limited_self_government
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
 		}
 
 		available = {
-			ENG = {
-				NOT = { has_war_with = ROOT }
-				has_capitulated = no
-				is_faction_leader = yes
-			}
-			NOT = {
-				any_other_country = {
-					is_in_faction_with = ENG
-					has_war_with = MEX
-				}
-			}
+
 		}
 
 		bypass = {
@@ -945,14 +921,14 @@ focus_tree = {
 		y = 6
 		relative_position_id = MEX_limited_self_government
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 100
 		}
 
 		available = {
-			is_in_faction_with = ENG
+
 		}
 
 		bypass = {
@@ -982,11 +958,11 @@ focus_tree = {
 	focus = {
 		id = MEX_recognize_the_soviet_union
 		icon = entente
-		prerequisite = { focus = MEX_western_focus }
-		x = 8
+		mutually_exclusive = { focus = MEX_western_focus }
+		x = 13
 		y = 0
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -1030,7 +1006,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_recognize_the_soviet_union
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 200
@@ -1070,7 +1046,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_recognize_the_soviet_union
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 150
@@ -1097,7 +1073,7 @@ focus_tree = {
 			add_stability = -0.10
 		}
 		completion_reward = {
-			remove_ideas = MEX_idea_slovene_nationalism
+			#remove_ideas = MEX_idea_slovene_nationalism
 			NEU = {
 				add_opinion_modifier = { 
 						target = ROOT
@@ -1118,18 +1094,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_abolish_the_monarchy
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
 		}
 
 		available = {
-			is_in_faction = no
 		}
 
 		bypass = {
-			is_in_faction = yes
 		}
 
 		cancel_if_invalid = yes
@@ -1164,10 +1138,10 @@ focus_tree = {
 	focus = {
 		id = MEX_industrialization_program
 		icon = GFX_goal_generic_construction
-		x = 12
-		y = 0
+		x = 9
+		y = 
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 80
@@ -1206,7 +1180,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_industrialization_program
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 70
@@ -1236,7 +1210,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = MEX_idea_expanded_mining_industry
+			add_stability = 0.01
 		}
 	}
 
@@ -1248,7 +1222,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_expand_the_mining_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1263,8 +1237,8 @@ focus_tree = {
 
 		available = {
 			OR = {
-				has_full_control_of_state = 105
-				has_full_control_of_state = 109
+				has_full_control_of_state = 277
+				has_full_control_of_state = 474
 			}
 		}
 
@@ -1283,9 +1257,9 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_full_control_of_state = 105
+					has_full_control_of_state = 277
 				}
-				105 = {
+				474= {
 					add_resource = {
 						type = tungsten
 						amount = 8
@@ -1295,9 +1269,9 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_full_control_of_state = 109
+					has_full_control_of_state = 474
 				}
-				109 = {
+				277 = {
 					add_resource = {
 						type = chromium
 						amount = 8
@@ -1315,7 +1289,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_rare_minerals_exploitation
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1329,7 +1303,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_full_control_of_state = 45
+			has_full_control_of_state = 485
 		}
 
 		bypass = {
@@ -1347,9 +1321,9 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_full_control_of_state = 45
+					has_full_control_of_state = 485
 				}
-				45 = {
+				485 = {
 					add_resource = {
 						type = oil
 						amount = 8
@@ -1368,7 +1342,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_expand_the_mining_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1399,7 +1373,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 102 }
+				prioritize = { 479 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
 				}
@@ -1412,7 +1386,7 @@ focus_tree = {
 			}
 
 			random_owned_controlled_state = {
-				prioritize = { 107 }
+				prioritize = { 480 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
 				}
@@ -1425,7 +1399,7 @@ focus_tree = {
 			}
 
 			random_owned_controlled_state = {
-				prioritize = { 109 }
+				prioritize = { 476 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
 				}
@@ -1447,16 +1421,14 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_industrialization_program
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 100
 		}
 
 		available = {
-			NOT = {
-				has_idea = MEX_idea_croatian_opposition
-			}
+
 		}
 
 		bypass = {
@@ -1485,7 +1457,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_develop_civilian_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1500,6 +1472,9 @@ focus_tree = {
 
 		available = {
 
+				has_full_control_of_state = 481
+				has_full_control_of_state = 478
+				has_full_control_of_state = 485
 		}
 
 		bypass = {
@@ -1522,7 +1497,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1537,7 +1512,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_develop_civilian_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 80
@@ -1603,7 +1578,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = MEX_develop_civilian_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1654,7 +1629,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_develop_slovenian_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1684,7 +1659,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = MEX_idea_local_self_management
+			add_political_power = 100
 		}
 	}
 
@@ -1699,7 +1674,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_expand_the_mining_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -1750,7 +1725,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_develop_military_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -1761,12 +1736,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				has_full_control_of_state = 45
-				has_full_control_of_state = 105
-				has_full_control_of_state = 107
-				has_full_control_of_state = 108
-			}
+
 		}
 
 		bypass = {
@@ -1781,54 +1751,9 @@ focus_tree = {
 
 		}
 
+
 		completion_reward = {
-			if = {
-				limit = { has_full_control_of_state = 45 }
-				45 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-
-			if = {
-				limit = { has_full_control_of_state = 105 }
-				105 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-
-			if = {
-				limit = { has_full_control_of_state = 107 }
-				107 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-
-			if = {
-				limit = { has_full_control_of_state = 108 }
-				108 = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
+			add_stability = 0.01
 		}
 	}
 
@@ -1840,14 +1765,14 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_develop_military_industry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
 		}
 
 		available = {
-			has_full_control_of_state = 108
+			has_full_control_of_state = 481
 		}
 
 		bypass = {
@@ -1863,7 +1788,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			108 = {
+			475 = {
 				add_resource = {
 					type = steel
 					amount = 16
@@ -1884,14 +1809,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_local_self_management
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 100
 		}
 
 		available = {
-			has_full_control_of_state = 104
+			has_full_control_of_state = 478
 		}
 
 		bypass = {
@@ -1907,7 +1832,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			104 = {
+			478 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1926,10 +1851,10 @@ focus_tree = {
 	focus = {
 		id = MEX_modernize_the_air_force
 		icon = GFX_goal_generic_air_doctrine
-		x = 19
+		x = 4
 		y = 0
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -1974,7 +1899,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_modernize_the_air_force
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -2009,7 +1934,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_local_developers
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -2035,7 +1960,7 @@ focus_tree = {
 			custom_effect_tooltip = MEX_designer_tt
 
 			random_owned_controlled_state = {
-				prioritize = { 107 }
+				prioritize = { 477 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
 				}
@@ -2057,7 +1982,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_local_developers
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -2082,7 +2007,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = MEX_designer_tt
 			random_owned_controlled_state = {
-				prioritize = { 107 }
+				prioritize = { 480 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
 				}
@@ -2104,7 +2029,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_local_developers
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -2129,7 +2054,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = MEX_designer_tt
 			random_owned_controlled_state = {
-				prioritize = { 107 }
+				prioritize = { 481 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
 				}
@@ -2151,7 +2076,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_local_developers
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -2192,7 +2117,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_local_developers
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -2232,7 +2157,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_local_developers
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 20
@@ -2279,10 +2204,10 @@ focus_tree = {
 	focus = {
 		id = MEX_army_modernization
 		icon = GFX_goal_generic_army_doctrines
-		x = 26
+		x = 22
 		y = 0
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 70
@@ -2321,7 +2246,7 @@ focus_tree = {
 		y = 1
 		relative_position_id =  MEX_army_modernization
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -2364,7 +2289,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_motorize_the_cavalry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -2409,7 +2334,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_motorize_the_cavalry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -2455,7 +2380,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_motorize_the_cavalry
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 25
@@ -2501,7 +2426,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_army_modernization
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 70
@@ -2541,7 +2466,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_small_arms
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 70
@@ -2581,7 +2506,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_small_arms
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -2621,7 +2546,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_army_modernization
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 70
@@ -2661,7 +2586,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_mountain_brigades
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 50
@@ -2701,7 +2626,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_mountain_brigades
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
@@ -2741,7 +2666,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_mountain_brigades
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 10
@@ -2781,7 +2706,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_army_modernization
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 70
@@ -2822,7 +2747,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_army_maneuvers
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 30
@@ -2864,7 +2789,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_army_maneuvers
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 60
@@ -2907,17 +2832,17 @@ focus_tree = {
 		id = MEX_expand_the_split_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
 		mutually_exclusive = { focus = MEX_expand_the_Mexican_shipyards }
-		x = 20
-		y = 4
+		x = 19
+		y = 5
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
 		}
 
 		available = {
-			has_full_control_of_state = 103
+			has_full_control_of_state = 474
 		}
 
 		bypass = {
@@ -2933,7 +2858,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			103 = {
+			474 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -2952,7 +2877,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_expand_the_split_shipyards
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 20
@@ -2994,7 +2919,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_expand_the_split_shipyards
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 20
@@ -3036,7 +2961,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_expand_the_split_shipyards
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 30
@@ -3078,7 +3003,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_expand_the_split_shipyards
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 20
@@ -3120,7 +3045,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = MEX_expand_the_split_shipyards
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 20
@@ -3162,14 +3087,14 @@ focus_tree = {
 		y = 0
 		relative_position_id = MEX_expand_the_split_shipyards
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 40
 		}
 
 		available = {
-			has_full_control_of_state = 105
+			has_full_control_of_state = 485
 		}
 
 		bypass = {
@@ -3185,7 +3110,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			105 = {
+			485 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -3204,7 +3129,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_expand_the_Mexican_shipyards
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 30
@@ -3212,8 +3137,8 @@ focus_tree = {
 
 		available = {
 			OR = {
-				has_full_control_of_state = 103
-				has_full_control_of_state = 105
+				has_full_control_of_state = 476
+				has_full_control_of_state = 474
 			}
 		}
 
@@ -3232,8 +3157,8 @@ focus_tree = {
 		completion_reward = {
 			#forts on coast and harbor
 			if = {
-				limit = { has_full_control_of_state = 103 }
-				103 = {
+				limit = { has_full_control_of_state = 476 }
+				476 = {
 					custom_effect_tooltip = MEX_coastal_defense_effect_tt1
 					custom_effect_tooltip = MEX_coastal_defense_effect_tt2
 					hidden_effect = {
@@ -3260,8 +3185,8 @@ focus_tree = {
 			}
 			
 			if = {
-				limit = { has_full_control_of_state = 105 }
-				105 = {
+				limit = { has_full_control_of_state = 474 }
+				477 = {
 					custom_effect_tooltip = MEX_coastal_defense_effect_tt1
 					custom_effect_tooltip = MEX_coastal_defense_effect_tt2
 					hidden_effect = {
@@ -3297,7 +3222,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = MEX_expand_the_Mexican_shipyards
 
-		cost = 10
+		cost = 12
 
 		ai_will_do = {
 			factor = 20

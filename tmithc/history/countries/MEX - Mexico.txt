@@ -28,17 +28,6 @@ add_to_faction = "BRA"
 
 	add_political_power = 200
 	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
 	oob = "MEX_1960"
 	set_technology = {
 		interwar_artillery = 1

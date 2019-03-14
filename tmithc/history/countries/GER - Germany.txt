@@ -114,7 +114,6 @@ add_to_faction = URG
 add_to_faction = VEN
 add_to_faction = NOR
 add_to_faction = RKO
-add_to_faction = CAN
 add_to_faction = AMM
 
 add_ideas = {

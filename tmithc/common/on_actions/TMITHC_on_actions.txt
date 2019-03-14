@@ -1,0 +1,21 @@
+on_actions = {
+
+	##TMITHC Settings Event
+	on_startup = {
+	
+		effect = {		
+
+			#Intro Event
+			every_country = {
+				limit = { is_ai = no }
+				news_event = { id = static_OBAMA_news.1 }				
+			}
+			
+
+								
+		}
+			
+	}
+	
+
+}
