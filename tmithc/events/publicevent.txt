@@ -1,0 +1,22 @@
+﻿add_namespace = mexico
+
+country_event = {
+	id = mexico.1
+	title = mexico.1.t
+	desc = mexico.1.d	
+	picture = GFX_report_event_election_vote
+	immediate = { log = "[GetDateText]: [Root.GetName]: mexico.1" }
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = MEX
+		AND = {
+			date > 1960.0.0
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+}

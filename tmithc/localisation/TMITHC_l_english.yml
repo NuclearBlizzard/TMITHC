@@ -1,0 +1,6 @@
+﻿l_english:
+ ##NEWS EVENTS##
+ #Startup news event
+ static_OBAMA_news.1.t:0 "The Man In the High Castle - Introduction"
+ static_OBAMA_news.1.d:0 "Hi, Fans of The Man in the High Castle Series!\n"We bring to you today, Our great attempt of a mod to make the Series come Alive!" This being said, We are a small development team of around twenty to thirty personnel. Attempting to ensure that our mod is bugfree, please join our very active discord which is listed on our workshop page and display them in the bug-notice room, Also please Rate and Enjoy!!!"
+ static_OBAMA_news.1.a:0 "Ok."
