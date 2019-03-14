@@ -1851,8 +1851,8 @@ focus_tree = {
 	focus = {
 		id = MEX_modernize_the_air_force
 		icon = GFX_goal_generic_air_doctrine
-		x = 19
-		y = 20
+		x = 4
+		y = 0
 
 		cost = 12
 
