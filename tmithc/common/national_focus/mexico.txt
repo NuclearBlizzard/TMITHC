@@ -316,6 +316,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_political_power = 200
+		}
+	}
+
+		
+		completion_reward = {
 			remove_ideas = MEX_idea_slovene_nationalism
 			GER = {
 				add_opinion_modifier = { 
@@ -709,7 +715,28 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = MEX_idea_religious_freedoms_guaranteed
+			remove_ideas = MEX_idea_slovene_nationalism
+			JAP = {
+				add_opinion_modifier = { 
+						target = ROOT
+						modifier = huge_increase
+					}
+			}
+		}
+		
+		completion_reward = {
+			add_political_power = -200
+		}
+	}
+		
+		completion_reward = {
+			remove_ideas = MEX_idea_slovene_nationalism
+			GER = {
+				add_opinion_modifier = { 
+						target = ROOT
+						modifier = large_decrease
+					}
+			}
 		}
 	}
 
