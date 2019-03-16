@@ -164,14 +164,14 @@ spriteTypes = {
 		name = "GFX_idea_saf_soviet_advisers"
 		texturefile = "gfx/interface/ideas/idea_saf_soviet_advisers.dds"
 	}
-	
+
 	### MEX
-		
+
 	spriteType = {
 		name = "MEX_TEST"
 		texturefile = "gfx/interface/ideas/MEX/mextest1.tga"
 	}
-	
+
 	spriteType = {
 		name = "MEX_TEST1"
 		texturefile = "gfx/interface/ideas/MEX/mextest2.tga"
@@ -3668,14 +3668,7 @@ spriteTypes = {
 		name = "GFX_idea_FRA_chained"
 		texturefile = "gfx/interface/ideas/FRA_chained.tga"
 	}
-	spriteType = {
-		name = "GFX_idea_obama"
-		texturefile = "gfx/interface/ideas/obama.tga"
-	}
-	spriteType = {
-		name = "GFX_idea_jew"
-		texturefile = "gfx/interface/ideas/jew.tga"
-	}
+
 	spriteType = {
 		name = "GFX_idea_FRA_resistance"
 		texturefile = "gfx/interface/ideas/FRA_resistance.tga"
@@ -3690,10 +3683,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Covert_Operations.tga"
 	}
 	spriteType = {
-		name = "GFX_idea_mexico"
-		texturefile = "gfx/interface/ideas/mexico.tga"
-	}
-	spriteType = {
 		name = "GFX_idea_Suffering_Economy"
 		texturefile = "gfx/interface/ideas/Suffering_Economy.tga"
 	}
@@ -3706,11 +3695,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Ukranian_Resistance.tga"
 	}
 	spriteType = {
-		name = "gfx_idea_treaty_of_canberra"
-		texturefile = "gfx/interface/ideas/COA_placeholder_treaty_icon.tga"
+		name = "GFX_idea_treaty_of_canberra"
+		texturefile = "gfx/interface/ideas/COA_treaty_of_canberra.dds"
 	}
 	spriteType = {
-		name = "gfx_idea_new_zealander_seperatism"
+		name = "GFX_idea_new_zealander_seperatism"
 		texturefile = "gfx/interface/idea/idea_generic_flexible_foreign_policy2.tga"
 	}
 		spriteType = {
@@ -3729,24 +3718,4 @@ spriteTypes = {
 		name = "GFX_idea_JAP_Hirohito_Yakuza"
 		texturefile = "gfx/interface/ideas/Hirohito_Yakuza.tga"
 	}
-	
-	#Neutral zone spirits
-	spriteType = {
-		name = "GFX_idea_NEU_Axis_Infiltration"
-		texturefile = "gfx/interface/ideas/NEU_Axis_Infiltration.tga"
-	}
-    spriteType = {
-		name = "GFX_idea_NEU_No_Army"
-		texturefile = "gfx/interface/ideas/NEU_No_Army.tga"
-	}
-	spriteType = {
-		name = "GFX_idea_NEU_No_Established_Industry"
-		texturefile = "gfx/interface/ideas/Suffering_Economy.tga"
-	}
-	spriteType = {
-		name = "GFX_idea_NEU_Anarchy"
-		texturefile = "gfx/interface/ideas/NEU_Anarchy.tga"
-	}
-
 }
-
