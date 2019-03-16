@@ -58,6 +58,78 @@ units = {
 
 	}
 	division= {	
+		name = "5a Brigada del Ejército"
+		location = 10747 # Bogota
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "5a Brigada del Ejército"
+		location = 10747 # Bogota
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "5a Brigada del Ejército"
+		location = 10747 # Bogota
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "5a Brigada del Ejército"
+		location = 10747 # Bogota
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "5a Brigada del Ejército"
+		location = 10747 # Bogota
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "5a Brigada del Ejército"
+		location = 10747 # Bogota
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "5a Brigada del Ejército"
+		location = 10747 # Bogota
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "5a Brigada del Ejército"
+		location = 10747 # Bogota
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "5a Brigada del Ejército"
+		location = 10747 # Bogota
+		division_template = "Brigada del Ejército"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
 		name = "6a Brigada del Ejército"
 		location = 2023 # Medellin
 		division_template = "Brigada del Ejército"	

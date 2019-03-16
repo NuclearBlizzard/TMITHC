@@ -168,13 +168,19 @@ spriteTypes = {
 	### MEX
 
 	spriteType = {
-		name = "MEX_TEST"
-		texturefile = "gfx/interface/ideas/MEX/mextest1.tga"
+		name = "GFX_idea_MEX_TEST1"
+		texturefile = "gfx/interface/ideas/mexico.tga"
 	}
 
 	spriteType = {
-		name = "MEX_TEST1"
-		texturefile = "gfx/interface/ideas/MEX/mextest2.tga"
+		name = "GFX_idea_MEX_TEST"
+		texturefile = "gfx/interface/ideas/jew.tga"
+	}
+
+
+	spriteType = {
+		name = "GFX_idea_MEX_TEST2"
+		texturefile = "gfx/interface/ideas/obama.tga"
 	}
 
 	### GER
