@@ -2129,7 +2129,7 @@ focus_tree = {
 		
 		completion_reward = {
 			SPR = {
-				add_opinion_modifier = { target = ROOT modifier = catholic_unity }
+				add_opinion_modifier = { target = ROOT modifier = huge_increase }
 			}
 		}
 
@@ -2299,9 +2299,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
-				category = motorized
+				name = armor_bonus
 				bonus = 0.75
 				uses = 1
+				category = motorized_equipment
 			}
 		}
 
@@ -3128,6 +3129,40 @@ focus_tree = {
 				bonus = 0.5
 				category = cat_superior_firepower
 			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+    focus = {
+		id = ITA_complete_army_reform
+		icon = infantry_allies
+		
+		x = 0
+		y = 4
+	    relative_position_id = ITA_army_reform
+		
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_dominance_of_artillery
+			focus = ITA_dominance_of_tanks
+			focus = ITA_dominance_of_strategy
+		}
+		mutually_exclusive = { }
+		available = { }
+		select_effect = { }
+		bypass = { }
+		cancel = { }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = yes
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_war_support = 0.05
+			remove_ideas = ITA_military_purges_1
 		}
 
 		ai_will_do = {

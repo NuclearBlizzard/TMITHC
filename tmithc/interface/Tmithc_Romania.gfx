@@ -15,9 +15,7 @@ spriteTypes = {
 		}
 		
 		
-		### ITS MEXICO NIGGA ### 
-		
-spriteTypes = {
+		### ITS MEXICO NIGGA ### 		
 		
 	spriteType = {
 		name = "GFX_idea_mextest2"
@@ -113,3 +111,4 @@ spriteTypes = {
 		name = "GFX_idea_mextest19"
 		texturefile = "gfx/interface/ideas/MEX/mextest19.tga"
 		}
+}

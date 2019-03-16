@@ -1,4 +1,4 @@
-ideas = {
+#ideas = {
 	country = {
 		rus_risk_of_famine = {
 		
@@ -619,4 +619,4 @@ ideas = {
 			}
 		}
 	}
-}
+#}
