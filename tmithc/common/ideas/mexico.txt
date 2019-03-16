@@ -56,3 +56,382 @@ ideas = {
 				decryption_factor = 0.05
 			}
 		}
+	}	
+	
+	high_command = {
+
+		MEX_jesus_garza_siller = {
+			
+			picture = mextest2.tga
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			
+			traits = { air_strategic_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		MEX_hector_meixueiro = {
+			
+			picture = mextest1.tga
+
+			allowed = {
+				original_tag = MEX
+			}
+			
+			traits = { navy_naval_air_defense_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MEX_pablo_m_valenzuela = {
+			
+			picture = mextest3.tga
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MEX_jose_gonzalo_escobar = {
+			
+			picture = mextest4.tga
+			
+			allowed = {
+				original_tag = MEX
+				has_dlc = "Man the Guns"
+			}
+			
+			available = {
+				has_completed_focus = MEX_focus_purge_the_bureaucracy
+			}
+
+			traits = { army_cavalry_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MEX_abelardo_rodriguez = {
+			
+			picture = mextest5.tga
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	army_chief = {
+
+		MEX_leon_trotsky = {
+			
+			picture = mextest6.tga
+			
+			cost = 75
+			
+			visible = {
+				has_global_flag = flag_mexico_invited_trotsky_to_government
+			}
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			available = {
+				OR = {
+					has_government = communism
+					has_government = neutrality
+				}
+				has_global_flag = flag_mexico_invited_trotsky_to_government
+				NOT = { 
+					OR = {
+						has_global_flag = trotsky_not_welcome_in_mexico
+						has_global_flag = flag_trotsky_dead
+						has_global_flag = flag_trotsky_has_returned_to_ussr_from_mexico
+					} 
+				}
+			}
+			
+			traits = { red_army_organizer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		MEX_saturnino_cedillo = {
+			
+			picture = mextest7.tga
+			
+			cost = 75
+			
+			allowed = {
+				original_tag = MEX
+				has_dlc = "Man the Guns"
+			}
+			
+			available = {
+				has_completed_focus = MEX_focus_support_general_cedillo
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MEX_matias_santos_ramos = {
+			
+			picture = mextest8.tga
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MEX_gilberto_lemon = {
+			
+			picture = mextest9
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		MEX_antonio_cardenas_rodriguez = {
+			
+			picture = mextest10.tga
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			traits = { air_air_combat_training_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MEX_luis_farell = {
+			
+			picture = mextest11.tga
+
+			allowed = {
+				original_tag = MEX
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	navy_chief = {
+
+		MEX_othon_blanco = {
+			
+			picture = mextest14.tga
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			traits = { navy_fleet_logistics_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		MEX_heriberto_corona = {
+			
+			picture = mextest12.tga
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			traits = { navy_chief_decisive_battle_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	theorist = {
+
+		MEX_manuel_perez_trevino = {
+			
+			picture = mextest13.tga
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			available = {
+			}
+			
+			cost = 150
+			
+			research_bonus = {
+				cat_superior_firepower = 0.10
+			}
+			
+			traits = { superior_firepower_expert }
+		}
+	}
+	
+	political_advisor = {
+
+		MEX_vicente_lombardo = {
+
+			picture = mextest15.tga
+
+			allowed = {
+				original_tag = MEX
+			}
+			
+			available = {
+
+			}
+			
+			traits = { ambitious_union_boss }
+		}
+	
+	
+		MEX_jose_vasconcelos = {
+
+			picture = mextest16.tga
+
+			allowed = {
+				original_tag = MEX
+			}
+			
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					has_completed_focus = MEX_focus_the_gold_shirts
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			
+			traits = { syncretic_revanchist }
+			add_war_support = 0.50
+		}
+
+		MEX_bartolome_garcia_correa = {
+
+			picture = mextest17.tga
+
+			allowed = {
+				original_tag = MEX
+			}
+			
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					has_completed_focus = MEX_focus_exile_calles
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			
+			traits = {
+				social_reformer
+			}
+		}
+
+
+
+		MEX_jesus_garza_siller = {
+			
+			picture = mextest18.tga
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			
+			traits = { air_strategic_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+
+
+
+
+
+		
+		MEX_abelardo_rodriguez = {
+			
+			picture = mextest19
+			
+			allowed = {
+				original_tag = MEX
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    }
+	
+	

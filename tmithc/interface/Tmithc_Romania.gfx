@@ -13,3 +13,103 @@ spriteTypes = {
 		name = "GFX_idea_Petre_Political_Advisor"
 		texturefile = "gfx/interface/ideas/ROM/Petre_Minister.tga"
 		}
+		
+		
+		### ITS MEXICO NIGGA ### 
+		
+spriteTypes = {
+		
+	spriteType = {
+		name = "GFX_idea_mextest2"
+		texturefile = "gfx/interface/ideas/MEX/mextest2.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest1"
+		texturefile = "gfx/interface/ideas/MEX/mextest1.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest3"
+		texturefile = "gfx/interface/ideas/MEX/mextest3.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest4"
+		texturefile = "gfx/interface/ideas/MEX/mextest4.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest5"
+		texturefile = "gfx/interface/ideas/MEX/mextest5.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest6"
+		texturefile = "gfx/interface/ideas/MEX/mextest6.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest7"
+		texturefile = "gfx/interface/ideas/MEX/mextest7.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest8"
+		texturefile = "gfx/interface/ideas/MEX/mextest8.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest9"
+		texturefile = "gfx/interface/ideas/MEX/mextest9.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest10"
+		texturefile = "gfx/interface/ideas/MEX/mextest10.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest11"
+		texturefile = "gfx/interface/ideas/MEX/mextest11.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest12"
+		texturefile = "gfx/interface/ideas/MEX/mextest12.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest13"
+		texturefile = "gfx/interface/ideas/MEX/mextest13.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest14"
+		texturefile = "gfx/interface/ideas/MEX/mextest14.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest15"
+		texturefile = "gfx/interface/ideas/MEX/mextest15.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest16"
+		texturefile = "gfx/interface/ideas/MEX/mextest16.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest17"
+		texturefile = "gfx/interface/ideas/MEX/mextest17.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest18"
+		texturefile = "gfx/interface/ideas/MEX/mextest18.tga"
+		}
+		
+	spriteType = {
+		name = "GFX_idea_mextest19"
+		texturefile = "gfx/interface/ideas/MEX/mextest19.tga"
+		}
