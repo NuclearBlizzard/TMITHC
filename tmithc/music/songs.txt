@@ -820,6 +820,3 @@ music = {
 		}
 	}
 }
-music = {
-	song = "El himno de ricardo"
-}

@@ -314,9 +314,3 @@ music = {
 	file = "spain1.ogg"
 	volume = 0.65
 }
-music = {
-	name = "El himno de ricardo"
-	file = "himnoricardo.ogg"
-	volume = 0.65
-}
-
