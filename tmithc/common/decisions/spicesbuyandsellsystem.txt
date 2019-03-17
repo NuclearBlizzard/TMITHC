@@ -1,0 +1,203 @@
+global_black_market_category = {
+
+	sellandbuy_mechanized = {
+
+		icon = border_war
+
+		available = {
+			is_ai = no
+			has_political_power > 150
+			has_tech = mechanised_infantry
+		}
+		
+        cost = 0
+		
+		visible = {
+            always = yes
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			add_political_power = -150
+			add_equipment_to_stockpile = { # 1pp for 4
+				type = mechanized_equipment
+				amount = 300
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	sellandbuy_artillery = {
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			is_ai = no
+			has_political_power > 150
+			has_tech = gw_artillery
+		}
+		
+        cost = 0
+		
+		visible = {
+            always = yes
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			add_political_power = -150
+			add_equipment_to_stockpile = { # 1pp for 10
+				type = artillery_equipment
+				amount = 1250
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	sellandbuy_motorized = {
+
+		icon = rubber
+
+		available = {
+			is_ai = no
+			has_political_power > 150
+			has_tech = motorised_infantry
+		}
+		
+        cost = 0
+		
+		visible = {
+            always = yes
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			add_political_power = -150
+			add_equipment_to_stockpile = { # 1pp for 6
+				type = motorized_equipment
+				amount = 300
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+	
+	sellandbuy = {
+
+		icon = ger_military_buildup
+
+		available = {
+			is_ai = no
+			has_political_power > 150
+			has_tech = infantry_weapons
+		}
+		
+        cost = 0
+		
+		visible = {
+            always = yes
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			add_political_power = -150
+			add_equipment_to_stockpile = { # 1pp for 40
+				type = infantry_equipment 
+				amount = 3500
+			
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+	
+	sellandbuysupport = {
+
+		icon = generic_research
+
+		available = {
+			is_ai = no
+			has_political_power > 150
+			has_tech = tech_support
+		}
+		
+        cost = 0
+		
+		visible = {
+            always = yes
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			add_political_power = -150
+			add_equipment_to_stockpile = { # 1pp for 10
+				type = support_equipment
+				amount = 500
+			
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+	
+	sellandbuy_light_tank = {
+
+		icon = generic_tank
+
+		available = {
+			is_ai = no
+			has_political_power > 150
+			has_tech = gwtank
+			has_tech = basic_light_tank
+		}
+		
+        cost = 0
+		
+		visible = {
+            always = yes
+		}
+		
+		fire_only_once = no
+		
+		complete_effect = {
+			add_political_power = -200
+			add_equipment_to_stockpile = { # 1pp for 3
+				type = light_tank_equipment
+				amount = 250
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+}
