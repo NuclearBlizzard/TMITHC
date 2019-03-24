@@ -4,6 +4,7 @@ oob = "JAP_1936"
 
 give_military_access = PAN
 JAP = { give_guarantee = PAN }
+JAP = { give_guarantee = NEU }
 
 set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8

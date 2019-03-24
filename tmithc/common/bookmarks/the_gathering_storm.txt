@@ -69,6 +69,9 @@ bookmarks = {
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
+				rus_risk_of_famine
+				rus_destroyed_industry
+				sov_beria_controls_the_government
 
 			}
 	
