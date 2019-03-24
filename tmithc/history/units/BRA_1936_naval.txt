@@ -1,5 +1,4 @@
 ﻿
-
 units = {
 	
 	##### Naval OOB #####
@@ -28,7 +27,12 @@ units = {
 			name = "Flotilha de Submarinos"			
 			location = 10980 # Rio de Janiero
 			ship = { name = "NRB Humaytá" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BRA version_name = "Humaytá Class"} } }
+			ship = { name = "NRB Tupi" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BRA version_name = "Tupi Class" } } }
+			ship = { name = "NRB Timbira" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BRA version_name = "Tupi Class" } } }
+			ship = { name = "NRB Tamoio" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BRA version_name = "Tupi Class" } } }
 		}				
 	}
 }
+
+
 
