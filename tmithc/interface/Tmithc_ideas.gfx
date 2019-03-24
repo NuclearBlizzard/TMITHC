@@ -1,4 +1,4 @@
-SpriteTypes = {
+spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_GER_african_question"
