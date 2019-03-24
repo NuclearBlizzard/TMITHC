@@ -1,1 +1,261 @@
-﻿add_namespace = soviet
+﻿add_namespace = sovietevent
+
+country_event = {
+	id = sovietevent.1
+	title = sovietevent.1.t
+	desc = sovietevent.1.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sovietevent.1.a
+		ai_chance = { factor = 10 }
+		set_cosmetic_tag = SOV_UNION
+	}
+}
+
+country_event = {
+	id = sovietevent.2
+	title = sovietevent.2.t
+	desc = sovietevent.2.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sovietevent.2.a
+		ai_chance = { factor = 10 }
+		hidden_effect = {
+			retire_country_leader = yes
+			country_event = { id = sovietevent.3 days = 7 }
+		}
+		create_country_leader = {
+			name = "Politburo of the Central Committee of the CPSU"
+			desc = "POLITICS_POLITBURO_DESC"
+			picture = "Portrait_Soviet_Politburo.tga"
+			expire = "1965.1.1"
+			ideology = stalinism
+			traits = {
+			}
+		}
+		remove_ideas = sov_beria_controls_the_government
+	}
+	
+	option = {
+		name = sovietevent.2.b
+		ai_chance = { factor = 0 }
+		add_political_power = -50
+		set_country_flag = beria_keep
+	}
+}
+
+country_event = {
+	id = sovietevent.3
+	title = sovietevent.3.t
+	desc = sovietevent.3.d
+	picture = GFX_report_event_khrushchev_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sovietevent.3.a
+		ai_chance = { factor = 10 }
+		hidden_effect = {
+			country_event = { id = sovietevent.4 days = 5 }
+		}
+	}
+}
+
+country_event = {
+	id = sovietevent.4
+	title = sovietevent.4.t
+	desc = sovietevent.4.d
+	picture = GFX_report_event_molotov_coalition
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sovietevent.4.a
+		ai_chance = { factor = 10 }
+		hidden_effect = {
+			country_event = { id = sovietevent.5 days = 6 }
+		}
+	}
+}
+
+country_event = {
+	id = sovietevent.5
+	title = sovietevent.5.t
+	desc = sovietevent.5.d
+	picture = GFX_report_event_brezhnev_smile
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sovietevent.5.a
+		ai_chance = { factor = 10 }
+		hidden_effect = {
+			country_event = { id = sovietevent.6 days = 6 }
+		}
+	}
+}
+
+country_event = {
+	id = sovietevent.6
+	title = sovietevent.6.t
+	desc = sovietevent.6.d
+	picture = GFX_report_event_generic_communist_congress
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sovietevent.6.a
+		ai_chance = { factor = 10 }
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Vyacheslav Molotov"
+			desc = "POLITICS_VYACHESLAV_MOLOTOV_DESC"
+			picture = "Portrait_Soviet_Molotov.tga"
+			expire = "1965.1.1"
+			ideology = stalinism
+			traits = {
+			}
+		}
+		set_country_flag = molotov_gensec
+	}
+	
+	option = {
+		name = sovietevent.6.b
+		ai_chance = { factor = 10 }
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Nikita Khrushchev"
+			desc = "POLITICS_NIKITA_KHRUSCHEV_DESC"
+			picture = "Portrait_Soviet_Khrushev.tga"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+			}
+		}
+		set_country_flag = khrushchev_gensec
+	}
+	
+	option = {
+		name = sovietevent.6.c
+		ai_chance = { factor = 10 }
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Leonid Brezhnev"
+			desc = "POLITICS_LEONID_BREZHNEV_DESC"
+			picture = "Portrait_Soviet_Brezhnev.tga"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+			}
+		}
+		set_country_flag = brezhnev_gensec
+	}
+}
+
+country_event = {
+	id = sovietevent.7
+	title = sovietevent.7.t
+	desc = sovietevent.7.d
+	picture = GFX_report_event_khrushchev_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sovietevent.7.a
+		ai_chance = { factor = 0 }
+		add_ideas = SOV_new_purge
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_political_power = -50
+		hidden_effect = {
+			country_event = { id = sovietevent.8 days = 4 }
+		}
+	}
+	
+	option = {
+		name = sovietevent.7.b
+		ai_chance = { factor = 10 }
+		add_ideas = SOV_new_purge
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+		add_political_power = 50
+		hidden_effect = {
+			country_event = { id = sovietevent.8 days = 4 }
+		}
+	}
+}
+
+country_event = {
+	id = sovietevent.8
+	title = sovietevent.8.t
+	desc = sovietevent.8.d
+	picture = GFX_report_event_brezhnev_smile
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sovietevent.8.a
+		ai_chance = { factor = 10 }
+		add_stability = 0.1
+		hidden_effect = {
+			country_event = { id = sovietevent.9 days = 16 }
+		}
+	}
+	
+	option = {
+		name = sovietevent.8.b
+		ai_chance = { factor = 0 }
+		add_stability = -0.1
+		hidden_effect = {
+			country_event = { id = sovietevent.9 days = 16 }
+		}
+	}
+}
+
+country_event = {
+	id = sovietevent.9
+	title = sovietevent.9.t
+	desc = sovietevent.9.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sovietevent.9.a
+		ai_chance = { factor = 10 }
+		add_ideas = SOV_army_purge
+		swap_ideas = {
+			remove_idea = sov_beria_controls_the_government
+			add_idea = sov_beria_controls_the_government_2
+		}
+		remove_ideas = SOV_new_purge
+		add_timed_idea = {
+			idea = SOV_purge_aftermath
+			days = 100
+		}
+	}
+	option = {
+		name = sovietevent.9.b
+		ai_chance = { factor = 0 }
+		add_ideas = SOV_army_not_purge
+		swap_ideas = {
+			remove_idea = sov_beria_controls_the_government
+			add_idea = sov_beria_controls_the_government_2
+		}
+		remove_ideas = SOV_new_purge
+		add_timed_idea = {
+			idea = SOV_purge_aftermath
+			days = 100
+		}
+	}
+}

@@ -2,28 +2,29 @@
 state={
 	id=24
 	name="STATE_24"
-	manpower = 2346300
+	manpower = 2696300
 	
 	
-	state_category = large_city
+	state_category = city
 
 	history={
 		owner = FRA
 		victory_points = {
-			3671 10
+			3671 15
 		}
 		victory_points = {
-			512 15
+			512 20
 		}
 		buildings = {
-			infrastructure = 7
+			infrastructure = 8
 			industrial_complex = 2
 
 		}
 		add_core_of = FRA
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 4
+				industrial_complex = 2
+				arms_factory = 1
 			}
 		}
 	}

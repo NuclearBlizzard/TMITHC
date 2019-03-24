@@ -3,8 +3,8 @@ state={
 	name="STATE_600"
 
 	history={
-		owner = RNC
-		add_core_of = RNC
+		owner = CHI
+		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 3
@@ -14,7 +14,6 @@ state={
 		victory_points = {
 			3992 3 
 		}
-
 	}
 
 	provinces={

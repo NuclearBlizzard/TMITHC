@@ -1,10 +1,10 @@
-﻿add_namespace = italy
+﻿add_namespace = italy.tmithc
 
 #Mussolini's Death
 country_event = {
-	id = italy.1
-	title = italy.1.t
-	desc = italy.1.d
+	id = italy.tmithc.1
+	title = italy.tmithc.1.t
+	desc = italy.tmithc.1.d
 	picture = GFX_report_event_funeral2
 	
 	is_triggered_only = yes
@@ -18,17 +18,17 @@ country_event = {
 				ideology = fascism_ideology
 			}
 			GER = {
-				country_event = { id = italy.4 days = 4 }
+				country_event = { id = italy.tmithc.4 days = 4 }
 			}
 			SPR = {
-				country_event = { id = italy.6 days = 7 }
+				country_event = { id = italy.tmithc.6 days = 7 }
 			}
-			country_event = { id = italy.2 days = 30 }
+			country_event = { id = italy.tmithc.2 days = 30 }
 		}
 	}
 	
 	option = {
-		name = italy.1.o1
+		name = italy.tmithc.1.o1
 		set_country_flag = ITA_death_of_the_duce
 		hidden_effect = {
 			news_event = { id = italy_news.1 days = 1 }
@@ -39,15 +39,15 @@ country_event = {
 
 #The Question of Succession
 country_event = {
-	id = italy.2
-	title = italy.2.t
-	desc = italy.2.d
+	id = italy.tmithc.2
+	title = italy.tmithc.2.t
+	desc = italy.tmithc.2.d
 	picture = GFX_report_event_political_speech5
 	
 	is_triggered_only = yes
 	
 	option = {	#De Vecchi
-		name = italy.2.o1
+		name = italy.tmithc.2.o1
 		add_war_support = 0.05
 		create_country_leader = {
 			name = "Cesare Maria De Vecchi"
@@ -70,7 +70,7 @@ country_event = {
 		}
 	}
 	option = {	#Fanfani
-		name = italy.2.o2
+		name = italy.tmithc.2.o2
 		add_stability = 0.05
 		create_country_leader = {
 			name = "Amintore Fanfani"
@@ -93,7 +93,7 @@ country_event = {
 		}
 	}
 	option = {	#Nenni
-		name = italy.2.o3
+		name = italy.tmithc.2.o3
 		add_stability = -0.1
 		add_war_support = -0.1
 		create_country_leader = {
@@ -120,113 +120,113 @@ country_event = {
 
 #Reinstatement of the Quadrumvirs
 country_event = {
-	id = italy.3
-	title = italy.3.t
-	desc = italy.3.d
+	id = italy.tmithc.3
+	title = italy.tmithc.3.t
+	desc = italy.tmithc.3.d
 	picture = GFX_report_event_government8
 	
 	is_triggered_only = yes
 	
 	option = {	#It has to be done.
-		name = italy.3.o1
+		name = italy.tmithc.3.o1
 		add_political_power = -50
 	}
 	option = {	#Withhold political assurances.
-		name = italy.3.o2
+		name = italy.tmithc.3.o2
 		add_stability = -0.05
 	}
 }
 
 #Germany: The Question of Italian Succession
 country_event = {
-	id = italy.4
-	title = italy.4.t
-	desc = italy.4.d
+	id = italy.tmithc.4
+	title = italy.tmithc.4.t
+	desc = italy.tmithc.4.d
 	picture = GFX_report_event_government
 	
 	is_triggered_only = yes
 	
 	option = {	#Urge the Italians to select De Vecchi.
-		name = italy.4.o1
+		name = italy.tmithc.4.o1
 		add_political_power = -50
-		ITA = { country_event = { id = italy.5 days = 7 } }
+		ITA = { country_event = { id = italy.tmithc.5 days = 7 } }
 		set_country_flag = GER_endorsed_de_vecchi
 		ai_chance = { base = 25 }
 	}
 	option = {	#This is not our fight.
-		name = italy.4.o2
+		name = italy.tmithc.4.o2
 		ai_chance = { base = 75 }
 	}
 }
 
 #Germany endorses De Vecchi
 country_event = {
-	id = italy.5
-	title = italy.5.t
-	desc = italy.5.d
+	id = italy.tmithc.5
+	title = italy.tmithc.5.t
+	desc = italy.tmithc.5.d
 	picture = GFX_report_event_international_treaty2
 	
 	is_triggered_only = yes
 	
 	option = {	#They shouldn't get involved in our affairs.
-		name = italy.5.o1
+		name = italy.tmithc.5.o1
 	}
 }
 
 #Spain: The Question of Italian Succession
 country_event = {
-	id = italy.6
-	title = italy.6.t
-	desc = italy.6.d
+	id = italy.tmithc.6
+	title = italy.tmithc.6.t
+	desc = italy.tmithc.6.d
 	picture = GFX_report_event_government
 	
 	is_triggered_only = yes
 	
 	option = {	#Italy must choose Fanfani!
-		name = italy.6.o1
+		name = italy.tmithc.6.o1
 		add_political_power = -50
-		ITA = { country_event = { id = italy.7 days = 7 } }
+		ITA = { country_event = { id = italy.tmithc.7 days = 7 } }
 		set_country_flag = SPR_endorsed_fanfani
 		ai_chance = { base = 40 }
 	}
 	option = {	#This is not our fight.
-		name = italy.6.o2
+		name = italy.tmithc.6.o2
 		ai_chance = { base = 60 }
 	}
 }
 
 #Spain doubts Mussolini's testament
 country_event = {
-	id = italy.7
-	title = italy.7.t
-	desc = italy.7.d
+	id = italy.tmithc.7
+	title = italy.tmithc.7.t
+	desc = italy.tmithc.7.d
 	picture = GFX_report_event_international_treaty2
 	
 	is_triggered_only = yes
 	
 	option = {	#They shouldn't get involved in our affairs.
-		name = italy.7.o1
+		name = italy.tmithc.7.o1
 	}
 }
 
 #Germany: Italy defies us!
 country_event = {
-	id = italy.8
-	title = italy.8.t
-	desc = italy.8.d
+	id = italy.tmithc.8
+	title = italy.tmithc.8.t
+	desc = italy.tmithc.8.d
 	picture = GFX_report_event_international_treaty
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = italy.8.o1
+		name = italy.tmithc.8.o1
 		ai_chance = { base = 20 }
 		add_political_power = -200
-		ITA = { country_event = { id = italy.10 days = 3 } }
+		ITA = { country_event = { id = italy.tmithc.10 days = 3 } }
 	}
 	
 	option = {
-		name = italy.8.o2
+		name = italy.tmithc.8.o2
 		add_stability = -0.02
 		german_influence_in_italy_decrease_by_3 = yes
 		ai_chance = { base = 80 }
@@ -235,65 +235,65 @@ country_event = {
 
 #Spain: Italy defies us!
 country_event = {
-	id = italy.9
-	title = italy.9.t
-	desc = italy.9.d
+	id = italy.tmithc.9
+	title = italy.tmithc.9.t
+	desc = italy.tmithc.9.d
 	picture = GFX_report_event_international_treaty
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = italy.9.o1
+		name = italy.tmithc.9.o1
 	}
 }
 
 #Germany demands South Tyrol
 country_event = {
-	id = italy.10
-	title = italy.10.t
-	desc = italy.10.d
+	id = italy.tmithc.10
+	title = italy.tmithc.10.t
+	desc = italy.tmithc.10.d
 	picture = GFX_report_event_diplomatic_message
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = italy.10.o1
-		GER = { country_event = { id = italy.11 days = 3 } }
+		name = italy.tmithc.10.o1
+		GER = { country_event = { id = italy.tmithc.11 days = 3 } }
 		ai_chance = { base = 50 }
 	}
 	
 	option = {
-		name = italy.10.o2
-		GER = { country_event = { id = italy.12 days = 3 } }
+		name = italy.tmithc.10.o2
+		GER = { country_event = { id = italy.tmithc.12 days = 3 } }
 		ai_chance = { base = 50 }
 	}
 }
 
 #Italy folds
 country_event = {
-	id = italy.11
-	title = italy.11.t
-	desc = italy.11.d
+	id = italy.tmithc.11
+	title = italy.tmithc.11.t
+	desc = italy.tmithc.11.d
 	picture = GFX_report_event_international_meeting7
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = italy.11.o1
+		name = italy.tmithc.11.o1
 	}
 }
 
 #Italy defies us
 country_event = {
-	id = italy.12
-	title = italy.12.t
-	desc = italy.12.d
+	id = italy.tmithc.12
+	title = italy.tmithc.12.t
+	desc = italy.tmithc.12.d
 	picture = GFX_report_event_infantry12
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = italy.12.o1
+		name = italy.tmithc.12.o1
 		add_war_support = 0.03
 		add_political_power = -50
 		create_wargoal = {
@@ -305,7 +305,7 @@ country_event = {
 	}
 	
 	option = {
-		name = italy.12.o2
+		name = italy.tmithc.12.o2
 		add_stability = -0.10
 		add_war_support = -0.10
 		add_popularity = {
@@ -318,15 +318,15 @@ country_event = {
 
 #Albania: Italy offers Support
 country_event = {
-	id = italy.13
-	title = italy.13.t
-	desc = italy.13.d
+	id = italy.tmithc.13
+	title = italy.tmithc.13.t
+	desc = italy.tmithc.13.d
 	picture = GFX_report_event_factory
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = italy.13.o1
+		name = italy.tmithc.13.o1
 		44 = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
@@ -348,15 +348,15 @@ country_event = {
 
 #Italy demands Foreign Workers
 country_event = {
-	id = italy.14
-	title = italy.14.t
-	desc = italy.14.d
+	id = italy.tmithc.14
+	title = italy.tmithc.14.t
+	desc = italy.tmithc.14.d
 	picture = GFX_report_event_truck
 	
 	is_triggered_only = yes
 	
 	option = {	#25000 Manpower
-		name = italy.14.o1
+		name = italy.tmithc.14.o1
 		trigger = {
 			has_manpower > 25000
 		}
@@ -365,7 +365,7 @@ country_event = {
 			value = 0.35
 			localization = "Excellent Service to the Overlord"
 		}
-		ITA = { country_event = { id = italy.15 hours = 5 } }
+		ITA = { country_event = { id = italy.tmithc.15 hours = 5 } }
 		
 		ai_chance = {
 			base = 25
@@ -373,7 +373,7 @@ country_event = {
 		}
 	}
 	option = {	#10000 Manpower
-		name = italy.14.o2
+		name = italy.tmithc.14.o2
 		trigger = {
 			has_manpower > 10000
 		}
@@ -382,7 +382,7 @@ country_event = {
 			value = 0.1
 			localization = "Commendable Service to the Overlord"
 		}
-		ITA = { country_event = { id = italy.16 hours = 10 } }
+		ITA = { country_event = { id = italy.tmithc.16 hours = 10 } }
 		
 		ai_chance = {
 			base = 25
@@ -392,9 +392,9 @@ country_event = {
 		}
 	}
 	option = {	#5000 Manpower
-		name = italy.14.o3
+		name = italy.tmithc.14.o3
 		add_manpower = -5000
-		ITA = { country_event = { id = italy.17 hours = 15 } }
+		ITA = { country_event = { id = italy.tmithc.17 hours = 15 } }
 		
 		ai_chance = {
 			base = 50
@@ -405,8 +405,8 @@ country_event = {
 		}
 	}
 	option = {	#Defy the Italians
-		name = italy.14.o4
-		ITA = { country_event = { id = italy.18 hours = 20 } }
+		name = italy.tmithc.14.o4
+		ITA = { country_event = { id = italy.tmithc.18 hours = 20 } }
 		
 		ai_chance = {
 			base = 25
@@ -418,66 +418,66 @@ country_event = {
 
 #[Puppet] sends 25000
 country_event = {
-	id = italy.15
-	title = italy.15.t
-	desc = italy.15.d
+	id = italy.tmithc.15
+	title = italy.tmithc.15.t
+	desc = italy.tmithc.15.d
 	picture = GFX_report_event_road
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = italy.15.o1
+		name = italy.tmithc.15.o1
 		add_manpower = 25000
 	}
 }
 
 #[Puppet] sends 10000
 country_event = {
-	id = italy.16
-	title = italy.16.t
-	desc = italy.16.d
+	id = italy.tmithc.16
+	title = italy.tmithc.16.t
+	desc = italy.tmithc.16.d
 	picture = GFX_report_event_troop_inspection3
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = italy.16.o1
+		name = italy.tmithc.16.o1
 		add_manpower = 10000
 	}
 }
 
 #[Puppet] sends 5000
 country_event = {
-	id = italy.17
-	title = italy.17.t
-	desc = italy.17.d
+	id = italy.tmithc.17
+	title = italy.tmithc.17.t
+	desc = italy.tmithc.17.d
 	picture = GFX_report_event_multinational_officers2
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = italy.17.o1
+		name = italy.tmithc.17.o1
 		add_manpower = 5000
 	}
 }
 
 #[Puppet] sends nothing!
 country_event = {
-	id = italy.18
-	title = italy.18.t
-	desc = italy.18.d
+	id = italy.tmithc.18
+	title = italy.tmithc.18.t
+	desc = italy.tmithc.18.d
 	picture = GFX_report_event_political_speech5
 	
 	is_triggered_only = yes
 	
 	option = {	#This must be punished!
-		name = italy.18.o1
+		name = italy.tmithc.18.o1
 		add_political_power = -25
 		FROM = { add_autonomy_ratio = { value = -0.15 localization = "Punished for Insubordination" } }
 	}
 	
 	option = {	#We shall let it slide.
-		name = italy.18.o2
+		name = italy.tmithc.18.o2
 		add_stability = -0.02
 		add_war_support = -0.01
 	}
@@ -485,20 +485,20 @@ country_event = {
 
 #The Dalmatian Question
 country_event = {
-	id = italy.19
-	title = italy.19.t
-	desc = italy.19.d
+	id = italy.tmithc.19
+	title = italy.tmithc.19.t
+	desc = italy.tmithc.19.d
 	picture = GFX_report_event_military_planning
 	
 	is_triggered_only = yes
 	
 	option = {	#Seize Dalmatia
-		name = italy.19.o1
+		name = italy.tmithc.19.o1
 		CRO = { add_autonomy_ratio = { value = 0.8 localization = "Territorial Encroachment by Overlord" } }
 	}
 	
 	option = {	#Allow Dalmatia to be Croatian
-		name = italy.19.o2
+		name = italy.tmithc.19.o2
 		CRO = { add_autonomy_ratio = { value = -0.25 localization = "Italian cession of Dalmatia" } }
 	}
 }

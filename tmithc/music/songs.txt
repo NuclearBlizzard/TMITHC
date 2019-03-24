@@ -50,19 +50,6 @@ music = {
 		modifier = {
 			factor = 1
 
-			
-		}		
-	}	
-}
-
-music = {
-	song = "The Necklace"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			
 		}		
 	}	
 }
@@ -103,28 +90,11 @@ music = {
 	}	
 }
 
-music = {
-	song = "allies_peace_2"
-	
-	chance = {
-		modifier = {
-			factor = 2
 
-			
-		}		
-	}	
-}
 
-music = {
-	song = "axis_peace_1"
-	
-	chance = {
-		modifier = {
-			factor = 2
 
-		}		
-	}	
-}
+
+
 
 music = {
 	song = "axis_peace_2"
@@ -159,23 +129,13 @@ music = {
 		modifier = {
 			factor = 1
 
-			has_war = yes
+
 		}		
 	}	
 }
 
-music = {
-	song = "axis_war_1"
-	
-	chance = {
-		modifier = {
-			factor = 2
 
-			
-			has_government = fascism
-		}		
-	}	
-}
+
 
 music = {
 	song = "axis_war_2"
@@ -185,36 +145,16 @@ music = {
 			factor = 2
 
 			
-			has_government = fascism
+
 		}		
 	}	
 }
 
-music = {
-	song = "axis_war_3"
-	
-	chance = {
-		modifier = {
-			factor = 2
 
-			has_war = yes
-			has_government = fascism
-		}		
-	}	
-}
 
-music = {
-	song = "axis_war_4"
-	
-	chance = {
-		modifier = {
-			factor = 2
 
-			
-			has_government = fascism
-		}		
-	}	
-}
+
+
 
 music = {
 	song = "allies_war_1"
@@ -259,61 +199,627 @@ music = {
 		modifier = {
 			factor = 2
 
-			has_war = no
-			has_government = communism
+
 		}		
 	}	
 }
 
+########### 1.6 MTG PATCH ADDED ###########
+
 music = {
-	song = "comintern_peace_3"
+	song = "When We"
 	
 	chance = {
 		modifier = {
+			not = { original_tag = RHD }
+			factor = 0
+		}
+		modifier = {
+			original_tag = RHD
 			factor = 2
-
-			has_war = no
-			has_government = communism
-		}		
-	}	
+		}
+	}
+}
+music = {
+	song = "What A Time it Was"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = RHD }
+			factor = 0
+		}
+		modifier = {
+			original_tag = RHD
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "The Siege at Elands River"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = RHD }
+			factor = 0
+		}
+		modifier = {
+			original_tag = RHD
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "The Shangani Patrol"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = RHD }
+			factor = 0
+		}
+		modifier = {
+			original_tag = RHD
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Sudwesterlied"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = SAF }
+			factor = 0
+		}
+		modifier = {
+			original_tag = SAF
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Rhodies Everywhere"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = RHD }
+			factor = 0
+		}
+		modifier = {
+			original_tag = RHD
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Rhodesians Never Die"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = RHD }
+			factor = 0
+		}
+		modifier = {
+			original_tag = RHD
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Marching With The Diggers"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = RHD }
+			factor = 0
+		}
+		modifier = {
+			original_tag = RHD
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "George"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = RHD }
+			factor = 0
+		}
+		modifier = {
+			original_tag = RHD
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Erikain Afrikaans"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = SAF }
+			factor = 0
+		}
+		modifier = {
+			original_tag = SAF
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Daisy"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = SAF }
+			factor = 0
+		}
+		modifier = {
+			original_tag = SAF
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "BSAP"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = SAF }
+			factor = 0
+		}
+		modifier = {
+			original_tag = SAF
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Another Tough Day In Africa"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = SAF }
+			not = { original_tag = RHD }
+			factor = 0
+		}
+		modifier = {
+			original_tag = SAF
+			original_tag = RHD
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Afrika Korps Lied"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = GER }
+			factor = 0
+		}
+		modifier = {
+			original_tag = GER
+			factor = 1.5
+		}
+		modifier = {
+			original_tag = RKA
+			factor = 2
+		}
+		modifier = {
+			original_tag = RHD
+			factor = 2
+		}
+		modifier = {
+			original_tag = SAF
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Goodbye Britannia"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = RHD }
+			factor = 0
+		}
+		modifier = {
+			original_tag = RHD
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Wo Alle Straßen Enden"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = GER }
+			factor = 0
+		}
+		modifier = {
+			original_tag = GER
+			factor = 2
+		}
+	}
 }
 
-
 music = {
-	song = "comintern_war_1"
+	song = "Comrades The Voices"
 	
 	chance = {
 		modifier = {
+			not = { original_tag = ENG }
+			factor = 0
+		}
+		modifier = {
+			original_tag = ENG
 			factor = 2
-
-			has_war = yes
-			has_government = communism
-		}		
-	}	
+		}
+	}
 }
-
 music = {
-	song = "comintern_war_2"
+	song = "Aint I Right"
 	
 	chance = {
 		modifier = {
+			not = { original_tag = USA }
+			factor = 0
+		}
+		modifier = {
+			original_tag = USA
+			not = { has_government = communism }
 			factor = 2
-
-			has_war = yes
-			has_government = communism
-		}		
-	}	
+		}
+	}
 }
-
 music = {
-	song = "comintern_war_3"
+	song = "Westerwald Marsch"
 	
 	chance = {
 		modifier = {
+			not = { original_tag = GER }
+			factor = 0
+		}
+		modifier = {
+			original_tag = GER
 			factor = 2
-
-			has_war = yes
-			has_government = communism
-		}		
-	}	
+		}
+	}
+}
+music = {
+	song = "Maréchal Nous Voilà"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = FRA }
+			factor = 0
+		}
+		modifier = {
+			original_tag = FRA
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Le chant du Diable"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = FRA }
+			factor = 0
+		}
+		modifier = {
+			original_tag = FRA
+			factor = 3
+		}
+		modifier = {
+			original_tag = GER
+			factor = 1.5
+		}
+	}
+}
+music = {
+	song = "SS-March"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = GER }
+			factor = 0
+		}
+		modifier = {
+			OR = {
+				original_tag = GER
+				original_tag = RBM
+				original_tag = RKG
+				original_tag = RKU
+				original_tag = RKO
+				original_tag = RKM
+				original_tag = RKK
+				original_tag = RKT
+			}
+			factor = 2.5
+		}
+	}
+}
+music = {
+	song = "Show A Restoration"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = JAP }
+			factor = 0
+		}
+		modifier = {
+			OR = {
+				original_tag = JAP
+				original_tag = JSR
+				original_tag = JPS
+				original_tag = MEN
+				original_tag = MAN
+				original_tag = CHI
+				original_tag = JIC
+				original_tag = JPR
+				original_tag = JBM
+				original_tag = JEI
+			}
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Madagaskar"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = GER }
+			factor = 0
+		}
+		modifier = {
+			original_tag = GER
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Katjuscha German"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = GER }
+			factor = 0
+		}
+		modifier = {
+			OR = {
+				original_tag = GER
+				original_tag = RBM
+				original_tag = RKG
+				original_tag = RKU
+				original_tag = RKO
+				original_tag = RKM
+				original_tag = RKK
+				original_tag = RKT
+			}
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "In Einem Polenstadtchen"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = GER }
+			factor = 0
+		}
+		modifier = {
+			OR = {
+				original_tag = GER
+				original_tag = RKG
+				original_tag = RKO
+			}
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Horst Wessel Lied"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = GER }
+			not = { original_tag = FRA }
+			factor = 0
+		}
+		modifier = {
+			OR = {
+				original_tag = GER
+				original_tag = FRA
+			}
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Hohei no Honryo"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = JAP }
+			factor = 0
+		}
+		modifier = {
+			original_tag = JAP
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Heia Safari"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = GER }
+			factor = 0
+		}
+		modifier = {
+			OR = {
+				original_tag = GER
+				original_tag = FRA
+			}
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Wir sind des Geyers schwarzer Haufen"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = GER }
+			factor = 0
+		}
+		modifier = {
+			original_tag = GER
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Haselnuss"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = GER }
+			factor = 0
+		}
+		modifier = {
+			original_tag = GER
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "German Submarine"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = GER }
+			factor = 0
+		}
+		modifier = {
+			original_tag = GER
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Funkerlied"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = GER }
+			factor = 0
+		}
+		modifier = {
+			original_tag = GER
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Inno della XMAS"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = ITA }
+			factor = 0
+		}
+		modifier = {
+			original_tag = ITA
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Our steps are heard!"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = SER }
+			factor = 0
+		}
+		modifier = {
+			OR = {
+				original_tag = SER
+				original_tag = ITA
+				original_tag = GER
+			}
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Ustaska se Vojska Dize"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = CRO }
+			factor = 0
+		}
+		modifier = {
+			OR = {
+				original_tag = CRO
+				original_tag = ITA
+				original_tag = GER
+			}
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Istrcale Zagrebacke Frajle"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = CRO }
+			factor = 0
+		}
+		modifier = {
+			original_tag = CRO
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Lore, Lore"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = GER }
+			factor = 0
+		}
+		modifier = {
+			original_tag = GER
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "Cara al Sol"
+	
+	chance = {
+		modifier = {
+			not = { original_tag = SPR }
+			factor = 0
+		}
+		modifier = {
+			original_tag = SPR
+			factor = 2
+		}
+	}
+}
+music = {
+	song = "El himno de ricardo"
 }

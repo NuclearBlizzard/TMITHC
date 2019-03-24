@@ -24,6 +24,7 @@ state={
 		victory_points = {
 			2211 1
 		}
+		add_core_of = NZL
 		add_core_of = COA
 	}
 	provinces={

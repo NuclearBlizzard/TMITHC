@@ -13,7 +13,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1946
+		start_year = 1922
 		
 		folder = {
 			name = naval_folder
@@ -41,6 +41,7 @@ technologies = {
 			destroyer_2
 		}
 		
+		
 		path = {
 			leads_to_tech = improved_destroyer 
 			research_cost_coeff = 1
@@ -48,7 +49,7 @@ technologies = {
 		
 		research_cost = 2
 		
-		start_year = 1960
+		start_year = 1936
 
 		folder = {
 			name = naval_folder
@@ -83,7 +84,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1964
+		start_year = 1940
 		
 		folder = {
 			name = naval_folder
@@ -113,7 +114,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1968
+		start_year = 1944
 		
 		folder = {
 			name = naval_folder
@@ -141,7 +142,6 @@ technologies = {
 		enable_equipments = { 
 			light_cruiser_1
 		}
-		
 		path = {
 			leads_to_tech = basic_light_cruiser 
 			research_cost_coeff = 1
@@ -154,7 +154,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1946
+		start_year = 1922
 		
 		folder = {
 			name = naval_folder
@@ -199,7 +199,7 @@ technologies = {
 		
 		research_cost = 2
 		
-		start_year = 1960
+		start_year = 1936
 		
 		folder = {
 			name = naval_folder
@@ -243,7 +243,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1964
+		start_year = 1940
 		
 		folder = {
 			name = naval_folder
@@ -283,7 +283,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1968
+		start_year = 1944
 		
 		folder = {
 			name = naval_folder
@@ -329,7 +329,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1946
+		start_year = 1922
 		
 		folder = {
 			name = naval_folder
@@ -364,7 +364,7 @@ technologies = {
 		
 		research_cost = 2
 		
-		start_year = 1960
+		start_year = 1936
 		
 		folder = {
 			name = naval_folder
@@ -398,7 +398,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1964
+		start_year = 1940
 		
 		folder = {
 			name = naval_folder
@@ -428,7 +428,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1968
+		start_year = 1944
 		
 		folder = {
 			name = naval_folder
@@ -460,7 +460,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1946
+		start_year = 1922
 		
 		folder = {
 			name = naval_folder
@@ -490,7 +490,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1964
+		start_year = 1940
 		
 		folder = {
 			name = naval_folder
@@ -520,7 +520,7 @@ technologies = {
 		
 		
 		research_cost = 1.5
-		start_year = 1946
+		start_year = 1922
 		
 		folder = {
 			name = naval_folder
@@ -554,7 +554,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1960
+		start_year = 1936
 		
 		folder = {
 			name = naval_folder
@@ -587,7 +587,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1964
+		start_year = 1940
 		
 		folder = {
 			name = naval_folder
@@ -616,7 +616,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1968
+		start_year = 1944
 		
 		folder = {
 			name = naval_folder
@@ -646,7 +646,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1960
+		start_year = 1936
 		
 		folder = {
 			name = naval_folder
@@ -671,7 +671,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1968
+		start_year = 1944
 		
 		folder = {
 			name = naval_folder
@@ -699,7 +699,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1946
+		start_year = 1922
 		
 		folder = {
 			name = naval_folder
@@ -748,7 +748,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1964
+		start_year = 1940
 		
 		folder = {
 			name = naval_folder
@@ -772,6 +772,21 @@ technologies = {
 				factor = 2
 				tag = JAP
 			}
+
+			modifier = {
+				factor = 50
+				tag = JAP
+				OR = {
+					has_war_with = USA
+					CHI = {  
+						OR = { 
+							has_capitulated = yes 
+							exists = no
+		                    is_subject_of = JAP
+						}
+					}
+				}
+			}
 			
 			modifier = {
 				factor = 2
@@ -792,8 +807,7 @@ technologies = {
 		naval_invasion_capacity = 100
 
 		research_cost = 2
-		start_year = 1968
-		
+		start_year = 1944
 		folder = {
 			name = naval_folder
 			position = { x = 0 y = 19 }
@@ -842,7 +856,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1946
+		start_year = 1922
 		
 		folder = {
 			name = naval_folder
@@ -881,7 +895,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1960
+		start_year = 1936
 		
 		folder = {
 			name = naval_folder
@@ -921,7 +935,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1964
+		start_year = 1940
 		
 		folder = {
 			name = naval_folder
@@ -957,7 +971,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1968
+		start_year = 1944
 		
 		folder = {
 			name = naval_folder
@@ -997,7 +1011,7 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1946
+		start_year = 1922
 		
 		folder = {
 			name = naval_folder
@@ -1031,7 +1045,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1960
+		start_year = 1936
 
 		folder = {
 			name = naval_folder
@@ -1066,7 +1080,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1964
+		start_year = 1940
 		
 		folder = {
 			name = naval_folder
@@ -1096,7 +1110,7 @@ technologies = {
 		
 		research_cost = 2
 
-		start_year = 1968
+		start_year = 1944
 		
 		folder = {
 			name = naval_folder
@@ -1118,6 +1132,8 @@ technologies = {
 		}
 	}
 
+	
+
 	######## JAPAN FOCUS TREE UNLOCK ########
 	torpedo_cruiser = {
 
@@ -1126,7 +1142,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1960
+		start_year = 1936
 
 		# only from focus!!! #####
 		allow = {

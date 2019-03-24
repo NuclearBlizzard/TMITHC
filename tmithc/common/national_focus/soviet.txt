@@ -10,5 +10,849 @@ focus_tree = {
 		}
 	}
 	
+	continuous_focus_position = { x = 50 y = 2000 }
+	
 	default = no
+	
+	focus = {
+		id = SOV_prepare_for_another_civil_war
+		icon = GFX_goal_generic_military_sphere
+		available = {
+			date > 1950.01.01
+		}
+		x = 2
+		y = 0
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			army_experience = 15
+			air_experience = 15
+		}
+	}
+	
+	focus = {
+		id = SOV_retake_northern_kazakhstan
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = SOV_prepare_for_another_civil_war }
+		relative_position_id = SOV_prepare_for_another_civil_war
+		available = {
+			date > 1960.07.01
+		}
+		x = -2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			declare_war_on = {
+				target = KAZ
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_crush_nationalists
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = SOV_prepare_for_another_civil_war }
+		relative_position_id = SOV_prepare_for_another_civil_war
+		available = {
+			date > 1960.07.01
+		}
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			declare_war_on = {
+				target = RUS
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_march_to_the_urals
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = SOV_prepare_for_another_civil_war }
+		relative_position_id = SOV_prepare_for_another_civil_war
+		available = {
+			date > 1960.07.01
+		}
+		x = 2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			declare_war_on = {
+				target = URL
+				type = annex_everything
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_restore_the_ussr
+		icon = GFX_focus_soviet_union_flag
+		prerequisite = { focus = SOV_crush_nationalists }
+		prerequisite = { focus = SOV_retake_northern_kazakhstan }
+		prerequisite = { focus = SOV_march_to_the_urals }
+		relative_position_id = SOV_crush_nationalists
+		available = {
+			has_war = no
+		}
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			country_event = { id = sovietevent.1 hours = 5 }
+		}
+	}
+	
+	focus = {
+		id = SOV_fate_of_enemy_officers
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = SOV_restore_the_ussr }
+		relative_position_id = SOV_restore_the_ussr
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_bastion_of_socialism
+		icon = GFX_focus_generic_soviet_politics
+		x = 8
+		y = 0
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = SOV_establish_politburo
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = SOV_bastion_of_socialism }
+		prerequisite = { focus = SOV_restore_the_ussr }
+		relative_position_id = SOV_bastion_of_socialism
+		x = 0
+		y = 3
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			country_event = { id = sovietevent.2 hours = 5 }
+		}
+	}
+	
+	focus = {
+		id = SOV_khrushchev_gensec
+		icon = GFX_focus_khrushchev_gensec
+		prerequisite = { focus = SOV_establish_politburo }
+		relative_position_id = SOV_establish_politburo
+		available = {
+			has_country_flag = khrushchev_gensec
+		}
+		x = -6
+		y = 1
+		cost = 0
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_thaw
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = SOV_khrushchev_gensec }
+		relative_position_id = SOV_khrushchev_gensec
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = destalinization
+		}
+	}
+	
+	focus = {
+		id = SOV_seven_year_plan
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = SOV_thaw }
+		relative_position_id = SOV_thaw
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_seven_year_plan_idea
+		}
+	}
+	
+	focus = {
+		id = SOV_virgin_lands
+		icon = GFX_goal_generic_wheat
+		prerequisite = { focus = SOV_thaw }
+		relative_position_id = SOV_thaw
+		x = -2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_virgin_lands_development
+		}
+	}
+	
+	focus = {
+		id = SOV_khrushchevka
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SOV_thaw }
+		relative_position_id = SOV_thaw
+		x = 2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_science_funding
+		icon = GFX_focus_research
+		prerequisite = { focus = SOV_seven_year_plan }
+		prerequisite = { focus = SOV_khrushchevka }
+		prerequisite = { focus = SOV_virgin_lands }
+		relative_position_id = SOV_seven_year_plan
+		x = -1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_science_funding_idea
+		}
+	}
+	
+	focus = {
+		id = SOV_electric_industry
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = SOV_seven_year_plan }
+		prerequisite = { focus = SOV_khrushchevka }
+		prerequisite = { focus = SOV_virgin_lands }
+		relative_position_id = SOV_seven_year_plan
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_modern_socialism
+		icon = GFX_focus_prc_agrarian_socialism
+		prerequisite = { focus = SOV_electric_industry }
+		prerequisite = { focus = SOV_science_funding }
+		relative_position_id = SOV_science_funding
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_modern_socialism_idea
+		}
+	}
+	
+	focus = {
+		id = SOV_brezhnev_gensec
+		icon = GFX_focus_brezhnev_gensec
+		prerequisite = { focus = SOV_establish_politburo }
+		relative_position_id = SOV_establish_politburo
+		available = {
+			has_country_flag = brezhnev_gensec
+		}
+		x = 0
+		y = 1
+		cost = 0
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_developed_socialism
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { focus = SOV_brezhnev_gensec }
+		relative_position_id = SOV_brezhnev_gensec
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_developed_socialism_idea
+		}
+	}
+	
+	focus = {
+		id = SOV_expand_komsomol
+		icon = GFX_focus_komsomol_ussr
+		prerequisite = { focus = SOV_developed_socialism }
+		relative_position_id = SOV_developed_socialism
+		x = -2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_komsomol
+		}
+	}
+	
+	focus = {
+		id = SOV_personal_farms
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = SOV_developed_socialism }
+		relative_position_id = SOV_developed_socialism
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_personal_farms_idea
+		}
+	}
+	
+	focus = {
+		id = SOV_horticultural_lands
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = SOV_developed_socialism }
+		relative_position_id = SOV_developed_socialism
+		x = 2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_horticultural_lands_idea
+		}
+	}
+	
+	focus = {
+		id = SOV_oil_and_gas_complex
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = SOV_horticultural_lands }
+		prerequisite = { focus = SOV_personal_farms }
+		prerequisite = { focus = SOV_expand_komsomol }
+		relative_position_id = SOV_personal_farms
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 25
+				state = 575
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_military_reform
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = SOV_oil_and_gas_complex }
+		relative_position_id = SOV_oil_and_gas_complex
+		x = -2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_military_reform_idea
+		}
+	}
+	
+	focus = {
+		id = SOV_purge_dissidents
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = SOV_oil_and_gas_complex }
+		relative_position_id = SOV_oil_and_gas_complex
+		x = 2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_strenghten_the_kgb
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = SOV_oil_and_gas_complex }
+		relative_position_id = SOV_oil_and_gas_complex
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_strenghtened_kgb
+		}
+	}
+	
+	focus = {
+		id = SOV_beria_gensec
+		icon = GFX_focus_beria_gensec
+		prerequisite = { focus = SOV_establish_politburo }
+		relative_position_id = SOV_establish_politburo
+		available = {
+			has_country_flag = beria_keep
+		}
+		x = 12
+		y = 1
+		cost = 0
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_destroy_the_enemies
+		icon = GFX_focus_soviet_destroy_enemies
+		prerequisite = { focus = SOV_beria_gensec }
+		relative_position_id = SOV_beria_gensec
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			hidden_effect = {
+			country_event = { id = sovietevent.7 hours = 5 }
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_strong_state
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = SOV_beria_gensec }
+		relative_position_id = SOV_beria_gensec
+		x = -2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = SOV_militarised_economy
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = SOV_strong_state }
+		relative_position_id = SOV_strong_state
+		x = -1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_military_economy
+		}
+	}
+	
+	focus = {
+		id = SOV_expand_military_industrial_complex
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = SOV_strong_state }
+		relative_position_id = SOV_strong_state
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_expand_military_production
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = SOV_militarised_economy }
+		prerequisite = { focus = SOV_expand_military_industrial_complex }
+		relative_position_id = SOV_militarised_economy
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_military_production
+		}
+	}
+	
+	focus = {
+		id = SOV_soviet_revanchism
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = SOV_beria_gensec }
+		relative_position_id = SOV_beria_gensec
+		x = 2
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_revanchism
+		}
+	}
+	
+	focus = {
+		id = SOV_total_war
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = SOV_soviet_revanchism }
+		relative_position_id = SOV_soviet_revanchism
+		x = -1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_total_war_idea
+		}
+	}
+	
+	focus = {
+		id = SOV_military_exercises
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		prerequisite = { focus = SOV_soviet_revanchism }
+		relative_position_id = SOV_soviet_revanchism
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			army_experience = 15
+			air_experience = 15
+			navy_experience = 15
+		}
+	}
+	
+	focus = {
+		id = SOV_peoples_moblisation
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = SOV_total_war }
+		prerequisite = { focus = SOV_military_exercises }
+		relative_position_id = SOV_total_war
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_manpower = 30000
+			add_ideas = SOV_peoples_mobilisation_idea
+		}
+	}
+	
+	focus = {
+		id = SOV_molotov_gensec
+		icon = GFX_focus_molotov_gensec
+		prerequisite = { focus = SOV_establish_politburo }
+		relative_position_id = SOV_establish_politburo
+		available = {
+			has_country_flag = molotov_gensec
+		}
+		x = 6
+		y = 1
+		cost = 0
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SOV_legacy_of_stalin
+		icon = GFX_focus_legacy_of_stalin
+		prerequisite = { focus = SOV_molotov_gensec }
+		relative_position_id = SOV_molotov_gensec
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_legacy_of_stalin_idea
+		}
+	}
+	
+	focus = {
+		id = SOV_heavy_industry_development
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = SOV_legacy_of_stalin }
+		relative_position_id = SOV_legacy_of_stalin
+		x = -1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_support_kolkhozes
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = SOV_legacy_of_stalin }
+		relative_position_id = SOV_legacy_of_stalin
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_kolkhozes
+		}
+	}
+	
+	focus = {
+		id = SOV_internationalism
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = SOV_support_kolkhozes }
+		prerequisite = { focus = SOV_heavy_industry_development }
+		relative_position_id = SOV_support_kolkhozes
+		x = -1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_internationalism_idea
+		}
+	}
+	
+	focus = {
+		id = SOV_control_the_cinema
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = SOV_support_kolkhozes }
+		prerequisite = { focus = SOV_heavy_industry_development }
+		relative_position_id = SOV_support_kolkhozes
+		x = -3
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_ideas = SOV_cinema_control
+		}
+	}
+	
+	focus = {
+		id = SOV_mining_expansion
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = SOV_support_kolkhozes }
+		prerequisite = { focus = SOV_heavy_industry_development }
+		relative_position_id = SOV_support_kolkhozes
+		x = 1
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 20
+				state = 570
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_build_stalin_monument
+		icon = GFX_yug_pan_slavic_congress
+		prerequisite = { focus = SOV_internationalism }
+		prerequisite = { focus = SOV_control_the_cinema }
+		prerequisite = { focus = SOV_mining_expansion }
+		relative_position_id = SOV_internationalism
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = SOV_legacy_of_stalin_idea
+			add_idea = SOV_legacy_of_stalin_idea_2
+			}	
+		}
+	}
 }	

@@ -27,7 +27,7 @@ state={
 				bunker = 1
 			}
 		}
-		add_core_of = JSA
+		add_core_of = CHL
 		victory_points = {
 			650 10
 		}

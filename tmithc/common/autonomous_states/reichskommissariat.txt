@@ -5,6 +5,8 @@ autonomy_state = {
 	
 	min_freedom_level = 0.0
 	
+	manpower_influence = 0.9
+	
 	rule = {
 		can_not_declare_war = yes
 		can_decline_call_to_war = no
@@ -36,11 +38,13 @@ autonomy_state = {
 	}
 
 	allowed = {
-		OR = {
-			has_government = fascism
-			has_government = neutrality
+		has_dlc = "Death or Dishonor"
+		has_government = fascism
+		if = {
+			limit = { has_dlc = "Waking the Tiger" }
+			NOT = { OVERLORD = { original_tag = JAP } }
+			NOT = { OVERLORD = { original_tag = MAN } }
 		}
-		OVERLORD = { original_tag = GER }
 	}
 	
 	can_take_level = {

@@ -69,8 +69,8 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 150
 			hidden_effect = {
-				country_event = italy.3
-				country_event = { id = italy.1 days = 103 }
+				country_event = italy.tmithc.3
+				country_event = { id = italy.tmithc.1 days = 103 }
 			}
 		}
 
@@ -1184,7 +1184,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { ALB = { is_subject_of = ROOT } }
-				ALB = { country_event = { id = italy.13 hours = 6 } }
+				ALB = { country_event = { id = italy.tmithc.13 hours = 6 } }
 				ALB = {
 					add_autonomy_ratio = {
 						value = -0.3
@@ -1441,7 +1441,7 @@ focus_tree = {
 		completion_reward = {
 			every_country = {
 				limit = { is_subject_of = ITA }
-				country_event = { id = italy.14 hours = 12 }
+				country_event = { id = italy.tmithc.14 hours = 12 }
 			}
 		}
 
@@ -1474,7 +1474,7 @@ focus_tree = {
 		available_if_capitulated = no
 		
 		completion_reward = {
-			country_event = { id = italy.19 hours = 4 }
+			country_event = { id = italy.tmithc.19 hours = 4 }
 		}
 
 		ai_will_do = {
@@ -1969,6 +1969,7 @@ focus_tree = {
 		
 		completion_reward = {
 			german_influence_in_italy_decrease_by_10 = yes
+			add_ideas = ITA_nationalized_assets
 		}
 
 		ai_will_do = {

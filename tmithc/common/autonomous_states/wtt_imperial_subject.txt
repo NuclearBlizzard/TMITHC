@@ -6,6 +6,8 @@ autonomy_state = {
 	
 	min_freedom_level = 0.75
 	
+	manpower_influence = 0.5
+	
 	rule = {
 		can_not_declare_war = no
 		can_decline_call_to_war = yes
@@ -34,6 +36,15 @@ autonomy_state = {
 	}
 
 	allowed = {
+		has_dlc = "Waking the Tiger"
+
+		original_tag = MAN
+		OR = {
+			has_country_flag = MAN_assertiveness
+			has_completed_focus = MAN_assertiveness
+		}
+			
+		
 		OR = {
 			has_government = fascism
 			has_government = neutrality

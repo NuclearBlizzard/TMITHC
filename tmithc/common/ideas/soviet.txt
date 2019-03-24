@@ -1,0 +1,622 @@
+ideas = {
+	country = {
+		rus_risk_of_famine = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = raj_risk_of_famine
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				MONTHLY_POPULATION = -0.025
+				conscription_factor = -0.025
+			}
+		}
+		
+		rus_destroyed_industry = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_factory_strikes
+			
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		sov_beria_controls_the_government = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = nkvd_2
+			
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = -0.1
+			}
+		}
+		
+		destalinization = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ger_bulwark_against_bolshevism
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+			}
+		}
+		
+		SOV_seven_year_plan_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				local_resources_factor = 0.03
+			}
+		}
+		
+		SOV_virgin_lands_development = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = can_wartime_prices_and_trade_board
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.02
+				consumer_goods_factor = -0.025
+			}
+		}
+		
+		SOV_science_funding_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_time_factor = -0.025
+			}
+		}
+		
+		SOV_modern_socialism_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.025
+			}
+		}
+		
+		SOV_developed_socialism_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		
+		SOV_komsomol = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = socialist_science_focus
+			
+			modifier = {
+				army_morale_factor = 0.1
+				political_power_gain = 0.1
+			}
+		}
+		
+		SOV_personal_farms_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ast_all_in
+			
+			modifier = {
+				global_building_slots_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		SOV_horticultural_lands_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_agrarian_reform
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		SOV_military_reform_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_communist_army
+			
+			modifier = {
+				army_org_factor = 0.05
+				max_planning = 0.05
+				max_command_power = 5
+			}
+		}
+		
+		SOV_strenghtened_kgb = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ast_classify_aliens
+			
+			modifier = {
+				drift_defence_factor = 0.25
+				foreign_subversive_activites = -0.25
+				subversive_activites_upkeep = -0.1
+				enemy_partisan_effect = -0.1
+			}
+		}
+		
+		SOV_new_purge = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = officers_purged
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				political_power_factor = -0.25
+			}
+		}
+		
+		SOV_army_purge = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_purge
+			
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				max_command_power = 10
+				experience_gain_army_factor = -0.05
+				training_time_army_factor = 0.05
+				army_chief_cost_factor = 0.1
+				air_chief_cost_factor = 0.1
+				high_command_cost_factor = 0.1
+			}
+		}
+		
+		SOV_army_not_purge = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = chi_incompetent_officers
+			
+			modifier = {
+				max_planning = 0.25
+				training_time_army_factor = -0.1
+				experience_gain_army = 0.1
+				army_chief_cost_factor = -0.05
+				air_chief_cost_factor = -0.05
+				high_command_cost_factor = -0.05
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+				max_command_power = -10
+			}
+		}
+		
+		sov_beria_controls_the_government_2 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = nkvd_2
+			
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		
+		SOV_purge_aftermath = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = trotskyite_plot
+			
+			modifier = {
+				political_power_factor = -0.25
+				political_advisor_cost_factor = 0.25
+				trade_laws_cost_factor = 0.25
+				mobilization_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+			}
+		}
+		
+		artillery_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+		
+		SOV_military_economy = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+				production_speed_anti_air_building_factor = 0.1
+				production_speed_air_base_factor = 0.1
+				production_speed_rocket_site_factor = 0.1
+			}
+		}
+		
+		SOV_military_production = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_license_production
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		
+		SOV_revanchism = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = cze_planning_bonus
+			
+			modifier = {
+				justify_war_goal_time = -0.25
+			}
+		}
+		
+		SOV_total_war_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		SOV_peoples_mobilisation_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}
+		
+		SOV_legacy_of_stalin_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = home_of_the_revolution
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		
+		SOV_kolkhozes = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_agrarian_reform
+			
+			modifier = {
+				local_resources_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		SOV_internationalism_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = trotskyite_plot_purged
+			
+			modifier = {
+				trade_opinion_factor = 0.25
+				communism_acceptance = 50
+				improve_relations_maintain_cost_factor = -0.2
+				opinion_gain_monthly_same_ideology_factor = 0.2
+			}
+		}
+		
+		SOV_legacy_of_stalin_idea_2 = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = home_of_the_revolution
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		
+		SOV_cinema_control = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_matignon_agreements
+			
+			modifier = {
+				foreign_subversive_activites = -0.25
+				drift_defence_factor = 0.25
+			}
+		}
+	}
+}

@@ -1,0 +1,316 @@
+##### Division Templates #####
+
+
+division_template = {
+	name = "Kempeitai Brigade"  		# used for island defense (older equipment, lower experience)
+
+	division_names_group = JPS_GAR_01		# Brigade level irregular unit, so no default names
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+	priority = 1
+}
+units = {
+ 	division = {			
+		name = "Los Angeles Brigade"
+		location = 9814
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Los Angeles Brigade"
+		location = 9814
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Los Angeles Brigade"
+		location = 9814
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Seatle Brigade"
+		location = 7315
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Seatle Brigade"
+		location = 7315
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Seatle Brigade"
+		location = 7315
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7764
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 3781
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 7761
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+	division = {			
+		name = "Border Brigade"
+		location = 917
+		division_template = "Kempeitai Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+}
+
+
+	##### NAVAL UNITS #####
+    navy = {					
+		name = "Japanese Americano Flotilla  1"				
+		base = 9814
+		location = 9814 # Norfolk
+		# 3rd Destroyer Division				
+		ship = { name = "JPS Decatur" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Badger" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Babbitt" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Leary" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Schenck" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		# 4th Destroyer Division				
+		ship = { name = "JPS Jacob Jones" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Roper" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Dickerson" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Herbert" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		# 28th Destroyer Division				
+		ship = { name = "JPS Dallas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Du Pont" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Bernadou" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Ellis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Cole" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		# 29th Destroyer Division				
+		ship = { name = "JPS Lea" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Tarbell" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Upshur" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Greer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+	}					
+	navy = {					
+		name = "Japanese Americano Flotilla  2"				
+		base = 9814
+		location = 9814 # Norfolk
+		# 36th Destroyer Division			
+		ship = { name = "JPS Trever" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Perry" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Hulbert" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Noa" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS William B Preston" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		# 37th Destroyer Division			
+		ship = { name = "JPS Palmer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Hogan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Howard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+		ship = { name = "JPS Stansbury" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = JPS } } }		
+	}				
+}
+
+air_wings = {
+	378 = {
+		CAS_equipment_1 =  { owner = "JPS" amount = 350 }
+	}
+}
+
+instant_effect = {
+    add_manpower = 1250000
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "JPS"
+		}
+		requested_factories = 30
+		progress = 0.35
+		efficiency = 100
+	}
+}

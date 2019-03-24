@@ -2,20 +2,24 @@
 state={
 	id=83
 	name="STATE_83"
-	manpower = 832900
-	resources={ aluminium=3 }
+	manpower = 792900
 	
-	state_category = rural
+	state_category = town
 
 	history={
 		owner = ROM
 		buildings = {
-			infrastructure = 6
+			infrastructure = 5
 			arms_factory = 1
+			industrial_complex = 1
 		}
-		victory_points = { 6682 1 }
+		victory_points = {
+			6682 1 
+		}
 		add_core_of = ROM
 	}
 
-	provinces={ 696 6682 6697 9640 }
+	provinces={
+		696 6682 6697 9640 
+	}
 }

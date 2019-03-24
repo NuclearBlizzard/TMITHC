@@ -25,17 +25,20 @@ bookmarks = {
 				GER_ss
 			}
 			focuses = {
-
+				
 			}
 		}
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-
+				ITA_military_purges_3
+				ITA_german_influence_in_italy_45
 			}	
 			focuses = {
-
+				ITA_the_former_traitor_pietro_nenni
+				ITA_the_heir_apparent_cesare_maria_de_vecchi
+				ITA_the_corporatist_amintore_fanfani
 			}		
 		}
 		"JAP"={
@@ -112,11 +115,27 @@ bookmarks = {
 			}
 			focuses = {
 				FRA_embraceresistance
-				FRA_francisque
+				FRA_francisqu
 				FRA_loyaltogermany
 			}
-	
 		}
+		
+		"NEU"={
+		    minor = yes
+			history = "NEU_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				NEU_No_Army
+				NEU_Anarchy
+				NEU_No_Established_Industry
+			}
+			
+			focuses = {
+			}	
+		}	
+
+
+		
 
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"

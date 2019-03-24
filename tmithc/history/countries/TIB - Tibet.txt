@@ -9,7 +9,13 @@ set_technology = {
 
 
 
-set_politics = {
+1959.1.1 = {
+
+	add_ideas = {
+	limited_conscription
+	}	
+
+	set_politics = {
 
 	parties = {
 		democratic = { 

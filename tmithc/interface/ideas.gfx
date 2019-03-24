@@ -164,17 +164,23 @@ spriteTypes = {
 		name = "GFX_idea_saf_soviet_advisers"
 		texturefile = "gfx/interface/ideas/idea_saf_soviet_advisers.dds"
 	}
-	
+
 	### MEX
-		
+
 	spriteType = {
-		name = "MEX_TEST"
-		texturefile = "gfx/interface/ideas/MEX/mextest1.tga"
+		name = "GFX_idea_MEX_TEST1"
+		texturefile = "gfx/interface/ideas/mexico.tga"
 	}
-	
+
 	spriteType = {
-		name = "MEX_TEST1"
-		texturefile = "gfx/interface/ideas/MEX/mextest2.tga"
+		name = "GFX_idea_MEX_TEST"
+		texturefile = "gfx/interface/ideas/jew.tga"
+	}
+
+
+	spriteType = {
+		name = "GFX_idea_MEX_TEST2"
+		texturefile = "gfx/interface/ideas/obama.tga"
 	}
 
 	### GER
@@ -3695,11 +3701,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Ukranian_Resistance.tga"
 	}
 	spriteType = {
-		name = "gfx_idea_treaty_of_canberra"
-		texturefile = "gfx/interface/ideas/COA_placeholder_treaty_icon.tga"
+		name = "GFX_idea_treaty_of_canberra"
+		texturefile = "gfx/interface/ideas/COA_treaty_of_canberra.dds"
 	}
 	spriteType = {
-		name = "gfx_idea_new_zealander_seperatism"
+		name = "GFX_idea_new_zealander_seperatism"
 		texturefile = "gfx/interface/idea/idea_generic_flexible_foreign_policy2.tga"
 	}
 		spriteType = {

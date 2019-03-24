@@ -8,6 +8,11 @@ state={
 
 	history={
 		owner = IAS
+		add_core_of = DJI
+		add_core_of = IAS
+		victory_points = {
+			8124 1
+		}
 		buildings = {
 			infrastructure = 3
 			air_base = 2

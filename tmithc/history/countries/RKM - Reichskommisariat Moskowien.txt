@@ -54,7 +54,7 @@ set_stability = 0.75
 
 
 create_country_leader = {
-	name = "Konstantin Althaus"
+	name = "Siegfried Kasche"
 	desc = "POLITICS_ANTON_MUSSERT_DESC"
 	picture = "portrait_rkm_siegfried.tga"
 	expire = "1965.1.1"

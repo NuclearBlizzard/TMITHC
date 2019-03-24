@@ -1,0 +1,25 @@
+state={
+	id=768
+	name="STATE_768" # Rwanda
+	
+	state_category = pastoral
+
+	history={
+		owner = RKA
+		add_core_of = RWA
+		add_core_of = RKA
+		victory_points = {
+			9962 1
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+	}
+
+	provinces={
+		9962
+	}
+	manpower=2116564
+	buildings_max_level_factor=1.000
+}

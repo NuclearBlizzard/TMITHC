@@ -1,0 +1,92 @@
+ideas = {
+	
+	country  = {	
+		
+		NEU_Axis_Infiltration = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = NEU_Axis_Infiltration
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.2
+				command_power_gain_mult = -0.15
+				stability_factor = -0.10
+			}
+		}
+
+		NEU_Anarchy = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = NEU_Anarchy
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -1
+				war_support_factor = -1
+			}
+		}
+
+		NEU_No_Established_Industry = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = NEU_No_Established_Industry
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.7
+				production_factory_efficiency_gain_factor = -0.7
+
+			}
+		}
+
+		NEU_No_Army = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			picture = NEU_No_Army
+
+			removal_cost = -1
+
+			modifier = {
+				mobilization_laws_cost_factor = 5
+				training_time_army_factor = 2
+				army_org_factor = -0.5
+				conscription = -0.02
+				planning_speed = -0.25
+			}
+
+		}
+
+	}
+}

@@ -7,6 +7,9 @@ state={
 	state_category = wasteland
 
 	history={
+		victory_points = {
+			8066 1
+		}
 		owner = PAK
 		buildings = {
 			infrastructure = 2

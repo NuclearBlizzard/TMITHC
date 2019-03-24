@@ -9,12 +9,7 @@ music = {
 # General Peace:
 music = {
 	name = "general_peace_1"
-	file = "Dei Partei Damen - Nowhere to Run.ogg"
-	volume = 0.65
-}
-music = {
-	name = "general_peace_2"
-	file = "Wilbert Eckart  Volksmusik Stars - House of the Rising Sun.ogg"
+	file = "PleaseJustWork"
 	volume = 0.65
 }
 music = {
@@ -37,7 +32,86 @@ music = {
 	file = "free.ogg"
 	volume = 0.65
 }
-
+music = {
+	name = "When We"
+	file = "WhenWe.ogg"
+	volume = 0.65
+}
+music = {
+	name = "What A Time it Was"
+	file = "WhataTimeitWas.ogg"
+	volume = 0.65
+}
+music = {
+	name = "The Siege at Elands River"
+	file = "TheSiegeatElandsRiver.ogg"
+	volume = 0.65
+}
+music = {
+	name = "The Shangani Patrol"
+	file = "TheShanganiPatrol.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Sudwesterlied"
+	file = "Sudwesterlied.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Rhodies Everywhere"
+	file = "RhodiesEverywhere.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Rhodesians Never Die"
+	file = "RhodesiansNeverDie.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Marching With The Diggers"
+	file = "MarchingWiththeDiggers.ogg"
+	volume = 0.65
+}
+music = {
+	name = "George"
+	file = "George.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Erikain Afrikaans"
+	file = "ErikainAfrikaans.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Daisy"
+	file = "Daisy.ogg"
+	volume = 0.65
+}
+music = {
+	name = "BSAP"
+	file = "BSAP.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Another Tough Day In Africa"
+	file = "AnotherToughDayinAfrica.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Afrika Korps Lied"
+	file = "AfrikaKorpsLied.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Goodbye Britania"
+	file = "GoodbyeBritania.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Woalle Strassen Enden"
+	file = "WoalleStrassenenden.ogg"
+	volume = 0.65
+}
 # General war:
 music = {
 	name = "general_war_1"
@@ -57,11 +131,6 @@ music = {
 	file = "Yuki no Shingun.ogg"
 	volume = 0.65
 }
-music = {
-	name = "allies_peace_2"
-	file = "The Rolling Stones - Paint It, Black.ogg"
-	volume = 0.65
-}
 
 
 # Allies War:
@@ -79,11 +148,6 @@ music = {
 
 # Axis Peace:
 music = {
-	name = "axis_peace_1"
-	file = "Wilbert Eckart  Volksmusik Stars - House of the Rising Sun.ogg"
-	volume = 0.65
-}
-music = {
 	name = "axis_peace_2"
 	file = "luftwaffemarch_reprise.ogg"
 	volume = 0.65
@@ -91,26 +155,13 @@ music = {
 
 
 # Axis War:
-music = {
-	name = "axis_war_1"
-	file = "axistheme.ogg"
-	volume = 0.65
-}
+
 music = {
 	name = "axis_war_2"
 	file = "Song of the Kamikaze Pilots.ogg"
 	volume = 0.65
 }
-music = {
-	name = "axis_war_3"
-	file = "operationbarbarossa.ogg"
-	volume = 0.65
-}
-music = {
-	name = "axis_war_4"
-	file = "war_axis_1_daysofthunder.ogg"
-	volume = 0.65
-}
+
 
 
 # Comintern Peace:
@@ -127,31 +178,9 @@ music = {
 	volume = 0.65
 }
 
-music = {
-	name = "comintern_peace_3"
-	file = "sovietvictory.ogg"
-	volume = 0.65
-}
 
 # Comintern War:
 
-music = {
-	name = "comintern_war_1"
-	file = "themightofsovietunion.ogg"
-	volume = 0.65
-}
-
-music = {
-	name = "comintern_war_2"
-	file = "cominterntheme.ogg"
-	volume = 0.65
-}
-
-music = {
-	name = "comintern_war_3"
-	file = "thegreatpatrioticwar.ogg"
-	volume = 0.65
-}
 
 	# ROMANIA:
 
@@ -160,3 +189,134 @@ music = {
 	file = "rom_viata_complicata.ogg"
 	volume = 0.65
 }
+
+
+
+
+
+
+
+
+	# Music V4 Tom is Gay:
+	
+music = {
+	name = "Comrades The Voices"
+	file = "ComradesTheVoices.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Aint I Right"
+	file = "AintIRight.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Westerwald"
+	file = "Westerwald.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Vichy France"
+	file = "VichyFrance.ogg"
+	volume = 0.65
+}
+music = {
+	name = "SS-March"
+	file = "SSMarch.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Show A Restoration"
+	file = "ShowaRestorationSong.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Madagaskar"
+	file = "Madagaskar.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Le chant du Diable"
+	file = "LechantduDiable.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Katjuscha German"
+	file = "KatjuschaGerman.ogg"
+	volume = 0.65
+}
+music = {
+	name = "In Einem Polenstadtchen"
+	file = "IneinemPolenstadtchen.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Horst Wessel Lied"
+	file = "HorstWesselLied.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Hohei no Honryo"
+	file = "HoheinoHonryo.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Heia Safari"
+	file = "HeiaSafari.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Wir sind des Geyers schwarzer Haufen"
+	file = "HaufenSoldatenlied.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Haselnuss"
+	file = "Haselnuss.ogg"
+	volume = 0.65
+}
+music = {
+	name = "German Submarine"
+	file = "GermanSubmarineSong.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Funkerlied"
+	file = "Funkerlied.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Inno della XMAS"
+	file = "Italian1.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Our steps are heard!"
+	file = "serbia.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Ustaska se Vojska Dize"
+	file = "Ustase1.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Istrcale Zagrebacke Frajle"
+	file = "Ustase2.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Lore, Lore"
+	file = "LoreLore.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Cara al Sol"
+	file = "spain1.ogg"
+	volume = 0.65
+}
+music = {
+	name = "El himno de ricardo"
+	file = "himnoricardo.ogg"
+	volume = 0.65
+}
+

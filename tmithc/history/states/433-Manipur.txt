@@ -12,6 +12,9 @@ state={
 	}
 
 	history={
+		victory_points = {
+			2054 1
+		}
 		owner = JPR
 		buildings = {
 			infrastructure = 3

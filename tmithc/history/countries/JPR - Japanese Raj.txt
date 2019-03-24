@@ -52,7 +52,7 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Keshav Baliram Hedgewar"
+	name = "Rajendra Prasad"
 	desc = "POLITICS_KESHAV_BALIRAM_DESC"
 	picture = "JPR_keshav.tga"
 	expire = "1965.1.1"

@@ -8,6 +8,14 @@ set_technology = {
 	basic_light_tank = 1
 }
 
+add_ideas = {
+		
+		NEU_Axis_Infiltration
+		NEU_Anarchy
+		NEU_No_Established_Industry
+		NEU_No_Army
+
+	}
 
 
 set_politics = {
@@ -36,7 +44,6 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-
 create_country_leader = {
 	name = "No Government"
 	desc = "POLITICS_ANARCHY_DESC"
