@@ -13,10 +13,6 @@ set_technology = {
 }
 
 1959.1.1 = {
-
-	add_political_power = 300
-	
-
 	
 	oob = "JPS_1960"
 	set_technology = {
@@ -59,19 +55,19 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
+			popularity = 10
 		}
 
 		fascism = {
-			popularity = 100
+			popularity = 80
 		}
 		
 		communism = {
-			popularity = 0
+			popularity = 5
 		}
 		
 		neutrality = { 
-			popularity = 0
+			popularity = 5
 		}
 	}
 	
