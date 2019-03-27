@@ -83,23 +83,18 @@ focus_tree = {
 	
 	focus = {
 		id = golden_coast
-		icon = GFX_goal_unknown
+		icon = GoldenGateBridge
 		cost = 10
 		x = 40
 		y = 0
 		
 		completion_reward = {
-			
 			add_tech_bonus = {
-				name = industry_bonus
-				bonus = 0.5
+				name = industrial_bonus
+				bonus = 0.50
 				uses = 2
-				technology = improved_machine_tools	
-				technology = advanced_machine_tools
-				technology = assembly_line_production
-				technology = flexible_line
-				technology = streamlined_line
-			}	
+				category = industry
+			}
 		}
 	}
 
