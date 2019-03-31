@@ -921,12 +921,19 @@ continuous_focus_position = { x = 150 y = 3500 }
 				}
 				
 				completion_reward = {
-					retire_country_leader = yes
 					add_political_power = 75
 					add_stability = 0.05
 					add_popularity = { ideology = democratic popularity = 0.2 }
 					add_ideas = FRA_constitution
-					set_cosmetic_tag = FRA_cosmetic_rep
+					FRA = {
+						set_cosmetic_tag = FRA_republica
+					}
+					create_country_leader = {
+						name = "Charles de Gaulle"
+						desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+						picture = "portrait_fra_degaulle.tga"
+						ideology = liberalism
+					}
 					set_party_name = { 
 						ideology = democratic 
 						long_name = FRA_democratic_party_gaulle_long 
