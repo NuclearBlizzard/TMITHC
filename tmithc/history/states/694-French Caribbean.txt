@@ -6,7 +6,11 @@ state={
 	state_category = rural
 
 	history={
+		add_core_of = RKC
 		owner = RKC
+		victory_points = {
+			9377 1
+		}
 		buildings = {
 			infrastructure = 4
 			air_base = 1

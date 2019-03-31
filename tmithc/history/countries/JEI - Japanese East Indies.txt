@@ -64,9 +64,9 @@ create_country_leader = {
 
 # REVISIT Unclear if appropriate for this ideology
 create_country_leader = {
-	name = "V. D. Savarkar"
+	name = "Kusno Sosrodihardjo"
 	desc = "POLITICS_VD_SAVARKAR_DESC"
-	picture = "GFX_RAJ_veer_savarkar"
+	picture = "gfx/leaders/JEI/JEI.tga"
 	expire = "1965.1.1"
 	ideology = falangism
 	traits = {

@@ -1,0 +1,74 @@
+﻿division_template = {
+	name = "Öffentliche Polizei"		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		military_police = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+units = {
+	### RK Bohemia & Moravia Units ###	
+	division = {
+		name = "1. Brigade"
+		location = 11542
+		division_template = "Öffentliche Polizei"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2. Brigade"
+		location = 6562
+		division_template = "Öffentliche Polizei"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3. Brigade"
+		location = 3569
+		division_template = "Öffentliche Polizei"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4. Brigade"
+		location = 9569
+		division_template = "Öffentliche Polizei"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+}
+##### Air Force #####
+air_wings = {
+	9 = { 
+		fighter_equipment_0 =  {
+			owner = "RBM" 
+			amount = 73
+		}
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "RBM"
+		}
+		requested_factories = 2
+		progress = 0.80
+		efficiency = 100
+	}
+}

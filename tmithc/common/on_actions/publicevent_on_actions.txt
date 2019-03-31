@@ -1,0 +1,23 @@
+on_actions = {
+
+	##SWP Settings Event
+	on_startup = {
+	
+		effect = {		
+
+			#Intro Event
+			every_country = {
+				limit = { is_ai = no }
+				news_event = { id = mexico.1 }				
+			}
+			
+			##Settings Event
+			#	random_country = {
+			#		limit = { is_ai = no }
+			#		
+			#		country_event = { id = mexico.1 }	
+			#	}
+								
+		}
+			
+	}

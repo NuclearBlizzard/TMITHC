@@ -2,9 +2,9 @@
 state={
 	id=152
 	name="STATE_152"
-	manpower = 2275377
+	manpower = 3175377
 	
-	state_category = city
+	state_category = large_city
 	
 	resources={
 		steel=5 # was: 8
@@ -13,23 +13,29 @@ state={
 
 	history={
 		owner = GER
+		controller = GER
+		add_core_of = GER
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 3
+			industrial_complex = 5
 		}
 		victory_points = {
 			688 10 
 		}
-		add_core_of = GER
-
-		1938.3.12 = {
-			owner = GER
-			controller = GER
-			add_core_of = GER
+		victory_points = {
+			3673 3
 		}
+		victory_points = {
+			9665 3
+		}
+		victory_points = {
+			732 10
+		}
+		add_core_of = AUS
+
 	}
 
 	provinces={
-		688 732 3673 3674 3684 3703 6552 6687 6691 6708 6723 9650 9665 11651 
+		688 732 3673 3674 3684 3703 6552 6687 6691 6708 6723 9650 9665 11651 11612
 	}
 }

@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		
+		JPS_Atlantic_Pacific_Trade = {
+
+		allowed = {
+			always = no
+		}
+		
+		modifier = {
+				
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
+}

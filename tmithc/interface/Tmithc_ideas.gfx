@@ -1,0 +1,78 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_GER_african_question"
+		texturefile = "gfx/interface/ideas/GER_african_question.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_ss"
+		texturefile = "gfx/interface/ideas/GER_ss.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_army_dominant"
+		texturefile = "gfx/interface/ideas/JAP_army_dominant.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_army_balanced"
+		texturefile = "gfx/interface/ideas/JAP_army_balanced.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_navy_dominant"
+		texturefile = "gfx/interface/ideas/JAP_navy_dominant.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_chained"
+		texturefile = "gfx/interface/ideas/FRA_chained.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_FRA_resistance"
+		texturefile = "gfx/interface/ideas/FRA_resistance.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_FRA_milice"
+		texturefile = "gfx/interface/ideas/FRA_milice.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_Covert_Operations"
+		texturefile = "gfx/interface/ideas/Covert_Operations.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_Suffering_Economy"
+		texturefile = "gfx/interface/ideas/Suffering_Economy.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_End_Hungary"
+		texturefile = "gfx/interface/ideas/Hungarian_Shield.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_Ukranian_Resistance"
+		texturefile = "gfx/interface/ideas/Ukranian_Resistance.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_treaty_of_canberra"
+		texturefile = "gfx/interface/ideas/COA_treaty_of_canberra.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_new_zealander_seperatism"
+		texturefile = "gfx/interface/idea/idea_generic_flexible_foreign_policy2.tga"
+	}
+		spriteType = {
+		name = "GFX_idea_JAP_Yakuza_Law"
+		texturefile = "gfx/interface/ideas/Yakuza_book.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Instability"
+		texturefile = "gfx/interface/ideas/Instability.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Taishi_Okamura"
+		texturefile = "gfx/interface/ideas/Taishi_Okamura.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Hirohito_Yakuza"
+		texturefile = "gfx/interface/ideas/Hirohito_Yakuza.tga"
+	}
+
+}

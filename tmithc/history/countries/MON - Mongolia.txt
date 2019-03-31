@@ -13,7 +13,13 @@ add_ideas = {
 
 
 
-set_politics = {
+1959.1.1 = {
+
+	add_ideas = {
+	limited_conscription
+	}	
+
+	set_politics = {
 
 	parties = {
 		democratic = { 
@@ -22,29 +28,30 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 2
 			banned = yes
 		}
 		
 		communism = {
-			popularity = 100
+			popularity = 98
 			#banned = no #default is no
 		}
 	}
 	
 	ruling_party = communism
-	last_election = "1936.1.1"
+	last_election = "1959.1.1"
 	election_frequency = 48
 	elections_allowed = no
-}
+    }
 
-create_country_leader = {
-	name = "Khorloogii Choibalsan"
-	desc = "POLITICS_CHOIBALSAN_DESC"
-	picture = "MON_khorloogiin.tga"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
+	create_country_leader = {
+  	    name = "Khorloogii Choibalsan"
+	    desc = "POLITICS_CHOIBALSAN_DESC"
+	    picture = "MON_khorloogiin.tga"
+	    expire = "1965.1.1"
+	    ideology = stalinism
+		traits = {
+			#
+		}
 	}
 }

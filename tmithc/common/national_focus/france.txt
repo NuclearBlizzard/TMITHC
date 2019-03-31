@@ -13,8 +13,8 @@ focus_tree = {
 continuous_focus_position = { x = 150 y = 3500 }
 
 	#Focus: Francisque
-		focus = { 
-			id = FRA_francisque
+		focus = {
+			id = FRA_francisqu
 			icon = vichy_france
 			x = 12
 			y = 0
@@ -38,12 +38,13 @@ continuous_focus_position = { x = 150 y = 3500 }
 		focus = { 
 			id = FRA_manydead
 			icon = french_casualties
-			x = 6
+			relative_position_id = FRA_francisqu
+			x = -6
 			y = 1
 			cost = 5
 			available_if_capitulated = yes
 			
-				prerequisite = { focus = FRA_francisque }
+				prerequisite = { focus = FRA_francisqu }
 			
 				ai_will_do = {
 					factor = 40
@@ -52,9 +53,8 @@ continuous_focus_position = { x = 150 y = 3500 }
 				completion_reward = {
 					add_war_support = -0.05
 					country_event = { days = 0 id = france.state.2 }
+			}
 		}
-
-	}
 	
 	#Focus: Strike the Maquis
 		focus = { 
@@ -499,6 +499,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 				completion_reward = {
 					add_ideas = FRA_victoryidea
 					remove_ideas = FRA_pushthemout
+					remove_ideas = FRA_organised_resistance
 					hidden_effect = {
 						country_event = { days = 7 id = france.elections.1 }
 					}
@@ -528,6 +529,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 					add_political_power = 150
 					add_stability = 0.05
 					add_war_support = 0.03
+					add_popularity = { ideology = democratic popularity = 0.1 }
 					add_ideas = FRA_democracy
 				}
 	}
@@ -773,7 +775,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 				prerequisite = { focus = FRA_fortrhone }
 				
 				available = {
-					ITA = { exists = no }
+					ITA = { exists = yes }
 					is_puppet = no
 					PER = {
 						NOT = { is_in_faction_with = ITA }
@@ -782,6 +784,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 				
 				bypass = {
 					has_war_with = ITA
+					NOT = { country_exists = ITA }
 					NOT = { country_exists = PER }
 				}
 			
@@ -920,6 +923,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 				completion_reward = {
 					add_political_power = 75
 					add_stability = 0.05
+					add_popularity = { ideology = democratic popularity = 0.2 }
 					add_ideas = FRA_constitution
 					FRA = {
 						set_cosmetic_tag = FRA_republica
@@ -1313,7 +1317,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 	#Focus: With the Reich
 		focus = { 
 			id = FRA_loyaltogermany
-			icon = GFX_FRA_puppet
+			icon = french_puppet
 			x = 12
 			y = 4
 			cost = 10
@@ -1340,14 +1344,14 @@ continuous_focus_position = { x = 150 y = 3500 }
 	
 	#Focus: The Iron Cross
 		focus = { 
-			id = FRA_ironcross
-			icon = GFX_FRA_ironcross
+			id = FRA_ironcrosss
+			icon = french_iron_cross
 			x = 11
 			y = 1
 			cost = 5
 			available_if_capitulated = yes
 			
-				prerequisite = { focus = FRA_francisque }
+				prerequisite = { focus = FRA_francisqu }
 			
 				ai_will_do = {
 					factor = 40

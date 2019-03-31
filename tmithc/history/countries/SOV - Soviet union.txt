@@ -1,6 +1,6 @@
-﻿capital = 570
+﻿capital = 566
 
-oob = "SOV_1936"
+oob = "SOV_1960"
 
 set_research_slots = 3
 set_stability = 0.5
@@ -66,13 +66,15 @@ set_politics = {
 
 
 add_ideas = {
-
+	rus_risk_of_famine
+	rus_destroyed_industry
+	sov_beria_controls_the_government
 }
 
 create_country_leader = {
-	name = "Russian Tribes"
-	desc = "POLITICS_RUSSIAN_TRIBES_DESC"
-	picture = "portrait_neu_anarchy.tga"
+	name = "Lavrentiy Beria"
+	desc = "POLITICS_LAVRENTIY_BERIA_DESC"
+	picture = "Portrait_Soviet_Lavrentiy_Beriya.tga"
 	expire = "1980.1.1"
 	ideology = stalinism
 	traits = {

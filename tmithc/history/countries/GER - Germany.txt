@@ -4,6 +4,8 @@ oob = "GER_1936"
 
 give_military_access = PAN
 GER = { give_guarantee = PAN }
+GER = { give_guarantee = NEU }
+
 
 # Starting tech
 set_technology = {
@@ -47,14 +49,17 @@ set_technology = {
 
 puppet = RKA
 puppet = RKM
+puppet = ARG
+puppet = RHD
 puppet = UKR
 puppet = RKV
 puppet = LIT
+puppet = RBM
 puppet = RKU
 puppet = ARM
 puppet = USA
-puppet = SAF
-puppet = ARG
+puppet = BOL
+puppet = HAH
 puppet = CUB
 puppet = CZE
 puppet = RKG
@@ -64,6 +69,7 @@ puppet = RKK
 puppet = RKT
 puppet = RKO
 puppet = RKC
+puppet = AMM
 
 
 set_research_slots = 4
@@ -103,15 +109,15 @@ add_to_faction = HUN
 add_to_faction = FRA
 add_to_faction = ENG
 add_to_faction = IRE
-add_to_faction = ARG
 add_to_faction = PAR
 add_to_faction = BOL
-add_to_faction = GAB
+add_to_faction = HAH
 add_to_faction = URG
 add_to_faction = VEN
 add_to_faction = NOR
 add_to_faction = RKO
 add_to_faction = CAN
+add_to_faction = AMM
 
 add_ideas = {
 	GER_african_question

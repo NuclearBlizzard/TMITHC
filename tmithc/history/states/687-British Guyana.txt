@@ -6,11 +6,15 @@ state={
 	state_category = pastoral
 	
 	resources={
-		aluminium=60 # was: 112
+		aluminium=64 # was: 112
 	}
 
 	history={
-		owner = GER
+		add_core_of = GYA
+		owner = VEN
+		victory_points = {
+			4982 1
+		}
 		buildings = {
 			infrastructure = 2
 			4982 = {

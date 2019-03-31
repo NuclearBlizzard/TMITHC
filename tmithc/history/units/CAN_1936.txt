@@ -16,30 +16,95 @@
 		infantry = { x = 2 y = 2 }
 	}
 }
-division_template = {
-	name = "Cavalry Militia"  
-	# Note: all forces at reserve levels in 1936
 
-	division_names_group = CAN_CAV_01
+units = {
+	##### Royal Canadian Army #####
+	## 1st Miltary District ##
+	division= {	
+		#name = "1st District Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 722 # London ONT
+		division_template = "District Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
 
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
+	}
+
+	## 2nd Miltary District ##
+	division= {	
+		#name = "2nd District Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3775 # Toronto
+		division_template = "District Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		#name = "2nd District Cavalry"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3775 # Toronto
+		division_template = "District Militia" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	## 3rd Miltary District ##
+	division= {	
+		#name = "3rd District Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3605 # Kingston ONT
+		division_template = "District Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	## 4th Miltary District ##
+	division= {	
+		#name = "4th District Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4345 # Montreal
+		division_template = "District Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+}
+
+air_wings = {
+	### Royal Canadian Air Force (RCAF)-- New South Wales
+	276 = {
+		# RCAF Station Trenton (ONT) -- Westland Wapitis
+		nav_bomber_equipment_1 =  {
+			owner = "CAN" 
+			amount = 24
+		}
 	}
 }
 
-division_template = {
-	name = "Armored-Division"
-
-	division_names_group = CAN_ARM_01
-
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-	}
-}
-
-
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "CAN"
+		}
+		re

@@ -2,7 +2,7 @@ state={
 	id=191
 	name="STATE_191"
 	
-	state_category = rural
+	state_category = town
 
 	history={
 		owner = RKO
@@ -18,12 +18,13 @@ state={
 
 		}
 		add_core_of = EST
+		add_core_of = RKO
 
 	}
 
 	provinces={
 		592 4640 6099 6178 6408 9221 9485 11057 11443 13127 
 	}
-	manpower=376400
+	manpower=696400
 	buildings_max_level_factor=1.000
 }

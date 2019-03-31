@@ -1,0 +1,22 @@
+spriteTypes = {	
+
+	######## GOALS #########
+
+	###### IDEAS #########
+
+	spriteType = {
+		name = "GFX_idea_ITA_mil_purge"
+		texturefile = "gfx/interface/ideas/ITA/ITA_mil_purge.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_german_influence"
+		texturefile = "gfx/interface/ideas/ITA/ITA_german_influence.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ITA_assets"
+		texturefile = "gfx/interface/ideas/ITA/ITA_assets.dds"
+	}
+
+}

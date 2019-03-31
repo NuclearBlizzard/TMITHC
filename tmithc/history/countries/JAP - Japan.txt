@@ -2,18 +2,18 @@
 
 oob = "JAP_1936"
 
+give_military_access = PAN
+JAP = { give_guarantee = PAN }
+JAP = { give_guarantee = NEU }
+
 set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
 
 set_research_slots = 4
 
 add_ideas = {
-
+		JAP_Instability
 }
-
-JAP = { give_guarantee = PAN }
-
-give_military_access = PAN
 
 
 set_technology = {
@@ -63,6 +63,9 @@ set_convoys = 400
 puppet = JAA
 puppet = JPR
 
+give_military_access = PAN
+JAP = { give_guarantee = PAN }
+
 
 if = {
 	limit = {
@@ -70,108 +73,78 @@ if = {
 	}
 	set_autonomy = {
 		target = MEN
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_puppet
 	}
 	set_autonomy = {
 		target = MAN
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_puppet
 	}
 	set_autonomy = {
 		target = JSR
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_puppet
 	}
 	set_autonomy = {
-		target = JIC
-		autonomous_state = autonomy_integrated_puppet
+		target = CHI
+		autonomous_state = autonomy_puppet
 	}
 	set_autonomy = {
 		target = SIA
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
-		target = JBD
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
-		target = JBM
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
-		target = JBM
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_puppet
 	}
 	set_autonomy = {
 		target = JEI
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = JBD
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = JBM
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = JBM
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = JEI
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = JIC
+		autonomous_state = autonomy_puppet
 	}
 	set_autonomy = {
 		target = JPS
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_puppet
 	}
 	set_autonomy = {
 		target = JSA
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_puppet
 	}
 	set_autonomy = {
 		target = RNC
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_puppet
 	}
-	else = {
-		set_autonomy = {
-			target = MEN
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
-			target = MAN
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
-			target = JSR
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
-			target = JIC
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
-			target = SIA
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
-			target = JBD
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
-			target = JBM
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
-			target = JBM
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
-			target = JEI
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
-			target = JPS
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
-			target = JSA
-			autonomous_state = autonomy_puppet
-		}
-		set_autonomy = {
-			target = RNC
-			autonomous_state = autonomy_puppet
-		}
-
-	}
+	
+CHI = {
+    add_popularity = { ideology = fascism popularity = 1 }
+    add_popularity = { ideology = naturalism popularity = 0.3 }
+    set_politics = {
+        ruling_party = fascism
+        last_election = "1959.1.1"
+        election_frequency = 48
+        elections_allowed = no
+    }
 }
 
 
-create_faction = "Greater East Asia Co-Prosperity Sphere"
-add_to_faction = JIC
+
+
+
+create_faction = cpps
+add_to_faction = CHI
 add_to_faction = SIA
 add_to_faction = JBM
 add_to_faction = JBD
@@ -181,10 +154,10 @@ add_to_faction = AST
 add_to_faction = RNC
 add_to_faction = JSR
 add_to_faction = JPS
+add_to_faction = JEI
 add_to_faction = BHU
-add_to_faction = NEP
 add_to_faction = COA
-
+add_to_faction = JIC
 
 set_politics = {
 

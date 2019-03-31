@@ -27,8 +27,13 @@ state=
 		victory_points = { 
 			7980 1.0 
 		}
+		add_core_of = ETH
 		add_core_of = IAS
 
+		1936.6.1 = {
+			owner = IAS
+			controller = IAS
+		}
 	}
 
 	provinces=

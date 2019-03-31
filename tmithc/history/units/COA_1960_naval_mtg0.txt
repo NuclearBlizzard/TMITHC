@@ -1,0 +1,15 @@
+﻿units = {
+
+	##### Naval OOB #####
+	fleet = {
+		name = "Australasian Navy"
+		naval_base = 1537
+		task_force = {
+			name = "Pacific Squadron"
+			location = 1537
+			# Scrap Iron Flotilla
+			ship = { name = "ANS Victoria" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COA version_name = "Battle Class" } } }
+			ship = { name = "ANS Anzac" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = COA version_name = "Battle Class" } } }
+		}
+	}
+}

@@ -2,6 +2,7 @@ ideas = {
 	country = {
 		ITA_german_influence_in_italy_5 = {
 			allowed = { always = no }
+			picture = ITA_german_influence
 			available = {}
 			cancel = {
 				OR = {
@@ -19,6 +20,7 @@ ideas = {
 		}
 		ITA_german_influence_in_italy_15 = {
 			allowed = { always = no }
+			picture = ITA_german_influence
 			available = {}
 			cancel = {
 				OR = {
@@ -36,6 +38,7 @@ ideas = {
 		}
 		ITA_german_influence_in_italy_25 = {
 			allowed = { always = no }
+			picture = ITA_german_influence
 			available = {}
 			cancel = {
 				OR = {
@@ -53,6 +56,7 @@ ideas = {
 		}
 		ITA_german_influence_in_italy_35 = {
 			allowed = { always = no }
+			picture = ITA_german_influence
 			available = {}
 			cancel = {
 				OR = {
@@ -70,6 +74,7 @@ ideas = {
 		}
 		ITA_german_influence_in_italy_45 = {
 			allowed = { always = no }
+			picture = ITA_german_influence
 			available = {}
 			cancel = {
 				OR = {
@@ -87,6 +92,7 @@ ideas = {
 		}
 		ITA_german_influence_in_italy_55 = {
 			allowed = { always = no }
+			picture = ITA_german_influence
 			available = {}
 			cancel = {
 				OR = {
@@ -104,6 +110,7 @@ ideas = {
 		}
 		ITA_german_influence_in_italy_65 = {
 			allowed = { always = no }
+			picture = ITA_german_influence
 			available = {}
 			cancel = {
 				OR = {
@@ -121,6 +128,7 @@ ideas = {
 		}
 		ITA_german_influence_in_italy_75 = {
 			allowed = { always = no }
+			picture = ITA_german_influence
 			available = {}
 			cancel = {
 				OR = {
@@ -138,6 +146,7 @@ ideas = {
 		}
 		ITA_german_influence_in_italy_85 = {
 			allowed = { always = no }
+			picture = ITA_german_influence
 			available = {}
 			cancel = {
 				OR = {
@@ -155,6 +164,7 @@ ideas = {
 		}
 		ITA_german_influence_in_italy_95 = {
 			allowed = { always = no }
+			picture = ITA_german_influence
 			available = {}
 			cancel = {
 				OR = {
@@ -168,6 +178,70 @@ ideas = {
 				political_power_factor = -0.5
 				stability_factor = -0.2
 				war_support_factor = -0.1
+			}
+		}
+		
+		ITA_military_purges_3 = {
+			allowed = { always = no }
+			picture = ITA_mil_purge
+			available = {}
+			cancel = {
+				OR = {
+					has_war_with = GER
+				}
+			}
+			modifier = {
+				army_attack_factor = -0.45
+				army_defence_factor = -0.3
+				production_speed_arms_factory_factor = -0.15
+				max_command_power = -30
+				command_power_gain = -0.3
+			}
+		}
+		ITA_military_purges_2 = {
+			allowed = { always = no }
+			picture = ITA_mil_purge
+			available = {}
+			cancel = {
+				OR = {
+					has_war_with = GER
+				}
+			}
+			modifier = {
+				army_attack_factor = -0.3
+				army_defence_factor = -0.2
+				production_speed_arms_factory_factor = -0.1
+				max_command_power = -20
+				command_power_gain = -0.2
+			}
+		}
+		ITA_military_purges_1 = {
+			allowed = { always = no }
+			picture = ITA_mil_purge
+			available = {}
+			cancel = {
+				OR = {
+					has_war_with = GER
+				}
+			}
+			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = -0.1
+				production_speed_arms_factory_factor = -0.05
+				max_command_power = -10
+				command_power_gain = -0.1
+			}
+		}
+		ITA_nationalized_assets = {
+			allowed = { always = no }
+			picture = ITA_assets
+			cancel = {
+				is_subject_of = GER
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+				equipment_conversion_speed = 0.05
+				industrial_capacity_factory = 0.05
 			}
 		}
 	}

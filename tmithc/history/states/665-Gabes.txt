@@ -4,6 +4,11 @@ state={
 
 	history={
 		owner = ITA
+		add_core_of = ITA
+		add_core_of = TUN
+		victory_points = {
+			7005 1 
+		}
 		buildings = {
 			infrastructure = 3
 

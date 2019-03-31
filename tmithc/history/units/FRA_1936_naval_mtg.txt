@@ -1,0 +1,45 @@
+﻿units= {
+
+	##### NAVAL UNITS #####
+	### METROPOLITAN FRANCE ###
+	fleet = {
+		name = "Marine Nationale"
+		naval_base = 9434 # Le Havre
+		task_force = {				
+			name = "1ère Région Navale"			
+			location = 9434 # Le Havre
+			ship = { name = "Justice" pride_of_the_fleet = yes definition = battle_cruiser equipment = { ship_hull_heavy_2 = { amount = 1 owner = FRA version_name = "Justice Class" } } }
+			ship = { name = "Fraternité" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRA version_name = "Fraternité Class"} } }
+			ship = { name = "Patrimoine" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Patrimoine Class" } } }
+			ship = { name = "Jeanne d'Arc" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Patrimoine Class" } } }
+			ship = { name = "Esprit" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Patrimoine Class" } } }
+			ship = { name = "Silence" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "La Galissonnière Class" } } }		
+			ship = { name = "Tombe" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "La Galissonnière Class" } } }
+			ship = { name = "Perspective" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "La Galissonnière Class" } } }
+			ship = { name = "Voltaire" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "La Galissonnière Class" } } }
+			ship = { name = "Rousseau" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "La Galissonnière Class" } } }
+			ship = { name = "L'Avant-garde" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "La Galissonnière Class" } } }
+			ship = { name = "Brillant" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Brillant Class" } } }		
+			ship = { name = "Le Fortuné" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Brillant Class" } } }					
+			ship = { name = "Fougueux" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Brillant Class" } } }				
+			ship = { name = "Le Fantasque" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Brillant Class" } } }		
+			ship = { name = "L'Audacieux" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Brillant Class" } } }					
+			ship = { name = "Le Triomphant" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Brillant Class" } } }		
+			ship = { name = "Le Terrible" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Brillant Class" } } }
+			ship = { name = "Le Fantasque" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Brillant Class" } } }		
+			ship = { name = "Le Simpliste" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Brillant Class" } } }					
+			ship = { name = "Le Gagnant" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Brillant Class" } } }		
+			ship = { name = "Le Vivant" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = FRA version_name = "Brillant Class" } } }
+			ship = { name = "Le Mars" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Bordelais Class" } } }		
+			ship = { name = "Bordelais" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Bordelais Class" } } }
+			ship = { name = "La Sainte" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Bordelais Class" } } }		
+			ship = { name = "Le Jeune" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Bordelais Class" } } }
+			ship = { name = "Le Souffle" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Bordelais Class" } } }		
+			ship = { name = "Réussite" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Bordelais Class" } } }
+			ship = { name = "Orphée" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "1250 Series" } } }
+			ship = { name = "Amazone" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "1250 Series" } } }
+			ship = { name = "La Sybille" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "1250 Series" } } }
+			ship = { name = "Saphir" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+		}				
+	}
+}

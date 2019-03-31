@@ -7,6 +7,9 @@ state={
 	state_category = town
 
 	history={
+		victory_points = {
+			3457 3
+		}
 		owner = RKU
 		buildings = {
 			infrastructure = 5
@@ -14,7 +17,7 @@ state={
 			air_base = 3
 		}
 		add_core_of = SOV
-		add_core_of = RKU
+		add_core_of = UKR
 	}
 
 	provinces={

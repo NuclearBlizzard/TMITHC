@@ -11,7 +11,10 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = RKK
+		add_core_of = SOV
+		victory_points = {
+			11724 1
+		}
 	}
 
 	provinces={

@@ -2,12 +2,12 @@
 state={
 	id=29
 	name="STATE_29"
-	manpower = 5856400
+	manpower = 3876400
 	
 	state_category = metropolis
 	resources={
-		steel=62 # was: 112
-		aluminium=12 # was: 22
+		steel=42 # was: 112
+		aluminium=8 # was: 22
 	}
 
 	history={
@@ -22,22 +22,23 @@ state={
 			11548 15
 		}
 		buildings = {
-			infrastructure = 8
-			industrial_complex = 4
-			air_base = 10
+			infrastructure = 9
+			industrial_complex = 2
+			air_base = 5
 			575 = {
-				naval_base = 6
+				naval_base = 8
 			}
 		}
 		add_core_of = FRA
+		add_core_of = GER
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 6
+				industrial_complex = 3
 			}
 		}
 	}
 
 	provinces={
-		454 575 3402 3447 3476 3536 6504 6585 9500 9561 11420 11483 11548 11549 11606 
+		575 3476 3536 6504 9500 11483 11548 11606 
 	}
 }

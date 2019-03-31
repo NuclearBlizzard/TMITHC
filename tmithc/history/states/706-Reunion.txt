@@ -7,6 +7,7 @@ state={
 
 	history={
 		owner = ITA
+		add_core_of = MAD
 		buildings = {
 			infrastructure = 3
 			13017 = {

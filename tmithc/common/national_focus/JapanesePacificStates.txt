@@ -1,0 +1,1248 @@
+focus_tree = {
+	id = JapanesePacificStates
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = JPS
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1350 }
+	
+	focus = {
+		id = pacific_air_force
+		icon = air_defense
+		cost = 10
+		x = 4
+		y = 0
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 50
+		}
+	}
+	
+	focus = {
+		id = refit_pacific_army
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 11
+		y = 0
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 20
+		}
+	}
+	
+	focus = {
+		id = path_of_pacific
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 24
+		y = 0
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = begin_naval_buildup
+		icon = naval_dockyard
+		cost = 10
+		x = 36
+		y = 0
+
+		available = { 
+			has_full_control_of_state = 385
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			 385 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3 
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = golden_coast
+		icon = GoldenGateBridge
+		cost = 10
+		x = 40
+		y = 0
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.50
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = naval_aviation
+		icon = carriers
+		cost = 10
+		prerequisite = {
+			focus = pacific_air_force
+		}
+		mutually_exclusive = {
+			focus = focus_on_land
+		}
+
+		x = 3
+		y = 1
+		
+		completion_reward = {
+				
+				add_tech_bonus = {
+				category = cv_tech
+				bonus = 0.5 
+				uses = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = a_zero_of_our_own
+		icon = the_zero
+		cost = 10
+		prerequisite = {
+			focus = naval_aviation
+		}
+		x = 3
+		y = 2
+
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = cf_bonus
+				bonus = 0.5
+				uses = 1
+				category = naval_bomber
+			}
+
+		}
+	}
+	
+
+	focus = {
+		id = long_distance_fighter_supp
+		icon = fighters2
+		cost = 10
+		prerequisite = {
+			focus = a_zero_of_our_own
+		}
+		
+		x = 3
+		y = 3
+
+
+		completion_reward = {
+			
+				add_tech_bonus = {
+					category = light_fighter
+					bonus = 0.5 
+					uses = 2
+				}
+		}
+	}
+	
+	focus = {
+		id = naval_expertise
+		icon = bombers
+		cost = 10
+		prerequisite = {
+			focus = long_distance_fighter_supp
+		}
+		
+		x = 3
+		y = 4
+
+		completion_reward = {
+
+			air_experience = 100
+		
+		}
+	}
+	
+	focus = {
+		id = focus_on_land
+		icon = close_air_support
+		cost = 10
+		prerequisite = {
+			focus = pacific_air_force
+		}
+		mutually_exclusive = {
+			focus = naval_aviation
+		}
+		x = 5
+		y = 1
+
+		completion_reward = {
+			
+			add_tech_bonus = {
+				category = cas_bomber
+				bonus = 0.5
+				uses = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = precise_strikes
+		icon = bombs
+		cost = 10
+		prerequisite = {
+			focus = focus_on_land
+		}
+		x = 5
+		y = 2
+
+		completion_reward = {
+
+			add_tech_bonus = {
+				category = tactical_bomber
+				bonus = 0.5
+				uses = 1 
+			}
+		}
+	}
+	
+	focus = {
+		id = support_divebombers
+		icon = bombs2
+		cost = 10
+		prerequisite = {
+			focus = precise_strikes
+		}
+		x = 5
+		y = 3
+
+		completion_reward = {
+			
+				add_tech_bonus = {
+					category = light_fighter
+					bonus = 0.5 
+					uses = 2
+				}
+		}
+	}
+	
+	focus = {
+		id = ensure_air_dominance
+		icon = fighters
+		cost = 10
+		prerequisite = {
+			focus = support_divebombers
+		}
+		x = 5
+		y = 4
+
+		completion_reward = {
+
+			air_experience = 100
+		
+		}
+
+	}
+	
+
+	focus = {
+		id = back_to_past
+		icon = air_doctrine
+		cost = 10
+		prerequisite = {
+			focus = ensure_air_dominance
+			focus = naval_expertise
+		}
+		x = 4
+		y = 5
+
+		completion_reward = {
+
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 2	
+				category = air_doctrine
+			}			
+		}
+	}
+	focus = {
+		id = japanese_dominance
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = refit_pacific_army
+		}
+		mutually_exclusive = {
+			focus = native_units
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = request_jap_mariness
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = japanese_dominance
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = strike_from_sea
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = request_jap_mariness
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = logistical_expertise
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = strike_from_sea
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = superior_planning
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = japanese_dominance
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = officer_initiative
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = superior_planning
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = digin
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = officer_initiative
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = warrior_spirit
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = digin
+		}
+		prerequisite = {
+			focus = logistical_expertise
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = native_units
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = refit_pacific_army
+		}
+		mutually_exclusive = {
+			focus = japanese_dominance
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = support_rifleman
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = native_units
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = fill_reserves
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = support_rifleman
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = deadly_firepower
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = fill_reserves
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = tank_development
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = native_units
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = mobile_infantry
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = tank_development
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = combined_arms
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = mobile_infantry
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = fierce_defenders
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = combined_arms
+		}
+		prerequisite = {
+			focus = deadly_firepower
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = begin_japanization
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = path_of_pacific
+		}
+		mutually_exclusive = {
+			focus = native_representation
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = bring_japanese_admin
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = begin_japanization
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = request_ships
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = bring_japanese_admin
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = encourage_settlement
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = request_ships
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = invite_jap_industrialists
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = bring_japanese_admin
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = favor_jap_corp
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = invite_jap_industrialists
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = employ_kempeitai
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = encourage_settlement
+		}
+		prerequisite = {
+			focus = favor_jap_corp
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = native_representation
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = path_of_pacific
+		}
+		mutually_exclusive = {
+			focus = begin_japanization
+			focus = our_own_way
+		}
+		x = 24
+		y = 1
+
+	}
+	focus = {
+		id = limited_local_autonomy
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = native_representation
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = local_development
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = limited_local_autonomy
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = native_police_officers
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = local_development
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = californian_bus_interests
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = native_police_officers
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = united_ind_dev_board
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = native_representation
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = resources_for_jap
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = united_ind_dev_board
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = trust_japan
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = resources_for_jap
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = meet_weapon_exp
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = trust_japan
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = prosperity_under_japan
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = meet_weapon_exp
+		}
+		prerequisite = {
+			focus = californian_bus_interests
+		}
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = our_own_way
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = path_of_pacific
+		}
+		mutually_exclusive = {
+			focus = native_representation
+		}
+		x = 29
+		y = 1
+
+	}
+	focus = {
+		id = hire_new_administrators
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = our_own_way
+		}
+		x = 29
+		y = 2
+
+	}
+	focus = {
+		id = work_with_american_industrialists
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = hire_new_administrators
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = promote_free_enterprise
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = work_with_american_industrialists
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = grant_further_autonomy
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = hire_new_administrators
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = equal_rights_natives
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = grant_further_autonomy
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = return_old_ideas
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = promote_free_enterprise
+		}
+		prerequisite = {
+			focus = equal_rights_natives
+		}
+		x = 29
+		y = 5
+
+	}
+	focus = {
+		id = liberty_for_all
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = return_old_ideas
+		}
+		x = 29
+		y = 6
+
+	}
+	focus = {
+		id = rally_freedom_fighters
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = liberty_for_all
+		}
+		x = 30
+		y = 7
+
+	}
+	focus = {
+		id = disrupt_communications
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = rally_freedom_fighters
+		}
+		x = 30
+		y = 8
+
+	}
+	
+	#INDUSTRY#
+	
+	focus = {
+		id = invite_jap_experts
+		icon = japanese_pacific_guardian
+		cost = 10
+		prerequisite = {
+			focus = begin_naval_buildup
+		}
+		x = 36
+		y = 1
+
+		completion_reward = {
+
+			navy_experience = 50
+			add_autonomy_ratio = {
+				value = -0.065
+			}
+
+		}
+	
+	}
+	focus = {
+		id = study_foreign_doctrines
+		icon = navy3
+		cost = 10
+		prerequisite = {
+			focus = invite_jap_experts
+		}
+		x = 36
+		y = 2
+
+		completion_reward = {
+
+			add_tech_bonus = {
+				name = navy_doc_bonus
+				bonus = 0.5
+				uses = 1	
+				category = naval_doctrine
+			}		
+		}
+
+	}
+	focus = {
+		id = atlantic_pacific_trade
+		icon = trade
+		cost = 10
+		prerequisite = {
+			focus = golden_coast
+		}
+		x = 38
+		y = 1
+
+		completion_reward = {
+
+			add_ideas = JPS_Atlantic_Pacific_Trade
+
+		}
+	}
+	focus = {
+		id = build_up_dockyards
+		icon = naval_dockyard
+		cost = 10
+		prerequisite = {
+			focus = atlantic_pacific_trade
+		}
+		x = 38
+		y = 2
+
+		available = {
+			has_full_control_of_state = 378
+		}
+
+		completion_reward = {
+			 378 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3 
+					instant_build = yes
+				}
+			}
+		}
+
+
+	}
+	focus = {
+		id = develop_our_harbours
+		icon = navy
+		cost = 10
+		prerequisite = {
+			focus = build_up_dockyards
+			focus = study_foreign_doctrines
+		}
+		
+		x = 37
+		y = 3
+
+		available = { 
+			has_full_control_of_state = 378
+		}
+
+		completion_reward = {
+			 378 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	
+	focus = {
+		id = prepare_an_escort
+		icon = destroyers
+		cost = 10
+		prerequisite = {
+			focus = develop_our_harbours
+		}
+		
+		x = 37
+		y = 4
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = dd_tech
+				ahead_reduction = 0.50
+				uses = 2
+			}
+		}
+	}
+	
+	focus = {
+		id = cruiser_support
+		icon = cruisers
+		cost = 10
+		prerequisite = {
+			focus = prepare_an_escort
+		}
+		
+		x = 37
+		y = 5
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = ca_tech
+				ahead_reduction = 0.50
+				uses = 2
+			}
+		}
+
+	}
+	
+	focus = {
+		id = naval_airpower
+		icon = naval_bombers
+		cost = 10
+		prerequisite = {
+			focus = cruiser_support
+		}
+		mutually_exclusive = { 
+			focus = floating_fortress
+		}
+		x = 38
+		y = 6
+		
+		completion_reward = {
+			add_tech_bonus = {
+				category = bb_tech
+				ahead_reduction = 0.50
+				uses = 2
+			}
+		}
+
+	}
+
+	focus = {
+		id = floating_fortresses
+		icon = carriers
+		cost = 10
+		prerequisite = {
+			focus = cruiser_support
+		}
+		mutually_exclusive = { 
+			focus = naval_airpower
+		}
+		x = 36
+		y = 6
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = cv_tech
+				bonus = 0.5 
+				uses = 2
+			}
+		}
+	}
+
+
+	focus = {
+		id = connect_the_cities
+		icon = infrastructure
+		cost = 10
+		prerequisite = {
+			focus = golden_coast
+		}
+		
+		available = { 
+			has_full_control_of_state = 386
+			has_full_control_of_state = 385
+			has_full_control_of_state = 378
+		}
+
+		x = 42
+		y = 1
+
+		completion_reward = {
+			386 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+			385 = { add_building_construction = { type = infrastructure level = 3 instant_build = yes } }
+			378 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+		}
+
+	}
+	focus = {
+		id = expand_pacific_tree
+		icon = industry_civilian
+		cost = 10
+		prerequisite = {
+			focus = connect_the_cities
+		}
+		x = 42
+		y = 2
+
+		available = { 
+			has_full_control_of_state = 378
+		}
+
+		completion_reward = {
+			378 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = rural_infrastucture
+		icon = construction3
+		cost = 10
+		prerequisite = {
+			focus = expand_pacific_tree
+		}
+		x = 41
+		y = 3
+
+		available = { 
+			has_full_control_of_state = 377
+			has_full_control_of_state = 380
+			has_full_control_of_state = 387
+		}
+
+		completion_reward = {
+			377 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+			380 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+			387 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+		}
+
+	}
+	focus = {
+		id = agricultural_subsidies
+		icon = agriculture
+		cost = 10
+		prerequisite = {
+			focus = rural_infrastucture
+		}
+		x = 41
+		y = 4
+
+		available = { 
+			has_full_control_of_state = 377
+			has_full_control_of_state = 380
+			has_full_control_of_state = 387
+		}
+
+		completion_reward = {
+			377 = {
+				add_extra_state_shared_building_slots = 3
+			}
+
+			380 = {
+				add_extra_state_shared_building_slots = 3
+			}
+
+			387 = {
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+
+	}
+	focus = {
+		id = crush_autonomy
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = employ_kempeitai
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = native_forced_labor
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = crush_autonomy
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = direct_rule_from_tokyo
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = native_forced_labor
+		}
+		x = 19
+		y = 8
+
+	}
+	focus = {
+		id = prepare_weapon_caches
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = liberty_for_all
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = foreign_support
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = prepare_weapon_caches
+		}
+		x = 28
+		y = 8
+
+	}
+	focus = {
+		id = from_the_ashes
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = disrupt_communications
+		}
+		prerequisite = {
+			focus = foreign_support
+		}
+		x = 29
+		y = 9
+
+	}
+	focus = {
+		id = import_industrial_expertise
+		icon = trade
+		cost = 10
+		prerequisite = {
+			focus = expand_pacific_tree
+		}
+		x = 43
+		y = 3
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.50
+				uses = 2
+				category = industry
+			}
+		}
+
+	}
+	focus = {
+		id = californian_arsenal
+		icon = industry_military
+		cost = 10
+		prerequisite = {
+			focus = import_industrial_expertise
+		}
+		x = 43
+		y = 4
+
+		available = { 
+			has_full_control_of_state = 378
+		}
+
+		completion_reward = {
+			378 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = western_powerhouse
+		icon = consumer_goods
+		cost = 10
+		prerequisite = {
+			focus = californian_arsenal
+			focus = agricultural_subsidies
+		}
+		x = 42
+		y = 5
+
+		available = { 
+			has_full_control_of_state = 385
+		}
+
+		completion_reward = {
+
+			add_stability = 0.10
+			385 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+
+		}
+
+	}
+}

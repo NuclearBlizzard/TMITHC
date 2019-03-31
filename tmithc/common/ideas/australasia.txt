@@ -5,6 +5,7 @@ ideas = {
 
 						allowed = {
 								always = yes
+						picture = gfx_idea_treaty_of_canberra
 						}
 
 						allowed_civil_war = {

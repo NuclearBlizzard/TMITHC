@@ -2,29 +2,33 @@ state={
 	id=546
 	name="STATE_546"
 	
-	state_category = rural
+	state_category = town
 	resources={
-		rubber=2 # was: 2
+		rubber=8 # was: 2
+		tungsten= 6
 	}
 	history={
 		owner = RKA
 		victory_points = {
-			2196 1
+			2196 3
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 5
 			2196 = {
-				naval_base = 2
+				naval_base = 4
 
 			}
 
 		}
+			add_core_of = TZN
 			add_core_of = RKA
 	}
 
 	provinces={
 		2176 2196 2206 2281 2308 4171 5180 5224 8144 8182 8183 8201 8205 10845 10932 10988 11017 12911 12944 12967 
 	}
-	manpower=5299000
-	buildings_max_level_factor=1.000
+	manpower=5935000
+	buildings_max_level_factor=5.000
 }

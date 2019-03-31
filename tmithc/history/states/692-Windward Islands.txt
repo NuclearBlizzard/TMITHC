@@ -5,12 +5,16 @@ state={
 	state_category = small_island
 
 	history={
+		add_core_of = RKC
 		owner = RKC
 		buildings = {
 			infrastructure = 4
 			11350 = {
 				naval_base = 1
 			}
+		}
+		victory_points = {
+			11350 1
 		}
 	}
 	

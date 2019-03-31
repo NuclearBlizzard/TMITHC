@@ -6,6 +6,10 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+			cancel = {
+					has_war = yes
+			}
 
 			allowed_civil_war {
 				always = yes
@@ -93,6 +97,10 @@ ideas = {
 			allowed_civil_war {
 				always = yes
 			}
+			
+			cancel = {
+				has_capitulated = yes
+			}
 
 			picture = FRA_gunresistance
 
@@ -115,6 +123,10 @@ ideas = {
 
 			allowed_civil_war {
 				always = yes
+			}
+			
+			cancel = {
+				has_capitulated = yes
 			}
 
 			picture = FRA_victoire
@@ -139,6 +151,10 @@ ideas = {
 			allowed_civil_war {
 				always = yes
 			}
+			
+			cancel = {
+				has_capitulated = yes
+			}
 
 			picture = FRA_freedom
 
@@ -160,6 +176,10 @@ ideas = {
 			allowed_civil_war {
 				always = no
 			}
+			
+			cancel = {
+				has_capitulated = yes
+			}
 
 			picture = generic_democratic_drift_bonus
 
@@ -178,6 +198,10 @@ ideas = {
 
 			allowed_civil_war {
 				always = no
+			}
+			
+			cancel = {
+				has_war_with = FRA
 			}
 			
 			available = {
@@ -225,6 +249,10 @@ ideas = {
 			allowed_civil_war {
 				always = no
 			}
+			
+			cancel = {
+				has_war_with = FRA
+			}
 
 			picture = generic_democratic_drift_bonus
 
@@ -243,6 +271,10 @@ ideas = {
 
 			allowed_civil_war {
 				always = no
+			}
+			
+			cancel = {
+				has_war_with = FRA
 			}
 			
 			available = {
@@ -289,6 +321,10 @@ ideas = {
 
 			allowed_civil_war {
 				always = no
+			}
+			
+			cancel = {
+				has_capitulated = yes
 			}
 			
 			available = {

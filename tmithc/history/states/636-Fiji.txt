@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = JAP
+		add_core_of = FIJ
 		buildings = {
 			infrastructure = 3
 			4286 = {

@@ -2,10 +2,11 @@ state=
 {
 	id=116
 	name="STATE_116"
-	manpower = 241621
+	manpower = 268121
 	state_category = small_island
 	history= {
 		owner = ITA
+		add_core_of = MLT
 		victory_points = {
 			12003 5 
 		}
@@ -13,8 +14,8 @@ state=
 			infrastructure = 3
 			air_base = 3
 			12003 = {
-				naval_base = 3
-				coastal_bunker = 1
+				naval_base = 6
+				coastal_bunker = 3
 			}
 		}
 	}

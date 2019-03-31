@@ -1,24 +1,23 @@
 state={
 	id=81
 	name="STATE_81"
-	manpower=2145300
-	resources={ 
-		aluminium=5
-		oil=5
-	}
+	manpower=1819300
 	
-	state_category = large_city
+	
+	state_category = large_town
 	
 	history={
+		victory_points = {
+			6652 3
+		}
 		owner = ROM
-		victory_points = { 6652 10 }
-		victory_points = { 637 1 }
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 2
-			synthetic_refinery = 2 
+			infrastructure = 5
+			industrial_complex = 4
 		}
 		add_core_of = ROM
 	}
-	provinces={ 637 3630 3645 6652 6667 11588 11605 11657 }
+	provinces={
+		637 3630 3645 6652 6667 11588 11605 11657 
+	}
 }
