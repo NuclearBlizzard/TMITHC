@@ -926,7 +926,7 @@ continuous_focus_position = { x = 150 y = 3500 }
 					add_popularity = { ideology = democratic popularity = 0.2 }
 					add_ideas = FRA_constitution
 					FRA = {
-						set_cosmetic_tag = FRA_republica
+						set_cosmetic_tag = FRA_cosmetic_rep
 					}
 					create_country_leader = {
 						name = "Charles de Gaulle"
