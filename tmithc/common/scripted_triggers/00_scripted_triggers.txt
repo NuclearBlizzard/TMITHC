@@ -66,6 +66,7 @@ check_has_focus_tree_to_switch_to_fascism = {
 	NOT = { tag = GER }
 	NOT = { tag = MAN }
 	NOT = { tag = ITA }
+	NOT = { tag = FRA }
 	OR = {
 		NOT = {
 			AND = {
@@ -110,6 +111,7 @@ check_has_focus_tree_to_switch_to_democratic = {
 	NOT = { tag = NZL }
 	NOT = { tag = RAJ }
 	NOT = { tag = CZE }
+	NOT = { tag = FRA }
 	NOT = {
 		AND = {
 			tag = HUN
@@ -170,6 +172,7 @@ check_has_focus_tree_to_switch_to_communism = {
 	NOT = { tag = SIK }
 	NOT = { tag = MAN }
 	NOT = { tag = SOV }
+	NOT = { tag = FRA }
 	NOT = {
 		AND = {
 			tag = RAJ

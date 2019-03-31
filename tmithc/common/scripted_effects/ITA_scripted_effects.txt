@@ -1,0 +1,221 @@
+ITA_military_purges_downgrade = {
+	if = {
+		limit = {
+			NOT = { has_idea = ITA_military_purges_1 }
+			NOT = { has_idea = ITA_military_purges_2 }
+			NOT = { has_idea = ITA_military_purges_3 }
+		}
+		army_experience = 25
+	}
+	if = {
+		limit = { has_idea = ITA_military_purges_1 }
+		remove_ideas = ITA_military_purges_1
+	}
+	if = {
+		limit = { has_idea = ITA_military_purges_2 }
+		swap_ideas = {
+			remove_idea = ITA_military_purges_2
+			add_idea = ITA_military_purges_1
+		}
+	}
+	if = {
+		limit = { has_idea = ITA_military_purges_3 }
+		swap_ideas = {
+			remove_idea = ITA_military_purges_3
+			add_idea = ITA_military_purges_2
+		}
+	}
+}
+german_influence_in_italy_end_mechanic = {
+	german_influence_in_italy_remove_all = yes
+}
+german_influence_in_italy_remove_all = {
+	ITA = {
+		if = { limit = { has_idea = ITA_german_influence_in_italy_5 } remove_ideas = ITA_german_influence_in_italy_5 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_15 } remove_ideas = ITA_german_influence_in_italy_15 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_25 } remove_ideas = ITA_german_influence_in_italy_25 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_35 } remove_ideas = ITA_german_influence_in_italy_35 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_45 } remove_ideas = ITA_german_influence_in_italy_45 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_55 } remove_ideas = ITA_german_influence_in_italy_55 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_65 } remove_ideas = ITA_german_influence_in_italy_65 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_75 } remove_ideas = ITA_german_influence_in_italy_75 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_85 } remove_ideas = ITA_german_influence_in_italy_85 }
+		if = { limit = { has_idea = ITA_german_influence_in_italy_95 } remove_ideas = ITA_german_influence_in_italy_95 }
+	}
+}
+german_influence_in_italy_update = {
+	ITA = {
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy < 11 }
+				NOT = { has_idea = ITA_german_influence_in_italy_5 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_5
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 10 } 
+				check_variable = { var_german_influence_in_italy < 21 } 
+				NOT = { has_idea = ITA_german_influence_in_italy_15 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_15
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 20 } 
+				check_variable = { var_german_influence_in_italy < 31 } 
+				NOT = { has_idea = ITA_german_influence_in_italy_25 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_25
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 30 } 
+				check_variable = { var_german_influence_in_italy < 41 } 
+				NOT = { has_idea = ITA_german_influence_in_italy_35 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_35
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 40 } 
+				check_variable = { var_german_influence_in_italy < 51 } 
+				NOT = { has_idea = ITA_german_influence_in_italy_45 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_45
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 50 } 
+				check_variable = { var_german_influence_in_italy < 61 } 
+				NOT = { has_idea = ITA_german_influence_in_italy_55 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_55
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 60 } 
+				check_variable = { var_german_influence_in_italy < 71 } 
+				NOT = { has_idea = ITA_german_influence_in_italy_65 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_65
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 70 } 
+				check_variable = { var_german_influence_in_italy < 81 } 
+				NOT = { has_idea = ITA_german_influence_in_italy_75 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_75
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 80 } 
+				check_variable = { var_german_influence_in_italy < 91 } 
+				NOT = { has_idea = ITA_german_influence_in_italy_85 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_85
+		}
+		if = { 
+			limit = { 
+				check_variable = { var_german_influence_in_italy > 90 } 
+				NOT = { has_idea = ITA_german_influence_in_italy_95 }
+			}
+			german_influence_in_italy_remove_all = yes
+			add_ideas = ITA_german_influence_in_italy_95
+		}
+	}
+}
+german_influence_in_italy_increase_by_1 = {
+	ITA = {
+		add_to_variable = { var = var_german_influence_in_italy value = 1 }
+	}
+	custom_effect_tooltip = tt_german_influence_in_italy_incr_1
+	german_influence_in_italy_update = yes
+}
+german_influence_in_italy_increase_by_2 = {
+	ITA = {
+		add_to_variable = { var = var_german_influence_in_italy value = 2 }
+	}
+	custom_effect_tooltip = tt_german_influence_in_italy_incr_2
+	german_influence_in_italy_update = yes
+}
+german_influence_in_italy_increase_by_3 = {
+	ITA = {
+		add_to_variable = { var = var_german_influence_in_italy value = 3 }
+	}
+	custom_effect_tooltip = tt_german_influence_in_italy_incr_3
+	german_influence_in_italy_update = yes
+}
+german_influence_in_italy_increase_by_4 = {
+	ITA = {
+		add_to_variable = { var = var_german_influence_in_italy value = 4 }
+	}
+	custom_effect_tooltip = tt_german_influence_in_italy_incr_4
+	german_influence_in_italy_update = yes
+}
+german_influence_in_italy_increase_by_5 = {
+	ITA = {
+		add_to_variable = { var = var_german_influence_in_italy value = 5 }
+	}
+	custom_effect_tooltip = tt_german_influence_in_italy_incr_5
+	german_influence_in_italy_update = yes
+}
+german_influence_in_italy_increase_by_10 = {
+	ITA = {
+		add_to_variable = { var = var_german_influence_in_italy value = 10 }
+	}
+	custom_effect_tooltip = tt_german_influence_in_italy_incr_10
+	german_influence_in_italy_update = yes
+}
+german_influence_in_italy_decrease_by_1 = {
+	ITA = {
+		add_to_variable = { var = var_german_influence_in_italy value = -1 }
+	}
+	custom_effect_tooltip = tt_german_influence_in_italy_decr_1
+	german_influence_in_italy_update = yes
+}
+german_influence_in_italy_decrease_by_2 = {
+	ITA = {
+		add_to_variable = { var = var_german_influence_in_italy value = -2 }
+	}
+	custom_effect_tooltip = tt_german_influence_in_italy_decr_2
+	german_influence_in_italy_update = yes
+}
+german_influence_in_italy_decrease_by_3 = {
+	ITA = {
+		add_to_variable = { var = var_german_influence_in_italy value = -3 }
+	}
+	custom_effect_tooltip = tt_german_influence_in_italy_decr_3
+	german_influence_in_italy_update = yes
+}
+german_influence_in_italy_decrease_by_4 = {
+	ITA = {
+		add_to_variable = { var = var_german_influence_in_italy value = -4 }
+	}
+	custom_effect_tooltip = tt_german_influence_in_italy_decr_4
+	german_influence_in_italy_update = yes
+}
+german_influence_in_italy_decrease_by_5 = {
+	ITA = {
+		add_to_variable = { var = var_german_influence_in_italy value = -5 }
+	}
+	custom_effect_tooltip = tt_german_influence_in_italy_decr_5
+	german_influence_in_italy_update = yes
+}
+german_influence_in_italy_decrease_by_10 = {
+	ITA = {
+		add_to_variable = { var = var_german_influence_in_italy value = -10 }
+	}
+	custom_effect_tooltip = tt_german_influence_in_italy_decr_10
+	german_influence_in_italy_update = yes
+}

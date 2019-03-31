@@ -1,5 +1,8 @@
-﻿add_namespace = italy_news
+﻿add_namespace = news
 
+add_namespace = italy_news
+
+############################## ITALY SECTION
 #Mussolini's Death
 news_event = {
 	id = italy_news.1

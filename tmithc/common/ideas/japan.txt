@@ -15,7 +15,7 @@ ideas = {
 			picture = Taishi_Okamura
 			
 			modifier = {
-				add_stability= 0.02
+				stability_factor = 0.02
 			}
 		}
 		JAP_Hirohito_Yakuza = {
@@ -33,7 +33,7 @@ ideas = {
 			picture = Hirohito_Yakuza
 			
 			modifier = {
-				add_stability= 0.05
+				stability_factor = 0.05
 			}
 		}
 		JAP_Instability = {
@@ -51,7 +51,7 @@ ideas = {
 			picture = Instability
 			
 			modifier = {
-				add_stability= -0.50
+				stability_factor = -0.50
 			}
 		}
 		JAP_Yakuza_Law = {
@@ -69,7 +69,7 @@ ideas = {
 			picture = Yakuza_book
 			
 			modifier = {
-				add_war_support= 5
+				war_support_factor = 0.05
 			}
 		}
 		JAP_Film = {
@@ -87,7 +87,7 @@ ideas = {
 			picture = Filmreel
 			
 			modifier = {
-				add_stability= 0.05
+				stability_factor = 0.05
 			}
 		}
 		JAP_Navy = {
@@ -105,7 +105,7 @@ ideas = {
 			picture = Filmreel
 			
 			modifier = {
-				add_stability= 0.05
+				stability_factor = 0.05
 			}
 		}
 		JAP_Army = {
@@ -123,7 +123,7 @@ ideas = {
 			picture = Filmreel
 			
 			modifier = {
-				add_stability= 0.05
+				stability_factor = 0.05
 			}
 		}
 		JAP_Neutral = {
@@ -141,8 +141,8 @@ ideas = {
 			picture = Facepalm
 			
 			modifier = {
-				add_stability= -0.10
-				add_war_support= -5
+				stability_factor = -0.10
+				war_support_factor = -0.05
 			}
 		}
 	}
