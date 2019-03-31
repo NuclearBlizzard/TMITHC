@@ -9,7 +9,6 @@ replace_path="common/decisions"
 replace_path="common/decisions/categories"
 replace_path="events"
 replace_path="history/countries"
-replace_path="history/states"
 replace_path="history/units"
 tags={
 	"Alternative History"
