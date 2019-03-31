@@ -25,7 +25,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_state_affairs
-		icon = 
+		icon = GFX_
 		cost = 10
 		x = 16
 		y = 1
@@ -41,7 +41,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_germania_meeting
-		icon = 
+		icon = GFX_
 		cost = 10
 		x = 18
 		y = 1
